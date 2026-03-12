@@ -2,10 +2,9 @@
 
 Simple static site that picks a random URL from an array.
 
-## Deploy on GitHub Pages
+## Deploy on GitHub Pages with GitHub Actions
 
 1. Push this repository to GitHub.
 2. In repository settings, open **Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch `main` and folder `/ (root)`.
-5. Save and wait for deployment.
+3. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+4. Push to `main` (or run the workflow manually) to deploy.
