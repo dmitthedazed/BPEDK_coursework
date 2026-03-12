@@ -1,0 +1,318 @@
+:root {
+  --bg-1: #eaf2ff;
+  --bg-2: #dbeafe;
+  --text: #162033;
+  --hint: #4f5e73;
+  --link: #1454cc;
+  --line: rgba(69, 90, 119, 0.2);
+  --card: rgba(249, 253, 255, 0.8);
+  --shadow: 0 24px 60px rgba(35, 52, 78, 0.24);
+  --button-text: #fefefe;
+  --timer: #2563eb;
+  --progress-bg: rgba(59, 130, 246, 0.2);
+  --progress-fill: linear-gradient(90deg, #60a5fa, #2563eb 50%, #0ea5e9);
+  --button-bg: linear-gradient(122deg, #0ea5e9, #2563eb 44%, #1d4ed8);
+  --button-shadow: 0 12px 20px rgba(37, 99, 235, 0.25);
+  --button-shadow-hover: 0 16px 26px rgba(37, 99, 235, 0.3);
+  --focus-ring: rgba(29, 78, 216, 0.34);
+  --spot-a: rgba(59, 130, 246, 0.32);
+  --spot-b: rgba(14, 165, 233, 0.24);
+  --spot-c: rgba(96, 165, 250, 0.2);
+  --orb-a: rgba(14, 165, 233, 0.2);
+  --orb-b: rgba(59, 130, 246, 0.22);
+}
+
+body.theme-educators {
+  --bg-1: #eaf2ff;
+  --bg-2: #dbeafe;
+  --link: #1454cc;
+}
+
+body.theme-parents {
+  --bg-1: #faf5ff;
+  --bg-2: #f3e8ff;
+  --text: #251236;
+  --hint: #5e4d74;
+  --link: #6d28d9;
+  --line: rgba(114, 66, 182, 0.24);
+  --card: rgba(253, 249, 255, 0.82);
+  --shadow: 0 24px 60px rgba(68, 33, 107, 0.24);
+  --timer: #7c3aed;
+  --progress-bg: rgba(124, 58, 237, 0.19);
+  --progress-fill: linear-gradient(90deg, #a855f7, #7c3aed 52%, #4f46e5);
+  --button-bg: linear-gradient(122deg, #a855f7, #7c3aed 48%, #5b21b6);
+  --button-shadow: 0 12px 20px rgba(124, 58, 237, 0.25);
+  --button-shadow-hover: 0 16px 26px rgba(124, 58, 237, 0.3);
+  --focus-ring: rgba(124, 58, 237, 0.35);
+  --spot-a: rgba(168, 85, 247, 0.3);
+  --spot-b: rgba(192, 132, 252, 0.24);
+  --spot-c: rgba(99, 102, 241, 0.2);
+  --orb-a: rgba(168, 85, 247, 0.18);
+  --orb-b: rgba(124, 58, 237, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 12%, var(--spot-a), transparent 37%),
+    radial-gradient(circle at 92% 9%, var(--spot-b), transparent 38%),
+    radial-gradient(circle at 74% 88%, var(--spot-c), transparent 40%),
+    linear-gradient(138deg, var(--bg-1), var(--bg-2));
+  color: var(--text);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  padding: 14px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+body::before {
+  width: 360px;
+  height: 360px;
+  right: -120px;
+  top: -110px;
+  background: var(--orb-a);
+}
+
+body::after {
+  width: 260px;
+  height: 260px;
+  left: -90px;
+  bottom: -90px;
+  background: var(--orb-b);
+}
+
+.app {
+  width: min(100%, 460px);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 18px 16px 16px;
+  box-shadow: var(--shadow);
+  animation: rise-in 580ms cubic-bezier(0.2, 0.85, 0.2, 1);
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(110deg, rgba(255, 255, 255, 0.48), transparent 52%),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08) 8px,
+      transparent 8px,
+      transparent 16px
+    );
+}
+
+.badge {
+  position: relative;
+  display: inline-block;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #3d4f68;
+  background: linear-gradient(90deg, rgba(255, 228, 198, 0.82), rgba(205, 233, 255, 0.82));
+  border: 1px solid rgba(120, 150, 188, 0.42);
+  border-radius: 999px;
+  padding: 5px 10px;
+  margin-bottom: 7px;
+}
+
+h1 {
+  position: relative;
+  margin: 0;
+  font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+  font-size: clamp(1.38rem, 4.8vw, 1.9rem);
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  max-width: 14ch;
+}
+
+.subtitle {
+  position: relative;
+  margin: 10px 0 14px;
+  color: var(--hint);
+  font-size: 0.93rem;
+  line-height: 1.45;
+}
+
+.media {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+}
+
+.gif {
+  position: relative;
+  width: min(100%, 220px);
+  border-radius: 16px;
+  border: 1px solid rgba(94, 117, 150, 0.34);
+  box-shadow: 0 16px 28px rgba(39, 56, 80, 0.22);
+}
+
+.status {
+  position: relative;
+  width: 100%;
+  border: 1px solid rgba(75, 101, 133, 0.22);
+  border-radius: 14px;
+  padding: 10px;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.75), rgba(245, 251, 255, 0.62));
+}
+
+.timer-row {
+  margin: 0;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+  justify-content: center;
+}
+
+#timer {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: var(--timer);
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--progress-bg);
+  margin-top: 9px;
+  overflow: hidden;
+}
+
+#progressBar {
+  width: 0%;
+  height: 100%;
+  background: var(--progress-fill);
+  transition: width 120ms linear;
+}
+
+#fallback {
+  position: relative;
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--hint);
+}
+
+#fallback a {
+  color: var(--link);
+  font-weight: 700;
+  text-underline-offset: 3px;
+  word-break: break-all;
+}
+
+.actions {
+  position: relative;
+  margin-top: 12px;
+  display: grid;
+}
+
+#goNowBtn {
+  border: 0;
+  border-radius: 14px;
+  padding: 11px 12px;
+  font: inherit;
+  font-weight: 700;
+  background: var(--button-bg);
+  color: var(--button-text);
+  cursor: pointer;
+  box-shadow: var(--button-shadow);
+  transition: transform 150ms ease, box-shadow 150ms ease, filter 150ms ease;
+}
+
+#goNowBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--button-shadow-hover);
+  filter: saturate(1.08);
+}
+
+#goNowBtn:active {
+  transform: translateY(0);
+}
+
+#goNowBtn:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+.note {
+  position: relative;
+  margin: 10px 0 0;
+  font-size: 0.78rem;
+  color: var(--hint);
+}
+
+@keyframes rise-in {
+  from {
+    transform: translateY(14px) scale(0.995);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app {
+    animation: none;
+  }
+
+  #progressBar {
+    transition: none;
+  }
+
+  #goNowBtn {
+    transition: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .app {
+    border-radius: 20px;
+    padding: 14px 12px 12px;
+  }
+
+  h1 {
+    max-width: none;
+  }
+
+  .subtitle {
+    margin-bottom: 12px;
+  }
+}

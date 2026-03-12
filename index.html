@@ -3,61 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Сторінка завершення опитування з автоматичним переходом на випадкове джерело."
-    />
-    <title>Опитування завершено | Випадковий перехід</title>
+    <meta name="description" content="Точка входу BPEDK з вибором типу опитування." />
+    <title>BPEDK Coursework</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Manrope:wght@400;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Manrope:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      :root {
+        --bg-1: #fef3c7;
+        --bg-2: #dbeafe;
+        --bg-3: #cffafe;
+        --card: rgba(255, 255, 255, 0.78);
+        --line: rgba(69, 90, 119, 0.24);
+        --text: #1b2438;
+        --hint: #55657a;
+        --edu-1: #0ea5e9;
+        --edu-2: #2563eb;
+        --par-1: #a855f7;
+        --par-2: #6d28d9;
+        --shadow: 0 26px 60px rgba(27, 42, 64, 0.24);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at 12% 12%, rgba(249, 115, 22, 0.3), transparent 36%),
+          radial-gradient(circle at 88% 14%, rgba(59, 130, 246, 0.28), transparent 38%),
+          radial-gradient(circle at 82% 84%, rgba(14, 165, 233, 0.2), transparent 40%),
+          linear-gradient(145deg, var(--bg-1), var(--bg-2) 54%, var(--bg-3));
+        color: var(--text);
+        font-family: "Manrope", "Segoe UI", sans-serif;
+        padding: 20px;
+        overflow-x: hidden;
+      }
+
+      main {
+        width: min(100%, 760px);
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 26px 22px;
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(12px);
+        position: relative;
+        overflow: hidden;
+      }
+
+      main::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(110deg, rgba(255, 255, 255, 0.44), transparent 52%),
+          repeating-linear-gradient(
+            -45deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.08) 10px,
+            transparent 10px,
+            transparent 20px
+          );
+      }
+
+      .badge {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        font-size: 0.7rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #2f4668;
+        border: 1px solid rgba(97, 131, 180, 0.36);
+        background: linear-gradient(90deg, rgba(254, 215, 170, 0.86), rgba(191, 219, 254, 0.86));
+      }
+
+      h1 {
+        position: relative;
+        margin: 0;
+        font-family: "Bricolage Grotesque", "Trebuchet MS", sans-serif;
+        font-size: clamp(1.65rem, 3.5vw, 2.45rem);
+        line-height: 1.08;
+        letter-spacing: 0.02em;
+        max-width: 16ch;
+      }
+
+      .subtitle {
+        position: relative;
+        margin: 12px 0 18px;
+        color: var(--hint);
+        max-width: 62ch;
+        line-height: 1.52;
+      }
+
+      .links {
+        position: relative;
+        display: grid;
+        gap: 12px;
+      }
+
+      .entry {
+        display: grid;
+        gap: 5px;
+        padding: 15px 14px;
+        border-radius: 16px;
+        border: 1px solid rgba(74, 102, 136, 0.26);
+        text-decoration: none;
+        color: var(--text);
+        transition: transform 160ms ease, box-shadow 160ms ease;
+      }
+
+      .entry strong {
+        font-size: 1rem;
+        letter-spacing: 0.01em;
+      }
+
+      .entry span {
+        color: var(--hint);
+        font-size: 0.9rem;
+      }
+
+      .entry.educators {
+        background: linear-gradient(120deg, rgba(224, 242, 254, 0.9), rgba(219, 234, 254, 0.82));
+      }
+
+      .entry.parents {
+        background: linear-gradient(120deg, rgba(243, 232, 255, 0.88), rgba(233, 213, 255, 0.8));
+      }
+
+      .entry.educators:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 20px rgba(37, 99, 235, 0.2);
+      }
+
+      .entry.parents:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 20px rgba(124, 58, 237, 0.2);
+      }
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 8px;
+      }
+
+      .dot.educators {
+        background: linear-gradient(140deg, var(--edu-1), var(--edu-2));
+      }
+
+      .dot.parents {
+        background: linear-gradient(140deg, var(--par-1), var(--par-2));
+      }
+
+      .footer {
+        position: relative;
+        margin: 14px 0 0;
+        color: var(--hint);
+        font-size: 0.84rem;
+      }
+
+      @media (max-width: 640px) {
+        body {
+          padding: 12px;
+        }
+
+        main {
+          border-radius: 20px;
+          padding: 16px 14px;
+        }
+
+        .subtitle {
+          margin-bottom: 14px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .entry {
+          transition: none;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="layout-shell">
-      <main class="box">
-        <span class="badge">Опитування</span>
-        <h1>Дякуємо за участь</h1>
-        <p class="subtitle">
-          Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого дитячого
-          контенту для дошкільників у сучасному медіасередовищі».
-        </p>
-        <hr class="divider" />
+    <main>
+      <span class="badge">BPEDK Coursework</span>
+      <h1>Оберіть формат опитування</h1>
+      <p class="subtitle">
+        Це стартова точка проєкту. Виберіть цільову групу респондентів і система відкриє
+        відповідну сторінку з автоматичним переходом.
+      </p>
+      <div class="links">
+        <a class="entry educators" href="survey/educators/">
+          <strong><span class="dot educators" aria-hidden="true"></span>Опитування вихователів</strong>
+          <span>Синя тема, фокус на опитуванні педагогів.</span>
+        </a>
+        <a class="entry parents" href="survey/parents/">
+          <strong><span class="dot parents" aria-hidden="true"></span>Опитування батьків</strong>
+          <span>Фіолетова тема, фокус на опитуванні батьків.</span>
+        </a>
+      </div>
+      <p class="footer">Виконавець: Савін Дмитрій, 4-А, Бердичівський педагогічний фаховий коледж.</p>
+    </main>
 
-        <section class="media-block" aria-label="Автоматичний перехід">
-          <img
-            class="gif"
-            src="assets/dice_animation.gif"
-            alt="Анімація кидка кубика, що символізує випадковий вибір"
-            width="360"
-            height="360"
-            decoding="async"
-          />
-          <div class="status-panel">
-            <p class="timer-row">
-              <span class="label">Переходимо через</span>
-              <span id="timer" aria-live="polite">-</span>
-              <span class="label">с</span>
-            </p>
-            <div class="progress-wrap" aria-hidden="true">
-              <div id="progressBar"></div>
-            </div>
-          </div>
-        </section>
-
-        <p id="fallback"></p>
-        <div class="actions">
-          <button id="goNowBtn" type="button">Перейти зараз</button>
-        </div>
-
-        <p class="author">Створено Савін Дмитрій, 4-А, Бердичівський педагогічний фаховий коледж</p>
-        <noscript>Увімкніть JavaScript, щоб працював автоматичний перехід.</noscript>
-      </main>
-    </div>
-
-    <script src="assets/app.js" defer></script>
+    <script>
+      const tgWebApp = window.Telegram && window.Telegram.WebApp ? window.Telegram.WebApp : null;
+      if (tgWebApp) {
+        tgWebApp.ready();
+        tgWebApp.expand();
+      }
+    </script>
   </body>
 </html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Опитування батьків" />
+    <title>Опитування батьків</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../survey.css" />
+  </head>
+  <body class="theme-parents">
+    <main class="app">
+      <span class="badge">Опитування батьків</span>
+      <h1>Дякуємо за участь</h1>
+      <p class="subtitle">Кілька секунд і для вас відкриється випадковий матеріал.</p>
+
+      <section class="media" aria-label="Автоматичний перехід">
+        <img
+          class="gif"
+          src="../../assets/dice_animation.gif"
+          alt="Анімація випадкового вибору"
+          width="220"
+          height="220"
+          decoding="async"
+        />
+        <div class="status">
+          <p class="timer-row">
+            <span>Переходимо через</span>
+            <span id="timer" aria-live="polite">-</span>
+            <span>с</span>
+          </p>
+          <div class="progress" aria-hidden="true">
+            <div id="progressBar"></div>
+          </div>
+        </div>
+      </section>
+
+      <p id="fallback"></p>
+      <div class="actions">
+        <button id="goNowBtn" type="button">Перейти зараз</button>
+      </div>
+      <p class="note">Група: батьки.</p>
+    </main>
+
+    <script src="links.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="../survey.js" defer></script>
+  </body>
+</html>
