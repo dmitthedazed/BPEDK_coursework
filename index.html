@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Link Picker</title>
+    <style>
+      :root {
+        --bg: #f4efe6;
+        --card: #fffaf2;
+        --text: #1f2937;
+        --accent: #0f766e;
+        --accent-hover: #115e59;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(circle at top right, #dbeafe, transparent 40%),
+          radial-gradient(circle at bottom left, #fde68a, transparent 35%),
+          var(--bg);
+        color: var(--text);
+      }
+
+      .card {
+        width: min(92vw, 520px);
+        background: var(--card);
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 24px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 { margin-top: 0; font-size: 1.5rem; }
+
+      p { line-height: 1.5; }
+
+      .actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+
+      button {
+        background: var(--accent);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        padding: 10px 14px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover { background: var(--accent-hover); }
+
+      a {
+        color: var(--accent-hover);
+        font-weight: 600;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Random Link Picker</h1>
+      <p>Click the button to pick a random link from the list.</p>
+      <p id="result">No link selected yet.</p>
+      <div class="actions">
+        <button id="pickBtn" type="button">Pick Random Link</button>
+      </div>
+    </main>
+
+    <script>
+      const links = [
+        "https://github.com",
+        "https://developer.mozilla.org",
+        "https://www.wikipedia.org",
+        "https://news.ycombinator.com",
+        "https://www.nasa.gov"
+      ];
+
+      const result = document.getElementById("result");
+      const pickBtn = document.getElementById("pickBtn");
+
+      function pickRandomLink() {
+        const randomIndex = Math.floor(Math.random() * links.length);
+        const url = links[randomIndex];
+        result.innerHTML = `Selected: <a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
+      }
+
+      pickBtn.addEventListener("click", pickRandomLink);
+    </script>
+  </body>
+</html>
