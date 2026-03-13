@@ -1,7 +1,3 @@
 window.SURVEY_LINKS = [
-  "https://github.com",
-  "https://developer.mozilla.org",
-  "https://www.wikipedia.org",
-  "https://news.ycombinator.com",
-  "https://www.nasa.gov"
+  "https://docs.google.com/forms/d/e/1FAIpQLSeAcTexNyLOoZO3zYkdtXJtKxnHi0gVOtESsCjz7xuUQha8sA/viewform?usp=publish-editor"
 ];
