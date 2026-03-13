@@ -1,3 +1,20 @@
 window.SURVEY_LINKS = [
-  "https://docs.google.com/forms/d/e/1FAIpQLSeAcTexNyLOoZO3zYkdtXJtKxnHi0gVOtESsCjz7xuUQha8sA/viewform?usp=publish-editor"
+  "https://docs.google.com/forms/d/e/1FAIpQLSfuUMWGVtWlPDhZIO8yv5nnm1QAE1Fv9F2URyEzwXcf2GHxDQ/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSfQaWq1x3ixBq_uoBYqZ4rYIiZnQihxpPltEqBRv1tjlSfljQ/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSduUoobhZ1_CwxPg5PqyvtFKBgrwx0neAZ69BuLPp46XBB7dw/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSeKvjHVyZA4fwYgyyTShPzTKl6fOvsPrA0T4XOSnBxebfJUWg/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSdXY4uzmJvUTvlNbwkZ-ecfgtBEHu-ftO2kpDjyQPdPmpQZyA/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSff-jsr_ASzwujamjEBM_-fAyWz0Pd0ukVwjB9-OZOAvfV-sg/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSewtC8d8r0UBc4oMqqvGmevdVBJY0NHx-7u-tJJMxPiKs-acw/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSebD0jwaGDg39NXbIbenxCpTE_Y4b9eb8EiJnFpPAccUU0aIg/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSe4PoFeQk-Z6iN81qFViAfjiFkR4oH6sL2k8aY7MGDpmdKkSQ/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSeXrc6KQkTIv1qBqMw-b1bSJGiW84l73v8r1TUxlhSIjGXsDA/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLScYRlBeNaBA9JdRcn7uR4tApuzDvd6zxsjD0QwtL9fCW6Dnsw/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSeVSTd9h8XTWmmWUiBli_wCPydhwjI0Pta7ZhNdRaYQDk-InA/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSeOzUWJuzCqzS87F6RskTfSOkY47mJD6IZ52m8DYxRzYYAIqw/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSer49wD0LpRNoet2H37ps1Glp6zsJxFvC5lgJkFfwBOlr5_wg/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSeryRW2LR80C_Bz5qNsBFabQJrzVkZ53BAjo6J0VMGTtgRvpw/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLSdUCnPUbgxQKaeMehlkYVzAa8P5RSwq2FNzEL1R6n6kWG03ng/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLScMMWQt8zUhr7VNVrPYhoMlhNMJAw3EYcl0vs7-HZB6BFnF_w/viewform?usp=sharing&ouid=111023911114849718901",
+  "https://docs.google.com/forms/d/e/1FAIpQLScYti7jLDL3IbCnBXMfjSj-bd_15VIIAOB_4yojyUM3aJpV0Q/viewform?usp=sharing&ouid=111023911114849718901"
 ];

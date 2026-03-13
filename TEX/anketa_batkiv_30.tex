@@ -1,0 +1,3601 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{DejaVu Serif}}
+\usepackage{polyglossia}
+\setmainlanguage{ukrainian}
+
+\usepackage[a4paper,top=1.2cm,bottom=1.2cm,left=1.35cm,right=1.35cm]{geometry}
+\usepackage{multicol}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{ragged2e}
+
+\definecolor{accent}{HTML}{274C77}
+\definecolor{accent2}{HTML}{5E7FA3}
+\definecolor{soft}{HTML}{EEF3F8}
+\definecolor{linec}{HTML}{C9D5E3}
+\definecolor{textsoft}{HTML}{4B5563}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\columnsep}{0.7cm}
+\setlength{\columnseprule}{0.3pt}
+\renewcommand{\arraystretch}{1.1}
+\pagestyle{empty}
+\linespread{1.08}
+
+\newcommand{\sqb}{\raisebox{0.15ex}{\footnotesize$\square$}}
+\newcommand{\opt}[1]{{\footnotesize\RaggedRight #1}}
+\newcommand{\optln}[1]{\par\vspace{2pt}{\footnotesize\RaggedRight #1}}
+\newcommand{\qn}[1]{\vspace{6pt}\noindent\textbf{#1.}~}
+\newcommand{\ratingrow}[1]{%
+  \vspace{2pt}\noindent{\small #1}\hfill{\footnotesize\sqb\,1\ \sqb\,2\ \sqb\,3\ \sqb\,4\ \sqb\,5}\par}
+\newcommand{\answerbox}[1]{%
+  \par\vspace{4pt}\fcolorbox{linec}{white}{\parbox[c][#1][t]{\linewidth}{\vspace{2pt}}}\par}
+\newcommand{\qrimg}[1]{%
+  \IfFileExists{#1}{\includegraphics[width=1.6cm]{#1}}{%
+    \fcolorbox{accent2}{soft}{\parbox[c][1.6cm][c]{1.6cm}{\centering\scriptsize QR\\код}}}}
+
+\newcommand{\sectionband}[1]{%
+  \vspace{5pt}
+  \noindent\colorbox{accent}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
+    \vspace{1.5pt}\color{white}\small\textbf{#1}\vspace{1.5pt}}}\par
+  \vspace{4pt}}
+
+\newmdenv[linewidth=0.8pt,linecolor=accent,backgroundcolor=soft,
+  roundcorner=5pt,skipabove=2pt,skipbelow=3pt,
+  innerleftmargin=8pt,innerrightmargin=8pt,
+  innertopmargin=5pt,innerbottommargin=5pt]{headbox}
+
+\newmdenv[linewidth=0.5pt,linecolor=linec,backgroundcolor=white,
+  roundcorner=4pt,skipabove=5pt,skipbelow=4pt,
+  innerleftmargin=6pt,innerrightmargin=6pt,
+  innertopmargin=5pt,innerbottommargin=5pt]{lightbox}
+
+\begin{document}
+\RaggedRight
+
+% ── Анкета Б-01-01-T6V4 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-01-T6V4}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T6-izh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V4-trk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-02-T1V4 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-02-T1V4}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T1-spb.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V4-trk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-03-T9V2 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-03-T9V2}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T9-pst.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V2-pkd.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-04-T7V4 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-04-T7V4}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T7-lsk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V4-trk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-05-T1V1 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-05-T1V1}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T1-spb.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V1-grk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-06-T5V6 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-06-T5V6}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T5-bbp.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V6-prs.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-07-T6V3 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-07-T6V3}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T6-izh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V3-ssn.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-01-08-T5V5 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-01-08-T5V5}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T5-bbp.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V5-tfi.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-01-T5V2 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-01-T5V2}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T5-bbp.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V2-pkd.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-02-T3V2 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-02-T3V2}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T3-ksh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V2-pkd.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-03-T9V1 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-03-T9V1}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T9-pst.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V1-grk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-04-T2V6 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-04-T2V6}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T2-dub.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V6-prs.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-05-T4V3 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-05-T4V3}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T4-xhf.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V3-ssn.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-06-T4V2 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-06-T4V2}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T4-xhf.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V2-pkd.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-07-T5V1 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-07-T5V1}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T5-bbp.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V1-grk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-02-08-T6V1 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-02-08-T6V1}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T6-izh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V1-grk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-01-T8V5 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-01-T8V5}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T8-snc.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V5-tfi.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-02-T7V6 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-02-T7V6}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T7-lsk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V6-prs.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-03-T9V3 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-03-T9V3}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T9-pst.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V3-ssn.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-04-T6V2 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-04-T6V2}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T6-izh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V2-pkd.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-05-T4V4 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-05-T4V4}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T4-xhf.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V4-trk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-06-T8V3 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-06-T8V3}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T8-snc.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V3-ssn.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-03-07-T3V5 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-03-07-T3V5}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T3-ksh.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V5-tfi.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-01-T9V6 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-01-T9V6}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T9-pst.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V6-prs.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-02-T4V6 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-02-T4V6}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T4-xhf.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V6-prs.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-03-T2V5 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-03-T2V5}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T2-dub.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V5-tfi.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-04-T7V1 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-04-T7V1}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T7-lsk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V1-grk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-05-T7V3 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-05-T7V3}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T7-lsk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V3-ssn.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-06-T2V4 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-06-T2V4}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T2-dub.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V4-trk.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+\newpage
+
+% ── Анкета Б-04-07-T1V5 ──────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.70\linewidth}
+  {\large\bfseries АНКЕТА ДЛЯ БАТЬКІВ}\\[2pt]
+  {\footnotesize\color{textsoft}Дослідження «Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільників»\\[1pt]
+  Конфіденційно. Персональні дані не збираються. Заповнення займає близько 7--10 хвилин.}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\linewidth}
+  \raggedleft
+  {\footnotesize\textbf{ID анкети:}}\\[2pt]
+  {\small Б-04-07-T1V5}\\[3pt]
+  \includegraphics[width=3cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{5pt}
+\begin{multicols}{2}
+
+% ── Блок А ────────────────────────────────────────────────────────────────────
+\sectionband{Блок А. Загальні відомості}
+
+\qn{1} Вік дитини: \underline{\hspace{1.2cm}}~р. \hfill Стать: \opt{\sqb~Хлопчик \quad \sqb~Дівчинка}
+
+\qn{2} Кількість дітей дошкільного віку в родині:\\
+\optln{\sqb~1 \quad \sqb~2 \quad \sqb~3 і більше}
+
+\qn{3} Скільки часу на добу дитина дивиться відео / мультфільми (будні)?\\
+\optln{\sqb~До 30 хв. \quad \sqb~30--60 хв. \quad \sqb~1--2 год. \quad \sqb~Більше 2 год.}
+
+\qn{4} На якому пристрої найчастіше?\\
+\optln{\sqb~Телевізор \quad \sqb~Планшет \quad \sqb~Смартфон \quad \sqb~ПК / ноутбук}
+
+\qn{5} Хто обирає контент для дитини?\\
+\optln{\sqb~Я сам/-а \quad \sqb~Дитина \quad \sqb~Разом \quad \sqb~Старші діти}
+
+\qn{6} Чи дивитеся разом із дитиною?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+% ── Блок Б ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Б. Ставлення до контенту}
+
+\qn{7} Чи перевіряєте контент перед показом дитині?\\
+\optln{\sqb~Завжди \quad \sqb~Часто \quad \sqb~Іноді \quad \sqb~Рідко \quad \sqb~Ніколи}
+
+\qn{8} Що найважливіше при виборі контенту? \opt{(можна кілька)}\\
+\optln{\sqb~Позитивні цінності \quad \sqb~Без насилля \quad \sqb~Спокійний темп}\\
+\optln{\sqb~Хороша мова \quad \sqb~Дитині подобається \quad \sqb~Знайома студія}\\
+\optln{\sqb~Інше: \underline{\hspace{3cm}}}
+
+\qn{9} Занепокоєність якістю контенту, який дивиться дитина:\\
+\optln{1 --- зовсім не турбує \hfill 5 --- турбує дуже}
+\ratingrow{}
+
+\qn{10} Чи знаєте, що таке «ШІ-контент»?\\
+\optln{\sqb~Так \quad \sqb~Чув(-ла), не впевнений(-а) \quad \sqb~Ні}
+
+\qn{11} Чи давали дитині ШІ-контент?\\
+\optln{\sqb~Так, свідомо \quad \sqb~Можливо \quad \sqb~Ні}
+
+\qn{12} Чи помічали негативну реакцію дитини на контент?\\
+\optln{
+  \sqb~Так, неодноразово \quad \sqb~Так, один раз \\
+  \sqb~Ні
+}
+
+\qn{13} Рівень довіри до YouTube-каналів для дітей:\\
+\optln{1 --- дуже низький \hfill 5 --- дуже високий}
+\ratingrow{}
+
+\columnbreak
+
+% ── Блок В ────────────────────────────────────────────────────────────────────
+\sectionband{Блок В. Сліпе оцінювання двох зразків}
+
+{\footnotesize\itshape Оцініть два матеріали за QR-кодами.}
+
+\vspace{4pt}
+\begin{lightbox}
+\noindent\textbf{\small Зразок 1 (текст)}\hfill\qrimg{qr/T1-spb.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+\begin{lightbox}
+\noindent\textbf{\small Зразок 2 (відео)}\hfill\qrimg{qr/V5-tfi.pdf}\\[3pt]
+\ratingrow{Сподобається дитині?}
+\ratingrow{Позитивний приклад / цінність}
+\ratingrow{Безпечний для дитини?}
+\ratingrow{Якість мови}
+\ratingrow{Відповідність вікові}
+\ratingrow{Загальна оцінка}
+\vspace{2pt}
+\optln{Походження: \sqb~Традиційний \quad \sqb~ШІ \quad \sqb~Важко сказати}
+\optln{Показали б дитині: \sqb~Так \quad \sqb~Скоріше так \quad \sqb~Скоріше ні \quad \sqb~Ні}
+\end{lightbox}
+
+% ── Блок Г ────────────────────────────────────────────────────────────────────
+\sectionband{Блок Г. Відкриті відповіді}
+
+\qn{14} Що найважливіше при виборі казки / мультфільму для дитини?
+\answerbox{2cm}
+
+\qn{15} Чого свідомо уникаєте при виборі контенту для дитини?
+\answerbox{2cm}
+
+\end{multicols}
+
+\vfill
+
+\end{document}

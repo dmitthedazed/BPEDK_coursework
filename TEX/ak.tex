@@ -1,0 +1,227 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1.8cm]{geometry}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{polyglossia}
+\setdefaultlanguage{ukrainian}
+
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{microtype}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\setstretch{1.03}
+
+\definecolor{main}{HTML}{1F3A5F}
+\definecolor{accent}{HTML}{6F7D8C}
+\definecolor{linegray}{HTML}{CCD3DA}
+\definecolor{textgray}{HTML}{444444}
+\definecolor{soft}{HTML}{F5F7F9}
+
+\newcommand{\topruleline}{%
+    {\color{linegray}\rule{\linewidth}{0.9pt}}
+}
+
+\newcommand{\midruleline}{%
+    {\color{linegray}\rule{\linewidth}{0.6pt}}
+}
+
+\newcommand{\formsection}[1]{%
+    \vspace{0.8em}
+    {\large\bfseries\color{main} #1}\par
+    \vspace{0.35em}
+    \midruleline
+    \vspace{0.45em}
+}
+
+\newcommand{\checkboxitem}[1]{\item[□] #1}
+
+\newcommand{\answerline}{%
+    \vspace{0.9em}
+    \hrulefill
+    \vspace{0.9em}
+}
+
+\newcommand{\twolines}{%
+    \answerline
+    \answerline
+}
+
+\begin{document}
+
+\begin{center}
+    {\footnotesize\color{accent}\textsc{Матеріали емпіричного дослідження}}\\[2pt]
+    {\small\color{textgray}\textsc{Психолого-педагогічний аналіз дитячого медіаконтенту}}
+\end{center}
+
+\vspace{0.3em}
+\topruleline
+
+\vspace{0.9em}
+
+\begin{center}
+    {\Large\bfseries\color{main} АНКЕТА ДЛЯ ВИХОВАТЕЛІВ}\\[0.45em]
+    {\normalsize\bfseries\color{textgray}
+    щодо оцінювання дитячого медіаконтенту,\\
+    створеного за участю технологій штучного інтелекту}
+\end{center}
+
+\vspace{0.9em}
+
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{4.5cm}X@{}}
+Мета опитування: &
+виявити ставлення вихователів до якості, психологічної безпечності та доцільності використання дитячого медіаконтенту, створеного за участю штучного інтелекту.\\[0.55em]
+
+Цільова група: &
+вихователі закладів дошкільної освіти.\\[0.55em]
+
+Форма участі: &
+анонімна, добровільна.\\[0.55em]
+
+Інструкція щодо заповнення: &
+уважно прочитайте кожне запитання, позначте потрібний варіант відповіді або коротко впишіть власну думку у відведених рядках.
+\end{tabularx}
+
+\vspace{0.8em}
+\topruleline
+
+\vspace{0.8em}
+
+\textbf{Шановні колеги!}
+
+Просимо Вас взяти участь в опитуванні, результати якого будуть використані виключно в узагальненому вигляді в межах курсового дослідження. Анкета не передбачає зазначення персональних даних і спрямована на вивчення професійної думки педагогів щодо сучасного дитячого медіаконтенту для дітей дошкільного віку.
+
+\formsection{1. Загальні відомості}
+
+\textbf{1. Ваш педагогічний стаж:}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{до 3 років}
+    \checkboxitem{3--10 років}
+    \checkboxitem{11--20 років}
+    \checkboxitem{понад 20 років}
+\end{itemize}
+
+\textbf{2. З якою віковою групою дітей Ви працюєте?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{ранній вік}
+    \checkboxitem{молодша група}
+    \checkboxitem{середня група}
+    \checkboxitem{старша група}
+    \checkboxitem{різновікова група}
+\end{itemize}
+
+\formsection{2. Досвід використання дитячого медіаконтенту}
+
+\textbf{3. Чи використовуєте Ви у своїй роботі відео, аудіо або цифрові матеріали для дітей?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{так, регулярно}
+    \checkboxitem{інколи}
+    \checkboxitem{дуже рідко}
+    \checkboxitem{не використовую}
+\end{itemize}
+
+\textbf{4. Чи звертаєте Ви увагу на походження дитячого контенту (створений людиною чи за участю ШІ)?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{так}
+    \checkboxitem{частково}
+    \checkboxitem{майже не звертаю уваги}
+    \checkboxitem{ні}
+\end{itemize}
+
+\textbf{5. Які критерії якості дитячого медіаконтенту для Вас є найважливішими?}
+{\small\color{textgray}(можна обрати кілька варіантів)}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{зрозумілість сюжету}
+    \checkboxitem{спокійний емоційний фон}
+    \checkboxitem{відповідність віку дітей}
+    \checkboxitem{мовна грамотність}
+    \checkboxitem{виховний зміст}
+    \checkboxitem{естетичність оформлення}
+    \checkboxitem{відсутність агресивних або тривожних елементів}
+    \checkboxitem{інше: \hrulefill}
+\end{itemize}
+
+\textbf{6. Як Ви вважаєте, чи може контент, створений за участю ШІ, бути корисним для дітей дошкільного віку?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{так}
+    \checkboxitem{скоріше так}
+    \checkboxitem{скоріше ні}
+    \checkboxitem{ні}
+    \checkboxitem{важко відповісти}
+\end{itemize}
+
+\textbf{7. Які можливі ризики такого контенту Ви вбачаєте?}
+{\small\color{textgray}(можна обрати кілька варіантів)}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{емоційне перевантаження}
+    \checkboxitem{надто яскраві або хаотичні стимули}
+    \checkboxitem{поверховий зміст}
+    \checkboxitem{невідповідність віковим особливостям}
+    \checkboxitem{формування страхів або тривожності}
+    \checkboxitem{зниження якості мовлення}
+    \checkboxitem{не бачу особливих ризиків}
+    \checkboxitem{інше: \hrulefill}
+\end{itemize}
+
+\textbf{8. Наскільки важливо, на Вашу думку, перевіряти дитячий контент перед показом дітям?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{дуже важливо}
+    \checkboxitem{скоріше важливо}
+    \checkboxitem{не завжди потрібно}
+    \checkboxitem{неважливо}
+\end{itemize}
+
+\textbf{9. Які платформи або джерела дитячого контенту Ви використовуєте найчастіше?}
+{\small\color{textgray}(можна обрати кілька варіантів)}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{YouTube}
+    \checkboxitem{YouTube Kids}
+    \checkboxitem{телевізійні канали}
+    \checkboxitem{освітні платформи}
+    \checkboxitem{месенджери / соціальні мережі}
+    \checkboxitem{файли від колег / методичні матеріали}
+    \checkboxitem{інше: \hrulefill}
+\end{itemize}
+
+\formsection{3. Професійні спостереження та оцінка}
+
+\textbf{10. Чи помічали Ви, що діти по-різному реагують на різні типи медіаконтенту?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{так, часто}
+    \checkboxitem{інколи}
+    \checkboxitem{майже не помічала(-в)}
+    \checkboxitem{ні}
+\end{itemize}
+
+\textbf{11. Які реакції дітей Ви спостерігали найчастіше після перегляду медіаконтенту?}
+\twolines
+
+\textbf{12. Які ознаки, на Вашу думку, свідчать про психологічну безпечність дитячого контенту?}
+\twolines
+
+\textbf{13. Чи потрібні, на Вашу думку, рекомендації для педагогів і батьків щодо добору дитячого ШІ-контенту?}
+\begin{itemize}[leftmargin=1.5cm, itemsep=2pt, topsep=4pt]
+    \checkboxitem{так}
+    \checkboxitem{скоріше так}
+    \checkboxitem{скоріше ні}
+    \checkboxitem{ні}
+\end{itemize}
+
+\textbf{14. Ваші додаткові думки або зауваження:}
+\twolines
+
+\vfill
+
+\begin{center}
+    {\color{linegray}\rule{0.36\linewidth}{0.8pt}}\\[0.45em]
+    \textbf{\color{main}Дякуємо за участь в опитуванні!}
+\end{center}
+
+\end{document}
