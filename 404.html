@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="404 — Сторінку не знайдено" />
+  <title>404 — Сторінку не знайдено</title>
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .error-container {
+      width: min(100%, 540px);
+      text-align: center;
+    }
+
+    .error-code {
+      font-family: "Instrument Serif", serif;
+      font-size: clamp(5rem, 14vw, 8rem);
+      line-height: 1;
+      color: var(--accent);
+      opacity: 0.12;
+      letter-spacing: -0.04em;
+      margin-bottom: -20px;
+      position: relative;
+      z-index: 0;
+    }
+
+    .error-card {
+      position: relative;
+      z-index: 1;
+      animation: rise-in 560ms cubic-bezier(0.22, 0.9, 0.22, 1) both;
+    }
+
+    .error-card h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 8px;
+    }
+
+    .error-card p {
+      color: var(--ink2);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 28px;
+    }
+
+    .error-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .error-link {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--line);
+      background: var(--card);
+      text-decoration: none;
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: transform 150ms, box-shadow 150ms, background 150ms;
+      backdrop-filter: blur(8px);
+    }
+
+    .error-link:hover {
+      transform: translateX(4px);
+      box-shadow: var(--shadow-sm);
+      background: var(--bg2);
+    }
+
+    .error-link-icon {
+      width: 36px;
+      height: 36px;
+      display: grid;
+      place-items: center;
+      border-radius: var(--radius-sm);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .error-link-icon--home { background: rgba(200,65,10,0.08); }
+    .error-link-icon--hub  { background: rgba(200,65,10,0.06); }
+    .error-link-icon--par  { background: rgba(107,33,168,0.08); }
+    .error-link-icon--edu  { background: rgba(26,86,160,0.08); }
+
+    .error-link span {
+      color: var(--ink3);
+      font-weight: 400;
+      font-size: 0.78rem;
+      margin-left: auto;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 16px; }
+      .error-link span { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <div class="error-code" aria-hidden="true">404</div>
+    <div class="error-card glass-card">
+      <div class="badge">Помилка</div>
+      <h1>Сторінку не знайдено</h1>
+      <p>Можливо, адреса змінилася або посилання застаріло. Оберіть один із розділів нижче.</p>
+      <div class="divider" style="margin: 0 auto 24px;"></div>
+      <nav class="error-links" aria-label="Навігація">
+        <a class="error-link" href="./">
+          <div class="error-link-icon error-link-icon--home" aria-hidden="true">&#8962;</div>
+          Головна сторінка
+          <span>index</span>
+        </a>
+        <a class="error-link" href="./m/">
+          <div class="error-link-icon error-link-icon--hub" aria-hidden="true">&#9783;</div>
+          Корпус матеріалів
+          <span>m/</span>
+        </a>
+        <a class="error-link" href="./survey/educators/">
+          <div class="error-link-icon error-link-icon--edu" aria-hidden="true">&#9998;</div>
+          Опитування вихователів
+          <span>survey/educators</span>
+        </a>
+        <a class="error-link" href="./survey/parents/">
+          <div class="error-link-icon error-link-icon--par" aria-hidden="true">&#9998;</div>
+          Опитування батьків
+          <span>survey/parents</span>
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    if (window.Telegram?.WebApp) {
+      window.Telegram.WebApp.ready();
+    }
+  </script>
+</body>
+</html>

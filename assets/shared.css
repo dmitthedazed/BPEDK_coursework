@@ -1,0 +1,274 @@
+/*  ━━━━  SHARED DESIGN SYSTEM  ━━━━
+    Unified tokens, reset, typography & utilities
+    matching the main index.html aesthetic.
+    Every sub-page imports this file.
+    ──────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/* ── DESIGN TOKENS ── */
+:root {
+  --bg:       #fdf8f0;
+  --bg2:      #f5ede0;
+  --ink:      #1a1208;
+  --ink2:     #4a3f30;
+  --ink3:     #8a7a68;
+  --accent:   #c8410a;
+  --accent2:  #e8873a;
+  --edu:      #1a56a0;
+  --par:      #6b21a8;
+  --line:     rgba(26,18,8,0.12);
+  --card:     rgba(255,252,245,0.82);
+  --shadow-sm: 0 2px 8px rgba(26,18,8,0.06);
+  --shadow-md: 0 12px 40px rgba(26,18,8,0.10);
+  --shadow-lg: 0 28px 64px rgba(26,18,8,0.14);
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --noise: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+/* ── RESET ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+/* ── BASE BODY ── */
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 10% 0%, rgba(200,65,10,0.07), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 100%, rgba(26,86,160,0.06), transparent),
+    var(--noise);
+  color: var(--ink);
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+/* ── TYPOGRAPHY ── */
+h1, h2, h3 {
+  font-family: "Instrument Serif", serif;
+  line-height: 1.15;
+  color: var(--ink);
+}
+
+/* ── SHARED NAV BAR (sub-pages) ── */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  background: rgba(253,248,240,0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-nav-logo {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 800;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 150ms;
+}
+
+.site-nav-logo:hover { opacity: 0.7; }
+
+.site-nav-back {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink2);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 150ms;
+}
+
+.site-nav-back:hover { color: var(--accent); }
+
+/* ── SHARED BADGE ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(200,65,10,0.25);
+  background: rgba(200,65,10,0.06);
+  border-radius: 999px;
+  padding: 5px 14px;
+}
+
+.badge--edu {
+  color: var(--edu);
+  border-color: rgba(26,86,160,0.25);
+  background: rgba(26,86,160,0.06);
+}
+
+.badge--par {
+  color: var(--par);
+  border-color: rgba(107,33,168,0.25);
+  background: rgba(107,33,168,0.06);
+}
+
+/* ── SHARED BUTTON ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn:focus-visible {
+  outline: 3px solid rgba(200,65,10,0.3);
+  outline-offset: 2px;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(200,65,10,0.25);
+}
+.btn--primary:hover { box-shadow: 0 8px 28px rgba(200,65,10,0.35); }
+
+.btn--edu {
+  background: var(--edu);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(26,86,160,0.25);
+}
+.btn--edu:hover { box-shadow: 0 8px 28px rgba(26,86,160,0.35); }
+
+.btn--par {
+  background: var(--par);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(107,33,168,0.25);
+}
+.btn--par:hover { box-shadow: 0 8px 28px rgba(107,33,168,0.35); }
+
+.btn--ghost {
+  background: transparent;
+  color: var(--ink2);
+  border: 1px solid var(--line);
+}
+.btn--ghost:hover { background: var(--bg2); }
+
+/* ── SHARED CARD ── */
+.glass-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  box-shadow: var(--shadow-lg);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background:
+    linear-gradient(115deg, rgba(255,255,255,0.5), transparent 50%),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255,255,255,0.06), rgba(255,255,255,0.06) 8px,
+      transparent 8px, transparent 16px
+    );
+}
+
+/* ── DIVIDER ── */
+.divider {
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  border-radius: 999px;
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* ── FADE-UP ANIMATION ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes rise-in {
+  from { transform: translateY(16px) scale(0.993); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* ── FOOTER (sub-pages) ── */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--ink3);
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.site-footer a:hover { text-decoration: underline; }
+
+/* ── RESPONSIVE SHARED ── */
+@media (max-width: 768px) {
+  .site-nav { padding: 12px 20px; }
+  .site-footer { padding: 16px 20px; flex-wrap: wrap; justify-content: center; text-align: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-up { opacity: 1; transform: none; transition: none; }
+  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

@@ -1,0 +1,410 @@
+/* ━━━━  MATERIALS HUB & FAIRY TALE PAGES  ━━━━
+   Inherits tokens from shared.css
+   ────────────────────────────────────────────── */
+
+/* ══════════════════════════════════════
+   HUB PAGE  (m/index.html)
+   ══════════════════════════════════════ */
+
+.hub-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 48px 40px 80px;
+}
+
+.hub-header {
+  margin-bottom: 48px;
+}
+
+.hub-header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.01em;
+  margin: 16px 0 12px;
+}
+
+.hub-lead {
+  color: var(--ink2);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 58ch;
+}
+
+.hub-lead code {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.9em;
+  background: var(--bg2);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1px 7px;
+  color: var(--ink2);
+}
+
+.hub-pills {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hub-pills span {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: rgba(200,65,10,0.06);
+  border: 1px solid rgba(200,65,10,0.2);
+}
+
+/* ── HUB SECTIONS ── */
+.hub-section {
+  margin-bottom: 32px;
+}
+
+.hub-section-head {
+  margin-bottom: 16px;
+}
+
+.hub-section-head h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  margin-bottom: 6px;
+}
+
+.hub-section-head p {
+  color: var(--ink3);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+/* ── GRID ── */
+.hub-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 540px) {
+  .hub-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 768px) {
+  .hub-grid--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── MATERIAL CARD ── */
+.mat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--card);
+  text-decoration: none;
+  color: var(--ink);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: transform 150ms, box-shadow 150ms, border-color 150ms;
+}
+
+.mat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(200,65,10,0.2);
+}
+
+.mat-card strong {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.mat-card span {
+  color: var(--ink3);
+  font-size: 0.82rem;
+}
+
+.mat-card--video {
+  border-left: 3px solid var(--edu);
+}
+
+.mat-card--text {
+  border-left: 3px solid var(--accent);
+}
+
+/* ── HUB ACTIONS ── */
+.hub-actions {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+  margin-top: 8px;
+}
+
+@media (min-width: 540px) {
+  .hub-actions { grid-template-columns: repeat(2, 1fr); }
+}
+
+.hub-action-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--card);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 0.88rem;
+  transition: transform 150ms, box-shadow 150ms;
+  backdrop-filter: blur(8px);
+}
+
+.hub-action-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-sm);
+}
+
+.hub-action-card span {
+  color: var(--ink3);
+  font-weight: 400;
+  font-size: 0.78rem;
+  margin-left: auto;
+}
+
+
+/* ══════════════════════════════════════
+   FAIRY TALE / STORY PAGES
+   ══════════════════════════════════════ */
+
+.story-layout {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 48px 40px 80px;
+}
+
+.story-header {
+  margin-bottom: 8px;
+}
+
+.story-header h1 {
+  font-size: clamp(1.85rem, 4vw, 2.8rem);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+  margin-top: 16px;
+  color: var(--story-title, var(--ink));
+}
+
+/* ── STORY CONTENT CARD ── */
+.story-content {
+  margin-top: 20px;
+  border: 1px solid var(--story-border, var(--line));
+  border-radius: var(--radius-lg);
+  background: var(--story-text-bg, rgba(255,255,255,0.72));
+  padding: 28px 24px;
+  position: relative;
+  box-shadow:
+    0 16px 34px rgba(26,18,8,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.64);
+}
+
+/* decorative corner dots */
+.story-content::before,
+.story-content::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(140deg,
+    var(--story-deco-a, rgba(200,65,10,0.4)),
+    var(--story-deco-b, rgba(26,86,160,0.3))
+  );
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
+}
+
+.story-content::before { top: 14px; right: 14px; }
+.story-content::after  { bottom: 14px; left: 14px; }
+
+.story-content p {
+  margin-top: 14px;
+  color: var(--story-ink, var(--ink2));
+  font-size: 1.02rem;
+  line-height: 1.78;
+}
+
+.story-content p:first-of-type { margin-top: 0; }
+
+.story-content p:first-of-type::first-letter {
+  float: left;
+  margin-right: 9px;
+  margin-top: 3px;
+  font-family: "Instrument Serif", serif;
+  font-size: 3em;
+  line-height: 0.84;
+  color: var(--story-dropcap, var(--accent));
+  text-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* ── STORY BACK LINK ── */
+.story-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink3);
+  text-decoration: none;
+  transition: color 150ms;
+}
+
+.story-back:hover { color: var(--accent); }
+
+
+/* ══════════════════════════════════════
+   STORY COLOR THEMES
+   ══════════════════════════════════════ */
+
+/* T1: Спасибі (green) */
+.story-thanks {
+  --story-bg-a:  rgba(34,197,94,0.08);
+  --story-bg-b:  rgba(56,189,248,0.06);
+  --story-border: rgba(34,197,94,0.22);
+  --story-title: #14532d;
+  --story-ink:   #345243;
+  --story-dropcap: #15803d;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(240,253,244,0.78));
+  --story-deco-a: rgba(34,197,94,0.5);
+  --story-deco-b: rgba(56,189,248,0.3);
+}
+
+/* T2: Дуб (amber) */
+.story-oak {
+  --story-bg-a:  rgba(180,83,9,0.08);
+  --story-bg-b:  rgba(132,204,22,0.06);
+  --story-border: rgba(146,64,14,0.22);
+  --story-title: #4a2810;
+  --story-ink:   #5d4330;
+  --story-dropcap: #92400e;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(254,249,235,0.78));
+  --story-deco-a: rgba(180,83,9,0.5);
+  --story-deco-b: rgba(132,204,22,0.3);
+}
+
+/* T3: Кошеня (pink) */
+.story-kitten {
+  --story-bg-a:  rgba(244,114,182,0.08);
+  --story-bg-b:  rgba(59,130,246,0.06);
+  --story-border: rgba(244,114,182,0.22);
+  --story-title: #7e1d56;
+  --story-ink:   #5a3f63;
+  --story-dropcap: #db2777;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(252,231,243,0.74));
+  --story-deco-a: rgba(244,114,182,0.5);
+  --story-deco-b: rgba(59,130,246,0.3);
+}
+
+/* T4: Хлібчик (warm orange) */
+.story-bread {
+  --story-bg-a:  rgba(251,146,60,0.08);
+  --story-bg-b:  rgba(250,204,21,0.06);
+  --story-border: rgba(180,83,9,0.22);
+  --story-title: #7c2d12;
+  --story-ink:   #6b4a35;
+  --story-dropcap: #b45309;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(255,247,237,0.80));
+  --story-deco-a: rgba(251,146,60,0.5);
+  --story-deco-b: rgba(250,204,21,0.3);
+}
+
+/* T5: Пиріг (red) */
+.story-pie {
+  --story-bg-a:  rgba(248,113,113,0.08);
+  --story-bg-b:  rgba(251,191,36,0.06);
+  --story-border: rgba(185,28,28,0.18);
+  --story-title: #7f1d1d;
+  --story-ink:   #6b3f3f;
+  --story-dropcap: #dc2626;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(254,242,242,0.80));
+  --story-deco-a: rgba(248,113,113,0.5);
+  --story-deco-b: rgba(251,191,36,0.3);
+}
+
+/* T6: Їжачок (green-lime) */
+.story-apple {
+  --story-bg-a:  rgba(132,204,22,0.08);
+  --story-bg-b:  rgba(249,115,22,0.06);
+  --story-border: rgba(101,163,13,0.22);
+  --story-title: #365314;
+  --story-ink:   #476437;
+  --story-dropcap: #65a30d;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(247,254,231,0.78));
+  --story-deco-a: rgba(132,204,22,0.5);
+  --story-deco-b: rgba(249,115,22,0.3);
+}
+
+/* T7: Лисичка (orange) */
+.story-fox-seed {
+  --story-bg-a:  rgba(249,115,22,0.08);
+  --story-bg-b:  rgba(251,191,36,0.06);
+  --story-border: rgba(194,65,12,0.22);
+  --story-title: #7c2d12;
+  --story-ink:   #68452e;
+  --story-dropcap: #c2410c;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(255,237,213,0.78));
+  --story-deco-a: rgba(249,115,22,0.5);
+  --story-deco-b: rgba(251,191,36,0.3);
+}
+
+/* T8: Сонечко і хмаринка (blue-yellow) */
+.story-sun-cloud {
+  --story-bg-a:  rgba(250,204,21,0.08);
+  --story-bg-b:  rgba(125,211,252,0.06);
+  --story-border: rgba(37,99,235,0.18);
+  --story-title: #1e3a8a;
+  --story-ink:   #3f4f78;
+  --story-dropcap: #2563eb;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(239,246,255,0.80));
+  --story-deco-a: rgba(250,204,21,0.5);
+  --story-deco-b: rgba(125,211,252,0.3);
+}
+
+/* T9: Пстрик (cyan) */
+.story-sun-bunny {
+  --story-bg-a:  rgba(251,191,36,0.08);
+  --story-bg-b:  rgba(14,165,233,0.06);
+  --story-border: rgba(14,116,144,0.18);
+  --story-title: #0f3d5a;
+  --story-ink:   #3a5568;
+  --story-dropcap: #0ea5e9;
+  --story-text-bg: linear-gradient(145deg, rgba(255,255,255,0.84), rgba(240,249,255,0.78));
+  --story-deco-a: rgba(251,191,36,0.5);
+  --story-deco-b: rgba(14,165,233,0.3);
+}
+
+/* ── Story body background tints ── */
+body[class*="story-"] {
+  background-image:
+    radial-gradient(ellipse 70% 50% at 10% 0%, var(--story-bg-a, rgba(200,65,10,0.07)), transparent),
+    radial-gradient(ellipse 60% 40% at 90% 100%, var(--story-bg-b, rgba(26,86,160,0.06)), transparent),
+    var(--noise);
+}
+
+/* ══════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .hub-layout { padding: 32px 20px 60px; }
+  .story-layout { padding: 32px 20px 60px; }
+}
+
+@media (max-width: 480px) {
+  .story-content { padding: 20px 16px; border-radius: 18px; }
+  .story-content p { font-size: 0.96rem; line-height: 1.68; }
+  .story-header h1 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
+}
