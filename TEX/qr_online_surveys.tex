@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{fontspec}
+\IfFontExistsTF{Times New Roman}{\setmainfont{Times New Roman}}{\setmainfont{DejaVu Serif}}
+\usepackage{polyglossia}
+\setmainlanguage{ukrainian}
+
+\usepackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{array}
+
+\definecolor{accent}{HTML}{274C77}
+\definecolor{accent2}{HTML}{5E7FA3}
+\definecolor{soft}{HTML}{EEF3F8}
+\definecolor{linec}{HTML}{C9D5E3}
+\definecolor{textsoft}{HTML}{4B5563}
+\definecolor{parentc}{HTML}{7C3AED}
+\definecolor{educc}{HTML}{1A56A0}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\pagestyle{empty}
+\linespread{1.15}
+
+\newcommand{\qrimg}[1]{%
+  \IfFileExists{#1}{\includegraphics[width=5cm]{#1}}{%
+    \fcolorbox{accent2}{soft}{\parbox[c][5cm][c]{5cm}{\centering\large QR-код}}}}
+
+\newmdenv[linewidth=0.8pt,linecolor=accent,backgroundcolor=soft,
+  roundcorner=5pt,skipabove=6pt,skipbelow=6pt,
+  innerleftmargin=12pt,innerrightmargin=12pt,
+  innertopmargin=10pt,innerbottommargin=10pt]{headbox}
+
+\newmdenv[linewidth=0.5pt,linecolor=linec,backgroundcolor=white,
+  roundcorner=4pt,skipabove=8pt,skipbelow=8pt,
+  innerleftmargin=10pt,innerrightmargin=10pt,
+  innertopmargin=10pt,innerbottommargin=10pt]{cardbox}
+
+\begin{document}
+\RaggedRight
+
+% ── Заголовок ─────────────────────────────────────────────────────────────────
+\begin{headbox}
+\noindent
+\begin{minipage}[t]{0.68\linewidth}
+  {\Large\bfseries\color{accent} ОНЛАЙН-АНКЕТУВАННЯ}\\[4pt]
+  {\large Дослідження «Психологічна безпека та педагогічна\\
+  доцільність ШІ-генерованого контенту для дошкільників»}\\[6pt]
+  {\color{textsoft} Бердичівський педагогічний фаховий коледж\\
+  Житомирського обласного педагогічного університету\\імені Івана Франка}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.28\linewidth}
+  \raggedleft
+  \includegraphics[width=3.5cm]{logo/ped_logo.png}
+\end{minipage}
+\end{headbox}
+
+\vspace{4pt}
+
+{\color{textsoft}\small
+Шановні учасники! Запрошуємо Вас пройти коротке анонімне онлайн-опитування.
+Скануйте відповідний QR-код камерою телефону або натисніть на посилання.
+Система автоматично підбере Вам унікальну анкету зі зразками для сліпого оцінювання.
+Заповнення займає \textbf{7--10 хвилин}. Персональні дані не збираються.}
+
+\vspace{8pt}
+
+% ── Два QR-коди ───────────────────────────────────────────────────────────────
+\noindent
+\begin{minipage}[t]{0.48\linewidth}
+\begin{cardbox}
+\centering
+{\large\bfseries\color{parentc} АНКЕТА ДЛЯ БАТЬКІВ}\\[8pt]
+\qrimg{qr/survey-parents.pdf}\\[8pt]
+{\small\color{textsoft} Оцініть дитячий контент як батьки.\\
+Анкета містить питання про медіазвички\\дитини та сліпе оцінювання двох зразків.}\\[6pt]
+{\footnotesize\color{accent2}\verb|survey/parents/|}
+\end{cardbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.48\linewidth}
+\begin{cardbox}
+\centering
+{\large\bfseries\color{educc} АНКЕТА ДЛЯ ВИХОВАТЕЛІВ}\\[8pt]
+\qrimg{qr/survey-educators.pdf}\\[8pt]
+{\small\color{textsoft} Оцініть дитячий контент як педагог.\\
+Анкета містить питання про професійний\\досвід та сліпе оцінювання двох зразків.}\\[6pt]
+{\footnotesize\color{accent2}\verb|survey/educators/|}
+\end{cardbox}
+\end{minipage}
+
+\vfill
+
+% ── Нижній блок ───────────────────────────────────────────────────────────────
+\noindent\rule{\linewidth}{0.4pt}
+
+\vspace{4pt}
+
+{\footnotesize\color{textsoft}
+\textbf{Як це працює:}
+\begin{enumerate}\setlength{\itemsep}{1pt}
+  \item Скануйте QR-код відповідно до Вашої ролі (батьки або вихователі).
+  \item Система випадково підбере Вам один текстовий і один відеозразок для оцінювання.
+  \item Прочитайте / перегляньте зразки за посиланнями в анкеті та дайте їм оцінку.
+  \item Дякуємо за участь у дослідженні!
+\end{enumerate}}
+
+\vspace{4pt}
+
+{\scriptsize\color{accent2}
+Дослідник: студент спеціальності 012 «Дошкільна освіта». Науковий керівник: викладач Бердичівського педагогічного фахового коледжу.\\
+Контакт для запитань щодо дослідження: \texttt{dmitthedazed@gmail.com}}
+
+\end{document}
