@@ -116,9 +116,8 @@
     fallbackEl.appendChild(document.createTextNode("Якщо не відкрилось — "));
     fallbackEl.appendChild(manualLink);
 
-    const depth = window.location.pathname.split("/").filter(Boolean).length;
     const indexBtn = document.createElement("a");
-    indexBtn.href = "../".repeat(depth);
+    indexBtn.href = "../../";
     indexBtn.textContent = "Хочете познайомитись з роботою? →";
     indexBtn.style.cssText = "display:block;margin-top:12px;font-size:0.85rem;color:var(--theme);font-weight:600;text-decoration:none;";
     indexBtn.addEventListener("mouseenter", () => indexBtn.style.textDecoration = "underline");
