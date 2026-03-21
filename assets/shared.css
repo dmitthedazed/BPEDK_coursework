@@ -262,6 +262,51 @@ h1, h2, h3 {
 
 .site-footer a:hover { text-decoration: underline; }
 
+/* ── FOOTER AVATAR ── */
+.footer-avatar {
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, var(--accent), var(--accent2));
+  color: #fff;
+  border-radius: 50%;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.65rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0;
+}
+
+/* ── DARK THEME ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:    #100d08;
+    --bg2:   #1c1710;
+    --ink:   #f0e8da;
+    --ink2:  #b8a890;
+    --ink3:  #7a6c5c;
+    --line:  rgba(240,232,218,0.10);
+    --card:  rgba(28,23,16,0.92);
+  }
+
+  body {
+    background-image:
+      radial-gradient(ellipse 70% 50% at 10% 0%, rgba(200,65,10,0.14), transparent),
+      radial-gradient(ellipse 60% 40% at 90% 100%, rgba(26,86,160,0.12), transparent),
+      var(--noise);
+  }
+
+  .site-nav {
+    background: rgba(16,13,8,0.90);
+  }
+
+  .glass-card::before {
+    display: none;
+  }
+}
+
 /* ── RESPONSIVE SHARED ── */
 @media (max-width: 768px) {
   .site-nav { padding: 12px 20px; }

@@ -13,34 +13,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Опитування для батьків дітей дошкільного віку — курсова робота Савіна Д.С." />
   <title>Опитування батьків — Курсова 2026</title>
+  <link rel="preconnect" href="https://docs.google.com" />
+  <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="../../assets/shared.css" />
   <link rel="stylesheet" href="../survey.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Дослідження БПФК · 2026" />
+  <meta property="og:title" content="Опитування батьків · Дослідження 2026" />
+  <meta property="og:description" content="Дослідження психологічної безпеки ШІ-контенту для дошкільників — БПФК, 2026." />
+  <meta property="og:url" content="https://dmitthedazed.github.io/BPEDK_coursework/survey/parents/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Опитування батьків · Дослідження 2026" />
+  <meta name="twitter:description" content="Дослідження психологічної безпеки ШІ-контенту для дошкільників — БПФК, 2026." />
 </head>
 <body class="theme-parents">
   <!-- NAV -->
-  <nav class="site-nav">
-    <a class="site-nav-logo" href="../../">Курсова · 2026</a>
-    <a class="site-nav-back" href="../../">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3L5 8l5 5"/></svg>
-      На головну
-    </a>
-  </nav>
 
   <main class="redirect-page">
     <div class="redirect-card glass-card">
       <span class="badge">Опитування батьків</span>
-      <h1>Дякуємо за участь</h1>
-      <p class="redirect-subtitle">Кілька секунд і для вас відкриється випадковий матеріал.</p>
+      <h1 id="compliment"></h1>
+      <script>(function(){var c=["Ви робите цей світ кращим","Ваша думка справді важлива","Ви неймовірно уважна людина","Дякуємо — ви чудові","З вами наука стає можливою","Ви — частина чогось важливого","Ваша участь має значення","Ви робите добру справу","Дякуємо від усього серця"];document.getElementById('compliment').textContent=c[Math.floor(Math.random()*c.length)];})();</script>
+      <p class="redirect-subtitle" id="subtitle"></p>
+      <script>(function(){var s=["Відкриваємо форму для вас","Готуємо все необхідне","Шукаємо ваш матеріал","Завантажуємо форму","Майже готово — зачекайте хвилинку"];document.getElementById('subtitle').textContent=s[Math.floor(Math.random()*s.length)];})();</script>
 
       <section class="redirect-media" aria-label="Автоматичний перехід">
-        <img
-          class="redirect-gif"
-          src="../../assets/dice_animation.gif"
-          alt="Анімація випадкового вибору"
-          width="220"
-          height="220"
-          decoding="async"
-        />
+        <tgs-player id="dicePlayer" class="redirect-gif" autoplay loop mode="normal" background="transparent"></tgs-player>
+        <script>document.getElementById('dicePlayer').setAttribute('src','../../assets/'+(Math.random()<.5?'dice1':'dice2')+'.tgs');</script>
         <div class="redirect-status">
           <p class="timer-row">
             <span>Переходимо через</span>
@@ -57,16 +56,16 @@
       <div class="redirect-actions">
         <button id="goNowBtn" type="button">Перейти зараз</button>
       </div>
-      <p class="redirect-note">Група: батьки.</p>
     </div>
   </main>
 
   <footer class="site-footer">
-    <span>Курсова робота · Савін Д.С. · 2026</span>
+    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
   </footer>
 
   <script src="links.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/tgs-player.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="../survey.js" defer></script>
+  <script src="../survey.js?v=12" defer></script>
 </body>
 </html>
