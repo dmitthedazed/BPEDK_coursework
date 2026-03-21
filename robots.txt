@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /TEX/
+
+Sitemap: https://dmitthedazed.github.io/BPEDK_coursework/sitemap.xml

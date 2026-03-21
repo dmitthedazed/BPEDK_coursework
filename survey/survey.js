@@ -179,6 +179,22 @@
 
   // ── Redirect ──
   let redirected = false;
+  let redirectFailureTimerId = null;
+
+  function scheduleRedirectFailureCheck(redirectMode, interactionSource) {
+    if (redirectFailureTimerId !== null) {
+      clearTimeout(redirectFailureTimerId);
+    }
+
+    redirectFailureTimerId = window.setTimeout(() => {
+      if (!document.hidden && window.location.pathname === new URL(window.location.href).pathname) {
+        track("redirect_failed", {
+          redirect_mode: redirectMode,
+          interaction_source: interactionSource,
+        });
+      }
+    }, 4500);
+  }
 
   function redirectNow(redirectMode, interactionSource) {
     if (redirected) return;
@@ -191,6 +207,7 @@
     navigator.vibrate && navigator.vibrate(200);
     document.body.classList.add("page-exit");
     goNowBtn.innerHTML = '<span class="btn-spinner"></span>';
+    scheduleRedirectFailureCheck(redirectMode, interactionSource);
     setTimeout(() => window.location.assign(url), 400);
   }
 
