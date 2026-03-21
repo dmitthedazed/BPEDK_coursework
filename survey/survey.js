@@ -10,6 +10,32 @@
   const links = Array.isArray(window.SURVEY_LINKS) && window.SURVEY_LINKS.length
     ? window.SURVEY_LINKS : ["https://example.org"];
   const url = links[Math.floor(Math.random() * links.length)];
+  const isVideo = window.location.pathname.includes("/m/");
+  const destinationLabel = isVideo ? "Google Drive" : "Google Forms";
+  const primaryActionLabel = isVideo
+    ? "Відкрити відео в Google Drive"
+    : "Відкрити анкету в Google Forms";
+  const targetHost = (function () {
+    try {
+      return new URL(url).host;
+    } catch (error) {
+      return "";
+    }
+  })();
+
+  function track(eventName, params) {
+    const analytics = window.BPEDKAnalytics;
+
+    if (!analytics || typeof analytics.track !== "function") {
+      return;
+    }
+
+    analytics.track(eventName, {
+      destination_service: destinationLabel,
+      redirect_target_host: targetHost,
+      ...params,
+    });
+  }
 
   // ── Prefetch redirect target ──
   const prefetch = document.createElement("link");
@@ -29,11 +55,21 @@
   // ── Fallback link ──
   const manualLink = document.createElement("a");
   manualLink.href = url;
-  manualLink.textContent = "відкрити вручну →";
+  manualLink.textContent = isVideo
+    ? "відкрити Google Drive вручну →"
+    : "відкрити Google Forms вручну →";
   manualLink.rel = "noopener noreferrer";
   manualLink.target = "_blank";
   fallbackEl.textContent = "Не відкрилось? ";
   fallbackEl.appendChild(manualLink);
+  goNowBtn.textContent = primaryActionLabel;
+
+  manualLink.addEventListener("click", () => {
+    track("manual_open", {
+      redirect_mode: "manual",
+      interaction_source: "fallback_link",
+    });
+  });
 
   // ── Confetti ──
   function launchConfetti() {
@@ -87,7 +123,6 @@
 
     const h1  = document.getElementById("compliment");
     const sub = document.getElementById("subtitle");
-    const isVideo = window.location.pathname.includes("/m/");
     if (h1)  h1.textContent = "Вже були тут — дякуємо!";
     if (sub) sub.textContent = isVideo
       ? "Відео мало відкритись автоматично."
@@ -125,6 +160,10 @@
     fallbackEl.appendChild(indexBtn);
 
     launchConfetti();
+    track("redirect_return", {
+      redirect_mode: "return",
+      interaction_source: "browser_back",
+    });
   }
 
   // ── bfcache: handle back navigation ──
@@ -141,9 +180,13 @@
   // ── Redirect ──
   let redirected = false;
 
-  function redirectNow() {
+  function redirectNow(redirectMode, interactionSource) {
     if (redirected) return;
     redirected = true;
+    track(redirectMode === "manual" ? "manual_open" : "auto_redirect", {
+      redirect_mode: redirectMode,
+      interaction_source: interactionSource,
+    });
     sessionStorage.setItem(STORAGE_KEY, "1");
     navigator.vibrate && navigator.vibrate(200);
     document.body.classList.add("page-exit");
@@ -173,7 +216,9 @@
       timerEl.classList.remove("tick");
       void timerEl.offsetWidth;
       timerEl.classList.add("tick");
-      goNowBtn.textContent = seconds > 0 ? `Перейти (${seconds}с) →` : "Перейти →";
+      goNowBtn.textContent = seconds > 0
+        ? `${primaryActionLabel} (${seconds}с)`
+        : primaryActionLabel;
     }
     const elapsed = REDIRECT_DELAY_MS - remainingMs;
     progressBar.style.width = `${Math.min(100, (elapsed / REDIRECT_DELAY_MS) * 100).toFixed(2)}%`;
@@ -189,7 +234,7 @@
       render(0);
       clearInterval(intervalId);
       launchConfetti();
-      redirectNow();
+      redirectNow("auto", "countdown");
       return;
     }
     render(remaining);
@@ -197,6 +242,6 @@
 
   goNowBtn.addEventListener("click", () => {
     launchConfetti();
-    redirectNow();
+    redirectNow("manual", "primary_button");
   });
 })();
