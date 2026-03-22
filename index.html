@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/shared.css" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Дослідження БПФК · 2026" />
   <meta property="og:title" content="Психологічна безпека ШІ-контенту для дошкільників" />
@@ -54,24 +55,6 @@
     }
   </script>
   <style>
-    :root {
-      --bg:       #fdf8f0;
-      --bg2:      #f5ede0;
-      --ink:      #1a1208;
-      --ink2:     #4a3f30;
-      --ink3:     #8a7a68;
-      --accent:   #c8410a;
-      --accent2:  #e8873a;
-      --edu:      #1a56a0;
-      --par:      #6b21a8;
-      --line:     rgba(26,18,8,0.12);
-      --card:     rgba(255,252,245,0.82);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
     body {
       background-color: var(--bg);
       background-image:
@@ -281,15 +264,6 @@
       padding: 100px 40px;
       max-width: 1100px;
       margin: 0 auto;
-    }
-
-    .section-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
     }
 
     h2 {
@@ -589,18 +563,63 @@
       border: 1px solid var(--line);
     }
 
-    /* ── DIVIDER ── */
-    .divider {
-      width: 48px; height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      border-radius: 999px;
-      margin-bottom: 24px;
+    /* ── HAMBURGER ── */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--ink2);
+      border-radius: 2px;
+      transition: transform 250ms ease, opacity 250ms ease;
     }
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       nav { padding: 12px 20px; }
-      .nav-links { display: none; }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        flex-direction: column;
+        gap: 2px;
+        background: rgba(253,248,240,0.97);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line);
+        padding: 12px 20px 16px;
+      }
+
+      .nav-links.open { display: flex; }
+
+      .nav-links a {
+        padding: 10px 12px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+      }
+
+      .nav-links a:hover { background: var(--bg2); }
+
+      .nav-toggle { display: flex; }
+
+      .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      .nav-toggle.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+      .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
       section { padding: 60px 20px; }
       #corpus { padding: 60px 20px; border-radius: 20px; }
       .about-grid,
@@ -610,15 +629,49 @@
       h1 { font-size: 2rem; }
     }
 
-    /* ── FADE IN ── */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
+    /* ── DARK THEME ── */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg:    #100d08;
+        --bg2:   #1c1710;
+        --ink:   #f0e8da;
+        --ink2:  #b8a890;
+        --ink3:  #7a6c5c;
+        --line:  rgba(240,232,218,0.10);
+        --card:  rgba(28,23,16,0.92);
+      }
+
+      body {
+        background-image:
+          radial-gradient(ellipse 70% 50% at 10% 0%, rgba(200,65,10,0.14), transparent),
+          radial-gradient(ellipse 60% 40% at 90% 100%, rgba(26,86,160,0.12), transparent),
+          url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+      }
+
+      nav {
+        background: rgba(16,13,8,0.90);
+      }
+
+      .participate-card.edu {
+        background: linear-gradient(135deg, rgba(26,86,160,0.20), rgba(26,86,160,0.10));
+      }
+
+      .participate-card.par {
+        background: linear-gradient(135deg, rgba(107,33,168,0.20), rgba(107,33,168,0.10));
+      }
+
+      .hero-meta span {
+        background: rgba(255,255,255,0.04);
+      }
+
+      .btn-ghost {
+        color: var(--ink2);
+      }
+      .btn-ghost:hover { background: var(--bg2); }
+
+      @media (max-width: 768px) {
+        .nav-links { background: rgba(16,13,8,0.97); }
+      }
     }
   </style>
 </head>
@@ -627,12 +680,15 @@
 <!-- NAV -->
 <nav>
   <a class="nav-logo" href="#">Курсова · 2026</a>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navLinks">
     <li><a href="#about">Про дослідження</a></li>
     <li><a href="#corpus">Корпус</a></li>
     <li><a href="#methods">Методи</a></li>
     <li><a href="#participate">Взяти участь</a></li>
   </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <!-- HERO -->
@@ -850,6 +906,24 @@
 </footer>
 
 <script>
+  // Hamburger nav
+  const navToggle = document.getElementById('navToggle');
+  const navLinks  = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', open);
+    navToggle.setAttribute('aria-expanded', String(open));
+    navToggle.setAttribute('aria-label', open ? 'Закрити меню' : 'Відкрити меню');
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Відкрити меню');
+    });
+  });
+
   // Intersection Observer для fade-up
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {

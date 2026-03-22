@@ -181,17 +181,17 @@
    ══════════════════════════════════════ */
 
 .story-layout {
-  max-width: 780px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 48px 40px 80px;
+  padding: 52px 40px 96px;
 }
 
 .story-header {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .story-header h1 {
-  font-size: clamp(1.85rem, 4vw, 2.8rem);
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
   letter-spacing: 0.01em;
   text-wrap: balance;
   margin-top: 16px;
@@ -200,14 +200,14 @@
 
 /* ── STORY CONTENT CARD ── */
 .story-content {
-  margin-top: 20px;
+  margin-top: 24px;
   border: 1px solid var(--story-border, var(--line));
   border-radius: var(--radius-lg);
   background: var(--story-text-bg, rgba(255,255,255,0.72));
-  padding: 28px 24px;
+  padding: 36px 32px;
   position: relative;
   box-shadow:
-    0 16px 34px rgba(26,18,8,0.06),
+    0 8px 24px rgba(26,18,8,0.05),
     inset 0 1px 0 rgba(255,255,255,0.64);
 }
 
@@ -216,8 +216,8 @@
 .story-content::after {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background: linear-gradient(140deg,
     var(--story-deco-a, rgba(200,65,10,0.4)),
@@ -230,18 +230,20 @@
 .story-content::after  { bottom: 14px; left: 14px; }
 
 .story-content p {
-  margin-top: 14px;
+  margin-top: 18px;
   color: var(--story-ink, var(--ink2));
-  font-size: 1.02rem;
-  line-height: 1.78;
+  font-size: 1.06rem;
+  line-height: 1.85;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .story-content p:first-of-type { margin-top: 0; }
 
 .story-content p:first-of-type::first-letter {
   float: left;
-  margin-right: 9px;
-  margin-top: 3px;
+  margin-right: 10px;
+  margin-top: 4px;
   font-family: "Instrument Serif", serif;
   font-size: 3em;
   line-height: 0.84;
@@ -395,16 +397,53 @@ body[class*="story-"] {
 }
 
 /* ══════════════════════════════════════
+   DARK THEME — STORY PAGES
+   ══════════════════════════════════════ */
+
+@media (prefers-color-scheme: dark) {
+  /* Shared overrides: dark card, readable warm ink, subtle border */
+  body[class*="story-"] {
+    --story-text-bg: rgba(255,255,255,0.09); /* ~#26231e over #100d08 page */
+    --story-border:  rgba(255,255,255,0.10);
+    --story-ink:     #c4b89a;               /* ~8:1 contrast on dark card */
+    --story-deco-a:  rgba(200,65,10,0.55);
+    --story-deco-b:  rgba(26,86,160,0.45);
+  }
+
+  /* Per-story: bright themed titles & drop caps for dark page */
+  .story-thanks    { --story-title: #4ade80;  --story-dropcap: #4ade80;  }
+  .story-oak       { --story-title: #fcd34d;  --story-dropcap: #fcd34d;  }
+  .story-kitten    { --story-title: #f472b6;  --story-dropcap: #f472b6;  }
+  .story-bread     { --story-title: #fb923c;  --story-dropcap: #fb923c;  }
+  .story-pie       { --story-title: #f87171;  --story-dropcap: #f87171;  }
+  .story-apple     { --story-title: #a3e635;  --story-dropcap: #a3e635;  }
+  .story-fox-seed  { --story-title: #fb923c;  --story-dropcap: #fb923c;  }
+  .story-sun-cloud { --story-title: #60a5fa;  --story-dropcap: #60a5fa;  }
+  .story-sun-bunny { --story-title: #38bdf8;  --story-dropcap: #38bdf8;  }
+
+  .story-content {
+    box-shadow:
+      0 8px 32px rgba(0,0,0,0.5),
+      inset 0 1px 0 rgba(255,255,255,0.06);
+  }
+
+  .story-content::before,
+  .story-content::after {
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.5);
+  }
+}
+
+/* ══════════════════════════════════════
    RESPONSIVE
    ══════════════════════════════════════ */
 
 @media (max-width: 768px) {
   .hub-layout { padding: 32px 20px 60px; }
-  .story-layout { padding: 32px 20px 60px; }
+  .story-layout { padding: 36px 20px 72px; }
 }
 
 @media (max-width: 480px) {
-  .story-content { padding: 20px 16px; border-radius: 18px; }
-  .story-content p { font-size: 0.96rem; line-height: 1.68; }
+  .story-content { padding: 24px 18px; border-radius: 18px; }
+  .story-content p { font-size: 1rem; line-height: 1.78; }
   .story-header h1 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
 }
