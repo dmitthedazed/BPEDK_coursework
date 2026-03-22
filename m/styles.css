@@ -184,6 +184,7 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 52px 40px 96px;
+  flex: 1;
 }
 
 .story-header {
@@ -257,19 +258,20 @@
   margin-top: 28px;
   padding: 14px 24px;
   border-radius: var(--radius-md);
-  border: 1px solid var(--story-border, var(--line));
-  background: var(--story-text-bg, rgba(255,255,255,0.72));
+  border: 1.5px solid var(--story-dropcap, var(--accent));
+  background: transparent;
   color: var(--story-dropcap, var(--accent));
+  font-family: "Manrope", sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
   text-align: center;
-  transition: transform 150ms, box-shadow 150ms;
+  transition: transform 150ms, background 150ms;
 }
 
 .story-home-btn:hover {
+  background: rgba(0,0,0,0.04);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
 }
 
 
@@ -396,6 +398,8 @@
 
 /* ── Story body background tints ── */
 body[class*="story-"] {
+  display: flex;
+  flex-direction: column;
   background-image:
     radial-gradient(ellipse 70% 50% at 10% 0%, var(--story-bg-a, rgba(200,65,10,0.07)), transparent),
     radial-gradient(ellipse 60% 40% at 90% 100%, var(--story-bg-b, rgba(26,86,160,0.06)), transparent),
