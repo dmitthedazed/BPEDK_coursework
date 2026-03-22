@@ -21,6 +21,15 @@ body.theme-parents {
   --prog-fill:   linear-gradient(90deg, #c084fc, #7c3aed 60%, #5b21b6);
 }
 
+body.theme-video {
+  --theme:       var(--accent);
+  --theme-soft:  rgba(200,65,10,0.08);
+  --theme-mid:   rgba(200,65,10,0.18);
+  --theme-glow:  rgba(200,65,10,0.28);
+  --btn-grad:    linear-gradient(122deg, #e8873a, #c8410a 50%, #9a2f06);
+  --prog-fill:   linear-gradient(90deg, #e8873a, #c8410a 60%, #9a2f06);
+}
+
 /* ── NO SCROLL ── */
 body {
   height: 100svh;
