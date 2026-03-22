@@ -38,12 +38,6 @@ body {
   flex-direction: column;
 }
 
-/* ── COMPACT NAV (overrides shared.css for tight layout) ── */
-.site-nav {
-  padding: 10px 20px;
-  flex-shrink: 0;
-}
-
 /* ── LAYOUT ── */
 .redirect-page {
   flex: 1;
