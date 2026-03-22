@@ -11,6 +11,39 @@
     ? window.SURVEY_LINKS : ["https://example.org"];
   const url = links[Math.floor(Math.random() * links.length)];
   const isVideo = window.location.pathname.includes("/m/");
+
+  // ── Compliment + subtitle ──
+  const COMPLIMENTS = [
+    "Ви робите цей світ кращим",
+    "Ваша думка справді важлива",
+    "Ви неймовірно уважна людина",
+    "Дякуємо — ви чудові",
+    "З вами наука стає можливою",
+    "Ви — частина чогось важливого",
+    "Ваша участь має значення",
+    "Ви робите добру справу",
+    "Дякуємо від усього серця",
+    "Ваш погляд — цінний внесок",
+    "Разом ми робимо науку кращою",
+  ];
+  const SUBTITLES = isVideo ? [
+    "Відкриваємо відео в Google Drive",
+    "Завантажуємо матеріал — секунду",
+    "Готуємо відео для перегляду",
+    "Відео відкривається автоматично",
+    "Майже там — зачекайте мить",
+  ] : [
+    "Відкриваємо анкету в Google Forms",
+    "Готуємо форму — секунду",
+    "Завантажуємо Google Forms",
+    "Форма відкривається автоматично",
+    "Майже там — зачекайте мить",
+  ];
+  const pick = arr => arr[Math.floor(Math.random() * arr.length)];
+  const complimentEl = document.getElementById("compliment");
+  const subtitleEl   = document.getElementById("subtitle");
+  if (complimentEl) complimentEl.textContent = pick(COMPLIMENTS);
+  if (subtitleEl)   subtitleEl.textContent   = pick(SUBTITLES);
   const destinationLabel = isVideo ? "Google Drive" : "Google Forms";
   const primaryActionLabel = isVideo
     ? "Відкрити відео в Google Drive"

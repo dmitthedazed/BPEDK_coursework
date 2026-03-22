@@ -52,6 +52,21 @@ body {
   background: var(--theme-soft);
 }
 
+.redirect-card .badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  flex-shrink: 0;
+  animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% { opacity: 1;    transform: scale(1); }
+  50%       { opacity: 0.35; transform: scale(0.65); }
+}
+
 .redirect-card h1 {
   font-size: clamp(1.35rem, 4.5vw, 2.2rem);
   margin-bottom: clamp(4px, 1vh, 8px);
@@ -295,4 +310,5 @@ body.page-exit .redirect-gif {
   body.page-exit .redirect-gif { animation: none; }
   .btn-spinner { animation: none; }
   .redirect-card h1 { animation: none; }
+  .redirect-card .badge::before { animation: none; }
 }
