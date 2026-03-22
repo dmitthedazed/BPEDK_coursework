@@ -251,20 +251,26 @@
   text-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* ── STORY BACK LINK ── */
-.story-back {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 24px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--ink3);
+/* ── STORY HOME BUTTON ── */
+.story-home-btn {
+  display: block;
+  margin-top: 28px;
+  padding: 14px 24px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--story-border, var(--line));
+  background: var(--story-text-bg, rgba(255,255,255,0.72));
+  color: var(--story-dropcap, var(--accent));
+  font-size: 0.9rem;
+  font-weight: 700;
   text-decoration: none;
-  transition: color 150ms;
+  text-align: center;
+  transition: transform 150ms, box-shadow 150ms;
 }
 
-.story-back:hover { color: var(--accent); }
+.story-home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
 
 
 /* ══════════════════════════════════════
