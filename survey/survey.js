@@ -70,6 +70,88 @@
     });
   }
 
+  function detectInAppBrowser() {
+    const ua = navigator.userAgent || "";
+
+    if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) {
+      return {
+        id: "telegram-webapp",
+        label: "Telegram",
+        instruction: "Натисніть ⋮ у верхньому куті та оберіть «Відкрити в браузері»."
+      };
+    }
+
+    if (/Telegram-Android/i.test(ua)) {
+      return {
+        id: "telegram-android",
+        label: "Telegram",
+        instruction: "Натисніть ⋮ у верхньому куті та оберіть «Відкрити в браузері»."
+      };
+    }
+
+    if (/Viber/i.test(ua)) {
+      return {
+        id: "viber",
+        label: "Viber",
+        instruction: "Відкрийте меню Viber і виберіть перехід у зовнішній браузер."
+      };
+    }
+
+    if (/Instagram/i.test(ua)) {
+      return {
+        id: "instagram",
+        label: "Instagram",
+        instruction: "Відкрийте меню ••• і виберіть «Open in browser» або поділіться посиланням у Safari / Chrome."
+      };
+    }
+
+    if (/FBAN|FBAV|FBIOS|Facebook/i.test(ua)) {
+      return {
+        id: "facebook",
+        label: "Facebook",
+        instruction: "Відкрийте меню ••• і виберіть «Open in browser»."
+      };
+    }
+
+    if (/musical_ly|BytedanceWebview/i.test(ua)) {
+      return {
+        id: "tiktok",
+        label: "TikTok",
+        instruction: "Відкрийте меню сторінки та перейдіть у браузер пристрою."
+      };
+    }
+
+    if (/WhatsApp/i.test(ua)) {
+      return {
+        id: "whatsapp",
+        label: "WhatsApp",
+        instruction: "Відкрийте меню у верхній частині сторінки та перейдіть у браузер пристрою."
+      };
+    }
+
+    return null;
+  }
+
+  async function copyText(value) {
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === "function") {
+      await navigator.clipboard.writeText(value);
+      return true;
+    }
+
+    const helper = document.createElement("textarea");
+    helper.value = value;
+    helper.setAttribute("readonly", "");
+    helper.style.cssText = "position:fixed;left:-9999px;top:0;opacity:0";
+    document.body.appendChild(helper);
+    helper.select();
+
+    try {
+      return document.execCommand("copy");
+    } finally {
+      helper.remove();
+    }
+  }
+
   // ── Prefetch redirect target ──
   const prefetch = document.createElement("link");
   prefetch.rel = "prefetch"; prefetch.href = url;
@@ -83,6 +165,60 @@
 
   if (!timerEl || !fallbackEl || !progressBar || !goNowBtn) {
     throw new Error("Required UI elements were not found");
+  }
+
+  const inAppBrowser = detectInAppBrowser();
+  let allowAutoRedirect = !inAppBrowser;
+
+  function showInAppBrowserPrompt() {
+    if (!inAppBrowser || !subtitleEl) {
+      return;
+    }
+
+    document.body.classList.add("is-in-app-browser");
+    subtitleEl.textContent = `У ${inAppBrowser.label} ${destinationLabel} може відкриватися нестабільно.`;
+
+    const prompt = document.createElement("section");
+    prompt.className = "inapp-prompt";
+    prompt.innerHTML = `
+      <p class="inapp-prompt-title">Краще відкрити цю сторінку в браузері</p>
+      <p class="inapp-prompt-copy">${inAppBrowser.instruction}</p>
+      <div class="inapp-prompt-actions">
+        <button class="inapp-copy-btn" type="button">Скопіювати посилання</button>
+      </div>
+      <p class="inapp-prompt-note">Після цього вставте посилання у Safari, Chrome або інший браузер.</p>
+    `;
+    subtitleEl.insertAdjacentElement("afterend", prompt);
+
+    const statusEl = document.querySelector(".redirect-status");
+    if (statusEl) {
+      statusEl.style.display = "none";
+    }
+
+    const copyBtn = prompt.querySelector(".inapp-copy-btn");
+    if (copyBtn) {
+      copyBtn.addEventListener("click", async () => {
+        const copied = await copyText(window.location.href).catch(() => false);
+        copyBtn.textContent = copied ? "Посилання скопійовано" : "Не вдалося скопіювати";
+        track("open_in_browser_copy", {
+          in_app_browser: inAppBrowser.id,
+          copy_success: copied,
+        });
+      });
+    }
+
+    goNowBtn.textContent = isVideo
+      ? "Продовжити тут у месенджері"
+      : "Спробувати тут у месенджері";
+
+    track("open_in_browser_prompt_shown", {
+      in_app_browser: inAppBrowser.id,
+      interaction_source: "in_app_detected",
+    });
+  }
+
+  if (inAppBrowser) {
+    showInAppBrowserPrompt();
   }
 
   // ── Fallback link ──
@@ -266,9 +402,11 @@
       timerEl.classList.remove("tick");
       void timerEl.offsetWidth;
       timerEl.classList.add("tick");
-      goNowBtn.textContent = seconds > 0
-        ? `${primaryActionLabel} (${seconds}с)`
-        : primaryActionLabel;
+      goNowBtn.textContent = inAppBrowser && !allowAutoRedirect
+        ? (isVideo ? "Продовжити тут у месенджері" : "Спробувати тут у месенджері")
+        : seconds > 0
+          ? `${primaryActionLabel} (${seconds}с)`
+          : primaryActionLabel;
     }
     const elapsed = REDIRECT_DELAY_MS - remainingMs;
     progressBar.style.width = `${Math.min(100, (elapsed / REDIRECT_DELAY_MS) * 100).toFixed(2)}%`;
@@ -278,6 +416,10 @@
 
   const intervalId = setInterval(() => {
     if (redirected) { clearInterval(intervalId); return; }
+    if (!allowAutoRedirect) {
+      render(REDIRECT_DELAY_MS);
+      return;
+    }
     const elapsed = Date.now() - startedAt;
     const remaining = REDIRECT_DELAY_MS - elapsed;
     if (remaining <= 0) {
@@ -291,6 +433,13 @@
   }, 100);
 
   goNowBtn.addEventListener("click", () => {
+    if (inAppBrowser && !allowAutoRedirect) {
+      allowAutoRedirect = true;
+      track("continue_in_app_browser", {
+        in_app_browser: inAppBrowser.id,
+        interaction_source: "primary_button",
+      });
+    }
     launchConfetti();
     redirectNow("manual", "primary_button");
   });

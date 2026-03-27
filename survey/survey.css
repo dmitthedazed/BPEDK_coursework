@@ -107,6 +107,72 @@ body {
   margin-bottom: clamp(12px, 2.5vh, 20px);
 }
 
+.inapp-prompt {
+  margin: 0 0 clamp(12px, 2.2vh, 18px);
+  padding: 14px 14px 12px;
+  text-align: left;
+  background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.58));
+  border: 1px solid var(--theme-mid);
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
+}
+
+.inapp-prompt-title {
+  margin: 0 0 6px;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.inapp-prompt-copy,
+.inapp-prompt-note {
+  margin: 0;
+  color: var(--ink2);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.inapp-prompt-actions {
+  margin: 12px 0 10px;
+}
+
+.inapp-copy-btn {
+  width: 100%;
+  border: 1px solid var(--theme-mid);
+  border-radius: 12px;
+  background: var(--theme-soft);
+  color: var(--theme);
+  padding: 11px 14px;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 150ms ease, background 150ms ease;
+}
+
+.inapp-copy-btn:hover {
+  transform: translateY(-1px);
+  background: color-mix(in srgb, var(--theme-soft) 72%, white 28%);
+}
+
+.inapp-copy-btn:focus-visible {
+  outline: 3px solid var(--theme-mid);
+  outline-offset: 2px;
+}
+
+body.is-in-app-browser #goNowBtn {
+  background: transparent;
+  color: var(--ink2);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+
+body.is-in-app-browser #goNowBtn:hover {
+  box-shadow: none;
+  background: var(--bg2);
+}
+
 /* ── MEDIA ── */
 .redirect-media {
   position: relative;
@@ -308,6 +374,11 @@ body.page-exit .redirect-gif {
   body.theme-parents {
     --theme-soft: rgba(107,33,168,0.18);
     --theme-mid:  rgba(107,33,168,0.30);
+  }
+
+  .inapp-prompt {
+    background: linear-gradient(180deg, rgba(28, 34, 46, 0.9), rgba(20, 24, 34, 0.82));
+    box-shadow: none;
   }
 }
 
