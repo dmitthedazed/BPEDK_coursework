@@ -73,6 +73,14 @@
   function detectInAppBrowser() {
     const ua = navigator.userAgent || "";
 
+    if (typeof window.TelegramWebview !== "undefined" || typeof window.TelegramWebviewProxy !== "undefined" || typeof window.TelegramWebviewProxyProto !== "undefined") {
+      return {
+        id: "telegram-webview",
+        label: "Telegram",
+        instruction: "Натисніть ⋮ у верхньому куті та оберіть «Відкрити в браузері»."
+      };
+    }
+
     if (window.Telegram && window.Telegram.WebApp && window.Telegram.WebApp.initData) {
       return {
         id: "telegram-webapp",
