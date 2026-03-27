@@ -39,10 +39,10 @@
       <section class="redirect-media" aria-label="Автоматичний перехід">
         <tgs-player id="dicePlayer" class="redirect-gif" autoplay loop mode="normal" background="transparent"></tgs-player>
         <script>document.getElementById('dicePlayer').setAttribute('src','../../assets/'+(Math.random()<.5?'dice1':'dice2')+'.tgs');</script>
-        <div class="redirect-status">
+        <div class="redirect-status" role="status" aria-live="polite" aria-atomic="true">
           <p class="timer-row">
             <span>Переходимо через</span>
-            <span id="timer" aria-live="polite">-</span>
+            <span id="timer">-</span>
             <span>с</span>
           </p>
           <div class="progress" aria-hidden="true">
