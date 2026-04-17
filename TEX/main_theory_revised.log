@@ -1,0 +1,4981 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026/Arch Linux) (preloaded format=xelatex 2026.4.6)  12 APR 2026 21:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main_theory_revised.tex
+(./main_theory_revised.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+(/usr/share/texmf-dist/tex/latex/extsizes/extreport.cls
+Document Class: extreport 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/extsizes/size14.clo
+File: size14.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
+)
+(/usr/share/texmf-dist/tex/latex/base/exscale.sty
+Package: exscale 2025/06/05 v2.1i Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen148
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen149
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-01-19 L3 programming layer (loader) 
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen150
+\l__fontspec_tmpb_dim=\dimen151
+\l__fontspec_tmpc_dim=\dimen152
+
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(/usr/share/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Regular" cannot be
+(fontspec)                found; this may be but usually is not a fontspec
+(fontspec)                bug. Either there is a typo in the font name/file,
+(fontspec)                the font is not installed (correctly), or there is
+(fontspec)                a bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Cyrillic' not explicitly supported within font
+(fontspec)             'Times New Roman-Regular'. Check the typeset output,
+(fontspec)             and if it is okay then ignore this warning. Otherwise a
+(fontspec)             different font should be chosen.
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Regular" cannot be
+(fontspec)                found; this may be but usually is not a fontspec
+(fontspec)                bug. Either there is a typo in the font name/file,
+(fontspec)                the font is not installed (correctly), or there is
+(fontspec)                a bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Regular" cannot be
+(fontspec)                found; this may be but usually is not a fontspec
+(fontspec)                bug. Either there is a typo in the font name/file,
+(fontspec)                the font is not installed (correctly), or there is
+(fontspec)                a bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Bold" cannot be found;
+(fontspec)                this may be but usually is not a fontspec bug.
+(fontspec)                Either there is a typo in the font name/file, the
+(fontspec)                font is not installed (correctly), or there is a
+(fontspec)                bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Bold" cannot be found;
+(fontspec)                this may be but usually is not a fontspec bug.
+(fontspec)                Either there is a typo in the font name/file, the
+(fontspec)                font is not installed (correctly), or there is a
+(fontspec)                bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Italic" cannot be found;
+(fontspec)                this may be but usually is not a fontspec bug.
+(fontspec)                Either there is a typo in the font name/file, the
+(fontspec)                font is not installed (correctly), or there is a
+(fontspec)                bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+! Package fontspec Error: 
+(fontspec)                The font "Times New Roman-Italic" cannot be found;
+(fontspec)                this may be but usually is not a fontspec bug.
+(fontspec)                Either there is a typo in the font name/file, the
+(fontspec)                font is not installed (correctly), or there is a
+(fontspec)                bug in the underlying font loading engine
+(fontspec)                (XeTeX/luaotfload).
+
+For immediate help type H <return>.
+ ...                                              
+                                                  
+l.18 ]
+      
+
+A font might not be found for many reasons.
+ Check the spelling, where the font is installed etc. etc.
+
+ When in doubt, ask someone for help!
+
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX,Script =
+(fontspec)             Cyrillic,Ligatures = TeX,Extension = .ttf,UprightFont =
+(fontspec)             *-Regular,BoldFont = *-Bold,ItalicFont = *-Italic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"[Times New
+(fontspec)             Roman-Regular.ttf]/OT"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"[Times New
+(fontspec)             Roman-Regular.ttf]/OT"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"[Times New
+(fontspec)             Roman-Bold.ttf]/OT"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"[Times
+(fontspec)             New Roman-Bold.ttf]/OT"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"[Times New
+(fontspec)             Roman-Italic.ttf]/OT"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"[Times New Roman-Italic.ttf]/OT"
+
+! Font TU/TimesNewRoman(0)/m/n/14.4="[Times New Roman-Regular.ttf]/OT" at 14.4p
+t not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.18 ]
+      
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+
+Package fontspec Info: 
+(fontspec)             Script 'Cyrillic' not explicitly supported within font
+(fontspec)             'Times New Roman'. Check the typeset output, and if it
+(fontspec)             is okay then ignore this warning. Otherwise a different
+(fontspec)             font should be chosen.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(1)' created for font 'Times
+(fontspec)             New Roman' with options
+(fontspec)             [Script=Cyrillic,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=cyrl;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=cyrl;language=dflt;mapping=tex-text;"
+
+
+(/usr/share/texmf-dist/tex/latex/polyglossia/polyglossia.sty
+Package: polyglossia 2025/12/01 v2.9 Modern multilingual typesetting with XeLaT
+eX and LuaLaTeX
+
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count294
+)
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+\l_xpg_alias_keyvals_int=\count295
+
+(/usr/share/texmf-dist/tex/latex/polyglossia/gloss-latex.ldf
+File: gloss-latex.ldf polyglossia: module for default language
+))
+(/usr/share/texmf-dist/tex/latex/polyglossia/gloss-ukrainian.ldf
+File: gloss-ukrainian.ldf polyglossia: module for Ukrainian
+
+(/usr/share/texmf-dist/tex/latex/polyglossia/xpg-cyrillicnumbers.sty
+Package: xpg-cyrillicnumbers 2019/11/15 v0.2 Formatting of Cyrillic alphabetic 
+numbers
+)
+(/usr/share/texmf-dist/tex/latex/polyglossia/babelsh.def
+File: babelsh.def 2022/06/21 Babel common definitions for shorthands
+ Taken verbatim from babel files (2022/06/06 v3.76)
+)
+Package babel Info: Making " an active character on input line 74.
+)
+
+Package polyglossia Info: Default language is ukrainian
+
+
+(/usr/share/texmf-dist/tex/latex/polyglossia/gloss-english.ldf
+File: gloss-english.ldf polyglossia: module for English
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count296
+\Gm@cntv=\count297
+\c@Gm@tempcnt=\count298
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks18
+)
+(/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/usr/share/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language15
+LaTeX Info: Redefining \_ on input line 43.
+)
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks19
+)
+(/usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2025/01/04 v2.17 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip65
+\aftertitleunit=\skip66
+\ttl@plus=\dimen161
+\ttl@minus=\dimen162
+\ttl@toksa=\toks20
+\titlewidth=\dimen163
+\titlewidthlast=\dimen164
+\titlewidthfirst=\dimen165
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
+)
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count299
+\calc@Bcount=\count300
+\calc@Adimen=\dimen168
+\calc@Bdimen=\dimen169
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count301
+\calc@Cskip=\skip69
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen170
+\ESO@tempdimb=\dimen171
+
+(/usr/share/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(/usr/share/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+))
+\AM@pagewidth=\dimen172
+\AM@pageheight=\dimen173
+\AM@fboxrule=\dimen174
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/ppxetex.def
+File: ppxetex.def 2025/07/23 v0.6g Pdfpages driver for XeTeX (AM)
+)
+\pdfpages@includegraphics@status=\count302
+\AM@pagebox=\box54
+\AM@global@opts=\toks21
+\AM@pagecnt=\count303
+\AM@toc@title=\toks22
+\AM@lof@heading=\toks23
+\c@AM@survey=\count304
+\AM@templatesizebox=\box55
+)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen175
+\ar@mcellbox=\box56
+\extrarowheight=\dimen176
+\NC@list=\toks24
+\extratabsurround=\skip70
+\backup@length=\skip71
+\ar@cellbox=\box57
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip72
+\LTright=\skip73
+\LTpre=\skip74
+\LTpost=\skip75
+\LTchunksize=\count305
+\LTcapwidth=\dimen177
+\LT@head=\box58
+\LT@firsthead=\box59
+\LT@foot=\box60
+\LT@lastfoot=\box61
+\LT@gbox=\box62
+\LT@cols=\count306
+\LT@rows=\count307
+\c@LT@tables=\count308
+\c@LT@chunks=\count309
+\LT@p@ftn=\toks25
+)
+(/usr/share/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
+\everycr=\toks26
+\minrowclearance=\skip76
+\rownum=\count310
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen178
+\captionmargin=\dimen179
+\caption@leftmargin=\dimen180
+\caption@rightmargin=\dimen181
+\caption@width=\dimen182
+\caption@indent=\dimen183
+\caption@parindent=\dimen184
+\caption@hangindent=\dimen185
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count311
+\c@continuedfloat=\count312
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+))
+(/usr/share/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2025/08/14 v1.18.2 Data Visualization (1.18.2)
+
+(/usr/share/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks27
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box63
+)
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks28
+\pgfkeys@temptoks=\toks29
+
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.te
+x
+\pgfkeys@tmptoks=\toks30
+))
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count313
+\c@pgf@countb=\count314
+\c@pgf@countc=\count315
+\c@pgf@countd=\count316
+\t@pgf@toka=\toks31
+\t@pgf@tokb=\toks32
+\t@pgf@tokc=\toks33
+\pgf@sys@id@count=\count317
+ (/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count318
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count319
+\pgfsyssoftpath@bigbuffer@items=\count320
+)
+(/usr/share/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count321
+\pgfmath@box=\box64
+\pgfmath@toks=\toks34
+\pgfmath@stack@operand=\toks35
+\pgfmath@stack@operation=\toks36
+)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code
+.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics
+.code.tex) (/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count322
+))
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count323
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen273
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.t
+ex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.te
+x
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen277
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen278
+\pgf@sys@shading@range@num=\count324
+\pgf@shadingcount=\count325
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box68
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box69
+)
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
+)
+(/usr/share/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks37
+\pgffor@toks=\toks38
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.te
+x
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count326
+\pgfplotmarksize=\dimen283
+)
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count327
+\tikznumberofchildren=\count328
+\tikznumberofcurrentchild=\count329
+\tikz@fig@count=\count330
+ (/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count331
+\pgfmatrixcurrentcolumn=\count332
+\pgf@matrix@numberofcolumns=\count333
+)
+\tikz@expandcount=\count334
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+topaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks39
+\t@pgfplots@tokb=\toks40
+\t@pgfplots@tokc=\toks41
+\pgfplots@tmpa=\dimen292
+\c@pgfplots@coordindex=\count335
+\c@pgfplots@scanlineindex=\count336
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_l
+oader.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_p
+gfutil-common-lists.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure
+ext.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.te
+x
+\c@pgfplotsarray@tmp=\count337
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.t
+ex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.t
+ex
+\c@pgfplotstable@counta=\count338
+\t@pgfplotstable@a=\toks42
+)
+(/usr/share/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.te
+x) (/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading
+.code.tex
+\c@pgfplotslibrarysurf@no=\count339
+
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-xetex.def
+(/usr/share/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.
+pgfsys-dvipdfmx.def
+\c@pgfplotslibrarysurf@streamlen=\count340
+))))
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen293
+\pgfdecoratedremainingdistance=\dimen294
+\pgfdecoratedinputsegmentcompleteddistance=\dimen295
+\pgfdecoratedinputsegmentremainingdistance=\dimen296
+\pgf@decorate@distancetomove=\dimen297
+\pgf@decorate@repeatstate=\count341
+\pgfdecorationsegmentamplitude=\dimen298
+\pgfdecorationsegmentlength=\dimen299
+)
+\tikz@lib@dec@box=\box74
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathmorphing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathmorphing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+decorations.pathreplacing.code.tex
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorati
+ons.pathreplacing.code.tex))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua
+.code.tex)
+\pgfplots@numplots=\count342
+\pgfplots@xmin@reg=\dimen300
+\pgfplots@xmax@reg=\dimen301
+\pgfplots@ymin@reg=\dimen302
+\pgfplots@ymax@reg=\dimen303
+\pgfplots@zmin@reg=\dimen304
+\pgfplots@zmax@reg=\dimen305
+)
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+plotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(/usr/share/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(/usr/share/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.groupplots
+.code.tex
+\pgfplots@group@current@plot=\count343
+\pgfplots@group@current@row=\count344
+\pgfplots@group@current@column=\count345
+
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+calc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(/usr/share/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrary
+positioning.code.tex
+File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+) (/usr/share/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(/usr/share/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip77
+\cftbeforetoctitleskip=\skip78
+\cftaftertoctitleskip=\skip79
+\cftbeforepartskip=\skip80
+\cftpartnumwidth=\skip81
+\cftpartindent=\skip82
+\cftbeforechapskip=\skip83
+\cftchapindent=\skip84
+\cftchapnumwidth=\skip85
+\cftbeforesecskip=\skip86
+\cftsecindent=\skip87
+\cftsecnumwidth=\skip88
+\cftbeforesubsecskip=\skip89
+\cftsubsecindent=\skip90
+\cftsubsecnumwidth=\skip91
+\cftbeforesubsubsecskip=\skip92
+\cftsubsubsecindent=\skip93
+\cftsubsubsecnumwidth=\skip94
+\cftbeforeparaskip=\skip95
+\cftparaindent=\skip96
+\cftparanumwidth=\skip97
+\cftbeforesubparaskip=\skip98
+\cftsubparaindent=\skip99
+\cftsubparanumwidth=\skip100
+\cftbeforeloftitleskip=\skip101
+\cftafterloftitleskip=\skip102
+\cftbeforefigskip=\skip103
+\cftfigindent=\skip104
+\cftfignumwidth=\skip105
+\c@lofdepth=\count346
+\c@lotdepth=\count347
+\cftbeforelottitleskip=\skip106
+\cftafterlottitleskip=\skip107
+\cftbeforetabskip=\skip108
+\cfttabindent=\skip109
+\cfttabnumwidth=\skip110
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
+
+(/usr/share/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+(/usr/share/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count348
+)
+(/usr/share/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen306
+\Hy@linkcounter=\count349
+\Hy@pagecounter=\count350
+
+(/usr/share/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count351
+
+(/usr/share/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 4201.
+Package hyperref Info: Link nesting OFF on input line 4206.
+Package hyperref Info: Hyper index ON on input line 4209.
+Package hyperref Info: Plain pages OFF on input line 4216.
+Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4468.
+\c@Hy@tempcnt=\count352
+
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4807.
+\XeTeXLinkMargin=\dimen307
+
+(/usr/share/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count353
+\Field@Width=\dimen308
+\Fld@charsize=\dimen309
+Package hyperref Info: Hyper figures OFF on input line 6084.
+Package hyperref Info: Link nesting OFF on input line 6089.
+Package hyperref Info: Hyper index ON on input line 6092.
+Package hyperref Info: backreferencing OFF on input line 6099.
+Package hyperref Info: Link coloring OFF on input line 6104.
+Package hyperref Info: Link coloring with OCG OFF on input line 6109.
+Package hyperref Info: PDF/A mode OFF on input line 6114.
+\Hy@abspage=\count354
+\c@Item=\count355
+\c@Hfootnote=\count356
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2026-01-29 v7.01p Hyperref driver for XeTeX
+\pdfm@box=\box75
+\c@Hy@AnnotLevel=\count357
+\HyField@AnnotCount=\count358
+\Fld@listcount=\count359
+\c@bookmark@seq@number=\count360
+
+(/usr/share/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip111
+)
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip112
+\enit@outerparindent=\dimen310
+\enit@toks=\toks43
+\enit@inbox=\box76
+\enit@count@id=\count361
+\enitdp@description=\count362
+)
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
+\csq@reset=\count363
+\csq@gtype=\count364
+\csq@glevel=\count365
+\csq@qlevel=\count366
+\csq@maxlvl=\count367
+\csq@tshold=\count368
+\csq@ltx@everypar=\toks44
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/usr/share/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2025/10/21 v2.0b multicolumn formatting (FMi)
+\c@tracingmulticols=\count369
+\mult@box=\box77
+\multicol@leftmargin=\dimen311
+\c@unbalance=\count370
+\c@collectmore=\count371
+\doublecol@number=\count372
+\multicoltolerance=\count373
+\multicolpretolerance=\count374
+\full@width=\dimen312
+\page@free=\dimen313
+\premulticols=\dimen314
+\postmulticols=\dimen315
+\multicolsep=\skip113
+\multicolbaselineskip=\skip114
+\partial@page=\box78
+\last@line=\box79
+\mc@boxedresult=\box80
+\maxbalancingoverflow=\dimen316
+\mult@rightbox=\box81
+\mult@grightbox=\box82
+\mult@firstbox=\box83
+\mult@gfirstbox=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\@tempa=\box105
+\@tempa=\box106
+\@tempa=\box107
+\@tempa=\box108
+\@tempa=\box109
+\@tempa=\box110
+\@tempa=\box111
+\@tempa=\box112
+\@tempa=\box113
+\@tempa=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\c@minrows=\count375
+\c@columnbadness=\count376
+\c@finalcolumnbadness=\count377
+\last@try=\dimen317
+\multicolovershoot=\dimen318
+\multicolundershoot=\dimen319
+\mult@nat@firstbox=\box121
+\colbreak@box=\box122
+\mc@col@check@num=\count378
+\g__mc_curr_col_int=\count379
+)
+(/usr/share/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(/usr/share/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'polyglossia' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'ukrainian'.
+ (./main_theory_revised.aux)
+\openout1 = `main_theory_revised.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 211.
+LaTeX Font Info:    ... okay on input line 211.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 211.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 211.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 211.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 211.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 211.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 211.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 211.
+LaTeX Font Info:    Redeclaring math accent \check on input line 211.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 211.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 211.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 211.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 211.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 211.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 2
+11.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 211.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+211.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+211.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 211.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 211.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 211.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(99.58464pt, 455.24411pt, 42.67912pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-40.1381pt
+* \headheight=17.0pt
+* \headsep=8.0pt
+* \topskip=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=15.0pt
+* \marginparsep=10.0pt
+* \columnsep=28.45274pt
+* \skip\footins=12.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+Package pgfplots notification 'compat/show suggested version=true': document ha
+s been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+Package hyperref Info: Link coloring OFF on input line 211.
+(./main_theory_revised.out) (./main_theory_revised.out)
+\@outlinefile=\write4
+\openout4 = `main_theory_revised.out'.
+
+
+! Font TU/TimesNewRoman(0)/m/n/10="[Times New Roman-Regular.ttf]/OT" at 10.0pt 
+not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.258 \end{minipage}
+                    
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font TU/TimesNewRoman(0)/m/n/7="[Times New Roman-Regular.ttf]/OT" at 7.0pt no
+t loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.258 \end{minipage}
+                    
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 258.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 275.
+! Font TU/TimesNewRoman(0)/m/n/14="[Times New Roman-Regular.ttf]/OT" at 14.0pt 
+not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.275 \begin{tabular}
+                     [t]{c@{\quad}l}
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font TU/TimesNewRoman(0)/m/n/9.79996="[Times New Roman-Regular.ttf]/OT" at 9.
+79996pt not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.275 \begin{tabular}
+                     [t]{c@{\quad}l}
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+[1
+
+] (./main_theory_revised.toc
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+[][] []\TU/TimesNewRoman(1)/b/n/14.4 РОЗДІЛ I. ТЕОРЕТИЧНІ ЗАСАДИ ДОСЛІДЖЕННЯ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+\TU/TimesNewRoman(1)/b/n/14.4 ПСИХОЛОГІЧНОЇ БЕЗПЕКИ ДИТЯЧОГО КОНТЕНТУ В 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][] []\TU/TimesNewRoman(1)/m/n/14.4 1.1. Психоемоційний розвиток дітей дошкіл
+ьного віку та 
+ []
+
+
+Underfull \hbox (badness 2326) in paragraph at lines 9--9
+ [][] []\TU/TimesNewRoman(1)/m/n/14.4 2.2. Матеріали дослідження: добір та хара
+ктеристика корпусу 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[][] []\TU/TimesNewRoman(1)/b/n/14.4 РОЗДІЛ ІІІ. АНАЛІЗ РЕЗУЛЬТАТІВ ДОСЛІДЖЕННЯ
+ ТА 
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `main_theory_revised.toc'.
+
+ [2]
+Underfull \hbox (badness 1762) in paragraph at lines 308--310
+[]\TU/TimesNewRoman(1)/b/n/14.4 Актуальність теми. \TU/TimesNewRoman(1)/m/n/14.
+4 Сучасні діти дошкільного віку з раннього
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 дитинства регулярно контактують із цифровим конте
+нтом — відео,
+ []
+
+
+Underfull \hbox (badness 6094) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 казками, короткими роликами, іграми, інтерактивни
+ми матеріалами,
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 — який стає частиною їхнього повсякденного досвід
+у. У старшому
+ []
+
+
+Underfull \hbox (badness 3690) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 дошкільному віці (5–6 років) активно формуються е
+моційна сфера,
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 контенту можуть безпосередньо впливати на психоло
+гічний комфорт,
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 значення набуває не лише сам факт доступу дитини 
+до цифрових
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 308--310
+\TU/TimesNewRoman(1)/m/n/14.4 матеріалів, а й питання їх вікової доречності, ем
+оційної помірності,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+[]\TU/TimesNewRoman(1)/m/n/14.4 Окремою особливістю сучасного медіасередовища є
+ швидке
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 311--312
+\TU/TimesNewRoman(1)/m/n/14.4 інтелектом. З одного боку, такі технології розшир
+юють можливості
+ []
+
+
+Underfull \hbox (badness 2582) in paragraph at lines 311--312
+\TU/TimesNewRoman(1)/m/n/14.4 виробництва збільшує частку потокового низькоякіс
+ного контенту (у
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+\TU/TimesNewRoman(1)/m/n/14.4 публічному дискурсі — «AI slop / ШІ-слоп»), який 
+може бути
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+\TU/TimesNewRoman(1)/m/n/14.4 що дозволяють оцінити, чи є конкретний матеріал п
+сихологічно
+ []
+
+
+Underfull \hbox (badness 7116) in paragraph at lines 311--312
+\TU/TimesNewRoman(1)/m/n/14.4 безпечним, педагогічно доцільним, віково відповід
+ним і культурно
+ []
+
+
+Underfull \hbox (badness 1442) in paragraph at lines 313--314
+[]\TU/TimesNewRoman(1)/m/n/14.4 У сучасних міжнародних підходах питання дитячог
+о цифрового
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
+[]\TU/TimesNewRoman(1)/b/n/14.4 Об’єкт дослідження: \TU/TimesNewRoman(1)/m/n/14
+.4 психологічна безпека та педагогічна
+ []
+
+
+Underfull \hbox (badness 6559) in paragraph at lines 317--318
+\TU/TimesNewRoman(1)/m/n/14.4 доцільність дитячого медіаконтенту для дошкільник
+ів у сучасному
+ []
+
+[3]
+Underfull \hbox (badness 1983) in paragraph at lines 323--324
+[]\TU/TimesNewRoman(1)/b/n/14.4 Робоча гіпотеза: \TU/TimesNewRoman(1)/m/n/14.4 
+традиційний контент отримає вищі оцінки за
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 323--324
+\TU/TimesNewRoman(1)/m/n/14.4 усталеним зразкам за глибиною ціннісного змісту. 
+Операціональний
+ []
+
+
+Underfull \hbox (badness 7186) in paragraph at lines 323--324
+\TU/TimesNewRoman(1)/m/n/14.4 критерій підтвердження: (а) показник контент-анал
+ізу традиційного
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+[]\TU/TimesNewRoman(1)/m/n/14.4 Визначити психолого-педагогічні критерії оцінюв
+ання
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 327--328
+\TU/TimesNewRoman(1)/m/n/14.4 психологічної безпеки та педагогічної доцільності
+ контенту для
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 334--335
+[]\TU/TimesNewRoman(1)/b/n/14.4 Методи дослідження: \TU/TimesNewRoman(1)/m/n/14
+.4 теоретичний аналіз; контент-аналіз;
+ []
+
+
+Underfull \hbox (badness 6893) in paragraph at lines 334--335
+\TU/TimesNewRoman(1)/m/n/14.4 анкетування; метод сліпого тестування; описова ст
+атистика; аналіз
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 336--337
+[]\TU/TimesNewRoman(1)/b/n/14.4 Етичні засади: \TU/TimesNewRoman(1)/m/n/14.4 уч
+асть у опитуваннях добровільна та анонімна;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--339
+[]\TU/TimesNewRoman(1)/b/n/14.4 Практичне значення: \TU/TimesNewRoman(1)/m/n/14
+.4 розроблення простих критеріїв і
+ []
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 338--339
+\TU/TimesNewRoman(1)/m/n/14.4 рекомендацій для педагогів і батьків щодо безпечн
+ого використання
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 340--341
+[]\TU/TimesNewRoman(1)/b/n/14.4 Наукова новизна: \TU/TimesNewRoman(1)/m/n/14.4 
+у роботі виявлено формат-залежний розрив
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 340--341
+\TU/TimesNewRoman(1)/m/n/14.4 між характеристиками ШІ-генерованого контенту (за
+ формалізованим
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 340--341
+\TU/TimesNewRoman(1)/m/n/14.4 для текстового формату різниця між ШІ-казками та 
+традиційними є
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 340--341
+\TU/TimesNewRoman(1)/m/n/14.4 якість супроводжується діаметрально протилежними 
+оцінками різних
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--343
+[]\TU/TimesNewRoman(1)/b/n/14.4 Структура роботи: \TU/TimesNewRoman(1)/m/n/14.4
+ вступ, три розділи, висновки, список
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 347--347
+|\TU/TimesNewRoman(1)/b/n/14.4 РОЗДІЛ I. ТЕОРЕТИЧНІ ЗАСАДИ ДОСЛІДЖЕННЯ
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 чутливістю до зовнішніх вражень, домінуванням емо
+ційно-образного
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 сприймання та недостатньою сформованістю механізм
+ів довільної
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 саморегуляції. Увага є переважно мимовільною, том
+у форма подання
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 символічної функції мислення означає, що дитина с
+приймає художні
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 переживання; та сама відкритість робить дошкільни
+ка вразливим до
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+\TU/TimesNewRoman(1)/m/n/14.4 тривожних, хаотичних або сенсорно перевантажених
+ []
+
+
+Underfull \hbox (badness 1048) in paragraph at lines 355--356
+[]\TU/TimesNewRoman(1)/m/n/14.4 Сприймання контенту дитиною дошкільного віку не
+ є повністю
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 355--356
+\TU/TimesNewRoman(1)/m/n/14.4 допомагає інтерпретувати побачене, пояснює причин
+но-наслідкові
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 355--356
+\TU/TimesNewRoman(1)/m/n/14.4 інформації. У цьому сенсі дорослий виступає не ли
+ше контролером
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 355--356
+\TU/TimesNewRoman(1)/m/n/14.4 середовищем: якість такого посередництва безпосер
+едньо впливає на
+ []
+
+[6
+
+] [7]
+Underfull \hbox (badness 6477) in paragraph at lines 361--362
+[]\TU/TimesNewRoman(1)/m/n/14.4 Поширення цифрових медіа поставило питання псих
+ологічної
+ []
+
+
+Underfull \hbox (badness 3302) in paragraph at lines 361--362
+\TU/TimesNewRoman(1)/m/n/14.4 безпеки дитячого контенту в практичну площину. Дл
+я дошкільника
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 361--362
+\TU/TimesNewRoman(1)/m/n/14.4 розвитку, тому зміст, форма, ритм подачі та загал
+ьний емоційний
+ []
+
+
+Underfull \hbox (badness 3250) in paragraph at lines 361--362
+\TU/TimesNewRoman(1)/m/n/14.4 дитини вважається не будь-який «нейтральний» конт
+ент, а той, що
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 363--364
+[]\TU/TimesNewRoman(1)/m/n/14.4 Під психологічно безпечним дитячим контентом у 
+межах цієї
+ []
+
+
+Underfull \hbox (badness 4832) in paragraph at lines 363--364
+\TU/TimesNewRoman(1)/m/n/14.4 роботи пропонується розуміти такий інформаційний 
+матеріал, який
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 363--364
+\TU/TimesNewRoman(1)/m/n/14.4 бути включений у її розвиток без руйнівних наслід
+ків для емоційної
+ []
+
+
+Underfull \hbox (badness 7814) in paragraph at lines 363--364
+\TU/TimesNewRoman(1)/m/n/14.4 рівноваги й поведінкової саморегуляції. Таке розу
+міння відповідає
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 367--368
+[]\TU/TimesNewRoman(1)/m/n/14.4 Дослідження підтверджують: спільний перегляд із
+ поясненнями
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+[]\TU/TimesNewRoman(1)/m/n/14.4 Міжнародні рекомендації наголошують на важливос
+ті якості
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 369--370
+\TU/TimesNewRoman(1)/m/n/14.4 екранна активність не повинна витісняти сон, гру 
+та живе
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 371--372
+\TU/TimesNewRoman(1)/m/n/14.4 а сукупність: відповідність віку, змістова цінніс
+ть, помірне сенсорне
+ []
+
+[9]
+Underfull \hbox (badness 1210) in paragraph at lines 373--373
+|\TU/TimesNewRoman(1)/b/n/14.4 1.3. ШІ-генерований дитячий контент: поняття, ри
+зики якості та
+ []
+
+
+Underfull \hbox (badness 4353) in paragraph at lines 375--376
+[]\TU/TimesNewRoman(1)/m/n/14.4 Сучасні генеративні моделі навчаються на масивн
+их корпусах
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 375--376
+\TU/TimesNewRoman(1)/m/n/14.4 текстового, зображального та аудіовізуального мат
+еріалу, акумулюючи
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 375--376
+\TU/TimesNewRoman(1)/m/n/14.4 статистичні закономірності мовлення, наративні сх
+еми та стилістичні
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 375--376
+\TU/TimesNewRoman(1)/m/n/14.4 автоматизовано згенерованим і традиційно створени
+м контентом, що
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+\TU/TimesNewRoman(1)/m/n/14.4 актуалізує потребу в психолого-педагогічних крите
+ріях оцінювання
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-генерованих матеріалів — незалежно від їх техн
+ологічного
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 377--378
+[]\TU/TimesNewRoman(1)/m/n/14.4 Стрімкий розвиток генеративних технологій штучн
+ого інтелекту
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 377--378
+\TU/TimesNewRoman(1)/m/n/14.4 відеоконтенту, який створюється автоматизовано аб
+о
+ []
+
+
+Underfull \hbox (badness 7221) in paragraph at lines 377--378
+\TU/TimesNewRoman(1)/m/n/14.4 оцінки не лише як технологічний результат, а як п
+едагогічний і
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 379--380
+[]\TU/TimesNewRoman(1)/m/n/14.4 З технологічного погляду генеративні інструмент
+и відкривають
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+\TU/TimesNewRoman(1)/m/n/14.4 нові можливості: пришвидшують створення ілюстраці
+й, сценаріїв,
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 379--380
+\TU/TimesNewRoman(1)/m/n/14.4 аудіосупроводу, навчальних текстів, інтерактивних
+ завдань і навіть
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+\TU/TimesNewRoman(1)/m/n/14.4 відеофрагментів. Однак у роботі з дитячим контент
+ом сам факт
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+\TU/TimesNewRoman(1)/m/n/14.4 Потенційна користь ШІ-інструментів реалізується л
+ише при
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 379--380
+\TU/TimesNewRoman(1)/m/n/14.4 професійному контролі, а не при автоматизованому 
+виробництві без
+ []
+
+
+Underfull \hbox (badness 2809) in paragraph at lines 381--383
+\TU/TimesNewRoman(1)/m/n/14.4 реальні можливості для підготовки навчальних мате
+ріалів. Водночас
+ []
+
+
+Underfull \hbox (badness 2818) in paragraph at lines 381--383
+\TU/TimesNewRoman(1)/m/n/14.4 прямо вказуючи його в інтерфейсах: «AI can make m
+istakes. Check
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 381--383
+\TU/TimesNewRoman(1)/m/n/14.4 і привабливий результат може містити фактичну пом
+илку, алогічний
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 381--383
+\TU/TimesNewRoman(1)/m/n/14.4 сюжет або невідповідний зміст. Це принципово важл
+иво для роботи
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
+\TU/TimesNewRoman(1)/m/n/14.4 матеріал, тому відповідальність за перевірку повн
+істю лежить на
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для педагогічної практики суттєво, що якість ШІ
+-контенту
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--385
+\TU/TimesNewRoman(1)/m/n/14.4 сформульовано запит (промпт). Різниця між детальн
+о описаним
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 384--385
+\TU/TimesNewRoman(1)/m/n/14.4 завданням і коротким запитом «без задуму» стосуєт
+ься не безпеки у
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 384--385
+\TU/TimesNewRoman(1)/m/n/14.4 вузькому сенсі, а саме якості: зв’язності сюжету,
+ природності мови,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-генерованого контенту віковим і психологічним 
+особливостям
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 386--387
+\TU/TimesNewRoman(1)/m/n/14.4 дошкільників. OECD виокремлює кілька типів цифров
+их ризиків для
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 386--387
+\TU/TimesNewRoman(1)/m/n/14.4 дітей, серед яких ризики контенту — сенсорне пере
+вантаження,
+ []
+
+
+Underfull \hbox (badness 4621) in paragraph at lines 386--387
+\TU/TimesNewRoman(1)/m/n/14.4 шаблонність, мовна неприродність — займають окрем
+е місце [[]14[]].
+ []
+
+
+Underfull \hbox (badness 4454) in paragraph at lines 386--387
+\TU/TimesNewRoman(1)/m/n/14.4 інформації обмежене [[]1[], []4[], []16[], []17[]
+]. У результаті матеріал може не
+ []
+
+[11]
+Underfull \hbox (badness 1297) in paragraph at lines 390--391
+\TU/TimesNewRoman(1)/m/n/14.4 контент виконує не лише розважальну, а й соціаліз
+увальну функцію:
+ []
+
+
+Underfull \hbox (badness 1038) in paragraph at lines 390--391
+\TU/TimesNewRoman(1)/m/n/14.4 через сюжети, образи та мовні конструкції дитина 
+засвоює культурні
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 392--393
+[]\TU/TimesNewRoman(1)/m/n/14.4 Генеративна модель, натренована переважно на ан
+гломовних і
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 392--393
+\TU/TimesNewRoman(1)/m/n/14.4 ДНК. Якщо ШІ-генерований продукт створюється без 
+урахування
+ []
+
+
+Underfull \hbox (badness 6032) in paragraph at lines 392--393
+\TU/TimesNewRoman(1)/m/n/14.4 локальним мовно-ціннісним середовищем. Це помітно
+, коли сервіс
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 392--393
+\TU/TimesNewRoman(1)/m/n/14.4 пейзажі без місця, мораль без контексту — результ
+ат формально
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 392--393
+\TU/TimesNewRoman(1)/m/n/14.4 коректний, але культурно «нікуди не прив’язаний».
+ Дитина отримує
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 392--393
+\TU/TimesNewRoman(1)/m/n/14.4 матеріал, зрозумілий на рівні слів, але позбавлен
+ий зв’язку з живою
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 394--395
+[]\TU/TimesNewRoman(1)/m/n/14.4 Принципово важливо: мистецтво — це не лише засі
+б передачі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+\TU/TimesNewRoman(1)/m/n/14.4 авторським задумом, культурним контекстом і часом
+ створення.
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 394--395
+\TU/TimesNewRoman(1)/m/n/14.4 Генеративна модель рекомбінує засвоєні зразки — в
+она не \TU/TimesNewRoman(1)/m/it/14.4 створює
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+\TU/TimesNewRoman(1)/m/n/14.4 перебуває на етапі первинної культурної соціаліза
+ції, ця різниця
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--395
+\TU/TimesNewRoman(1)/m/n/14.4 принципова: ШІ-контент може стати корисним педаго
+гічним
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 394--395
+\TU/TimesNewRoman(1)/m/n/14.4 інструментом, але не може замінити мистецтво як ж
+иве свідчення
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+[]\TU/TimesNewRoman(1)/m/n/14.4 Підсумовуючи: ШІ-генерований дитячий контент — 
+це
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+\TU/TimesNewRoman(1)/m/n/14.4 психолого-педагогічний і культурний феномен, а не
+ просто
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 396--397
+\TU/TimesNewRoman(1)/m/n/14.4 технологічний продукт. Оцінювати його слід за кри
+теріями змістової
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
+\TU/TimesNewRoman(1)/m/n/14.4 якості, вікової відповідності, емоційної помірнос
+ті та культурної
+ []
+
+[12]
+Underfull \hbox (badness 2717) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 Алгоритми рекомендацій оптимізовані на утримання 
+уваги, а не на
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 найдовше утримує погляд. Генеративні платформи зб
+ирають дані про
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 взаємодію користувача — включно з дитячою аудитор
+ією — для
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 навчання моделей, що створює питання щодо інформо
+ваної згоди та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 захисту персональних даних неповнолітніх. Переваж
+на більшість
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 мають обізнаність щодо існування таких матеріалів
+, але не мають
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
+\TU/TimesNewRoman(1)/m/n/14.4 інструментів для їх надійного розпізнавання в реж
+имі реального
+ []
+
+
+Underfull \hbox (badness 1655) in paragraph at lines 400--401
+\TU/TimesNewRoman(1)/m/n/14.4 дитячий твір має автора — людину, яка несе змісто
+вну й моральну
+ []
+
+[13]
+Underfull \hbox (badness 3646) in paragraph at lines 407--407
+|\TU/TimesNewRoman(1)/b/n/14.4 2.1. Організація дослідження, характеристика виб
+ірки та етичні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+[]\TU/TimesNewRoman(1)/m/n/14.4 Дослідження має описовий порівняльний дизайн і 
+поєднує
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-генерованого дитячого контенту за психолого-пе
+дагогічними
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+\TU/TimesNewRoman(1)/m/n/14.4 вихователями ЗДО та батьками дошкільників. На пер
+шому етапі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+\TU/TimesNewRoman(1)/m/n/14.4 проводилися контент-аналіз, анкетування та сліпе 
+оцінювання
+ []
+
+
+Underfull \hbox (badness 5403) in paragraph at lines 411--413
+\TU/TimesNewRoman(1)/m/n/14.4 досвід взаємодії з дитячим контентом або його доб
+ору для дітей
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 411--413
+\TU/TimesNewRoman(1)/m/n/14.4 через відділ освіти Бердичівської міської ради та
+ на додатковій базі
+ []
+
+
+Underfull \hbox (badness 3769) in paragraph at lines 411--413
+\TU/TimesNewRoman(1)/m/n/14.4 заклади дошкільної освіти, до яких потрапили анке
+ти через відділ
+ []
+
+
+Underfull \hbox (badness 7415) in paragraph at lines 414--415
+\TU/TimesNewRoman(1)/m/n/14.4 протягом визначеного періоду збору даних. Спеціал
+ьних процедур
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 414--415
+\TU/TimesNewRoman(1)/m/n/14.4 є виявлення загальних тенденцій та апробація інст
+рументарію, а не
+ []
+
+[14
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
+[]\TU/TimesNewRoman(1)/b/n/14.4 Процедура формування вибірки та розподілу матер
+іалів.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--420
+\TU/TimesNewRoman(1)/m/n/14.4 Принциповим завданням дослідження було забезпечит
+и сліпе
+ []
+
+
+Underfull \hbox (badness 5756) in paragraph at lines 418--420
+\TU/TimesNewRoman(1)/m/n/14.4 пред’явлення матеріалів і рівномірне покриття кор
+пусу. Для цього
+ []
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 421--422
+\TU/TimesNewRoman(1)/m/n/14.4 було передано по 30 анкет для кожної групи (вихов
+ателі та батьки);
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 421--422
+\TU/TimesNewRoman(1)/m/n/14.4 (84% від розданих); 7 батьківських анкет не повер
+нулося. Кожен із
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 421--422
+\TU/TimesNewRoman(1)/m/n/14.4 шести відеозразків повторювався в межах базового 
+набору однакову
+ []
+
+
+Underfull \hbox (badness 3333) in paragraph at lines 421--422
+\TU/TimesNewRoman(1)/m/n/14.4 кількість разів, а дев’ять текстових зразків розп
+оділялися так, щоб
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 створено окремі Google Forms для різних комбінаці
+й текстового та
+ []
+
+
+Underfull \hbox (badness 4647) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 батьків. Ця асиметрія не пов’язана зі зміною інст
+рументарію, а з
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 практичним розширенням батьківського каналу набор
+у та потребою
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 вища варіативність шляхів входу в дослідження. Во
+дночас така
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 нерівномірність враховується як методичне обмежен
+ня: пряме
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 зіставлення груп здійснюється на рівні змісту від
+повідей і середніх
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 425--426
+\TU/TimesNewRoman(1)/m/n/14.4 оцінок, але не інтерпретується як наслідок іденти
+чного розподілу
+ []
+
+[15]
+Underfull \hbox (badness 1902) in paragraph at lines 427--428
+[]\TU/TimesNewRoman(1)/m/n/14.4 Розподіл онлайн-респондентів між формами здійсн
+ювався через
+ []
+
+
+Underfull \hbox (badness 4846) in paragraph at lines 427--428
+\TU/TimesNewRoman(1)/m/n/14.4 спеціалізовану веб-сторінку з випадковим переспря
+муванням. Такий
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
+[]\TU/TimesNewRoman(1)/m/n/14.4 Охоплення не обмежувалося одним закладом, що сп
+рияло
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--433
+\TU/TimesNewRoman(1)/m/n/14.4 етичних принципів педагогічної та психологічної н
+ауки. Участь
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 431--433
+\TU/TimesNewRoman(1)/m/n/14.4 респондентів була добровільною, а заповнення анке
+ти могло бути
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 431--433
+\TU/TimesNewRoman(1)/m/n/14.4 припинене на будь-якому етапі без пояснення причи
+н. Анкетування
+ []
+
+
+Underfull \hbox (badness 5189) in paragraph at lines 431--433
+\TU/TimesNewRoman(1)/m/n/14.4 прямі ідентифікаційні дані. Діти безпосередньо не
+ брали участі в
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 434--435
+[]\TU/TimesNewRoman(1)/m/n/14.4 Усі матеріали, використані для контент-аналізу,
+ є публічно
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 434--435
+\TU/TimesNewRoman(1)/m/n/14.4 науковою метою. Перед початком участі респондента
+м надавалася
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 434--435
+\TU/TimesNewRoman(1)/m/n/14.4 коротка інформація про мету дослідження, добровіл
+ьність участі та
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+|\TU/TimesNewRoman(1)/b/n/14.4 2.2. Матеріали дослідження: добір та характерист
+ика корпусу
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 446--447
+[]\TU/TimesNewRoman(1)/m/n/14.4 можливість порівняльного аналізу за визначеними
+
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 450--452
+\TU/TimesNewRoman(1)/m/n/14.4 окремий завершений ролик або один конкретний епіз
+од серіалу. Для
+ []
+
+
+Underfull \hbox (badness 4899) in paragraph at lines 450--452
+\TU/TimesNewRoman(1)/m/n/14.4 казки. Такий підхід забезпечив порівнюваність мат
+еріалів у межах
+ []
+
+
+Underfull \hbox (badness 3701) in paragraph at lines 453--454
+[]\TU/TimesNewRoman(1)/m/n/14.4 Оскільки тривалість відео суттєво різнилася, по
+казники темпу
+ []
+
+
+Underfull \hbox (badness 4013) in paragraph at lines 453--454
+\TU/TimesNewRoman(1)/m/n/14.4 та сенсорного навантаження оцінювалися з урахуван
+ням тривалості
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 453--454
+\TU/TimesNewRoman(1)/m/n/14.4 матеріалу. Для цього аналіз здійснювався або щодо
+ всього короткого
+ []
+
+[17] [18]
+Underfull \hbox (badness 10000) in paragraph at lines 455--458
+[]\TU/TimesNewRoman(1)/b/n/14.4 Категорія 1. Традиційна анімація українською мо
+вою (3
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--458
+\TU/TimesNewRoman(1)/b/n/14.4 одиниці). \TU/TimesNewRoman(1)/m/n/14.4 До цієї к
+атегорії включено мультфільми, створені без
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Ґруффало» (реж. М.Ленг, Дж.Шух, BBC Films, 200
+9; укр.
+ []
+
+
+Underfull \hbox (badness 3029) in paragraph at lines 459--460
+\TU/TimesNewRoman(1)/m/n/14.4 YouTube, 2023,  10 хв.) — епізод чесько-китайсько
+го серіалу;
+ []
+
+
+Underfull \hbox (badness 4156) in paragraph at lines 463--466
+[]\TU/TimesNewRoman(1)/b/n/14.4 Категорія 2. ШІ-генерований та гібридний відеок
+онтент (3
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 463--466
+\TU/TimesNewRoman(1)/b/n/14.4 одиниці). \TU/TimesNewRoman(1)/m/n/14.4 До цієї к
+атегорії включено сучасні відеоматеріали, у яких
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 463--466
+\TU/TimesNewRoman(1)/m/n/14.4 присутні ознаки використання генеративного штучно
+го інтелекту або
+ []
+
+[19]
+Underfull \hbox (badness 1953) in paragraph at lines 471--472
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для класифікації матеріалів цієї категорії врах
+овувалися: пряма
+ []
+
+
+Underfull \hbox (badness 2478) in paragraph at lines 471--472
+\TU/TimesNewRoman(1)/m/n/14.4 згадка автора чи каналу про використання ШІ або д
+ані метаданих;
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 473--476
+[]\TU/TimesNewRoman(1)/b/n/14.4 Категорія 3. Традиційні літературні тексти (3 о
+диниці). \TU/TimesNewRoman(1)/m/n/14.4 До
+ []
+
+
+Underfull \hbox (badness 1383) in paragraph at lines 473--476
+\TU/TimesNewRoman(1)/m/n/14.4 цієї категорії включено короткі казки В.О.Сухомли
+нського як зразки
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 476--477
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Навіщо кажуть ”Спасибі”» — текст, присвячений 
+формуванню
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 488--490
+[]\TU/TimesNewRoman(1)/m/n/14.4 Розширення цієї категорії до шести одиниць було
+ зумовлене
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 491--492
+[]\TU/TimesNewRoman(1)/m/n/14.4 мінімально визначений сценарій (мінімальний про
+мпт і та сама
+ []
+
+[20]
+Underfull \hbox (badness 2165) in paragraph at lines 494--496
+[]\TU/TimesNewRoman(1)/b/n/14.4 Умови генерації. \TU/TimesNewRoman(1)/m/n/14.4 
+Кожна генерація здійснювалася в новій сесії
+ []
+
+
+Underfull \hbox (badness 1072) in paragraph at lines 494--496
+\TU/TimesNewRoman(1)/m/n/14.4 без збереженого контексту, однією спробою, без ру
+чного редагування
+ []
+
+
+Underfull \hbox (badness 2698) in paragraph at lines 494--496
+\TU/TimesNewRoman(1)/m/n/14.4 результату; фіксувалися дата, модель та версія; м
+ова — українська,
+ []
+
+
+Underfull \hbox (badness 1584) in paragraph at lines 499--500
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Теплий хлібчик для друзів» (GPT-5.4 Thinking) 
+— історія про
+ []
+
+
+Underfull \hbox (badness 4859) in paragraph at lines 501--502
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Їжачкова яблучна знахідка» (Gemini 3.1 Pro) — 
+історія про
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 506--507
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Лисичка і чарівне зернятко» (GPT-5.4 Thinking)
+ — історія про
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
+[]\TU/TimesNewRoman(1)/m/n/14.4 «Пригоди сонячного зайчика Пстрика» (Gemini 3.1
+ Pro) —
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
+[]\TU/TimesNewRoman(1)/m/n/14.4 У дослідженні застосовувався комплекс чотирьох
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 516--517
+\TU/TimesNewRoman(1)/m/n/14.4 взаємодоповнювальних методів. Поєднання цих метод
+ів дало змогу
+ []
+
+
+Underfull \hbox (badness 3525) in paragraph at lines 516--517
+\TU/TimesNewRoman(1)/m/n/14.4 експертного аналізу самого контенту, суб’єктивних
+ оцінок дорослих
+ []
+
+
+Underfull \hbox (badness 6078) in paragraph at lines 518--519
+\TU/TimesNewRoman(1)/m/n/14.4 першому етапі для визначення критеріїв психологіч
+ної безпеки та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--519
+\TU/TimesNewRoman(1)/m/n/14.4 корпусу матеріалів. Аналізувалися українські псих
+олого-педагогічні
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 520--521
+\TU/TimesNewRoman(1)/m/n/14.4 характеристик матеріалів корпусу. Для кожної один
+иці заповнювалася
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 520--521
+\TU/TimesNewRoman(1)/m/n/14.4 мовна якість; вікова доречність (інтегральний під
+сумковий критерій).
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 522--524
+\TU/TimesNewRoman(1)/m/n/14.4 навантаження) застосовуються лише до відео (макс.
+ 18 балів); для
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--524
+\TU/TimesNewRoman(1)/m/n/14.4 здійснюються у \TU/TimesNewRoman(1)/b/n/14.4 відс
+отковій шкалі \TU/TimesNewRoman(1)/m/n/14.4 (бал/максимум × 100%),
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для підвищення надійності кодування розроблено 
+кодбук із
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 525--526
+\TU/TimesNewRoman(1)/m/n/14.4 докладним описом індикаторів кожного рівня шкали 
+для кожного
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+\TU/TimesNewRoman(1)/m/n/14.4 зменшення ризику довільного тлумачення шкали. Код
+ування
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+\TU/TimesNewRoman(1)/m/n/14.4 здійснювалося одним дослідником; відсутність друг
+ого кодера
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 525--526
+\TU/TimesNewRoman(1)/m/n/14.4 розглядається як методологічне обмеження і врахов
+ується при
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 527--528
+[]\TU/TimesNewRoman(1)/b/n/14.4 3. Анкетування \TU/TimesNewRoman(1)/m/n/14.4 пр
+оводилося у двох форматах: онлайн (Google
+ []
+
+
+Overfull \hbox (0.10661pt too wide) in paragraph at lines 527--528
+\TU/TimesNewRoman(1)/m/n/14.4 шкальні оцінки (1–5 балів), відкриті питання та е
+лемент сліпого тестування
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 529--530
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для доставки зразків контенту респондентам було
+ розроблено
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 533--534
+[]\TU/TimesNewRoman(1)/b/n/14.4 Пред’явлення матеріалів в онлайн-анкетах. \TU/T
+imesNewRoman(1)/m/n/14.4 У Google Forms
+ []
+
+
+Underfull \hbox (badness 2828) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 зразки вбудовано безпосередньо у форму: текстові 
+казки подано як
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 відеозразки — як посилання для переходу. Кожна фо
+рма відповідає
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 конкретній парі матеріалів. Розподіл респондентів
+ між формами
+ []
+
+
+Underfull \hbox (badness 2846) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 доступу підготовлено окремий друкований аркуш із 
+QR-кодами, що
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 ведуть на сторінки переспрямування для батьків та
+ вихователів
+ []
+
+
+Underfull \hbox (badness 3108) in paragraph at lines 533--534
+\TU/TimesNewRoman(1)/m/n/14.4 відповідно (Додаток 10). Аркуш розміщувався поруч
+ із паперовими
+ []
+
+[23]
+Underfull \hbox (badness 7851) in paragraph at lines 535--536
+\TU/TimesNewRoman(1)/m/n/14.4 матеріалів незалежно від формату збору даних: в о
+бох випадках
+ []
+
+
+Underfull \hbox (badness 6364) in paragraph at lines 535--536
+\TU/TimesNewRoman(1)/m/n/14.4 респондент отримує рівно один текстовий і один ві
+деозразок без
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--536
+\TU/TimesNewRoman(1)/m/n/14.4 інформації про їх походження. Відмінності між пап
+еровим та
+ []
+
+
+Underfull \hbox (badness 6691) in paragraph at lines 535--536
+\TU/TimesNewRoman(1)/m/n/14.4 онлайн-форматом стосуються лише способу доступу д
+о анкети та
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 537--538
+\TU/TimesNewRoman(1)/m/n/14.4 один текстовий і один відеозразок без вказівки на
+ їх походження
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 537--538
+\TU/TimesNewRoman(1)/m/n/14.4 критеріями респондент визначав, традиційним чи ШІ
+-генерованим є
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 537--538
+\TU/TimesNewRoman(1)/m/n/14.4 походження на оцінку, і виявити, які ознаки дорос
+лі сприймають як
+ []
+
+[24]
+Underfull \hbox (badness 4739) in paragraph at lines 541--542
+\TU/TimesNewRoman(1)/m/n/14.4 статистики: підрахунок частот відповідей (у відсо
+тках), обчислення
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 541--542
+\TU/TimesNewRoman(1)/m/n/14.4 між категоріями контенту та між групами респонден
+тів (вихователі
+ []
+
+
+Underfull \hbox (badness 3536) in paragraph at lines 541--542
+\TU/TimesNewRoman(1)/m/n/14.4 та батьки). Результати представлялися у вигляді т
+аблиць і діаграм.
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 541--542
+\TU/TimesNewRoman(1)/m/n/14.4 Через зручний характер вибірки та описовий дизайн
+ дослідження
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 541--542
+\TU/TimesNewRoman(1)/m/n/14.4 статистична інтерпретація мала переважно аналітик
+о-описовий, а не
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 543--545
+[]\TU/TimesNewRoman(1)/b/n/14.4 Обробка даних контент-аналізу. \TU/TimesNewRoma
+n(1)/m/n/14.4 Для кожної одиниці корпусу
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 543--545
+\TU/TimesNewRoman(1)/m/n/14.4 між форматами (відео та текст) використовувалася 
+відсоткова шкала:
+ []
+
+
+Underfull \hbox (badness 1939) in paragraph at lines 546--548
+\TU/TimesNewRoman(1)/m/n/14.4 фіксувалися як змістовно значущі й інтерпретували
+ся з урахуванням
+ []
+
+
+Underfull \hbox (badness 4378) in paragraph at lines 549--551
+[]\TU/TimesNewRoman(1)/b/n/14.4 Обробка результатів сліпого тестування. \TU/Tim
+esNewRoman(1)/m/n/14.4 Фіксувалася частка
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 549--551
+\TU/TimesNewRoman(1)/m/n/14.4 правильного розпізнавання ШІ-матеріалів окремо дл
+я кожної групи;
+ []
+
+
+Underfull \hbox (badness 1953) in paragraph at lines 552--554
+[]\TU/TimesNewRoman(1)/b/n/14.4 Обмеження методу. \TU/TimesNewRoman(1)/m/n/14.4
+ Вибірка є зручною (не випадковою), тому
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 552--554
+\TU/TimesNewRoman(1)/m/n/14.4 оцінює сприйняття дорослих, а не реакцію дітей. К
+ласифікація
+ []
+
+
+Underfull \hbox (badness 3872) in paragraph at lines 555--556
+\TU/TimesNewRoman(1)/m/n/14.4 анкет. З 45 розданих паперових анкет для батьків 
+повернулося 38
+ []
+
+
+Underfull \hbox (badness 2050) in paragraph at lines 555--556
+\TU/TimesNewRoman(1)/m/n/14.4 оцінювання незаповненими, що зумовлює відмінність
+ у значеннях $\OML/cmm/m/it/14.4 n$
+ []
+
+
+Underfull \hbox (badness 1092) in paragraph at lines 555--556
+\TU/TimesNewRoman(1)/m/n/14.4 в умовах добровільного анонімного анкетування нем
+ожливо повністю
+ []
+
+[25]
+Underfull \hbox (badness 2582) in paragraph at lines 557--558
+\TU/TimesNewRoman(1)/m/n/14.4 відеозразки, 164 — текстові казки), а сторінки пе
+респрямування на
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 557--558
+\TU/TimesNewRoman(1)/m/n/14.4 у групі вихователів, із яких форму заповнили 73 о
+соби (конверсія
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 565--565
+|\TU/TimesNewRoman(1)/b/n/14.4 РОЗДІЛ ІІІ. АНАЛІЗ РЕЗУЛЬТАТІВ ДОСЛІДЖЕННЯ ТА
+ []
+
+
+Underfull \hbox (badness 1406) in paragraph at lines 573--574
+\TU/TimesNewRoman(1)/m/n/14.4 (1 — не відповідає, 2 — частково відповідає, 3 — 
+відповідає). Для
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+\TU/TimesNewRoman(1)/m/n/14.4 відеоматеріалів застосовувалися всі шість критері
+їв (максимум —
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 573--574
+\TU/TimesNewRoman(1)/m/n/14.4 форматами здійснювалося у відсотковій шкалі (факт
+ичний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 582--582
+[]|\TU/TimesNewRoman(1)/m/n/14.4 1. Традиційна анімація
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--583
+[]|\TU/TimesNewRoman(1)/m/n/14.4 2. ШІ/гібридне відео
+ []
+
+
+Underfull \hbox (badness 8151) in paragraph at lines 584--584
+[]|\TU/TimesNewRoman(1)/m/n/14.4 3. Казки Сухомлинського
+ []
+
+
+Underfull \hbox (badness 3049) in paragraph at lines 585--585
+[]|\TU/TimesNewRoman(1)/m/n/14.4 4а. ШІ, структур. промпт
+ []
+
+
+Underfull \hbox (badness 1975) in paragraph at lines 620--620
+ [][]\TU/TimesNewRoman(1)/m/n/12 ШІ-текст,
+ []
+
+
+Underfull \hbox (badness 1014) in paragraph at lines 620--620
+ \TU/TimesNewRoman(1)/m/n/12 мін. промпт
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
+[]\TU/TimesNewRoman(1)/m/n/14.4 Найвищі бали за контент-аналізом отримали казки
+
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 625--626
+\TU/TimesNewRoman(1)/m/n/14.4 тексти за мінімальним промптом показали помітно н
+ижчий результат
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 625--626
+\TU/TimesNewRoman(1)/m/n/14.4 (80,6%), передусім через слабшу наративну цілісні
+сть і ціннісну
+ []
+
+[27
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 629--630
+[]\TU/TimesNewRoman(1)/m/n/14.4 Контент-аналіз показав три чіткі закономірності
+: традиційні
+ []
+
+[28]
+Underfull \hbox (badness 5231) in paragraph at lines 633--634
+[]\TU/TimesNewRoman(1)/m/n/14.4 У дослідженні взяли участь \TU/TimesNewRoman(1)
+/b/n/14.4 62 вихователі \TU/TimesNewRoman(1)/m/n/14.4 ЗДО (29 онлайн,
+ []
+
+
+Underfull \hbox (badness 1558) in paragraph at lines 633--634
+\TU/TimesNewRoman(1)/m/n/14.4 аудіоматеріали у роботі (регулярно — 58%); основн
+і цілі: тематичні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+[]\TU/TimesNewRoman(1)/b/n/14.4 Ставлення до ШІ-контенту. \TU/TimesNewRoman(1)/
+m/n/14.4 Обізнаність вихователів щодо
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 635--636
+\TU/TimesNewRoman(1)/m/n/14.4 його існування, 67,7% свідомо використовували ШІ-
+інструменти у
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+\TU/TimesNewRoman(1)/m/n/14.4 роботі, ще 24,2% вважають, що, можливо, стикалися
+ з такими
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+\TU/TimesNewRoman(1)/m/n/14.4 матеріалами. Щодо педагогічної доцільності ШІ-кон
+тенту: \TU/TimesNewRoman(1)/b/n/14.4 75,8%
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+\TU/TimesNewRoman(1)/m/n/14.4 зазначали: позитивні цінності (46,8%), чіткий сюж
+ет (41,9%),
+ []
+
+
+Underfull \hbox (badness 1521) in paragraph at lines 635--636
+\TU/TimesNewRoman(1)/m/n/14.4 відповідність віку (40,3%), відсутність насилля т
+а переляку (33,9%),
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 659--660
+\TU/TimesNewRoman(1)/b/n/14.4 не виявили змістовних відмінностей \TU/TimesNewRo
+man(1)/m/n/14.4 між традиційними казками та
+ []
+
+[29]
+Underfull \hbox (badness 10000) in paragraph at lines 661--662
+[]\TU/TimesNewRoman(1)/b/n/14.4 Оцінка відеозразків. \TU/TimesNewRoman(1)/m/n/1
+4.4 Картина для відеоматеріалів виявилася
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 683--684
+\TU/TimesNewRoman(1)/m/n/14.4 формат ШІ-роликів (короткі повчальні історії) бли
+жчий до типового
+ []
+
+
+Underfull \hbox (badness 6204) in paragraph at lines 683--684
+\TU/TimesNewRoman(1)/m/n/14.4 запиту вихователя, тоді як традиційна авторська а
+німація з менш
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
+[]\TU/TimesNewRoman(1)/b/n/14.4 Ставлення до потенційного використання ШІ. \TU/
+TimesNewRoman(1)/m/n/14.4 Позиції
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
+\TU/TimesNewRoman(1)/m/n/14.4 нерівномірно: 75,8% відповіли позитивно, тоді як 
+лише 6,5%
+ []
+
+[30]
+! Font TU/TimesNewRoman(0)/m/n/12="[Times New Roman-Regular.ttf]/OT" at 12.0pt 
+not loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.715 \end{axis}
+                
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font TU/TimesNewRoman(0)/m/n/8="[Times New Roman-Regular.ttf]/OT" at 8.0pt no
+t loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.715 \end{axis}
+                
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+! Font TU/TimesNewRoman(0)/m/n/6="[Times New Roman-Regular.ttf]/OT" at 6.0pt no
+t loadable: Metric (TFM) file or installed font not found.
+<to be read again> 
+                   relax 
+l.715 \end{axis}
+                
+I wasn't able to read the size data for this font,
+so I will ignore the font specification.
+[Wizards can fix TFM files using TFtoPL/PLtoTF.]
+You might try inserting a different font spec;
+e.g., type `I\font<same font id>=<substitute font name>'.
+
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 715.
+Package pgfplots info on input line 762: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
+[]\TU/TimesNewRoman(1)/m/n/14.4 Ключовий результат: \TU/TimesNewRoman(1)/b/n/14
+.4 жоден вихователь не ідентифікував
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 783--784
+\TU/TimesNewRoman(1)/m/n/14.4 професійну анімацію продуктом ШІ. Натомість 85,0%
+ правильно
+ []
+
+
+Underfull \hbox (badness 1057) in paragraph at lines 783--784
+\TU/TimesNewRoman(1)/m/n/14.4 розпізнали ШІ-відео. Для текстів ситуація зворотн
+а: традиційні казки
+ []
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 783--784
+\TU/TimesNewRoman(1)/m/n/14.4 ідентифікувалися вірно лише у 36,4% випадків — ни
+жче за рівень
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 785--786
+[]\TU/TimesNewRoman(1)/m/n/14.4 Готовність використовувати текстові зразки у ро
+боті висока для
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 785--786
+\TU/TimesNewRoman(1)/m/n/14.4 всіх трьох категорій: традиційні — 92,3%, ШІ-міні
+мальні — 88,2%,
+ []
+
+[31]
+Underfull \hbox (badness 4595) in paragraph at lines 787--788
+\TU/TimesNewRoman(1)/m/n/14.4 разу не розпізнали традиційну анімацію як традиці
+йну. Переважна
+ []
+
+[32]
+Underfull \hbox (badness 1694) in paragraph at lines 791--792
+[]\TU/TimesNewRoman(1)/m/n/14.4 У дослідженні взяли участь \TU/TimesNewRoman(1)
+/b/n/14.4 82 батьки \TU/TimesNewRoman(1)/m/n/14.4 дітей дошкільного віку
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 791--792
+\TU/TimesNewRoman(1)/m/n/14.4 (44 онлайн, 38 паперових анкет). Середній вік дит
+ини — 4,7 року;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
+[]\TU/TimesNewRoman(1)/b/n/14.4 Ставлення до ШІ-контенту. \TU/TimesNewRoman(1)/
+m/n/14.4 86,6% батьків знають про
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 795--796
+\TU/TimesNewRoman(1)/m/n/14.4 32,9% — можливо, стикалися. Негативні реакції дит
+ини на контент
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 795--796
+\TU/TimesNewRoman(1)/m/n/14.4 нижча, ніж у вихователів: \TU/TimesNewRoman(1)/b/
+n/14.4 2,91 \TU/TimesNewRoman(1)/m/n/14.4 з 5. При доборі контенту батьки
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 795--796
+\TU/TimesNewRoman(1)/m/n/14.4 зазначають: позитивні цінності (37,8%), хороша мо
+ва (32,9%),
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 819--820
+\TU/TimesNewRoman(1)/m/n/14.4 за всіма п’ятьма критеріями, зокрема загальну оці
+нку 4,64 — вище
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 819--820
+\TU/TimesNewRoman(1)/m/n/14.4 за традиційні казки (4,33) і значно вище за казки
+ зі структурованим
+ []
+
+
+Underfull \hbox (badness 1259) in paragraph at lines 819--820
+\TU/TimesNewRoman(1)/m/n/14.4 промптом (4,03). Різниця між ШІ-мінімальним та ШІ
+-структурованим
+ []
+
+[33]
+Underfull \hbox (badness 1558) in paragraph at lines 821--822
+\TU/TimesNewRoman(1)/m/n/14.4 казки за структурованим промптом найвище (4,16), 
+що свідчить про
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 821--822
+\TU/TimesNewRoman(1)/m/n/14.4 систематичну розбіжність між групами, а не про за
+гальну перевагу
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 821--822
+\TU/TimesNewRoman(1)/m/n/14.4 вихователі в умовах сліпого тестування орієнтувал
+ися на педагогічно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 858--859
+\TU/TimesNewRoman(1)/b/n/14.4 традиційну анімацію вище\TU/TimesNewRoman(1)/m/n/
+14.4 , ніж ШІ-відео за всіма критеріями
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-відео) та «Якість мови» ($\OMS/cmsy/m/n/14.4 ^
+^@$\TU/TimesNewRoman(1)/m/n/14.4 0,44). Це відповідає очікуванням:
+ []
+
+
+Underfull \hbox (badness 1163) in paragraph at lines 880--881
+\TU/TimesNewRoman(1)/m/n/14.4 синтезований голос і неприродні рухи персонажів у
+ ШІ-відео батьки
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 880--881
+\TU/TimesNewRoman(1)/m/n/14.4 від групи вихователів (де ШІ-відео отримало вищі 
+оцінки) є
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 880--881
+\TU/TimesNewRoman(1)/m/n/14.4 функціональність, батьки — на емоційний комфорт і
+ «природність»
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+[]\TU/TimesNewRoman(1)/b/n/14.4 Сліпе розпізнавання. \TU/TimesNewRoman(1)/m/n/1
+4.4 Батьки правильно ідентифікували
+ []
+
+
+Underfull \hbox (badness 5175) in paragraph at lines 882--883
+\TU/TimesNewRoman(1)/m/n/14.4 розпізнаний у 83,3% випадків; традиційний — лише 
+у 28,6% (у
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
+\TU/TimesNewRoman(1)/m/n/14.4 100% позитивних відповідей, традиційний — 96,3%,
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 884--885
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-структурований — 82,8%. Для відео обидві катег
+орії отримали
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+[]\TU/TimesNewRoman(1)/m/n/14.4 Ця розбіжність між групами є найпомітнішою міжг
+руповою
+ []
+
+[35] [36]
+Package pgfplots info on input line 910: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Overfull \hbox (12.94148pt too wide) in paragraph at lines 919--920
+ [][] 
+ []
+
+
+Underfull \hbox (badness 8113) in paragraph at lines 923--924
+[]\TU/TimesNewRoman(1)/m/n/14.4 Для відеоформату між групами — діаметрально про
+тилежна
+ []
+
+Package pgfplots info on input line 942: Using 'lua backend=false' for axis: x 
+coord trafo unsupported.
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--956
+[]\TU/TimesNewRoman(1)/m/it/14.4 1. Текстовий ШІ-контент практично нерозрізненн
+ий від
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 955--956
+\TU/TimesNewRoman(1)/m/n/14.4 групами (4,23 з 5 балів, $\OML/cmm/m/it/14.4 n \O
+T1/cmr/m/n/14.4 = 90$\TU/TimesNewRoman(1)/m/n/14.4 ) майже тотожна оцінці казок
+
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 955--956
+\TU/TimesNewRoman(1)/m/n/14.4 були правильно ідентифіковані як ШІ-генеровані — 
+нижче за рівень
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 955--956
+\TU/TimesNewRoman(1)/m/n/14.4 «ШІ» дорослі сприймають текстовий контент за його
+ змістовими
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
+\TU/TimesNewRoman(1)/m/it/14.4 суперечливо. \TU/TimesNewRoman(1)/m/n/14.4 ШІ-ві
+део правильно ідентифіковано загалом у 84,1%
+ []
+
+
+Underfull \hbox (badness 2932) in paragraph at lines 957--958
+\TU/TimesNewRoman(1)/m/n/14.4 вихователів — 0%. Оцінки ж розходяться між групам
+и: вихователі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 957--958
+\TU/TimesNewRoman(1)/m/n/14.4 надали перевагу ШІ-відео (3,67 проти 3,00), тоді 
+як батьки —
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 959--960
+[]\TU/TimesNewRoman(1)/m/it/14.4 3. Якість промпта — ключовий фактор для тексто
+вого
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 959--960
+\TU/TimesNewRoman(1)/m/it/14.4 ШІ-контенту. \TU/TimesNewRoman(1)/m/n/14.4 Конте
+нт-аналіз зафіксував різницю у 16,6 відсоткових
+ []
+
+
+Underfull \hbox (badness 6001) in paragraph at lines 961--962
+[]\TU/TimesNewRoman(1)/m/it/14.4 4. Робоча гіпотеза підтвердилася частково. \TU
+/TimesNewRoman(1)/m/n/14.4 Операціональний
+ []
+
+
+Underfull \hbox (badness 2073) in paragraph at lines 961--962
+\TU/TimesNewRoman(1)/m/n/14.4 промптом не менш ніж на 10в.п. Для тексту: 100,0%
+ — 80,6% =
+ []
+
+
+Underfull \hbox (badness 6316) in paragraph at lines 961--962
+\OMS/cmsy/m/n/14.4 ^^U$\TU/TimesNewRoman(1)/m/n/14.4 85% за наративністю та цін
+нісним змістом — результат 97,2%
+ []
+
+
+Underfull \hbox (badness 3815) in paragraph at lines 961--962
+\TU/TimesNewRoman(1)/b/n/14.4 підтверджено\TU/TimesNewRoman(1)/m/n/14.4 . Разом
+ із тим суб’єктивне оцінювання дорослими не
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 961--962
+\TU/TimesNewRoman(1)/m/n/14.4 виявило переваги традиційних текстів, що вказує н
+а розбіжність між
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
+[]\TU/TimesNewRoman(1)/m/it/14.4 5. Обидві групи виявляють високу обізнаність і
+ переважно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
+\TU/TimesNewRoman(1)/m/n/14.4 про ШІ-контент; 75,8% вихователів вважають його п
+отенційно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 963--964
+\TU/TimesNewRoman(1)/m/n/14.4 доцільним. Обидві групи при цьому наголошують на 
+критичній
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+[]\TU/TimesNewRoman(1)/b/n/14.4 Перевіряти перед показом. \TU/TimesNewRoman(1)/
+m/n/14.4 Будь-який новий матеріал —
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--970
+\TU/TimesNewRoman(1)/m/n/14.4 традиційний чи ШІ-генерований — потребує попередн
+ього
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 970--971
+\TU/TimesNewRoman(1)/m/n/14.4 позитивні цінності, природне мовлення, відсутніст
+ь насилля та
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 971--972
+[]\TU/TimesNewRoman(1)/b/n/14.4 Контролювати темп і сенсорне навантаження \TU/T
+imesNewRoman(1)/m/n/14.4 (особливо для
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 971--972
+\TU/TimesNewRoman(1)/m/n/14.4 відео). ШІ-відео часто характеризується неприродн
+істю рухів і
+ []
+
+
+Underfull \hbox (badness 5578) in paragraph at lines 973--974
+\TU/TimesNewRoman(1)/m/n/14.4 показало, що педагоги та батьки системно оцінюють
+ один і
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 973--974
+\TU/TimesNewRoman(1)/m/n/14.4 той самий матеріал по-різному — не через некомпет
+ентність,
+ []
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 973--974
+\TU/TimesNewRoman(1)/m/n/14.4 а через різні критерії добору. Обговорення цих ро
+збіжностей
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 973--974
+\TU/TimesNewRoman(1)/m/n/14.4 між вихователем і батьками є ефективнішим інструм
+ентом, ніж
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 979--980
+\TU/TimesNewRoman(1)/m/n/14.4 обмеження (без насилля, страху, маніпуляцій). Різ
+ниця у якості
+ []
+
+
+Underfull \hbox (badness 4048) in paragraph at lines 979--980
+\TU/TimesNewRoman(1)/m/n/14.4 між структурованим і мінімальним промптом — 16,6 
+в.п. за
+ []
+
+[39]
+Underfull \hbox (badness 7397) in paragraph at lines 980--981
+[]\TU/TimesNewRoman(1)/b/n/14.4 Завжди перевіряти результат. \TU/TimesNewRoman(
+1)/m/n/14.4 Навіть при якісному промпті
+ []
+
+
+Underfull \hbox (badness 1571) in paragraph at lines 982--983
+[]\TU/TimesNewRoman(1)/b/n/14.4 Проводити етичний аудит перед впровадженням. \T
+U/TimesNewRoman(1)/m/n/14.4 При виборі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--983
+\TU/TimesNewRoman(1)/m/n/14.4 збирає вона дані про дітей; чи маркується контент
+ як
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 982--983
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-генерований; чи передбачений механізм модераці
+ї та
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 982--983
+\TU/TimesNewRoman(1)/m/n/14.4 підзвітності. Комерційні інтереси платформи і вих
+овні інтереси
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 991--992
+[]\TU/TimesNewRoman(1)/m/n/14.4 За результатами теоретичного аналізу, контент-а
+налізу та
+ []
+
+
+Underfull \hbox (badness 6078) in paragraph at lines 991--992
+\TU/TimesNewRoman(1)/m/n/14.4 емпіричного дослідження ($\OML/cmm/m/it/14.4 N \O
+T1/cmr/m/n/14.4 = 144$\TU/TimesNewRoman(1)/m/n/14.4 : 62 вихователі, 82 батьки)
+
+ []
+
+
+Underfull \hbox (badness 5345) in paragraph at lines 993--995
+[]\TU/TimesNewRoman(1)/b/n/14.4 1. Психолого-педагогічні критерії оцінювання ко
+нтенту. \TU/TimesNewRoman(1)/m/n/14.4 На
+ []
+
+
+Underfull \hbox (badness 4927) in paragraph at lines 993--995
+\TU/TimesNewRoman(1)/m/n/14.4 кодбук із деталізованими індикаторами (Додаток 5)
+, який дозволяє
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 996--998
+[]\TU/TimesNewRoman(1)/b/n/14.4 2. Феномен масового низькоякісного ШІ-контенту.
+
+ []
+
+
+Underfull \hbox (badness 3229) in paragraph at lines 996--998
+\TU/TimesNewRoman(1)/m/n/14.4 Охарактеризовано явище «AI slop/ШІ-слоп» як індик
+атор проблеми
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 999--1001
+\TU/TimesNewRoman(1)/m/n/14.4 сліпого тестування та кодбук для контент-аналізу.
+ Загалом зібрано
+ []
+
+
+Underfull \hbox (badness 3291) in paragraph at lines 1002--1004
+\TU/TimesNewRoman(1)/m/n/14.4 ШІ-генерованими та традиційними текстами (середні
+ оцінки: 4,23 і
+ []
+
+
+Underfull \hbox (badness 2042) in paragraph at lines 1002--1004
+\TU/TimesNewRoman(1)/m/n/14.4 4,21 з 5 балів відповідно). Лише 36,8% ШІ-текстів
+ були правильно
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 1002--1004
+\TU/TimesNewRoman(1)/m/n/14.4 розпізнається значно легше (84,1%), проте оцінки 
+розходяться між
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1004
+\TU/TimesNewRoman(1)/m/n/14.4 традиційному (3,92 проти 3,55). Зафіксовано, що 0
+% вихователів
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 1002--1004
+\TU/TimesNewRoman(1)/m/n/14.4 правильно ідентифікували традиційну анімацію як т
+радиційну. 75,8%
+ []
+
+[41]
+Underfull \hbox (badness 1043) in paragraph at lines 1005--1007
+[]\TU/TimesNewRoman(1)/b/n/14.4 5. Вплив якості промпта та розрив евалюаційних 
+парадигм.
+ []
+
+
+Underfull \hbox (badness 1097) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 Підтверджено, що якість промпта суттєво впливає н
+а характеристики
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 Сухомлинського (4,33). Розбіжність пояснюється ві
+дмінністю
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 евалюаційних парадигм: оцінювання за кодбуком орі
+єнтоване на
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 тоді як батьківське сприйняття тяжіє до критерію 
+емоційної
+ []
+
+
+Underfull \hbox (badness 1466) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 доступності — простіша мова і конкретний сюжет сп
+риймаються як
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 «ближчі до дитини». Отримані дані вказують на те,
+ що якість
+ []
+
+
+Underfull \hbox (badness 1412) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 зафіксовано її залежність від позиції оцінювача т
+а критеріїв, що він
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 груп дорослих — педагогів і батьків — до спільног
+о обговорення
+ []
+
+
+Underfull \hbox (badness 4792) in paragraph at lines 1005--1007
+\TU/TimesNewRoman(1)/m/n/14.4 контенту: розбіжності в оцінках є не проблемою, а
+ продуктивним
+ []
+
+
+Underfull \hbox (badness 6658) in paragraph at lines 1008--1009
+\TU/TimesNewRoman(1)/m/n/14.4 дизайну та зручної вибірки і не претендують на ре
+презентативні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+[]\TU/TimesNewRoman(1)/b/n/14.4 Обмеження дослідження. \TU/TimesNewRoman(1)/m/n
+/14.4 Результати слід інтерпретувати з
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 наявністю синтезованого мовлення у ШІ-зразках: во
+но слугувало
+ []
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 очевидним аудіальним маркером, тому оцінка змісту
+ відео не може
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 вважатися повністю вільною від упереджень щодо те
+хнологічного
+ []
+
+
+Underfull \hbox (badness 6542) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 контент-аналіз здійснювався одним дослідником за 
+формалізованим
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 відображають застосування кодбуку конкретним коду
+вальником.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/b/n/14.4 По-четверте\TU/TimesNewRoman(1)/m/n/14.4 , дослід
+ження фіксує оцінки та судження дорослих;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 безпосередні реакції дітей дошкільного віку на ма
+теріали не
+ []
+
+
+Underfull \hbox (badness 1546) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 вимірювалися — що є принциповим обмеженням для ви
+сновків про
+ []
+
+
+Underfull \hbox (badness 3746) in paragraph at lines 1010--1017
+\TU/TimesNewRoman(1)/m/n/14.4 психологічну безпеку. Зазначені обмеження не скас
+овують отримані
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+[]\TU/TimesNewRoman(1)/b/n/14.4 Напрями подальших досліджень. \TU/TimesNewRoman
+(1)/m/n/14.4 Виявлені обмеження
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+\TU/TimesNewRoman(1)/m/n/14.4 для перевірки узагальнюваності результатів; залуч
+ення незалежних
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+\TU/TimesNewRoman(1)/m/n/14.4 кодерів із розрахунком коефіцієнта міжекспертної 
+узгодженості
+ []
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 1020--1021
+\TU/TimesNewRoman(1)/m/n/14.4 (Cohen’s $\OML/cmm/m/it/14.4 ^^T$\TU/TimesNewRoma
+n(1)/m/n/14.4 ); верифікація класифікації відеоматеріалів через незалежні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1020--1021
+\TU/TimesNewRoman(1)/m/n/14.4 віку на ШІ-контент із використанням психофізіолог
+ічних або
+ []
+
+[43]
+Underfull \hbox (badness 5417) in paragraph at lines 1031--1032
+[]\TU/TimesNewRoman(1)/m/n/14.4 Дуткевич Т. В. Дошкільна психологія. Київ : Цен
+тр учбової
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1044
+[]\TU/TimesNewRoman(1)/m/n/14.4 Поліщук В. М. Вікова і педагогічна психологія. 
+Суми :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1046--1047
+[]\TU/TimesNewRoman(1)/m/n/14.4 Савчин М. В., Василенко Л. П. Вікова психологія
+. Київ :
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 1058--1059
+[]\TU/TimesNewRoman(1)/m/n/14.4 Canadian Paediatric Society. Screen time and pr
+eschool children:
+ []
+
+[44]
+Underfull \hbox (badness 1622) in paragraph at lines 1064--1065
+\TU/TimesNewRoman(1)/m/n/14.4 Technology and Associations with Child Behavior P
+roblems. \TU/TimesNewRoman(1)/m/it/14.4 Child
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 1079--1080
+[]\TU/TimesNewRoman(1)/m/n/14.4 Radesky J. S. та ін. Longitudinal Associations 
+Between Use of
+ []
+
+[45] [46] [47]
+
+! Package keyval Error: pages undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1106 ...keepaspectratio]{anketa_vykhovatel.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `anketa_vykhovatel.pdf' not found on input line 1106.
+
+! Unable to load picture or PDF file 'anketa_vykhovatel.pdf'.
+<to be read again> 
+                   }
+l.1106 ...keepaspectratio]{anketa_vykhovatel.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1106 ...keepaspectratio]{anketa_vykhovatel.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1106 ...keepaspectratio]{anketa_vykhovatel.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: anketa_vykhovatel.pdf Graphic file (type pdf)
+<use anketa_vykhovatel.pdf>
+! Unable to load picture or PDF file 'anketa_vykhovatel.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.1106 ...keepaspectratio]{anketa_vykhovatel.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+[48]
+
+! Package keyval Error: pages undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 ... keepaspectratio]{anketa_batkiv_30.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `anketa_batkiv_30.pdf' not found on input line 1114.
+
+! Unable to load picture or PDF file 'anketa_batkiv_30.pdf'.
+<to be read again> 
+                   }
+l.1114 ... keepaspectratio]{anketa_batkiv_30.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 ... keepaspectratio]{anketa_batkiv_30.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1114 ... keepaspectratio]{anketa_batkiv_30.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: anketa_batkiv_30.pdf Graphic file (type pdf)
+<use anketa_batkiv_30.pdf>
+! Unable to load picture or PDF file 'anketa_batkiv_30.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.1114 ... keepaspectratio]{anketa_batkiv_30.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1125
+[]\TU/TimesNewRoman(1)/m/n/14.4 Створи теплу, спокійну історію з простим сюжето
+м і
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 1126--1127
+[]\TU/TimesNewRoman(1)/m/n/14.4 Нехай історія розгортається природно: невелика 
+проблема,
+ []
+
+
+Underfull \hbox (badness 2435) in paragraph at lines 1128--1129
+[]\TU/TimesNewRoman(1)/m/n/14.4 Пиши живою, природною українською мовою, коротк
+ими
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 1128--1129
+\TU/TimesNewRoman(1)/m/n/14.4 реченнями. Уникай надмірної фантастики, різких по
+дій і
+ []
+
+[50]
+Underfull \hbox (badness 4556) in paragraph at lines 1144--1145
+[]\TU/TimesNewRoman(1)/m/n/14.4 Мінімальний промпт використовувався для перевір
+ки того, як
+ []
+
+
+Underfull \hbox (badness 2126) in paragraph at lines 1144--1145
+\TU/TimesNewRoman(1)/m/n/14.4 мовлення та характеру морального посилу. Базові е
+тичні обмеження
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 1144--1145
+\TU/TimesNewRoman(1)/m/n/14.4 (відсутність насилля, страшних сцен) залишені одн
+аковими для обох
+ []
+
+[51]
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 1165--1165
+[]|\TU/TimesNewRoman(1)/b/n/12 №| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1165
+[]|\TU/TimesNewRoman(1)/b/n/12 2 — частково
+ []
+
+
+Overfull \hbox (0.67767pt too wide) in paragraph at lines 1169--1169
+[]|\TU/TimesNewRoman(1)/b/n/12 №| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1169--1169
+[]|\TU/TimesNewRoman(1)/b/n/12 2 — частково
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+[]|\TU/TimesNewRoman(1)/m/n/12 Тривалість та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+[]|\TU/TimesNewRoman(1)/m/n/12 Тривалість понад
+ []
+
+
+Underfull \hbox (badness 1629) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 20 хв. без поділу
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 на частини АБО
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 темп надмірно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 швидкий: часта
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 зміна кадрів
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 (менше 2 с.),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 постійний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 динамічний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+[]|\TU/TimesNewRoman(1)/m/n/12 Тривалість 10–20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 хв. АБО темп
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 нерівномірний:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 є швидкі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 фрагменти, але
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1172
+\TU/TimesNewRoman(1)/m/n/12 навантаження
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+[]|\TU/TimesNewRoman(1)/m/n/12 Тривалість до
+ []
+
+
+Underfull \hbox (badness 2065) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 10 хв. АБО темп
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 спокійний та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 рівномірний:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 кадри тривають
+ []
+
+
+Underfull \hbox (badness 5970) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 3 с. і більше, є
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 паузи, відсутній
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1172--1173
+\TU/TimesNewRoman(1)/m/n/12 надмірний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+[]|\TU/TimesNewRoman(1)/m/n/12 Сенсорне
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+[]|\TU/TimesNewRoman(1)/m/n/12 Надмірно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 яскраві кольори,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 миготіння, різкі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 гучні звукові
+ []
+
+
+Underfull \hbox (badness 2426) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 ефекти або гучна
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 музика протягом
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 більшої частини
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 відео; сенсорне
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 перевантаження
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 звукові ефекти
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 є, але не різкі;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 навантаження
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
+\TU/TimesNewRoman(1)/m/n/12 помірне, не
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 1174--1175
+[]|\TU/TimesNewRoman(1)/m/n/12 Кольори природні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+\TU/TimesNewRoman(1)/m/n/12 або м’які;
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 1174--1175
+\TU/TimesNewRoman(1)/m/n/12 звуковий супровід
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+\TU/TimesNewRoman(1)/m/n/12 спокійний;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+\TU/TimesNewRoman(1)/m/n/12 сенсорне
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1174--1175
+\TU/TimesNewRoman(1)/m/n/12 навантаження
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+[]|\TU/TimesNewRoman(1)/m/n/12 Наративна
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+[]|\TU/TimesNewRoman(1)/m/n/12 Сюжет відсутній
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 або хаотичний:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 немає зрозумілої
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 зав’язки,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 кульмінації
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 та розв’язки;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 послідовність
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 послідовність
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 подій, але
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 кульмінація
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 або розв’язка
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 нечіткі; сюжет
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 1176--1176
+\TU/TimesNewRoman(1)/m/n/12 незавершений або
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 структура:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 зав’язка,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 кульмінація,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 розв’язка;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 події пов’язані
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 між собою
+ []
+
+
+Overfull \hbox (16.04207pt too wide) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 причинно-наслідково;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1177
+\TU/TimesNewRoman(1)/m/n/12 сюжет
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+[]|\TU/TimesNewRoman(1)/m/n/12 Ціннісний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+[]|\TU/TimesNewRoman(1)/m/n/12 Відсутній
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 позитивний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 моральний посил
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 АБО наявні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 приниження,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 маніпуляції,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 страхітливі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+[]|\TU/TimesNewRoman(1)/m/n/12 Є натяк на
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 позитивну
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 нечітка, розмита
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 або суперечлива;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 моральний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1178
+\TU/TimesNewRoman(1)/m/n/12 висновок
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+[]|\TU/TimesNewRoman(1)/m/n/12 Чіткий
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 позитивний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 моральний
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 посил (доброта,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 взаємодопомога,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 відповідальність
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 тощо); відсутні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
+\TU/TimesNewRoman(1)/m/n/12 деструктивні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+[]|\TU/TimesNewRoman(1)/m/n/12 Мовлення
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 неприродне,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 синтетичне або
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 з помітними
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 помилками;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 лексика не
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 відповідає рівню
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 дошкільника
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 (надто складна
+ []
+
+
+Underfull \hbox (badness 5105) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 або спрощена до
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 беззмістовності);
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 зрозуміле, але є
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 окремі незвичні
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 конструкції,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 кальки або
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 надмірно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1180
+\TU/TimesNewRoman(1)/m/n/12 шаблонні фрази;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+[]|\TU/TimesNewRoman(1)/m/n/12 Мовлення
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 природне,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 живе; лексика
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 відповідає рівню
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 дошкільника 4–6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 років; речення
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
+\TU/TimesNewRoman(1)/m/n/12 короткі та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+[]|\TU/TimesNewRoman(1)/m/n/12 Вікова
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+[]|\TU/TimesNewRoman(1)/m/n/12 Матеріал явно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 не відповідає
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 надто складний,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 тривожний,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 емоційно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 перевантажений
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 для дітей 4–6
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+[]|\TU/TimesNewRoman(1)/m/n/12 Матеріал
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 переважно
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 доречний, але
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 містить окремі
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 елементи, що
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 можуть бути
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1182
+\TU/TimesNewRoman(1)/m/n/12 дискомфортними
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 відповідає рівню
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 розвитку та
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 інтересам дітей
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 4–6 років;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 доступний,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 безпечний,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1183
+\TU/TimesNewRoman(1)/m/n/12 підтримує вікові
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [52]
+ignored: Infinite glue shrinkage fo
+und in box being split [53] [54]
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1204
+\TU/TimesNewRoman(1)/m/n/12 анімація укр.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1204
+[]|\TU/TimesNewRoman(1)/m/n/12 відео,
+ []
+
+File: assets/gruffalo_1.png Graphic file (type bmp)
+<assets/gruffalo_1.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
+[]|\TU/TimesNewRoman(1)/m/n/12 «Кротик і Панда.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
+\TU/TimesNewRoman(1)/m/n/12 анімація укр.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1206
+[]|\TU/TimesNewRoman(1)/m/n/12 відео,
+ []
+
+File: assets/krotiopanda_2.png Graphic file (type bmp)
+<assets/krotiopanda_2.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1206--1207
+[]|\TU/TimesNewRoman(1)/m/n/12 Multplaneta UA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+[]|\TU/TimesNewRoman(1)/m/n/12 «Шусть і Шуня.
+ []
+
+
+Underfull \hbox (badness 3271) in paragraph at lines 1208--1208
+\TU/TimesNewRoman(1)/m/n/12 Мегахалабуда» (с.1,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+\TU/TimesNewRoman(1)/m/n/12 анімація укр.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1208--1208
+[]|\TU/TimesNewRoman(1)/m/n/12 відео,
+ []
+
+File: assets/shust_i_shunya_3.png Graphic file (type bmp)
+<assets/shust_i_shunya_3.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]|\TU/TimesNewRoman(1)/m/n/12 «Три улюблені
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\TU/TimesNewRoman(1)/m/n/12 пригоди Синього
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.2:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+\TU/TimesNewRoman(1)/m/n/12 ШІ/гібридне
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1210--1210
+[]|\TU/TimesNewRoman(1)/m/n/12 відео,
+ []
+
+File: assets/tri_prigody_traktora_4.png Graphic file (type bmp)
+<assets/tri_prigody_traktora_4.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1212
+[]|\TU/TimesNewRoman(1)/m/n/12 «Тофі і Таємниця
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1212
+\TU/TimesNewRoman(1)/m/n/12 Правильного
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1212
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.2:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1212--1212
+\TU/TimesNewRoman(1)/m/n/12 ШІ/гібридне
+ []
+
+File: assets/tofi_kidsua_5.png Graphic file (type bmp)
+<assets/tofi_kidsua_5.png>
+
+Underfull \hbox (badness 1205) in paragraph at lines 1214--1214
+[]|\TU/TimesNewRoman(1)/m/n/12 «Пригоди поросятка
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.2:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1214
+\TU/TimesNewRoman(1)/m/n/12 ШІ/гібридне
+ []
+
+File: assets/prigody_porosiatka_6.png Graphic file (type bmp)
+<assets/prigody_porosiatka_6.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1214--1215
+[]|\TU/TimesNewRoman(1)/m/n/12 Казкова мудрість
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
+[]|\TU/TimesNewRoman(1)/m/n/12 «Навіщо кажуть
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.3:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1216--1217
+[]|\TU/TimesNewRoman(1)/m/n/12 В.О.Сухомлинський.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1218
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.3:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1218--1219
+[]|\TU/TimesNewRoman(1)/m/n/12 В.О.Сухомлинський.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1220
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.3:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1220--1221
+[]|\TU/TimesNewRoman(1)/m/n/12 В.О.Сухомлинський.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.4: ШІ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1222--1222
+\TU/TimesNewRoman(1)/m/n/12 (структур.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1224
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.4: ШІ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1224--1224
+\TU/TimesNewRoman(1)/m/n/12 (структур.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
+[]|\TU/TimesNewRoman(1)/m/n/12 «Їжачкова яблучна
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
+[]|\TU/TimesNewRoman(1)/m/n/12 Кат.4: ШІ
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
+\TU/TimesNewRoman(1)/m/n/12 (структур.
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 1228--1228
+[]|\TU/TimesNewRoman(1)/m/n/12 «Лисичка і чарівне
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1230
+[]|\TU/TimesNewRoman(1)/m/n/12 «Сонечко і
+ []
+
+
+ignored: Infinite glue shrinkage found in box being split [55] [56]
+Underfull \hbox (badness 1755) in paragraph at lines 1267--1268
+[]\TU/TimesNewRoman(1)/m/n/14.4 Настав ранок. Покликав дідусь трьох синів і дев
+’ятьох онуків,
+ []
+
+[57]
+Underfull \hbox (badness 10000) in paragraph at lines 1278--1279
+[]\TU/TimesNewRoman(1)/m/n/14.4 Настав вечір. Зайшло сонце. Страшно стало кошен
+яткові.
+ []
+
+[58]
+Underfull \hbox (badness 1117) in paragraph at lines 1295--1296
+\TU/TimesNewRoman(1)/m/n/14.4 У повітрі пахло теплом і свіжою травою. Марко зна
+йшов біля куща
+ []
+
+
+Underfull \hbox (badness 2142) in paragraph at lines 1295--1296
+\TU/TimesNewRoman(1)/m/n/14.4 на маленькі шматочки, щоб вистачило кожному. Вони
+ їли повільно,
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 1301--1302
+\TU/TimesNewRoman(1)/m/n/14.4 поруч і весь час питала: «Вже готово? Вже можна?»
+ Бабуся лише
+ []
+
+
+Underfull \hbox (badness 2452) in paragraph at lines 1307--1308
+[]\TU/TimesNewRoman(1)/m/n/14.4 Старий їжачок Хрум ішов лісовою стежкою і знайш
+ов велике
+ []
+
+
+Underfull \hbox (badness 1199) in paragraph at lines 1307--1308
+\TU/TimesNewRoman(1)/m/n/14.4 моху, хрумтіли солодким яблуком і дивилися, як ве
+чірнє сонце сідає
+ []
+
+[59]
+Underfull \hbox (badness 1028) in paragraph at lines 1316--1317
+\TU/TimesNewRoman(1)/m/n/14.4 дивовижна рослина з великими листочками. На ній д
+остигли солодкі
+ []
+
+
+Underfull \hbox (badness 6641) in paragraph at lines 1322--1323
+\TU/TimesNewRoman(1)/m/n/14.4 здивувалася, подумала трішки і погодилася: вона п
+оливала землю
+ []
+
+[60]
+Underfull \hbox (badness 1024) in paragraph at lines 1328--1329
+\TU/TimesNewRoman(1)/m/n/14.4 а сховався у весняній краплинці роси, де перетвор
+ився на справжню
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 1328--1329
+\TU/TimesNewRoman(1)/m/n/14.4 щоб знову вистрибнути на доріжку і погукати всіх 
+малят гратися в
+ []
+
+[61]
+
+! Package polyglossia Error: The current main monospace font,
+(polyglossia)                lmmono12-regular, does not contain the
+(polyglossia)                "Cyrillic" script!
+(polyglossia)                Please define \cyrillicfonttt with
+(polyglossia)                \newfontfamily command
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.1336 ...альний код формату \texttt{Г-ЗЗ-НН-TxVy}
+                                                  , що однозначно ідентифіку...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+Missing character: There is no Г (U+0413) in font [lmmono12-regular]:!
+Missing character: There is no З (U+0417) in font [lmmono12-regular]:!
+Missing character: There is no З (U+0417) in font [lmmono12-regular]:!
+Missing character: There is no Н (U+041D) in font [lmmono12-regular]:!
+Missing character: There is no Н (U+041D) in font [lmmono12-regular]:!
+
+! Package polyglossia Error: The current main monospace font,
+(polyglossia)                lmmono12-regular, does not contain the
+(polyglossia)                "Cyrillic" script!
+(polyglossia)                Please define \cyrillicfonttt with
+(polyglossia)                \newfontfamily command
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.1336 ...я (див. Підрозділ~2.1). Поле~\texttt{ЗЗ}
+                                                   містить реальний номер ЗД...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+Missing character: There is no З (U+0417) in font [lmmono12-regular]:!
+Missing character: There is no З (U+0417) in font [lmmono12-regular]:!
+
+! Package polyglossia Error: The current main monospace font,
+(polyglossia)                lmmono12-regular, does not contain the
+(polyglossia)                "Cyrillic" script!
+(polyglossia)                Please define \cyrillicfonttt with
+(polyglossia)                \newfontfamily command
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.1336 ...терний мнемонік (наприклад, \texttt{КТФ}
+                                                   для Центру «Катафєйка»).
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+Missing character: There is no К (U+041A) in font [lmmono12-regular]:!
+Missing character: There is no Т (U+0422) in font [lmmono12-regular]:!
+Missing character: There is no Ф (U+0424) in font [lmmono12-regular]:!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1337
+[]\TU/TimesNewRoman(1)/b/n/14.4 Система ідентифікації анкет. \TU/TimesNewRoman(
+1)/m/n/14.4 Кожна друкована анкета має
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1337
+\TU/TimesNewRoman(1)/m/n/14.4 респондентів, заклад, порядковий номер та конкрет
+ну комбінацію
+ []
+
+
+! Package pgfkeys Error: The key '/tikz/dash' requires a value. I am going to i
+gnore this key.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1346   \node[dash, right=4pt of G]
+                                     (d1) {-};
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+! Package pgfkeys Error: The key '/tikz/dash' requires a value. I am going to i
+gnore this key.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1348   \node[dash, right=4pt of ZZ]
+                                      (d2) {-};
+(That was another \errmessage.)
+
+
+! Package pgfkeys Error: The key '/tikz/dash' requires a value. I am going to i
+gnore this key.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1350   \node[dash, right=4pt of NN]
+                                      (d3) {-};
+(That was another \errmessage.)
+
+
+! Package polyglossia Error: The current main monospace font,
+(polyglossia)                lmmono12-regular, does not contain the
+(polyglossia)                "Cyrillic" script!
+(polyglossia)                Please define \cyrillicfonttt with
+(polyglossia)                \newfontfamily command
+
+Type <return> to continue.
+ ...                                              
+                                                  
+l.1362 {\small Приклад: \texttt{В-22-05-T3V2}
+                                              --- вихователь, ЗДО\,\textnume...
+
+
+LaTeX does not know anything more about this error, sorry.
+
+Try typing <return> to proceed.
+If that doesn't work, type X <return> to quit.
+
+
+Missing character: There is no В (U+0412) in font [lmmono12-regular]:!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1368
+[]\TU/TimesNewRoman(1)/b/n/14.4 Веб-ресурс дослідження. \TU/TimesNewRoman(1)/m/
+n/14.4 Для доставки зразків корпусу
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 1366--1368
+\TU/TimesNewRoman(1)/m/n/14.4 респондентам розроблено статичний веб-ресурс на п
+латформі GitHub
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1366--1368
+\TU/TimesNewRoman(1)/m/n/14.4 щодо походження зразка. Веб-ресурс також містить 
+сторінки для
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 1366--1368
+\TU/TimesNewRoman(1)/m/n/14.4 онлайн-опитування з випадковим переспрямуванням н
+а Google Forms
+ []
+
+
+Underfull \hbox (badness 3557) in paragraph at lines 1373--1374
+\TU/TimesNewRoman(1)/m/n/12 респондентів (вихователі та батьки), поширених чере
+з відділ освіти м.Бердичева
+ []
+
+[62]
+Underfull \hbox (badness 3460) in paragraph at lines 1379--1381
+\TU/TimesNewRoman(1)/m/n/14.4 Скрипт генерує 18 форм для вихователів та 27 форм
+ для батьків,
+ []
+
+
+Underfull \hbox (badness 3449) in paragraph at lines 1383--1385
+\TU/TimesNewRoman(1)/m/n/14.4 онлайн-анкет підготовлено окремий друкований арку
+ш (Додаток 10)
+ []
+
+
+Underfull \hbox (badness 3590) in paragraph at lines 1383--1385
+\TU/TimesNewRoman(1)/m/n/14.4 із двома великими QR-кодами, які ведуть на сторін
+ки випадкового
+ []
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 1383--1385
+\TU/TimesNewRoman(1)/m/n/14.4 переспрямування: один для батьків, другий для вих
+ователів. Аркуш
+ []
+
+[63]
+
+! Package keyval Error: pages undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1394 ...keepaspectratio]{qr_online_surveys.pdf}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `qr_online_surveys.pdf' not found on input line 1394.
+
+! Unable to load picture or PDF file 'qr_online_surveys.pdf'.
+<to be read again> 
+                   }
+l.1394 ...keepaspectratio]{qr_online_surveys.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1394 ...keepaspectratio]{qr_online_surveys.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package graphics Error: Division by 0.
+
+See the graphics package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1394 ...keepaspectratio]{qr_online_surveys.pdf}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+File: qr_online_surveys.pdf Graphic file (type pdf)
+<use qr_online_surveys.pdf>
+! Unable to load picture or PDF file 'qr_online_surveys.pdf'.
+<to be read again> 
+                   \GPT@clipend 
+l.1394 ...keepaspectratio]{qr_online_surveys.pdf}}
+                                                  
+The requested image couldn't be read because
+it was not a recognized image format.
+
+[64] (./main_theory_revised.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-01-19>
+ ***********
+Package rerunfilecheck Info: File `main_theory_revised.out' has not changed.
+(rerunfilecheck)             Checksum: 200F0BCBE4D51738F7675D086A8E4073;7564.
+ ) 
+Here is how much of TeX's memory you used:
+ 38397 strings out of 469397
+ 924799 string characters out of 5470096
+ 1489397 words of memory out of 5000000
+ 66395 multiletter control sequences out of 15000+600000
+ 632860 words of font info for 86 fonts, out of 8000000 for 9000
+ 704 hyphenation exceptions out of 8191
+ 99i,17n,108p,1111b,2392s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main_theory_revised.pdf (64 pages).
