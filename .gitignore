@@ -1,2 +1,19 @@
 duck-test/
 CLAUDE.md
+.omc/
+.claude/
+.~lock*
+
+# Data / working files (tracked separately or generated)
+data/*.csv
+data/*.xlsx
+data/GA_Reports*
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk

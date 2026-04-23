@@ -1,0 +1,22 @@
+% ============================================================
+%  Накладає водяний знак "Dmytrii Savin" на main.tex
+%
+%  Компіляція:
+%    1. xelatex main.tex          → main.pdf
+%    2. xelatex watermark.tex     → watermark.pdf  (із знаком)
+% ============================================================
+\documentclass[a4paper]{article}
+
+\usepackage[margin=0pt]{geometry}
+\usepackage{pdfpages}
+\usepackage{xwatermark}
+\usepackage{xcolor}
+
+% Діагональний напівпрозорий знак на кожній сторінці
+\newwatermark[allpages, color=gray!20, angle=52, scale=3.2, xpos=-10, ypos=0]{%
+  Dmytrii Savin%
+}
+
+\begin{document}
+  \includepdf[pages=-]{main.pdf}
+\end{document}
