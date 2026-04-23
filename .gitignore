@@ -18,6 +18,11 @@ data/GA_Reports*
 *.fls
 *.fdb_latexmk
 
-# Coursework generated PDFs
-coursework/TEX/main.pdf
-coursework/TEX/watermark.*
+# Coursework generated PDFs and build artifacts
+coursework/TEX/*.pdf
+coursework/TEX/*.out
+coursework/TEX/*.aux
+coursework/TEX/*.log
+coursework/TEX/*.toc
+coursework/TEX/*.synctex.gz
+coursework/TEX/*.xwm
