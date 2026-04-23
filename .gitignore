@@ -17,3 +17,7 @@ data/GA_Reports*
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+
+# Coursework generated PDFs
+coursework/TEX/main.pdf
+coursework/TEX/watermark.*
