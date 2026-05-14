@@ -1,8 +1,14 @@
 duck-test/
 CLAUDE.md
+.agents/
+.codex/
 .omc/
 .claude/
 .~lock*
+
+# Non-site working trees
+coursework/
+data/
 
 # Data / working files (tracked separately or generated)
 data/*.csv
