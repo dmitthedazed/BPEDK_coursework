@@ -8,15 +8,24 @@
 %  ШРИФТИ (XeLaTeX + Times New Roman)
 % ─────────────────────────────────────────────────────────────
 \usepackage{fontspec}
-\setmainfont{Times New Roman}[
-  Script      = Cyrillic,
-  Ligatures   = TeX,
-  Extension   = .ttf,
-  UprightFont = *-Regular,
-  BoldFont    = *-Bold,
-  ItalicFont  = *-Italic,
-]
-\newfontfamily{\cyrillicfont}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]
+\IfFontExistsTF{Times New Roman}{%
+  \setmainfont{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+  \newfontfamily{\cyrillicfont}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+  \newfontfamily{\cyrillicfonttt}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+}{%
+  \setmainfont{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+  \newfontfamily{\cyrillicfont}{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+  \newfontfamily{\cyrillicfonttt}{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+}
 
 % ─────────────────────────────────────────────────────────────
 %  МОВА
@@ -109,9 +118,10 @@
 %  ТАБЛИЦІ ТА РИСУНКИ
 % ─────────────────────────────────────────────────────────────
 \usepackage{graphicx}
+\graphicspath{{./}{resources/}{resources/assets/}{resources/qr/}{resources/logo/}}
 \usepackage{pdfpages}
 \usepackage{array, longtable}
-\usepackage{colortbl}
+\usepackage[table]{xcolor}
 \definecolor{tblhead}{HTML}{D9E1F2}
 \renewcommand{\arraystretch}{1.35}
 \usepackage{caption}
@@ -852,7 +862,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{Анкета для вихователів (зразок)}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_vykhovatel.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_vykhovatel.pdf}}
 \end{center}
 
 \newpage
@@ -860,7 +870,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{Анкета для батьків (зразок)}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_batkiv_30.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_batkiv_30.pdf}}
 \end{center}
 
 \newpage
@@ -1089,14 +1099,14 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{tikzpicture}[
   box/.style={draw, rounded corners=3pt, inner sep=8pt, minimum width=1.1cm, font=\large\bfseries},
   lbl/.style={font=\small\rmfamily, align=center, text width=1.8cm},
-  dash/.style={draw=none, font=\large\bfseries}
+  sep/.style={draw=none, font=\large\bfseries}
 ]
   \node[box, fill=gray!15] (G) {Г};
-  \node[dash, right=4pt of G] (d1) {-};
+  \node[sep, right=4pt of G] (d1) {-};
   \node[box, fill=bartrad!20, right=4pt of d1] (ZZ) {ЗЗ};
-  \node[dash, right=4pt of ZZ] (d2) {-};
+  \node[sep, right=4pt of ZZ] (d2) {-};
   \node[box, fill=baraimin!20, right=4pt of d2] (NN) {НН};
-  \node[dash, right=4pt of NN] (d3) {-};
+  \node[sep, right=4pt of NN] (d3) {-};
   \node[box, fill=baraistr!20, right=4pt of d3] (T) {Tx};
   \node[box, fill=baraivid!20, right=0pt of T] (V) {Vy};
 
@@ -1140,7 +1150,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{QR-аркуш для доступу до онлайн-опитування}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{qr_online_surveys.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{qr_online_surveys.pdf}}
 \end{center}
 
 % ============================================================

@@ -8,15 +8,24 @@
 %  ШРИФТИ (XeLaTeX + Times New Roman)
 % ─────────────────────────────────────────────────────────────
 \usepackage{fontspec}
-\setmainfont{Times New Roman}[
-  Script      = Cyrillic,
-  Ligatures   = TeX,
-  Extension   = .ttf,
-  UprightFont = *-Regular,
-  BoldFont    = *-Bold,
-  ItalicFont  = *-Italic,
-]
-\newfontfamily{\cyrillicfont}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]
+\IfFontExistsTF{Times New Roman}{%
+  \setmainfont{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+  \newfontfamily{\cyrillicfont}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+  \newfontfamily{\cyrillicfonttt}{Times New Roman}[Script=Cyrillic, Ligatures=TeX]%
+}{%
+  \setmainfont{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+  \newfontfamily{\cyrillicfont}{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+  \newfontfamily{\cyrillicfonttt}{Times New Roman}[
+    Path=resources/font/, Extension=.ttf, Script=Cyrillic, Ligatures=TeX,
+    UprightFont=*-Regular, BoldFont=*-Bold, ItalicFont=*-Italic,
+  ]%
+}
 
 % ─────────────────────────────────────────────────────────────
 %  МОВА
@@ -109,6 +118,7 @@
 %  ТАБЛИЦІ ТА РИСУНКИ
 % ─────────────────────────────────────────────────────────────
 \usepackage{graphicx}
+\graphicspath{{./}{resources/}{resources/assets/}{resources/qr/}{resources/logo/}}
 \usepackage{pdfpages}
 \usepackage{booktabs, array, longtable}
 \usepackage{caption}
@@ -667,7 +677,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{Анкета для вихователів (зразок)}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_vykhovatel.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_vykhovatel.pdf}}
 \end{center}
 
 \newpage
@@ -675,7 +685,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{Анкета для батьків (зразок)}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_batkiv_30.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{anketa_batkiv_30.pdf}}
 \end{center}
 
 \newpage
@@ -928,7 +938,7 @@ World Health Organization. Guidelines on physical activity, sedentary behaviour 
 \begin{center}\textbf{QR-аркуш для доступу до онлайн-опитування}\end{center}
 \vspace{2pt}
 \begin{center}
-\fbox{\includegraphics[pages=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{qr_online_surveys.pdf}}
+\fbox{\includegraphics[page=1, width=\textwidth, height=\dimexpr\textheight-3\baselineskip\relax, keepaspectratio]{qr_online_surveys.pdf}}
 \end{center}
 
 % ============================================================
