@@ -448,3 +448,46 @@ body[class*="story-"] {
   .story-content p { font-size: 1rem; line-height: 1.78; }
   .story-header h1 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
 }
+
+/* ── ACADEMIC THEME ALIGNMENT ── */
+.hub-layout,
+.story-layout {
+  max-width: 800px;
+}
+
+.hub-header h1,
+.story-header h1,
+.hub-section-head h2 {
+  color: var(--accent);
+}
+
+.mat-card,
+.story-content {
+  border-radius: 2px;
+  background: #fff;
+  border-color: var(--line);
+  box-shadow: none;
+}
+
+.mat-card strong,
+.mat-card span,
+.story-content p {
+  color: var(--ink2);
+}
+
+.story-content {
+  padding: 34px 30px;
+}
+
+.story-content::before,
+.story-content::after {
+  display: none;
+}
+
+.story-content p:first-of-type::first-letter {
+  color: var(--accent);
+}
+
+.story-home-btn {
+  font-family: "Inter", system-ui, sans-serif;
+}

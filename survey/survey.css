@@ -309,6 +309,113 @@ body.is-in-app-browser #goNowBtn:hover {
   text-align: center;
 }
 
+/* ── SURVEY CLOSED STATE ── */
+.badge-closed {
+  color: #16a34a;
+  border-color: rgba(22,163,74,0.25);
+  background: rgba(22,163,74,0.08);
+}
+
+.badge-closed::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+  flex-shrink: 0;
+  animation: none;
+  opacity: 1;
+}
+
+.closed-title {
+  background: linear-gradient(
+    90deg,
+    var(--ink) 0%,
+    #16a34a 35%,
+    var(--ink) 50%,
+    #16a34a 65%,
+    var(--ink) 100%
+  ) !important;
+  background-size: 200% auto !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  animation: text-shimmer 8s linear infinite !important;
+}
+
+.closed-info {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  gap: clamp(8px, 1.5vh, 14px);
+  margin-bottom: clamp(2px, 0.5vh, 4px);
+}
+
+.closed-status {
+  position: relative;
+  width: 100%;
+  background: rgba(22,163,74,0.06);
+  border: 1px solid rgba(22,163,74,0.2);
+  border-radius: var(--radius-md);
+  padding: clamp(10px, 1.8vh, 14px) 14px;
+}
+
+.closed-status-text {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ink2);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.closed-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.closed-home-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: clamp(10px, 1.8vh, 13px) 16px;
+  font-family: "Manrope", sans-serif;
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+  font-weight: 700;
+  background: var(--btn-grad);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 22px var(--theme-glow);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.closed-home-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px var(--theme-glow);
+}
+
+.closed-home-btn:active { transform: translateY(0); }
+
+.closed-home-btn:focus-visible {
+  outline: 3px solid var(--theme-mid);
+  outline-offset: 2px;
+}
+
 /* ── RESPONSIVE ── */
 
 /* Small phones (≤ 390px) */
@@ -379,6 +486,11 @@ body.page-exit .redirect-gif {
   .inapp-prompt {
     background: linear-gradient(180deg, rgba(28, 34, 46, 0.9), rgba(20, 24, 34, 0.82));
     box-shadow: none;
+  }
+
+  .closed-status {
+    background: rgba(22,163,74,0.12);
+    border-color: rgba(22,163,74,0.25);
   }
 }
 
