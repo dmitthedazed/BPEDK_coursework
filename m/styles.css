@@ -1,88 +1,53 @@
-/* ━━━━  MATERIALS HUB & FAIRY TALE PAGES  ━━━━
-   Inherits tokens from shared.css
-   ────────────────────────────────────────────── */
+/* ════════════════════════════════════════
+   HUB + STORY PAGES — Extensions
+   Base tokens, reset, layout from shared.css.
+   This file adds only hub-specific grids and story color themes.
+   ════════════════════════════════════════ */
 
-/* ══════════════════════════════════════
-   HUB PAGE  (m/index.html)
-   ══════════════════════════════════════ */
-
-.hub-layout {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 48px 40px 80px;
+/* ── Hub body radial gradients ── */
+body.hub-body {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    var(--noise);
+  background-size: 48px 48px, 48px 48px, 200px 200px;
 }
 
-.hub-header {
-  margin-bottom: 48px;
+@media (prefers-color-scheme: dark) {
+  body.hub-body {
+    background-image:
+      linear-gradient(to right, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+      linear-gradient(to bottom, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+      var(--noise);
+  }
 }
 
-.hub-header h1 {
-  font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: -0.01em;
-  margin: 16px 0 12px;
-}
-
-.hub-lead {
-  color: var(--ink2);
-  font-size: 0.95rem;
-  line-height: 1.65;
-  max-width: 58ch;
-}
-
-.hub-lead code {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 0.9em;
-  background: var(--bg2);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 1px 7px;
-  color: var(--ink2);
-}
-
-.hub-pills {
-  margin-top: 16px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.hub-pills span {
-  display: inline-block;
-  padding: 5px 12px;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(200,65,10,0.06);
-  border: 1px solid rgba(200,65,10,0.2);
-}
-
-/* ── HUB SECTIONS ── */
+/* ── Hub sections ── */
 .hub-section {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .hub-section-head {
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .hub-section-head h2 {
-  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  font-weight: 750;
+  color: var(--ink);
   margin-bottom: 6px;
 }
 
 .hub-section-head p {
-  color: var(--ink3);
-  font-size: 0.88rem;
+  color: var(--ink-3);
+  font-size: 0.92rem;
   line-height: 1.55;
 }
 
-/* ── GRID ── */
+/* ── Hub grid ── */
 .hub-grid {
   display: grid;
-  gap: 12px;
+  gap: 20px;
   grid-template-columns: 1fr;
 }
 
@@ -90,185 +55,13 @@
   .hub-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
   .hub-grid--3 { grid-template-columns: repeat(3, 1fr); }
 }
 
-/* ── MATERIAL CARD ── */
-.mat-card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  padding: 16px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  background: var(--card);
-  text-decoration: none;
-  color: var(--ink);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: transform 150ms, box-shadow 150ms, border-color 150ms;
-}
-
-.mat-card:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
-  border-color: rgba(200,65,10,0.2);
-}
-
-.mat-card strong {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-}
-
-.mat-card span {
-  color: var(--ink3);
-  font-size: 0.82rem;
-}
-
-.mat-card--video {
-  border-left: 3px solid var(--edu);
-}
-
-.mat-card--text {
-  border-left: 3px solid var(--accent);
-}
-
-/* ── HUB ACTIONS ── */
-.hub-actions {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: 1fr;
-  margin-top: 8px;
-}
-
-@media (min-width: 540px) {
-  .hub-actions { grid-template-columns: repeat(2, 1fr); }
-}
-
-.hub-action-card {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 14px 18px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--line);
-  background: var(--card);
-  text-decoration: none;
-  color: var(--ink);
-  font-weight: 600;
-  font-size: 0.88rem;
-  transition: transform 150ms, box-shadow 150ms;
-  backdrop-filter: blur(8px);
-}
-
-.hub-action-card:hover {
-  transform: translateX(4px);
-  box-shadow: var(--shadow-sm);
-}
-
-.hub-action-card span {
-  color: var(--ink3);
-  font-weight: 400;
-  font-size: 0.78rem;
-  margin-left: auto;
-}
-
-
-/* ══════════════════════════════════════
-   FAIRY TALE / STORY PAGES
-   ══════════════════════════════════════ */
-
-.story-layout {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 52px 40px 96px;
-  flex: 1;
-}
-
-.story-header {
-  margin-bottom: 12px;
-}
-
-.story-header h1 {
-  font-size: clamp(1.85rem, 4vw, 2.6rem);
-  letter-spacing: 0.01em;
-  text-wrap: balance;
-  margin-top: 16px;
-  color: var(--story-title, var(--ink));
-}
-
-/* ── STORY CONTENT CARD ── */
-.story-content {
-  margin-top: 24px;
-  border: 1px solid var(--story-border, var(--line));
-  border-radius: var(--radius-lg);
-  background: var(--story-text-bg, rgba(255,255,255,0.72));
-  padding: 36px 32px;
-  position: relative;
-  box-shadow:
-    0 8px 24px rgba(26,18,8,0.05),
-    inset 0 1px 0 rgba(255,255,255,0.64);
-}
-
-/* decorative corner dots */
-.story-content::before,
-.story-content::after {
-  content: "";
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: linear-gradient(140deg,
-    var(--story-deco-a, rgba(200,65,10,0.4)),
-    var(--story-deco-b, rgba(26,86,160,0.3))
-  );
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.5);
-}
-
-.story-content::before { top: 14px; right: 14px; }
-.story-content::after  { bottom: 14px; left: 14px; }
-
-.story-content p {
-  margin-top: 18px;
-  color: var(--story-ink, var(--ink2));
-  font-size: 1.06rem;
-  line-height: 1.85;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.story-content p:first-of-type { margin-top: 0; }
-
-.story-content p:first-of-type::first-letter {
-  float: left;
-  margin-right: 10px;
-  margin-top: 4px;
-  font-family: "Instrument Serif", serif;
-  font-size: 3em;
-  line-height: 0.84;
-  color: var(--story-dropcap, var(--accent));
-  text-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-/* ── STORY HOME LINK ── */
-.story-home-btn {
-  display: block;
-  margin-top: 20px;
-  font-size: 0.8rem;
-  color: var(--ink3);
-  text-decoration: none;
-  text-align: center;
-  transition: color 150ms;
-}
-
-.story-home-btn:hover { color: var(--accent); }
-
-
-/* ══════════════════════════════════════
+/* ════════════════════════════════════════
    STORY COLOR THEMES
-   ══════════════════════════════════════ */
+   ════════════════════════════════════════ */
 
 /* T1: Спасибі (green) */
 .story-thanks {
@@ -387,31 +180,32 @@
   --story-deco-b: rgba(14,165,233,0.3);
 }
 
-/* ── Story body background tints ── */
-body[class*="story-"] {
-  display: flex;
-  flex-direction: column;
-  background-image:
-    radial-gradient(ellipse 70% 50% at 10% 0%, var(--story-bg-a, rgba(200,65,10,0.07)), transparent),
-    radial-gradient(ellipse 60% 40% at 90% 100%, var(--story-bg-b, rgba(26,86,160,0.06)), transparent),
-    var(--noise);
-}
-
-/* ══════════════════════════════════════
+/* ════════════════════════════════════════
    DARK THEME — STORY PAGES
-   ══════════════════════════════════════ */
+   ════════════════════════════════════════ */
 
 @media (prefers-color-scheme: dark) {
-  /* Shared overrides: dark card, readable warm ink, subtle border */
+  .mat-card, .hub-action-card {
+    background: var(--surface);
+    border-color: var(--line);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .mat-card:hover, .hub-action-card:hover {
+    background: var(--surface);
+    border-color: var(--accent);
+    box-shadow: var(--shadow-lg);
+  }
+
   body[class*="story-"] {
-    --story-text-bg: rgba(255,255,255,0.09); /* ~#26231e over #100d08 page */
-    --story-border:  rgba(255,255,255,0.10);
-    --story-ink:     #c4b89a;               /* ~8:1 contrast on dark card */
+    --story-text-bg: rgba(15, 23, 34, 0.96);
+    --story-border:  var(--line);
+    --story-ink:     #c4b89a;
     --story-deco-a:  rgba(200,65,10,0.55);
     --story-deco-b:  rgba(26,86,160,0.45);
   }
 
-  /* Per-story: bright themed titles & drop caps for dark page */
+  /* Per-story: bright themed titles and drop caps for dark page */
   .story-thanks    { --story-title: #4ade80;  --story-dropcap: #4ade80;  }
   .story-oak       { --story-title: #fcd34d;  --story-dropcap: #fcd34d;  }
   .story-kitten    { --story-title: #f472b6;  --story-dropcap: #f472b6;  }
@@ -423,60 +217,76 @@ body[class*="story-"] {
   .story-sun-bunny { --story-title: #38bdf8;  --story-dropcap: #38bdf8;  }
 
   .story-content {
+    background: var(--surface);
+    border-color: var(--line);
     box-shadow:
-      0 8px 32px rgba(0,0,0,0.5),
+      0 12px 40px rgba(0,0,0,0.5),
       inset 0 1px 0 rgba(255,255,255,0.06);
+  }
+
+  .story-content p {
+    color: var(--ink-2);
   }
 
   .story-content::before,
   .story-content::after {
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.6);
   }
 }
 
-/* ══════════════════════════════════════
+/* ════════════════════════════════════════
    RESPONSIVE
-   ══════════════════════════════════════ */
+   ════════════════════════════════════════ */
 
 @media (max-width: 768px) {
   .hub-layout { padding: 32px 20px 60px; }
+  .hub-actions { grid-template-columns: 1fr; }
   .story-layout { padding: 36px 20px 72px; }
 }
 
 @media (max-width: 480px) {
-  .story-content { padding: 24px 18px; border-radius: 18px; }
+  .story-content { padding: 24px 18px; border-radius: 3px; }
   .story-content p { font-size: 1rem; line-height: 1.78; }
   .story-header h1 { font-size: clamp(1.6rem, 7vw, 2.1rem); }
 }
 
-/* ── ACADEMIC THEME ALIGNMENT ── */
-.hub-layout,
-.story-layout {
-  max-width: 800px;
+/* ── Landing-style unification across hub and material pages ── */
+body[class*="story-"] {
+  --story-bg-a: color-mix(in srgb, var(--accent) 5.5%, transparent);
+  --story-bg-b: color-mix(in srgb, var(--accent) 5.5%, transparent);
+  --story-border: var(--line);
+  --story-title: var(--ink);
+  --story-ink: var(--ink-2);
+  --story-dropcap: var(--accent);
+  --story-text-bg: var(--surface);
+  --story-deco-a: var(--accent);
+  --story-deco-b: var(--accent);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    var(--noise);
+  background-size: 48px 48px, 48px 48px, 200px 200px;
 }
 
-.hub-header h1,
-.story-header h1,
-.hub-section-head h2 {
-  color: var(--accent);
+.hub-section-head h2,
+.story-header h1 {
+  color: var(--ink);
+  letter-spacing: 0;
 }
 
+.hub-pills span,
 .mat-card,
-.story-content {
-  border-radius: 2px;
-  background: #fff;
-  border-color: var(--line);
-  box-shadow: none;
+.hub-action-card,
+.story-content,
+.story-home-btn,
+.origin-disclosure {
+  border-radius: 3px;
 }
 
-.mat-card strong,
-.mat-card span,
-.story-content p {
-  color: var(--ink2);
-}
-
-.story-content {
-  padding: 34px 30px;
+.mat-card--video,
+.mat-card--text {
+  border-left-width: 1px;
+  border-left-color: var(--line);
 }
 
 .story-content::before,
@@ -484,10 +294,9 @@ body[class*="story-"] {
   display: none;
 }
 
-.story-content p:first-of-type::first-letter {
-  color: var(--accent);
-}
-
-.story-home-btn {
-  font-family: "Inter", system-ui, sans-serif;
+@media (prefers-color-scheme: dark) {
+  body[class*="story-"] {
+    --story-title: var(--ink);
+    --story-dropcap: var(--accent);
+  }
 }

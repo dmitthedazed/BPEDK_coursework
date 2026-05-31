@@ -1,0 +1,406 @@
+/* ════════════════════════════════════════
+   PAPER VIEWER — sidebar + PDF embed
+   ════════════════════════════════════════ */
+
+.paper-viewer-page {
+  background: var(--bg);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    var(--noise);
+  background-size: 48px 48px, 48px 48px, 200px 200px;
+  overflow: hidden;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* ── LAYOUT ── */
+.paper-viewer-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  height: 100vh;
+  height: 100dvh;
+}
+
+/* ── SIDEBAR ── */
+.paper-sidebar {
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  border-right: 1px solid var(--line);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.sidebar-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.sidebar-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--ink-3);
+  text-decoration: none;
+  transition: color var(--dur-fast);
+}
+
+.sidebar-back:hover { color: var(--accent); }
+
+.sidebar-back .material-symbols-outlined {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* Paper info card */
+.sidebar-card {
+  padding: 18px 16px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.sidebar-title {
+  font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.sidebar-author {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-2);
+  margin-bottom: 2px;
+}
+
+.sidebar-year {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+  margin-bottom: 10px;
+}
+
+.sidebar-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+}
+
+.sidebar-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-3);
+}
+
+.sidebar-meta-item .material-symbols-outlined {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #fff;
+  background: var(--accent);
+  padding: 9px 14px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+}
+
+.sidebar-download:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.sidebar-download .material-symbols-outlined {
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+}
+
+/* TOC */
+.sidebar-toc {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+
+.sidebar-toc-title {
+  padding: 0 16px 10px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-list li {
+  margin: 0;
+}
+
+.toc-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 16px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  text-decoration: none;
+  transition: background var(--dur-fast), color var(--dur-fast);
+  border-left: 2px solid transparent;
+}
+
+.toc-link:hover {
+  background: var(--bg-2);
+  color: var(--accent);
+}
+
+.toc-link.active {
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+  border-left-color: var(--accent);
+}
+
+.toc-link span {
+  font-size: 0.68rem;
+  font-weight: 500;
+  color: var(--ink-4);
+  white-space: nowrap;
+}
+
+.toc-chapter > .toc-link {
+  font-weight: 700;
+  color: var(--ink);
+  padding-top: 10px;
+}
+
+.toc-sublist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-sublist .toc-link {
+  padding-left: 28px;
+  font-size: 0.72rem;
+  font-weight: 500;
+}
+
+/* Citation guide */
+.sidebar-cite {
+  padding: 14px 0 24px;
+}
+
+.sidebar-cite-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 16px 10px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin: 0;
+}
+
+.sidebar-cite-title .material-symbols-outlined {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+
+.sidebar-cite-intro {
+  padding: 0 16px 10px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.74rem;
+  color: var(--ink-3);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.cite-details {
+  margin: 0;
+}
+
+.cite-details[open] {
+  margin-bottom: 8px;
+}
+
+.cite-details summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  list-style: none;
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+
+.cite-details summary::-webkit-details-marker { display: none; }
+
+.cite-details summary::after {
+  content: "+";
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--line);
+  color: var(--ink-3);
+  background: var(--bg-2);
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.cite-details[open] summary::after { content: "−"; }
+
+.cite-details summary:hover {
+  background: var(--bg-2);
+  color: var(--accent);
+}
+
+.cite-block {
+  padding: 0 16px 4px;
+}
+
+.cite-block pre {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 12px;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--ink-2);
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
+  user-select: text;
+  margin: 0;
+}
+
+/* ── PDF EMBED ── */
+.paper-main-viewer {
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  background:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 4%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 4%, transparent) 1px, transparent 1px),
+    var(--bg-2);
+  background-size: 48px 48px, 48px 48px;
+}
+
+.paper-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ── SIDEBAR TOGGLE (mobile) ── */
+.sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--r-full);
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: 200;
+  grid: place-items;
+}
+
+.sidebar-toggle .material-symbols-outlined {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 140;
+}
+
+.sidebar-overlay.active {
+  display: block;
+}
+
+/* ── PRINT ── */
+@media print {
+  .paper-sidebar, .sidebar-toggle { display: none !important; }
+  .paper-viewer-layout { grid-template-columns: 1fr; }
+  .paper-viewer-page { overflow: auto; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .paper-viewer-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .paper-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: min(340px, 90vw);
+    z-index: 150;
+    transform: translateX(-100%);
+    transition: transform 300ms var(--ease-out);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .paper-sidebar.open {
+    transform: translateX(0);
+  }
+
+  .sidebar-toggle {
+    display: grid;
+  }
+}

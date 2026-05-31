@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Оберіть анкету для участі в дослідженні: для вихователів закладів дошкільної освіти або для батьків дошкільнят." />
+  <title>Анкети дослідження — оберіть роль</title>
+  <link rel="canonical" href="https://dmitthedazed.github.io/BPEDK_coursework/survey/" />
+  <meta name="robots" content="noindex,follow" />
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="../assets/shared.css" />
+  <link rel="stylesheet" href="./survey.css" />
+  <style>
+    .survey-hub {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: clamp(16px, 4vw, 40px);
+      min-height: calc(100svh - 72px);
+    }
+    .survey-hub-card {
+      width: min(100%, 520px);
+      text-align: center;
+      animation: rise-in 560ms cubic-bezier(0.22, 0.9, 0.22, 1) both;
+      border-radius: 3px;
+      background: var(--surface);
+      box-shadow: 0 18px 60px color-mix(in srgb, var(--accent) 10%, transparent);
+    }
+    .survey-hub-title {
+      font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+      font-size: clamp(1.4rem, 4.5vw, 2rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: clamp(8px, 1.5vh, 14px);
+    }
+    .survey-hub-subtitle {
+      color: var(--ink-2);
+      font-size: clamp(0.85rem, 2.2vw, 0.95rem);
+      line-height: 1.55;
+      margin-bottom: clamp(20px, 3vh, 32px);
+    }
+    .survey-hub-actions {
+      display: grid;
+      gap: clamp(10px, 1.8vh, 14px);
+    }
+    .survey-hub-btn {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: clamp(14px, 2.2vh, 18px) 18px;
+      border-radius: 3px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      text-decoration: none;
+      font-family: "Inter", system-ui, sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.9rem, 2.4vw, 1rem);
+      transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+      box-shadow: var(--shadow-sm);
+    }
+    .survey-hub-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+    .survey-hub-btn:active {
+      transform: translateY(0);
+    }
+    .survey-hub-btn:focus-visible {
+      outline: 3px solid var(--theme-mid);
+      outline-offset: 2px;
+    }
+    .survey-hub-btn--edu {
+      border-color: color-mix(in srgb, var(--edu) 22%, transparent);
+      background: var(--surface);
+    }
+    .survey-hub-btn--edu:hover {
+      border-color: var(--edu);
+    }
+    .survey-hub-btn--par {
+      border-color: color-mix(in srgb, var(--par) 22%, transparent);
+      background: var(--surface);
+    }
+    .survey-hub-btn--par:hover {
+      border-color: var(--par);
+    }
+    .survey-hub-btn__icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 3px;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .survey-hub-btn--edu .survey-hub-btn__icon {
+      background: color-mix(in srgb, var(--edu) 10%, transparent);
+      color: var(--edu);
+    }
+    .survey-hub-btn--par .survey-hub-btn__icon {
+      background: color-mix(in srgb, var(--par) 10%, transparent);
+      color: var(--par);
+    }
+    .survey-hub-btn__meta {
+      margin-left: auto;
+      color: var(--ink-3);
+      font-size: 0.78rem;
+      font-weight: 500;
+    }
+    .survey-hub-note {
+      margin-top: clamp(14px, 2.2vh, 20px);
+      font-size: 0.76rem;
+      color: var(--ink-3);
+    }
+    @media (prefers-color-scheme: dark) {
+      .survey-hub-btn--edu {
+        border-color: rgba(96,165,250,0.22);
+        background: linear-gradient(180deg, rgba(96,165,250,0.08), rgba(96,165,250,0.02));
+      }
+      .survey-hub-btn--edu .survey-hub-btn__icon {
+        background: rgba(96,165,250,0.14);
+        color: #60a5fa;
+      }
+      .survey-hub-btn--par {
+        border-color: rgba(192,132,252,0.22);
+        background: linear-gradient(180deg, rgba(192,132,252,0.08), rgba(192,132,252,0.02));
+      }
+      .survey-hub-btn--par .survey-hub-btn__icon {
+        background: rgba(192,132,252,0.14);
+        color: #c084fc;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="site-nav-logo" href="../">Курсова · 2026</a>
+    <a class="site-nav-back" href="../">На головну →</a>
+  </nav>
+
+  <main class="survey-hub">
+    <div class="survey-hub-card glass-card">
+      <h1 class="survey-hub-title">Оберіть анкету</h1>
+      <p class="survey-hub-subtitle">
+        Дослідження психологічної безпеки та педагогічної доцільності ШІ-контенту для дошкільників.
+      </p>
+
+      <nav class="survey-hub-actions" aria-label="Вибір анкети">
+        <a class="survey-hub-btn survey-hub-btn--edu" href="educators/">
+          <span class="survey-hub-btn__icon" aria-hidden="true">&#9998;</span>
+          <span>Анкета для вихователів ЗДО</span>
+          <span class="survey-hub-btn__meta">educators</span>
+        </a>
+        <a class="survey-hub-btn survey-hub-btn--par" href="parents/">
+          <span class="survey-hub-btn__icon" aria-hidden="true">&#9998;</span>
+          <span>Анкета для батьків дошкільнят</span>
+          <span class="survey-hub-btn__meta">parents</span>
+        </a>
+      </nav>
+
+      <p class="survey-hub-note">Курсова робота · Савін Д.С. · 2026</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
+    <a href="../">На головну →</a>
+  </footer>
+
+  <script src="../assets/shared.js?v=3" defer></script>
+</body>
+</html>

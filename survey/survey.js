@@ -176,7 +176,8 @@
   }
 
   const inAppBrowser = detectInAppBrowser();
-  let allowAutoRedirect = !inAppBrowser;
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  let allowAutoRedirect = !inAppBrowser && !isLocalhost;
 
   function showInAppBrowserPrompt() {
     if (!inAppBrowser || !subtitleEl) {

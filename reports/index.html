@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S590QSD215"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S590QSD215', { 'debug_mode': location.hostname === 'localhost' || location.hostname === '127.0.0.1' });
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Звітні CSV-файли з відповідями батьків і вихователів: дані з Google Forms і вручну перенесені паперові анкети." />
+  <title>Звітність — Курсова робота 2026</title>
+  <link rel="canonical" href="https://dmitthedazed.github.io/BPEDK_coursework/reports/" />
+  <link rel="stylesheet" href="../assets/shared.css" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Дослідження БПФК · 2026" />
+  <meta property="og:title" content="Звітність до курсової роботи" />
+  <meta property="og:description" content="CSV-файли з відповідями батьків і вихователів для дослідження." />
+  <meta property="og:url" content="https://dmitthedazed.github.io/BPEDK_coursework/reports/" />
+  <link rel="stylesheet" href="../assets/reports.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <a class="site-nav-logo" href="../">Курсова · 2026</a>
+    <a class="site-nav-back" href="../">На головну →</a>
+  </nav>
+
+  <main class="reports-layout">
+    <header class="reports-header">
+      <div class="section-label">Дані опитування</div>
+      <h1>Звітність</h1>
+      <p class="reports-lead">
+        CSV-файли з відповідями респондентів, підготовлені для подальшого аналізу
+        результатів опитування батьків і вихователів.
+      </p>
+    </header>
+
+    <section class="reports-grid" aria-label="Файли для завантаження">
+      <article class="report-card">
+        <div>
+          <h2>Відповіді батьків</h2>
+          <p>Повний CSV-набір відповідей батьків щодо дитячого медіаспоживання та ставлення до ШІ-контенту.</p>
+          <div class="report-meta">
+            <span>CSV</span>
+            <span>Батьки</span>
+          </div>
+        </div>
+        <a class="report-download" href="../data/responses_parents_all.csv" download>Завантажити CSV</a>
+        <div class="report-preview">
+          <h3>Перші записи <span>82 рядки</span></h3>
+          <div class="preview-scroll">
+            <table class="preview-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Матеріали</th>
+                  <th>Вік</th>
+                  <th>YouTube</th>
+                  <th>Оцінки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P-04-04</td>
+                  <td>T7 text / V1 video</td>
+                  <td>5</td>
+                  <td>2/5</td>
+                  <td>2 / 4</td>
+                </tr>
+                <tr>
+                  <td>P-04-03</td>
+                  <td>T2 text / V5 video</td>
+                  <td>6</td>
+                  <td>1/5</td>
+                  <td>4 / 3</td>
+                </tr>
+                <tr>
+                  <td>P-03-06</td>
+                  <td>T8 text / V3 video</td>
+                  <td>4</td>
+                  <td>1/5</td>
+                  <td>4 / 4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+
+      <article class="report-card">
+        <div>
+          <h2>Відповіді вихователів</h2>
+          <p>Повний CSV-набір відповідей вихователів для порівняння оцінок і професійного погляду на матеріали корпусу.</p>
+          <div class="report-meta">
+            <span>CSV</span>
+            <span>Вихователі</span>
+          </div>
+        </div>
+        <a class="report-download" href="../data/responses_educators_all.csv" download>Завантажити CSV</a>
+        <div class="report-preview">
+          <h3>Перші записи <span>62 рядки</span></h3>
+          <div class="preview-scroll">
+            <table class="preview-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Матеріали</th>
+                  <th>Стаж</th>
+                  <th>YouTube</th>
+                  <th>Оцінки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>E-04-06</td>
+                  <td>T2 text / V4 video</td>
+                  <td>23</td>
+                  <td>3/5</td>
+                  <td>4 / 2</td>
+                </tr>
+                <tr>
+                  <td>E-04-05</td>
+                  <td>T7 text / V3 video</td>
+                  <td>17</td>
+                  <td>3/5</td>
+                  <td>5 / 2</td>
+                </tr>
+                <tr>
+                  <td>E-01-03</td>
+                  <td>T9 text / V2 video</td>
+                  <td>8</td>
+                  <td>4/5</td>
+                  <td>4 / 4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="data-note" aria-label="Пояснення складу CSV">
+      <div>
+        <h2>Що входить у CSV</h2>
+        <p>
+          Обидва файли об'єднують електронні та паперові відповіді, щоб у
+          подальшому аналізі використовувався один повний масив даних.
+        </p>
+      </div>
+      <ul class="data-note-list">
+        <li>
+          <strong>Google Forms</strong>
+          <span>Електронні відповіді респондентів, експортовані з Google Forms.</span>
+        </li>
+        <li>
+          <strong>Паперові анкети</strong>
+          <span>Відскановані бланки з raw-масивів нижче також внесені до CSV.</span>
+        </li>
+        <li>
+          <strong>Оцифрування</strong>
+          <span>
+            Перенесення паперових анкет виконувалося через
+            <a href="../data-entry/">data-entry</a>; усі відповіді читалися та вводилися вручну.
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="scan-panel" aria-label="Raw-скани паперових опитувальників">
+      <div class="scan-head">
+        <div>
+          <h2>Raw-скани паперових опитувальників</h2>
+          <p>Оригінальні PDF-скани паперових масивів відповідей. Файли великі, тому відкриття або завантаження може зайняти трохи часу.</p>
+        </div>
+        <div class="scan-badge">4 PDF</div>
+      </div>
+
+      <div class="scan-grid">
+        <article class="scan-card">
+          <div>
+            <strong>Масив 1</strong>
+            <span>PDF · 23 MB</span>
+          </div>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_1.pdf" download>Завантажити</a>
+        </article>
+        <article class="scan-card">
+          <div>
+            <strong>Масив 2</strong>
+            <span>PDF · 31 MB</span>
+          </div>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_2.pdf" download>Завантажити</a>
+        </article>
+        <article class="scan-card">
+          <div>
+            <strong>Масив 3</strong>
+            <span>PDF · 28 MB</span>
+          </div>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_3.pdf" download>Завантажити</a>
+        </article>
+        <article class="scan-card">
+          <div>
+            <strong>Масив 4</strong>
+            <span>PDF · 986 KB</span>
+          </div>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_4.pdf" download>Завантажити</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
+    <a href="../">На головну →</a>
+  </footer>
+
+  <script src="../assets/shared.js?v=3" defer></script>
+  <script src="../assets/analytics.js?v=2" defer></script>
+</body>
+</html>

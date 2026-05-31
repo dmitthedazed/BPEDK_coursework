@@ -1,118 +1,39 @@
 <!doctype html>
 <html lang="uk">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S590QSD215"></script>
+  <script src="../assets/shared.js?v=3" defer></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S590QSD215', { 'debug_mode': location.hostname === 'localhost' || location.hostname === '127.0.0.1' });
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Локальний інструмент для внесення та збереження паперових анкет до курсової роботи про психологічну безпеку ШІ-контенту для дошкільників." />
   <title>Внесення анкет — локальний інструмент</title>
   <link rel="stylesheet" href="../assets/shared.css" />
-  <style>
-    body { min-height: 100vh; }
-    .wrap { max-width: 1200px; margin: 0 auto; padding: 32px 20px 64px; }
-    .hero { display: grid; gap: 10px; margin-bottom: 24px; }
-    .hero p { color: var(--ink2); max-width: 70ch; }
-    .layout { display: grid; grid-template-columns: 340px 1fr; gap: 20px; align-items: start; }
-    .panel { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); padding: 20px; }
-    .panel h2, .panel h3 { font-family: "Bricolage Grotesque", sans-serif; font-size: 1rem; margin-bottom: 10px; }
-    .stack { display: grid; gap: 14px; }
-    .field { display: grid; gap: 6px; }
-    .field label { font-size: 0.86rem; font-weight: 700; color: var(--ink2); }
-    .field input, .field select, .field textarea {
-      width: 100%; border: 1px solid var(--line); border-radius: 12px; padding: 11px 12px;
-      font: inherit; color: var(--ink); background: #fff;
-    }
-    .field textarea { min-height: 88px; resize: vertical; }
-    .muted { color: var(--ink3); font-size: 0.84rem; }
-    .meta-grid { display: grid; gap: 8px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .meta-item { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; }
-    .meta-item b { display: block; font-size: 0.75rem; color: var(--ink3); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.04em; }
-    .toolbar { display: flex; flex-wrap: wrap; gap: 10px; }
-    .questions { display: grid; gap: 18px; }
-    .question-group { display: grid; gap: 12px; padding: 16px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,0.52); }
-    .question-group h3 { margin-bottom: 0; }
-    .option-list { display: grid; gap: 8px; }
-    .option-list.inline { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 8px 12px; }
-    .option { display: flex; align-items: center; gap: 8px; font-size: 0.94rem; }
-    .option input { width: auto; }
-    .rating { display: flex; gap: 10px; flex-wrap: wrap; }
-    .rating label { display: inline-flex; align-items: center; gap: 5px; font-weight: 600; }
-    .sample-block { border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: grid; gap: 12px; background: var(--bg2); }
-    .sample-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; }
-    .sample-head h4 { font-family: "Bricolage Grotesque", sans-serif; font-size: 0.95rem; }
-    .sample-code { font-size: 0.84rem; color: var(--ink3); }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; font-size: 0.9rem; }
-    th { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--ink3); }
-    .empty { padding: 18px; border: 1px dashed var(--line); border-radius: 16px; color: var(--ink3); text-align: center; }
-    .hidden { display: none; }
-    .status { padding: 10px 12px; border-radius: 12px; font-size: 0.9rem; }
-    .status.error { background: rgba(185, 28, 28, 0.08); color: #991b1b; border: 1px solid rgba(185, 28, 28, 0.18); }
-    .status.ok { background: rgba(5, 150, 105, 0.08); color: #065f46; border: 1px solid rgba(5, 150, 105, 0.18); }
-    @media (prefers-color-scheme: dark) {
-      .panel,
-      .question-group,
-      .sample-block,
-      .meta-item,
-      .empty {
-        background: rgba(28, 23, 16, 0.92);
-        border-color: rgba(240,232,218,0.12);
-      }
-      .question-group,
-      .sample-block,
-      .meta-item { box-shadow: none; }
-      .field input,
-      .field select,
-      .field textarea {
-        background: #16110b;
-        color: var(--ink);
-        border-color: rgba(240,232,218,0.14);
-      }
-      .field input::placeholder,
-      .field textarea::placeholder { color: var(--ink3); }
-      .field label,
-      .sample-code,
-      th,
-      .muted,
-      .meta-item b { color: #d5c7b3; }
-      .meta-item span,
-      td,
-      .option,
-      .inapp-prompt-copy,
-      .empty,
-      .hero p { color: var(--ink2); }
-      table { background: transparent; }
-      th, td { border-bottom-color: rgba(240,232,218,0.12); }
-      .status.error {
-        background: rgba(248, 113, 113, 0.12);
-        color: #fecaca;
-        border-color: rgba(248, 113, 113, 0.25);
-      }
-      .status.ok {
-        background: rgba(52, 211, 153, 0.12);
-        color: #bbf7d0;
-        border-color: rgba(52, 211, 153, 0.25);
-      }
-      .btn--ghost {
-        color: var(--ink);
-        border-color: rgba(240,232,218,0.14);
-        background: rgba(255,255,255,0.02);
-      }
-      .btn--ghost:hover { background: rgba(255,255,255,0.05); }
-    }
-    @media (max-width: 960px) { .layout { grid-template-columns: 1fr; } }
-  </style>
+  <link rel="stylesheet" href="../assets/data-entry.css" />
 </head>
-<body>
-  <div class="wrap">
-    <header class="hero">
-      <span class="badge">Локальний інструмент</span>
+<body data-page-type="data-entry">
+  <nav class="site-nav">
+    <a class="site-nav-logo" href="../">Курсова · 2026</a>
+    <a class="site-nav-back" href="../">На головну →</a>
+  </nav>
+
+  <main class="wrap">
+    <header class="hero-header">
+      <div class="section-label">Локальний інструмент</div>
       <h1>Внесення паперових анкет</h1>
-      <p>Введи ID анкети, і сторінка сама визначить, чия це анкета та які зразки в ній закладені. Далі просто накликуй відповіді й зберігай рядки у локальну таблицю.</p>
+      <p class="hero-lead">Введи ID анкет, і сторінка сама визначить, чия це анкета та які зразки в ній закладені. Далі просто накликуй відповіді й зберігай рядки у локальну таблицю.</p>
     </header>
 
     <div class="layout">
       <aside class="panel stack">
         <div class="field">
-          <label for="questionnaireId">ID анкети</label>
+          <label for="questionnaireId">ID анкет</label>
           <input id="questionnaireId" type="text" placeholder="Напр.: Б-03-07-T2V1 або В-01-01-T6V4" />
         </div>
         <div class="field">
@@ -132,7 +53,7 @@
         <div class="meta-grid" id="metaGrid">
           <div class="meta-item"><b>Група</b><span id="metaGroup">—</span></div>
           <div class="meta-item"><b>Код закладу</b><span id="metaInstitution">—</span></div>
-          <div class="meta-item"><b>№ анкети</b><span id="metaQuestionnaireNumber">—</span></div>
+          <div class="meta-item"><b>№ анкет</b><span id="metaQuestionnaireNumber">—</span></div>
           <div class="meta-item"><b>Код тексту</b><span id="metaText">—</span></div>
           <div class="meta-item"><b>Код відео</b><span id="metaVideo">—</span></div>
           <div class="meta-item"><b>Форма</b><span id="metaRoleLabel">—</span></div>
@@ -178,7 +99,12 @@
         </section>
       </main>
     </div>
-  </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
+    <a href="../">На головну →</a>
+  </footer>
 
   <script>
     const STORAGE_KEY = 'bpedk-questionnaire-records-v1';
@@ -436,14 +362,21 @@
       els.recordsWrap.classList.remove('hidden');
       records.forEach((record) => {
         const tr = document.createElement('tr');
+        const modeBadge = record.mode === 'google_form'
+          ? '<span class="t-badge t-badge--online">онлайн</span>'
+          : '<span class="t-badge t-badge--paper">паперова</span>';
+        const groupBadge = record.group === 'parent'
+          ? '<span class="g-badge g-badge--parent">Батьки</span>'
+          : '<span class="g-badge g-badge--educator">Вихователі</span>';
+
         tr.innerHTML = `
-          <td>${record.questionnaire_id || ''}</td>
-          <td>${record.group === 'parent' ? 'Батьки' : 'Вихователі'}</td>
+          <td><b>${record.questionnaire_id || ''}</b></td>
+          <td>${groupBadge}</td>
           <td>${record.institution_code || ''}</td>
           <td>${record.questionnaire_number || ''}</td>
-          <td>${record.sample1_code || ''}</td>
-          <td>${record.sample2_code || ''}</td>
-          <td>${record.mode === 'google_form' ? 'онлайн' : 'паперова'}</td>
+          <td><span class="code-pill">${record.sample1_code || ''}</span></td>
+          <td><span class="code-pill">${record.sample2_code || ''}</span></td>
+          <td>${modeBadge}</td>
         `;
         els.recordsBody.appendChild(tr);
       });
@@ -541,5 +474,6 @@
     renderForm(null);
     renderRecords();
   </script>
+  <script src="../assets/analytics.js?v=2" defer></script>
 </body>
 </html>

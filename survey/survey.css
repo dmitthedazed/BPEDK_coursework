@@ -1,180 +1,56 @@
-/* ━━━━  SURVEY / REDIRECT PAGES  ━━━━
-   Inherits design tokens from shared.css
-   ───────────────────────────────────── */
+/* ═══════════════════════════════════════════
+   SURVEY / REDIRECT PAGES — Theme & Animations
+   Base tokens and layout from shared.css.
+   ═══════════════════════════════════════════ */
 
-/* ── THEME OVERRIDES ── */
-body.theme-educators {
-  --theme:       var(--edu);
-  --theme-soft:  rgba(26,86,160,0.08);
-  --theme-mid:   rgba(26,86,160,0.18);
-  --theme-glow:  rgba(26,86,160,0.28);
-  --btn-grad:    linear-gradient(122deg, #3b82f6, #1a56a0 50%, #1e3a6e);
-  --prog-fill:   linear-gradient(90deg, #60a5fa, #1a56a0 60%, #1e3a6e);
-}
-
-body.theme-parents {
-  --theme:       var(--par);
-  --theme-soft:  rgba(107,33,168,0.08);
-  --theme-mid:   rgba(107,33,168,0.18);
-  --theme-glow:  rgba(107,33,168,0.28);
-  --btn-grad:    linear-gradient(122deg, #a855f7, #7c3aed 50%, #5b21b6);
-  --prog-fill:   linear-gradient(90deg, #c084fc, #7c3aed 60%, #5b21b6);
-}
-
-body.theme-video {
-  --theme:       var(--accent);
-  --theme-soft:  rgba(200,65,10,0.08);
-  --theme-mid:   rgba(200,65,10,0.18);
-  --theme-glow:  rgba(200,65,10,0.28);
-  --btn-grad:    linear-gradient(122deg, #e8873a, #c8410a 50%, #9a2f06);
-  --prog-fill:   linear-gradient(90deg, #e8873a, #c8410a 60%, #9a2f06);
-}
-
-/* ── NO SCROLL ── */
-body {
-  height: 100svh;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-/* ── LAYOUT ── */
-.redirect-page {
-  flex: 1;
-  min-height: 0;
-  display: grid;
-  place-items: center;
-  padding: clamp(12px, 3vw, 24px);
-}
-
-/* ── APP CARD ── */
-.redirect-card {
-  width: min(100%, 440px);
-  text-align: center;
-  animation: rise-in 560ms cubic-bezier(0.22, 0.9, 0.22, 1) both;
-}
-
-.redirect-card .badge {
-  margin-bottom: clamp(8px, 1.5vh, 14px);
-  color: var(--theme);
-  border-color: var(--theme-mid);
-  background: var(--theme-soft);
-}
-
-.redirect-card .badge::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: currentColor;
-  flex-shrink: 0;
-  animation: badge-pulse 2s ease-in-out infinite;
-}
-
-@keyframes badge-pulse {
-  0%, 100% { opacity: 1;    transform: scale(1); }
-  50%       { opacity: 0.35; transform: scale(0.65); }
-}
-
-.redirect-card h1 {
-  font-size: clamp(1.35rem, 4.5vw, 2.2rem);
-  margin-bottom: clamp(4px, 1vh, 8px);
-  background: linear-gradient(
-    90deg,
-    var(--ink) 0%,
-    var(--theme) 35%,
-    var(--ink) 50%,
-    var(--theme) 65%,
-    var(--ink) 100%
-  );
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  animation: text-shimmer 8s linear infinite;
-}
-
-@keyframes text-shimmer {
-  from { background-position: 200% center; }
-  to   { background-position: -200% center; }
-}
-
-.redirect-subtitle {
-  position: relative;
-  color: var(--ink2);
-  font-size: clamp(0.8rem, 2.2vw, 0.92rem);
-  line-height: 1.55;
-  margin-bottom: clamp(12px, 2.5vh, 20px);
-}
-
-.inapp-prompt {
-  margin: 0 0 clamp(12px, 2.2vh, 18px);
-  padding: 14px 14px 12px;
-  text-align: left;
-  background: linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.58));
-  border: 1px solid var(--theme-mid);
-  border-radius: 16px;
-  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.08);
-}
-
-.inapp-prompt-title {
-  margin: 0 0 6px;
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--ink);
-}
-
-.inapp-prompt-copy,
-.inapp-prompt-note {
-  margin: 0;
-  color: var(--ink2);
-  font-size: 0.82rem;
-  line-height: 1.55;
-}
-
-.inapp-prompt-actions {
-  margin: 12px 0 10px;
-}
-
-.inapp-copy-btn {
+/* ── ACTIVE REDIRECT BUTTON ── */
+#goNowBtn {
+  display: block;
   width: 100%;
-  border: 1px solid var(--theme-mid);
-  border-radius: 12px;
-  background: var(--theme-soft);
-  color: var(--theme);
-  padding: 11px 14px;
-  font: inherit;
-  font-size: 0.88rem;
+  border: none;
+  border-radius: 3px;
+  padding: clamp(10px, 1.8vh, 13px) 16px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
   font-weight: 700;
+  background: var(--theme-accent, var(--accent));
+  color: #fff;
   cursor: pointer;
-  transition: transform 150ms ease, background 150ms ease;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+  letter-spacing: 0.01em;
+  text-align: center;
 }
-
-.inapp-copy-btn:hover {
-  transform: translateY(-1px);
-  background: color-mix(in srgb, var(--theme-soft) 72%, white 28%);
+#goNowBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
-
-.inapp-copy-btn:focus-visible {
-  outline: 3px solid var(--theme-mid);
+#goNowBtn:active { transform: translateY(0); }
+#goNowBtn:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--theme-accent, var(--accent)) 35%, transparent);
   outline-offset: 2px;
 }
 
 body.is-in-app-browser #goNowBtn {
   background: transparent;
-  color: var(--ink2);
+  color: var(--ink-2);
   border: 1px solid var(--line);
   box-shadow: none;
 }
-
 body.is-in-app-browser #goNowBtn:hover {
   box-shadow: none;
-  background: var(--bg2);
+  background: var(--bg-2);
 }
 
-/* ── MEDIA ── */
-.redirect-media {
+/* ── THEME-COLORED CLOSED HOME BUTTON ── */
+body.theme-educators .closed-home-btn,
+body.theme-parents   .closed-home-btn,
+body.theme-video     .closed-home-btn {
+  background: var(--theme-accent);
+}
+
+/* ── CLOSED STATE SECTION LAYOUT ── */
+.closed-info {
   position: relative;
   display: grid;
   justify-items: center;
@@ -182,146 +58,18 @@ body.is-in-app-browser #goNowBtn:hover {
   margin-bottom: clamp(2px, 0.5vh, 4px);
 }
 
-.redirect-gif {
-  width: clamp(120px, 35vmin, 220px);
-  height: clamp(120px, 35vmin, 220px);
-  border-radius: 18px;
-}
-
-/* ── STATUS BOX ── */
-.redirect-status {
-  position: relative;
-  width: 100%;
-  background: var(--bg2);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-md);
-  padding: clamp(8px, 1.5vh, 12px) 14px;
-}
-
-.timer-row {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--ink2);
-  display: flex;
-  gap: 5px;
-  align-items: baseline;
-  justify-content: center;
-}
-
-#timer {
-  font-family: "Bricolage Grotesque", sans-serif;
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--theme);
-  display: inline-block;
-}
-
-#timer.tick {
-  animation: tick 0.35s cubic-bezier(0.22, 0.9, 0.22, 1);
-}
-
-@keyframes tick {
-  0%   { transform: scale(1.5); opacity: 0.5; }
-  100% { transform: scale(1);   opacity: 1; }
-}
-
-.progress {
-  width: 100%;
-  height: 6px;
-  border-radius: 999px;
-  background: var(--theme-soft);
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-#progressBar {
-  width: 0%;
-  height: 100%;
-  background: var(--prog-fill);
-  background-size: 200% auto;
-  animation: shimmer 1.8s linear infinite;
-  transition: width 120ms linear;
-  border-radius: 999px;
-}
-
-@keyframes shimmer {
-  0%   { background-position: 200% center; }
-  100% { background-position: -200% center; }
-}
-
-/* ── FALLBACK ── */
-#fallback {
-  position: relative;
-  margin: clamp(8px, 1.2vh, 14px) 0 0;
-  font-size: clamp(0.72rem, 1.8vw, 0.8rem);
-  color: var(--ink3);
-  line-height: 1.55;
-  word-break: break-word;
-}
-
-#fallback a {
-  color: var(--theme);
-  font-weight: 600;
-  text-underline-offset: 3px;
-  word-break: break-all;
-}
-
-/* ── GO NOW BUTTON ── */
-.redirect-actions {
-  position: relative;
-  margin-top: clamp(8px, 1.5vh, 14px);
-}
-
-#goNowBtn {
-  width: 100%;
-  border: none;
-  border-radius: 14px;
-  padding: clamp(10px, 1.8vh, 13px) 16px;
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
-  font-weight: 700;
-  background: var(--btn-grad);
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0 10px 22px var(--theme-glow);
-  transition: transform 150ms ease, box-shadow 150ms ease;
-  letter-spacing: 0.01em;
-}
-
-#goNowBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px var(--theme-glow);
-}
-
-#goNowBtn:active { transform: translateY(0); }
-
-#goNowBtn:focus-visible {
-  outline: 3px solid var(--theme-mid);
-  outline-offset: 2px;
-}
-
-/* ── NOTE ── */
-.redirect-note {
-  position: relative;
-  margin-top: 10px;
-  font-size: 0.76rem;
-  color: var(--ink3);
-  text-align: center;
-}
-
-/* ── SURVEY CLOSED STATE ── */
+/* ── CLOSED STATE BADGE & TITLE ── */
 .badge-closed {
-  color: #16a34a;
-  border-color: rgba(22,163,74,0.25);
-  background: rgba(22,163,74,0.08);
+  color: var(--success);
+  border-color: color-mix(in srgb, var(--success) 25%, transparent);
+  background: color-mix(in srgb, var(--success) 7%, transparent);
 }
-
 .badge-closed::before {
   content: "";
   width: 6px;
   height: 6px;
-  border-radius: 50%;
-  background: #16a34a;
+  border-radius: 3px;
+  background: var(--success);
   flex-shrink: 0;
   animation: none;
   opacity: 1;
@@ -331,44 +79,38 @@ body.is-in-app-browser #goNowBtn:hover {
   background: linear-gradient(
     90deg,
     var(--ink) 0%,
-    #16a34a 35%,
+    var(--success) 35%,
     var(--ink) 50%,
-    #16a34a 65%,
+    var(--success) 65%,
     var(--ink) 100%
-  ) !important;
-  background-size: 200% auto !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  animation: text-shimmer 8s linear infinite !important;
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-shimmer 8s linear infinite;
 }
 
-.closed-info {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  gap: clamp(8px, 1.5vh, 14px);
-  margin-bottom: clamp(2px, 0.5vh, 4px);
-}
-
+/* ── CLOSED STATUS BOX ── */
 .closed-status {
   position: relative;
   width: 100%;
-  background: rgba(22,163,74,0.06);
-  border: 1px solid rgba(22,163,74,0.2);
-  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--success) 6%, transparent);
+  border: 1px solid color-mix(in srgb, var(--success) 18%, transparent);
+  border-radius: 3px;
   padding: clamp(10px, 1.8vh, 14px) 14px;
 }
 
 .closed-status-text {
   margin: 0;
   font-size: 0.88rem;
-  color: var(--ink2);
+  color: var(--ink-2);
   display: flex;
   gap: 8px;
   align-items: center;
   justify-content: center;
   line-height: 1.5;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 .closed-icon {
@@ -377,60 +119,82 @@ body.is-in-app-browser #goNowBtn:hover {
   justify-content: center;
   width: 22px;
   height: 22px;
-  border-radius: 50%;
-  background: #16a34a;
+  border-radius: 3px;
+  background: var(--success);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 800;
   flex-shrink: 0;
 }
 
-.closed-home-btn {
-  display: block;
-  width: 100%;
-  border: none;
-  border-radius: 14px;
-  padding: clamp(10px, 1.8vh, 13px) 16px;
-  font-family: "Manrope", sans-serif;
-  font-size: clamp(0.85rem, 2.2vw, 0.95rem);
-  font-weight: 700;
-  background: var(--btn-grad);
-  color: #fff;
-  cursor: pointer;
-  box-shadow: 0 10px 22px var(--theme-glow);
-  transition: transform 150ms ease, box-shadow 150ms ease;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  text-align: center;
+/* ── IN-APP PROMPT ── */
+.inapp-prompt {
+  background: linear-gradient(180deg, var(--surface-glass), rgba(255,255,255,0.58));
 }
 
-.closed-home-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 14px 28px var(--theme-glow);
+/* ── FALLBACK ── */
+#fallback {
+  position: relative;
+  margin: clamp(8px, 1.2vh, 14px) 0 0;
+  font-size: clamp(0.72rem, 1.8vw, 0.8rem);
+  color: var(--ink-3);
+  line-height: 1.55;
+  word-break: break-word;
+}
+#fallback a {
+  color: var(--theme-accent, var(--accent));
+  font-weight: 600;
+  text-underline-offset: 3px;
+  word-break: break-all;
 }
 
-.closed-home-btn:active { transform: translateY(0); }
+/* ── ANIMATIONS ── */
+@keyframes tick {
+  0%   { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1);   opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+@keyframes text-shimmer {
+  from { background-position: 200% center; }
+  to   { background-position: -200% center; }
+}
 
-.closed-home-btn:focus-visible {
-  outline: 3px solid var(--theme-mid);
-  outline-offset: 2px;
+#timer.tick { animation: tick 0.35s var(--ease-spring); }
+
+#progressBar {
+  background-size: 200% auto;
+  animation: shimmer 1.8s linear infinite;
+}
+
+.redirect-card h1 {
+  letter-spacing: 0;
+  background: linear-gradient(
+    90deg,
+    var(--ink) 0%,
+    var(--theme-accent, var(--accent)) 35%,
+    var(--ink) 50%,
+    var(--theme-accent, var(--accent)) 65%,
+    var(--ink) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: text-shimmer 8s linear infinite;
 }
 
 /* ── RESPONSIVE ── */
-
-/* Small phones (≤ 390px) */
 @media (max-width: 390px) {
   .redirect-page { padding: 12px; }
-  .redirect-card { padding: 16px 14px 14px; border-radius: 20px; }
+  .redirect-card { padding: 16px 14px 14px; }
 }
-
-/* Standard phones (≤ 480px) */
 @media (max-width: 480px) {
   .redirect-page { padding: 16px; }
-  .redirect-card { border-radius: 22px; padding: 20px 16px 16px; }
+  .redirect-card { padding: 20px 16px 16px; }
 }
-
-/* Landscape / short screens (≤ 600px height) */
 @media (max-height: 600px) {
   .redirect-gif { width: clamp(80px, 25vmin, 140px); height: clamp(80px, 25vmin, 140px); }
   .redirect-page { padding: 10px 20px; }
@@ -438,62 +202,11 @@ body.is-in-app-browser #goNowBtn:hover {
   .redirect-card h1 { font-size: clamp(1.1rem, 3.5vw, 1.5rem); }
   .redirect-subtitle { display: none; }
 }
-
-/* Medium height (601–700px) */
 @media (min-height: 601px) and (max-height: 700px) {
   .redirect-gif { width: clamp(100px, 28vmin, 160px); height: clamp(100px, 28vmin, 160px); }
 }
 
-/* ── PAGE EXIT ── */
-body.page-exit {
-  opacity: 0;
-  transition: opacity 0.4s ease;
-  pointer-events: none;
-}
-
-body.page-exit .redirect-gif {
-  animation: fly-away 0.4s cubic-bezier(0.22, 0.9, 0.22, 1) forwards;
-}
-
-@keyframes fly-away {
-  to { transform: translateY(-60px) scale(1.25); opacity: 0; }
-}
-
-/* ── SPINNER ── */
-.btn-spinner {
-  width: 18px;
-  height: 18px;
-  border: 2.5px solid rgba(255,255,255,0.35);
-  border-top-color: #fff;
-  border-radius: 50%;
-  animation: spin 0.7s linear infinite;
-  display: inline-block;
-}
-
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* ── DARK THEME ── */
-@media (prefers-color-scheme: dark) {
-  body.theme-educators {
-    --theme-soft: rgba(26,86,160,0.18);
-    --theme-mid:  rgba(26,86,160,0.30);
-  }
-  body.theme-parents {
-    --theme-soft: rgba(107,33,168,0.18);
-    --theme-mid:  rgba(107,33,168,0.30);
-  }
-
-  .inapp-prompt {
-    background: linear-gradient(180deg, rgba(28, 34, 46, 0.9), rgba(20, 24, 34, 0.82));
-    box-shadow: none;
-  }
-
-  .closed-status {
-    background: rgba(22,163,74,0.12);
-    border-color: rgba(22,163,74,0.25);
-  }
-}
-
+/* ── REDUCED MOTION ── */
 @media (prefers-reduced-motion: reduce) {
   #progressBar { transition: none; animation: none; }
   #goNowBtn { transition: none; }
@@ -502,5 +215,36 @@ body.page-exit .redirect-gif {
   body.page-exit .redirect-gif { animation: none; }
   .btn-spinner { animation: none; }
   .redirect-card h1 { animation: none; }
-  .redirect-card .badge::before { animation: none; }
+}
+
+/* ── Landing-style unification for redirect and survey states ── */
+body.theme-educators,
+body.theme-parents,
+body.theme-video {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--accent) 5.5%, transparent) 1px, transparent 1px),
+    var(--noise);
+  background-size: 48px 48px, 48px 48px, 200px 200px;
+}
+
+.redirect-card,
+.redirect-status,
+.closed-status,
+.closed-home-btn,
+#goNowBtn,
+.inapp-prompt,
+.origin-disclosure {
+  border-radius: 3px;
+}
+
+.redirect-card {
+  background: var(--surface);
+  box-shadow: 0 18px 60px color-mix(in srgb, var(--accent) 10%, transparent);
+}
+
+.redirect-card h1,
+.closed-title {
+  font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
+  letter-spacing: 0;
 }

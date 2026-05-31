@@ -16,7 +16,7 @@
   <meta name="robots" content="noindex,follow" />
   <link rel="canonical" href="https://dmitthedazed.github.io/BPEDK_coursework/m/" />
   <link rel="stylesheet" href="../assets/shared.css" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./styles.css?v=4" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Дослідження БПФК · 2026" />
   <meta property="og:title" content="Корпус матеріалів для дослідження ШІ-контенту" />
@@ -40,7 +40,12 @@
     }
   </script>
 </head>
-<body>
+<body class="hub-body">
+  <nav class="site-nav">
+    <a class="site-nav-logo" href="../">Курсова · 2026</a>
+    <a class="site-nav-back" href="../">На головну →</a>
+  </nav>
+
   <main class="hub-layout">
     <!-- HEADER -->
     <header class="hub-header fade-up">
@@ -66,12 +71,12 @@
         <p>Після відкриття сторінка автоматично переходить до Google Drive. Оцінювання відбувається після перегляду через анкету.</p>
       </div>
       <div class="hub-grid hub-grid--3">
-        <a class="mat-card mat-card--video" href="./grk/"><strong>V1</strong><span>m/grk/</span></a>
-        <a class="mat-card mat-card--video" href="./pkd/"><strong>V2</strong><span>m/pkd/</span></a>
-        <a class="mat-card mat-card--video" href="./ssn/"><strong>V3</strong><span>m/ssn/</span></a>
-        <a class="mat-card mat-card--video" href="./trk/"><strong>V4</strong><span>m/trk/</span></a>
-        <a class="mat-card mat-card--video" href="./tfi/"><strong>V5</strong><span>m/tfi/</span></a>
-        <a class="mat-card mat-card--video" href="./prs/"><strong>V6</strong><span>m/prs/</span></a>
+        <a class="mat-card mat-card--video" href="./grk/"><strong>V1</strong><span>Ґруффало</span></a>
+        <a class="mat-card mat-card--video" href="./pkd/"><strong>V2</strong><span>Кротик і Панда</span></a>
+        <a class="mat-card mat-card--video" href="./ssn/"><strong>V3</strong><span>Шусть і Шуня</span></a>
+        <a class="mat-card mat-card--video" href="./trk/"><strong>V4</strong><span>Три пригоди Синього Трактора</span></a>
+        <a class="mat-card mat-card--video" href="./tfi/"><strong>V5</strong><span>Тофі і Таємниця</span></a>
+        <a class="mat-card mat-card--video" href="./prs/"><strong>V6</strong><span>Пригоди поросятка</span></a>
       </div>
     </section>
 
@@ -111,24 +116,7 @@
     </section>
   </main>
 
-  <script>
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((e, i) => {
-        if (e.isIntersecting) {
-          setTimeout(() => e.target.classList.add('visible'), i * 80);
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-    // Telegram WebApp
-    if (window.Telegram?.WebApp) {
-      window.Telegram.WebApp.ready();
-      window.Telegram.WebApp.expand();
-    }
-  </script>
+  <script src="../assets/shared.js?v=3" defer></script>
   <script src="../assets/analytics.js?v=2" defer></script>
   <footer class="site-footer">
     <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
