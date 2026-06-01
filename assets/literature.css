@@ -3,9 +3,11 @@
    ════════════════════════════════════════ */
 
 .literature-layout {
-  width: min(100%, 920px);
+  width: 100%;
+  max-width: none;
   margin: 0 auto;
-  padding: var(--space-16) var(--space-6) var(--space-20);
+  padding: var(--space-16) clamp(40px, 4.6vw, 84px) var(--space-20);
+  box-sizing: border-box;
 }
 
 .literature-header {
@@ -14,14 +16,14 @@
 }
 
 .literature-header h1 {
-  max-width: 760px;
+  max-width: none;
   margin-top: var(--space-4);
   font-size: clamp(2.2rem, 6vw, 4rem);
   letter-spacing: 0;
 }
 
 .literature-lead {
-  max-width: 680px;
+  max-width: none;
   margin-top: var(--space-4);
   color: var(--ink-2);
   font-size: 1rem;
@@ -37,7 +39,7 @@
   align-items: start;
   border: 1px solid var(--line-strong);
   border-radius: 3px;
-  background: linear-gradient(135deg, var(--accent) 8%, transparent 42%), var(--surface);
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
   box-shadow: var(--shadow-sm);
 }
 
@@ -121,9 +123,17 @@
   text-decoration-thickness: 2px;
 }
 
+/* ── DESKTOP TWO-COLUMN LAYOUT ── */
+@media (min-width: 900px) {
+  .literature-list {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    gap: var(--space-4);
+  }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 560px) {
-  .literature-layout { padding: var(--space-10) var(--space-4) var(--space-14); }
+  .literature-layout { padding: var(--space-10) var(--space-4) var(--space-12); }
   .literature-header { padding-top: var(--space-7); }
   .ai-note {
     grid-template-columns: 1fr;

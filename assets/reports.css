@@ -345,7 +345,7 @@
 @media (max-width: 720px) {
   .reports-layout {
     width: min(calc(100% - 32px), 1480px);
-    padding: var(--space-8) 0 var(--space-13);
+    padding: var(--space-8) 0 var(--space-12);
   }
 
   .reports-grid {

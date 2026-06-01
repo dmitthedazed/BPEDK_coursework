@@ -293,6 +293,100 @@ h2 {
   background: var(--bg-2);
 }
 
+/* --- KPI CARDS ENHANCEMENTS --- */
+.kpi-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 3px solid var(--line-strong) !important;
+  border-radius: 4px !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.kpi-total {
+  border-top-color: var(--accent-warm) !important;
+}
+
+.kpi-split {
+  border-top-color: var(--edu) !important;
+}
+
+.kpi-risk {
+  border-top-color: var(--danger) !important;
+}
+
+.split-metrics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.edu-num {
+  color: var(--edu);
+}
+
+.par-num {
+  color: var(--par);
+}
+
+.sep {
+  color: var(--ink-3);
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.kpi-split-bar {
+  display: flex;
+  height: 5px;
+  border-radius: var(--r-full);
+  overflow: hidden;
+  margin-top: auto;
+  background: var(--bg-3);
+  width: 100%;
+}
+
+.bar-edu {
+  background: var(--edu);
+  height: 100%;
+}
+
+.bar-par {
+  background: var(--par);
+  height: 100%;
+}
+
+.kpi-progress-bar {
+  height: 5px;
+  border-radius: var(--r-full);
+  overflow: hidden;
+  margin-top: auto;
+  background: var(--bg-3);
+  width: 100%;
+}
+
+.progress-fill {
+  display: block;
+  background: var(--danger);
+  height: 100%;
+}
+
+.total-decor {
+  height: 5px;
+  border-radius: var(--r-full);
+  margin-top: auto;
+  background: var(--accent-warm);
+  opacity: 0.15;
+  width: 100%;
+}
+
 .context-value {
   display: block;
   font-size: clamp(1.6rem, 4vw, 2.7rem);
@@ -306,12 +400,30 @@ h2 {
   color: var(--danger);
 }
 
-.context-label,
 .chart-label {
   color: var(--ink-3);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+}
+
+.context-label {
+  display: block;
+  color: var(--ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 6px;
+  line-height: 1.35;
+}
+
+.kpi-desc {
+  font-size: 0.78rem;
+  color: var(--ink-2);
+  line-height: 1.45;
+  margin: 10px 0 auto;
+  text-align: center;
 }
 
 .paper-heading {
@@ -1420,13 +1532,14 @@ body.landing-page {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     grid-auto-flow: dense;
-    align-items: start;
+    align-items: stretch;
     gap: clamp(22px, 2vw, 28px);
     padding: 28px clamp(40px, 4.6vw, 84px) 40px;
   }
 
   .landing-tile-board > .paper-section {
-    display: block;
+    display: flex;
+    flex-direction: column;
     max-width: none;
     min-width: 0;
     margin: 0;
@@ -1443,13 +1556,70 @@ body.landing-page {
     background: color-mix(in srgb, var(--surface) 90%, transparent);
   }
 
-  .tile-context { grid-column: 1 / span 4; }
-  .tile-problem { grid-column: 5 / span 8; }
-  .tile-findings { grid-column: 1 / span 7; }
-  .tile-corpus { grid-column: 8 / span 5; }
-  .tile-methodology { grid-column: 1 / span 6; }
-  .tile-resources { grid-column: 7 / span 6; }
-  .tile-conclusion { grid-column: 1 / -1; }
+  .tile-context { grid-row: 1; grid-column: 1 / span 5; }
+  .tile-problem { grid-row: 1; grid-column: 6 / span 7; }
+  .tile-methodology { grid-row: 2; grid-column: 1 / span 4; }
+  .tile-findings { grid-row: 2; grid-column: 5 / span 8; }
+  .tile-corpus { grid-row: 3; grid-column: 1 / span 7; }
+  .tile-resources { grid-row: 3; grid-column: 8 / span 5; }
+  .tile-conclusion { grid-row: 4; grid-column: 1 / -1; }
+
+  /* Ensure children of grid items stretch to fill the height */
+  .tile-context .context-grid {
+    flex-grow: 1;
+    display: grid;
+  }
+  .tile-problem {
+    justify-content: space-between;
+  }
+  .tile-problem .problem-grid {
+    flex-grow: 1;
+  }
+  .tile-findings .findings-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .tile-findings .comparison-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tile-methodology .recognition-grid-paper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    gap: 12px;
+    flex-grow: 1;
+  }
+  .tile-methodology .recognition-paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .tile-corpus .materials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    flex-grow: 1;
+  }
+  #corpus.tile-corpus .paper-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .tile-resources > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tile-resources .recommendations-grid {
+    flex-grow: 1;
+  }
 
   .landing-tile-board .paper-heading,
   .landing-tile-board .paper-subheading {
@@ -1487,16 +1657,15 @@ body.landing-page {
   }
 
   .tile-context .context-card {
-    padding: 14px 10px;
+    padding: 24px 16px;
   }
 
   .tile-context .context-value {
-    font-size: 1.55rem;
+    font-size: 2.8rem;
   }
 
-  .tile-context .context-card:nth-child(2) .context-value {
-    font-size: 1rem !important;
-    line-height: 1.18;
+  .tile-context .split-metrics {
+    font-size: 2.2rem;
   }
 
   .tile-problem .problem-grid {
@@ -1605,13 +1774,39 @@ body.landing-page {
   }
 
   .tile-corpus .materials-list {
-    gap: 6px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 8px;
+    flex-grow: 1;
+  }
+
+  .tile-corpus .materials-list li {
+    display: flex;
+  }
+
+  .tile-corpus .materials-list li:last-child:nth-child(odd) {
+    grid-column: span 2;
   }
 
   .tile-corpus .materials-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     gap: 6px;
-    padding: 6px 8px;
+    padding: 8px 10px;
     font-size: 0.72rem;
+    border-radius: var(--r-sm);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .tile-corpus .materials-list a:hover {
+    background: color-mix(in srgb, var(--accent) 4%, var(--surface));
+    border-color: var(--accent);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--accent) 8%, transparent);
   }
 
   .tile-corpus .materials-list a span {
@@ -1647,12 +1842,19 @@ body.landing-page {
   }
 
   .tile-methodology .recognition-paper strong {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   .tile-resources .recommendations-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
     gap: 12px;
+  }
+
+  .tile-resources .recommendation-paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .tile-resources .recommendation-paper .material-symbols-outlined {
@@ -1666,32 +1868,63 @@ body.landing-page {
   }
 
   .tile-conclusion {
-    padding: 16px 20px;
+    padding: 24px 28px;
+    border: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
+    border-left: 4px solid var(--accent);
+    background: color-mix(in srgb, var(--surface) 76%, transparent);
+    border-radius: var(--r-lg);
+    box-shadow: var(--shadow-sm);
   }
 
   .tile-conclusion .conclusion-card {
     display: grid;
-    grid-template-columns: 40px 180px minmax(0, 1fr);
-    align-items: center;
-    gap: 16px;
+    grid-template-columns: 56px 1fr;
+    gap: 4px 20px;
     margin: 0;
     padding: 0;
     border: 0;
     background: transparent;
+    text-align: left;
+  }
+
+  .tile-conclusion .conclusion-card::before {
+    display: none;
   }
 
   .tile-conclusion .conclusion-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: inline-grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: var(--r-full);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    color: var(--accent);
+    font-size: 28px;
     margin: 0;
+    align-self: start;
+    justify-self: center;
   }
 
   .tile-conclusion h2 {
-    margin: 0;
-    font-size: 1.25rem;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 6px;
+    font-size: 1.32rem;
+    color: var(--accent);
+    border: 0;
+    padding: 0;
   }
 
   .tile-conclusion p {
+    grid-column: 2;
+    grid-row: 2;
     max-width: none;
     margin: 0;
+    font-size: 1.06rem;
+    line-height: 1.72;
+    color: var(--ink-2);
   }
 }
 
@@ -1746,13 +1979,20 @@ body.landing-page {
 
   .topbar-inner {
     display: flex;
-    gap: 8px;
-    grid-template-columns: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
   }
 
   .brand {
-    font-size: 0.95rem;
+    display: inline-block;
+    max-width: calc(100% - 120px);
+    font-size: clamp(0.78rem, 4.2vw, 0.95rem);
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
   }
 
   .paper-nav,
@@ -1776,6 +2016,8 @@ body.landing-page {
     padding: 12px 20px 16px;
     background: var(--surface);
     border-bottom: 1px solid var(--line);
+    box-shadow: 0 12px 36px color-mix(in srgb, var(--accent) 8%, transparent);
+    z-index: 100;
   }
 
   .paper-nav.open a {
@@ -1794,8 +2036,64 @@ body.landing-page {
   .materials-grid,
   .chart-two,
   .recognition-grid-paper,
+  .resources-section .recommendations-grid,
   .recommendations-grid {
     grid-template-columns: 1fr;
+  }
+
+  .split-metrics {
+    font-size: clamp(1.4rem, 5vw, 2.2rem) !important;
+  }
+
+  .materials-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  @media (min-width: 480px) {
+    .materials-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .materials-list li:last-child:nth-child(odd) {
+      grid-column: span 2;
+    }
+  }
+
+  .recommendation-paper {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 4px 12px;
+    text-align: left;
+    align-items: flex-start;
+    padding: 16px !important;
+  }
+
+  .recommendation-paper .material-symbols-outlined {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-size: 26px;
+    margin: 0;
+    align-self: start;
+    justify-self: center;
+    color: var(--accent);
+  }
+
+  .recommendation-paper h4 {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0 0 2px;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+
+  .recommendation-paper p {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.48;
+    color: var(--ink-2);
   }
 
   .comparison-chart {
