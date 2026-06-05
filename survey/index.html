@@ -15,8 +15,7 @@
       flex: 1;
       display: grid;
       place-items: center;
-      padding: clamp(16px, 4vw, 40px);
-      min-height: calc(100svh - 72px);
+      padding: clamp(16px, 4vw, 40px) clamp(16px, 4vw, 40px) clamp(80px, 12vh, 100px);
     }
     .survey-hub-card {
       width: min(100%, 520px);
@@ -135,37 +134,74 @@
 </head>
 <body>
   <nav class="site-nav">
-    <a class="site-nav-logo" href="../">Курсова · 2026</a>
-    <a class="site-nav-back" href="../">На головну →</a>
+    <a class="site-nav-logo" href="../">
+      <span class="lang-uk">Курсова · 2026</span>
+      <span class="lang-en">Coursework · 2026</span>
+      <span class="lang-sk">Ročníková práca · 2026</span>
+    </a>
+    <div style="display: flex; align-items: center; gap: clamp(8px, 1.5vw, 16px);">
+      <button class="lang-toggle" type="button"></button>
+      <a class="site-nav-back" href="../">
+        <span class="lang-uk">На головну →</span>
+        <span class="lang-en">To main →</span>
+        <span class="lang-sk">Na hlavnú →</span>
+      </a>
+    </div>
   </nav>
 
   <main class="survey-hub">
     <div class="survey-hub-card glass-card">
-      <h1 class="survey-hub-title">Оберіть анкету</h1>
+      <h1 class="survey-hub-title">
+        <span class="lang-uk">Оберіть анкету</span>
+        <span class="lang-en">Select a Questionnaire</span>
+        <span class="lang-sk">Vyberte dotazník</span>
+      </h1>
       <p class="survey-hub-subtitle">
-        Дослідження психологічної безпеки та педагогічної доцільності ШІ-контенту для дошкільників.
+        <span class="lang-uk">Дослідження психологічної безпеки та педагогічної доцільності ШІ-контенту для дошкільників.</span>
+        <span class="lang-en">Research on the psychological safety and pedagogical appropriateness of AI content for preschoolers.</span>
+        <span class="lang-sk">Výskum psychologickej bezpečnosti a pedagogickej vhodnosti obsahu AI pre predškolákov.</span>
       </p>
 
       <nav class="survey-hub-actions" aria-label="Вибір анкети">
         <a class="survey-hub-btn survey-hub-btn--edu" href="educators/">
           <span class="survey-hub-btn__icon" aria-hidden="true">&#9998;</span>
-          <span>Анкета для вихователів ЗДО</span>
+          <span>
+            <span class="lang-uk">Анкета для вихователів ЗДО</span>
+            <span class="lang-en">Questionnaire for educators</span>
+            <span class="lang-sk">Dotazník pre pedagógov</span>
+          </span>
           <span class="survey-hub-btn__meta">educators</span>
         </a>
         <a class="survey-hub-btn survey-hub-btn--par" href="parents/">
           <span class="survey-hub-btn__icon" aria-hidden="true">&#9998;</span>
-          <span>Анкета для батьків дошкільнят</span>
+          <span>
+            <span class="lang-uk">Анкета для батьків дошкільнят</span>
+            <span class="lang-en">Questionnaire for parents</span>
+            <span class="lang-sk">Dotazník pre rodičov</span>
+          </span>
           <span class="survey-hub-btn__meta">parents</span>
         </a>
       </nav>
 
-      <p class="survey-hub-note">Курсова робота · Савін Д.С. · 2026</p>
+      <p class="survey-hub-note">
+        <span class="lang-uk">Курсова робота · Савін Д.С. · 2026</span>
+        <span class="lang-en">Coursework · Savin D.S. · 2026</span>
+        <span class="lang-sk">Ročníková práca · Savin D.S. · 2026</span>
+      </p>
     </div>
   </main>
 
   <footer class="site-footer">
-    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
-    <a href="../">На головну →</a>
+    <span>
+      <span class="lang-uk">Дослідник: Савін Д.С. · Курсова робота 2026</span>
+      <span class="lang-en">Researcher: Savin D.S. · Coursework 2026</span>
+      <span class="lang-sk">Výskumník: Savin D.S. · Ročníková práca 2026</span>
+    </span>
+    <a href="../">
+      <span class="lang-uk">На головну →</span>
+      <span class="lang-en">To main →</span>
+      <span class="lang-sk">Na hlavnú →</span>
+    </a>
   </footer>
 
   <script src="../assets/shared.js?v=3" defer></script>

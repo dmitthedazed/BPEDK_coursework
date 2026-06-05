@@ -3,6 +3,13 @@
    Base tokens and layout from shared.css.
    ═══════════════════════════════════════════ */
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
 /* ── ACTIVE REDIRECT BUTTON ── */
 #goNowBtn {
   display: block;
@@ -247,4 +254,19 @@ body.theme-video {
 .closed-title {
   font-family: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
   letter-spacing: 0;
+}
+
+/* ── FIXED FOOTER FOR SURVEY & REDIRECT PAGES ── */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+/* Ensure content has padding at bottom to prevent overlap with fixed footer */
+.redirect-page {
+  padding-bottom: clamp(80px, 12vh, 100px);
 }

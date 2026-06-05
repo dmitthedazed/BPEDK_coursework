@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Психологічна безпека ШІ-контенту для дошкільнят — Дослідницький звіт</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700;800;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* ===================== THEME VARIABLES ===================== */
+    :root {
+      --bg:            #FAFAF5;
+      --bg-grid:       rgba(208,213,221,0.3);
+      --surface:       #FAFAF5;
+      --surface-low:   #f4f4ef;
+      --surface:       #eeeee9;
+      --surface-high:  #e8e8e3;
+      --surface-variant: #e3e3de;
+      --border:        #D0D5DD;
+      --ink:           #1a1c19;
+      --ink-secondary: #475467;
+      --accent:        #c8410a;
+      --accent2:       #e8873a;
+      --edu:           #1a56a0;
+      --par:           #6b21a8;
+      --danger:        #cc0000;
+      --giant-text:    rgba(199,65,10,0.03);
+      --scrollbar:     #D0D5DD;
+      --card-bg:       #ffffff;
+      --card-border:   #D0D5DD;
+      --shadow:        rgba(0,0,0,0.06);
+      --shadow-hover:  rgba(0,0,0,0.1);
+      --glass-bg:      rgba(250,250,245,0.85);
+      --glass-border:  rgba(208,213,221,0.6);
+      --footnote-hover:#1a1c19;
+      --on-accent:     #ffffff;
+      --on-accent-text:rgba(255,255,255,0.8);
+      --code-bg:       #e8e8e3;
+      --quote-bg:      #f4f4ef;
+      --divider:       #D0D5DD;
+    }
+
+    .dark {
+      --bg:            #131311;
+      --bg-grid:       rgba(58,58,53,0.25);
+      --surface:       #1c1c1a;
+      --surface-low:   #232320;
+      --surface:       #252522;
+      --surface-high:  #2a2a27;
+      --surface-variant: #3a3a35;
+      --border:        #3a3a35;
+      --ink:           #e3e3de;
+      --ink-secondary: #9e9e95;
+      --accent:        #e8873a;
+      --accent2:       #f0a060;
+      --edu:           #5b9bd5;
+      --par:           #a070d0;
+      --danger:        #e04040;
+      --giant-text:    rgba(232,135,58,0.04);
+      --scrollbar:     #3a3a35;
+      --card-bg:       #1c1c1a;
+      --card-border:   #3a3a35;
+      --shadow:        rgba(0,0,0,0.3);
+      --shadow-hover:  rgba(0,0,0,0.5);
+      --glass-bg:      rgba(19,19,17,0.92);
+      --glass-border:  rgba(58,58,53,0.6);
+      --footnote-hover:#e3e3de;
+      --on-accent:     #1a1c19;
+      --on-accent-text:rgba(26,28,25,0.8);
+      --code-bg:       #2a2a27;
+      --quote-bg:      #232320;
+      --divider:       #3a3a35;
+    }
+
+    /* ===================== BASE ===================== */
+    body {
+      background-color: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* ===================== GRID BACKGROUND ===================== */
+    .bg-grid-pattern {
+      background-image:
+        linear-gradient(to right, var(--bg-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--bg-grid) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: grid-drift 60s linear infinite;
+    }
+    @keyframes grid-drift {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-40px); }
+    }
+
+    /* ===================== PAPER LAYERS ===================== */
+    .paper-layer {
+      background: var(--card-bg);
+      border-color: var(--card-border);
+      box-shadow: 0 4px 6px -1px var(--shadow), 0 2px 4px -1px var(--shadow);
+      transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s cubic-bezier(0.4,0,0.2,1), background-color 0.3s ease, border-color 0.3s ease;
+    }
+    .paper-layer:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px var(--shadow-hover), 0 4px 6px -2px var(--shadow-hover);
+    }
+
+    /* ===================== DOSSIER CARDS ===================== */
+    .dossier-card {
+      background: var(--card-bg);
+      border-color: var(--card-border);
+      transition: all 0.4s cubic-bezier(0.25,0.8,0.25,1);
+    }
+    .dossier-card:hover {
+      transform: scale(1.05) rotate(0deg) !important;
+      z-index: 10;
+      box-shadow: 0 20px 25px -5px var(--shadow-hover), 0 10px 10px -5px var(--shadow);
+    }
+
+    /* ===================== GLASSMORPHISM ===================== */
+    .glass-panel {
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--glass-border);
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    /* ===================== GIANT TYPOGRAPHY ===================== */
+    .giant-bg-text {
+      font-size: 30vw;
+      line-height: 0.8;
+      color: var(--giant-text);
+      position: absolute;
+      z-index: -1;
+      user-select: none;
+      pointer-events: none;
+      font-weight: 800;
+    }
+
+    /* ===================== SCROLLBAR ===================== */
+    .margin-scroll::-webkit-scrollbar { width: 4px; }
+    .margin-scroll::-webkit-scrollbar-track { background: transparent; }
+    .margin-scroll::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 4px; }
+
+    /* ===================== FOOTNOTE LINKS ===================== */
+    .footnote-ref {
+      font-size: 0.7em;
+      vertical-align: super;
+      color: var(--accent);
+      cursor: pointer;
+      text-decoration: none;
+      padding: 0 2px;
+      transition: color 0.2s;
+    }
+    .footnote-ref:hover { color: var(--footnote-hover); text-decoration: underline; }
+
+    html { scroll-behavior: smooth; }
+
+    /* ===================== THEME TOGGLE ===================== */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--ink);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .theme-toggle:hover {
+      background: var(--surface-high);
+      border-color: var(--accent);
+    }
+
+    /* ===================== UTILITY CLASSES ===================== */
+    .text-accent  { color: var(--accent); }
+    .bg-accent    { background-color: var(--accent); }
+    .border-accent{ border-color: var(--accent); }
+    .text-accent2 { color: var(--accent2); }
+    .bg-accent2   { background-color: var(--accent2); }
+    .text-edu     { color: var(--edu); }
+    .bg-edu       { background-color: var(--edu); }
+    .text-par     { color: var(--par); }
+    .bg-par       { background-color: var(--par); }
+    .text-danger  { color: var(--danger); }
+    .bg-danger    { background-color: var(--danger); }
+    .text-ink     { color: var(--ink); }
+    .text-ink-secondary { color: var(--ink-secondary); }
+    .bg-surface   { background-color: var(--surface); }
+    .bg-surface-low  { background-color: var(--surface-low); }
+    .bg-surface-high { background-color: var(--surface-high); }
+    .bg-surface-container { background-color: var(--surface); }
+    .bg-surface-variant { background-color: var(--surface-variant); }
+    .bg-card      { background-color: var(--card-bg); }
+    .bg-quote     { background-color: var(--quote-bg); }
+    .bg-code      { background-color: var(--code-bg); }
+    .border-subtle{ border-color: var(--border); }
+    .text-on-accent { color: var(--on-accent); }
+    .text-on-accent-dim { color: var(--on-accent-text); }
+
+    /* Bar chart fills */
+    .bar-fill { background-color: var(--accent); }
+    .bar-fill-edu { background-color: var(--edu); }
+    .bar-fill-par { background-color: var(--par); }
+    .bar-bg   { background-color: var(--surface-high); }
+    .text-on-accent { color: var(--on-accent); }
+    .text-on-accent-dim { color: var(--on-accent-text); }
+    .bg-accent-fg { background-color: var(--accent); color: var(--on-accent); }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          fontFamily: {
+            "display": ["Source Serif 4", "serif"],
+            "body": ["Inter", "sans-serif"],
+            "mono": ["monospace"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-body relative min-h-screen">
+
+<!-- Animated Grid Background -->
+<div class="fixed inset-0 pointer-events-none z-[-2] overflow-hidden">
+  <div class="absolute inset-[-100%] bg-grid-pattern opacity-60"></div>
+</div>
+
+<!-- Giant Typography Overlays -->
+<div class="giant-bg-text font-display top-20 -left-10 transform -rotate-6">ШІ</div>
+<div class="giant-bg-text font-display bottom-40 -right-20">144</div>
+
+<!-- ===== HEADER ===== -->
+<header class="w-full glass-panel fixed top-0 z-50 transition-all duration-300">
+  <div class="flex justify-between items-center px-6 md:px-12 w-full max-w-[1600px] mx-auto h-16 md:h-20">
+    <a href="#abstract" class="font-display text-xl font-extrabold text-ink flex items-center gap-4">
+      <span class="w-3 h-3 bg-accent rounded-full animate-pulse"></span>
+      Курсова · 2026
+    </a>
+    <nav class="hidden lg:flex space-x-10 items-center">
+      <a class="text-ink font-semibold border-b-2 border-accent pb-1 font-mono text-xs uppercase tracking-widest transition-all" href="#abstract">Анотація</a>
+      <a class="text-ink-secondary font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors duration-200" href="#findings">Результати</a>
+      <a class="text-ink-secondary font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors duration-200" href="#corpus">Корпус</a>
+      <a class="text-ink-secondary font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors duration-200" href="#methodology">Методологія</a>
+      <a class="text-ink-secondary font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors duration-200" href="#resources">Рекомендації</a>
+      <a class="text-ink-secondary font-mono text-xs uppercase tracking-widest hover:text-accent transition-colors duration-200" href="literature/">Література</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a class="bg-accent text-on-accent px-5 py-2 font-mono text-xs uppercase tracking-wider hover:opacity-90 transition-colors shadow-md" href="paper/">Переглянути PDF</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути тему">
+        <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+      </button>
+      <button id="mobileMenuBtn" class="lg:hidden p-2" aria-label="Відкрити меню">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="hidden lg:hidden px-6 pb-4">
+    <a class="block py-2 text-ink font-semibold" href="#abstract">Анотація</a>
+    <a class="block py-2 text-ink-secondary" href="#findings">Результати</a>
+    <a class="block py-2 text-ink-secondary" href="#corpus">Корпус</a>
+    <a class="block py-2 text-ink-secondary" href="#methodology">Методологія</a>
+    <a class="block py-2 text-ink-secondary" href="#resources">Рекомендації</a>
+    <a class="block py-2 text-ink-secondary" href="literature/">Література</a>
+    <a class="block py-2 text-ink-secondary" href="paper/">Переглянути PDF</a>
+  </div>
+</header>
+
+<div class="max-w-[1600px] mx-auto pt-24 md:pt-32 px-4 md:px-8 lg:px-12 pb-20">
+
+<!-- ===== ASYMMETRIC LAYOUT ===== -->
+<div class="flex flex-col lg:flex-row gap-8 lg:gap-16 relative items-start">
+
+<!-- ===== LEFT SIDEBAR ===== -->
+<aside class="w-full lg:w-1/4 lg:sticky lg:top-32 space-y-8 margin-scroll pr-4 pb-8 border-l-2 border-accent/20 pl-6 z-20">
+
+  <div class="mb-12">
+    <p class="font-mono text-xs text-ink-secondary mb-2 uppercase tracking-[0.2em]">Ідентифікатор</p>
+    <p class="font-mono text-sm font-bold text-accent bg-surface-high inline-block px-2 py-1">BPEDK-2026-06-A</p>
+  </div>
+
+  <div class="space-y-6" id="methodology-notes">
+    <div class="border-t border-subtle pt-4">
+      <h5 class="font-mono text-xs text-accent mb-2 uppercase font-bold tracking-widest flex justify-between items-center">
+        Анотація <span class="text-edu font-mono">[1]</span>
+      </h5>
+      <p class="text-xs text-ink-secondary leading-relaxed">
+        Курсова робота Савіна Д.С. на тему психологічної безпеки та педагогічної доцільності ШІ-генерованого контенту для дітей дошкільного віку.
+      </p>
+    </div>
+
+    <div class="border-t border-subtle pt-4">
+      <h5 class="font-mono text-xs text-accent mb-2 uppercase font-bold tracking-widest flex justify-between items-center">
+        Параметри <span class="text-edu font-mono">[2]</span>
+      </h5>
+      <ul class="font-mono text-xs space-y-2">
+        <li class="flex justify-between"><span>Респонденти</span> <span class="text-accent font-bold">144</span></li>
+        <li class="flex justify-between"><span>Матеріали корпусу</span> <span class="text-accent font-bold">15</span></li>
+        <li class="flex justify-between"><span>Вихователі</span> <span>62</span></li>
+        <li class="flex justify-between"><span>Батьки</span> <span>82</span></li>
+        <li class="flex justify-between"><span>Контент &gt;1 год/день</span> <span class="text-danger font-bold">47%</span></li>
+      </ul>
+    </div>
+
+    <div class="border-t border-subtle pt-4">
+      <h5 class="font-mono text-xs text-accent mb-4 uppercase font-bold tracking-widest">Ключові Терміни</h5>
+      <ul class="space-y-4 text-xs text-ink-secondary">
+        <li class="group cursor-pointer">
+          <a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer" class="text-edu font-semibold block mb-1 group-hover:underline">ШІ-мотлох (AI slop)</a>
+          Масове генерування низькоякісного контенту нейромережами без редакційного контролю.
+        </li>
+        <li class="group cursor-pointer">
+          <a href="https://ru.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer" class="text-edu font-semibold block mb-1 group-hover:underline">Elsagate 2.0</a>
+          Використання дитячих персонажів у тривожних або абсурдних ситуаціях, створених алгоритмами.
+        </li>
+        <li class="group cursor-pointer">
+          <span class="text-edu font-semibold block mb-1">Сліпе оцінювання</span>
+          Методика, за якої респонденти не знають походження контенту (людське чи ШІ).
+        </li>
+      </ul>
+    </div>
+
+    <div class="border-t border-subtle pt-4">
+      <h5 class="font-mono text-xs text-accent mb-2 uppercase font-bold tracking-widest">Анкети</h5>
+      <ul class="space-y-2 text-xs">
+        <li><a class="text-edu hover:underline" href="survey/educators/">→ Анкета вихователів</a></li>
+        <li><a class="text-par hover:underline" href="survey/parents/">→ Анкета батьків</a></li>
+      </ul>
+    </div>
+  </div>
+
+</aside>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="w-full lg:w-3/4 space-y-16 lg:space-y-32 relative z-10">
+
+  <!-- HERO -->
+  <section class="relative" id="abstract">
+    <div class="bg-surface border border-subtle p-8 md:p-12 lg:p-16 shadow-2xl relative z-10 lg:-ml-12 paper-layer">
+      <p class="font-mono text-xs text-ink-secondary mb-6 uppercase tracking-[0.2em] flex items-center gap-2">
+        <span class="material-symbols-outlined text-sm">inventory_2</span>
+        Первинна анотація
+      </p>
+      <h1 class="font-display text-4xl md:text-5xl text-ink mb-8 leading-tight">
+        Психологічна безпека та педагогічна доцільність ШІ-генерованого контенту для дошкільнят<a class="footnote-ref" href="#methodology-notes">[1]</a>
+      </h1>
+      <div class="grid md:grid-cols-3 gap-8 items-start border-t border-subtle pt-8">
+        <div class="md:col-span-2">
+          <p class="text-base md:text-lg text-ink-secondary leading-relaxed">
+            Дослідження актуальної проблеми інтеграції штучного інтелекту в дитячий медіапростір.
+            Аналіз ризиків алгоритмічно згенерованого контенту та його вплив на когнітивний
+            розвиток дошкільнят через сліпе оцінювання, контент-аналіз і практичні рекомендації
+            для дорослих.
+          </p>
+        </div>
+        <div class="bg-surface-low p-6 border border-subtle">
+          <p class="font-mono text-xs text-accent uppercase font-bold mb-4">Статус звіту</p>
+          <div class="space-y-4 font-mono text-sm">
+            <div class="flex justify-between border-b border-subtle pb-2">
+              <span class="text-ink-secondary">Збір даних</span>
+              <span class="text-accent font-bold">Завершено</span>
+            </div>
+            <div class="flex justify-between border-b border-subtle pb-2">
+              <span class="text-ink-secondary">Аналіз</span>
+              <span class="text-accent font-bold">Рівень 4</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-ink-secondary">Автор</span>
+              <span class="text-accent font-bold">Савін Д.С.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="relative -mt-10 lg:ml-20">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="bg-surface border border-subtle p-6 paper-layer transform rotate-1 hover:rotate-0 transition-transform z-10">
+        <p class="font-display text-4xl text-accent mb-2">144</p>
+        <p class="font-mono text-xs text-ink-secondary uppercase tracking-wider">Респондентів</p>
+      </div>
+      <div class="bg-surface border border-subtle p-6 paper-layer transform -rotate-2 hover:rotate-0 transition-transform z-20 mt-4 lg:mt-0">
+        <p class="font-display text-4xl text-accent mb-2">15</p>
+        <p class="font-mono text-xs text-ink-secondary uppercase tracking-wider">Одиниць корпусу</p>
+      </div>
+      <div class="bg-accent-fg border border-accent p-6 paper-layer transform rotate-1 hover:rotate-0 transition-transform z-10 -mt-2 lg:mt-0 shadow-lg">
+        <p class="font-display text-4xl mb-2">47%</p>
+        <p class="font-mono text-xs text-on-accent-dim uppercase tracking-wider">Контент понад годину/день<a class="footnote-ref text-on-accent hover:text-white" href="#methodology-notes">[2]</a></p>
+      </div>
+      <div class="bg-surface border border-subtle p-6 paper-layer transform -rotate-1 hover:rotate-0 transition-transform z-20 mt-6 lg:mt-0">
+        <p class="font-display text-4xl text-accent mb-2">0%</p>
+        <p class="font-mono text-xs text-ink-secondary uppercase tracking-wider">Точність на традиційне відео</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMS -->
+  <section class="space-y-16">
+    <div class="bg-card border border-subtle p-8 md:p-12 shadow-md relative paper-layer">
+      <div class="absolute top-0 right-0 p-4 font-mono text-xs text-ink-secondary bg-code border-l border-b border-subtle">FIG_01_PROBLEMS</div>
+      <h3 class="font-display text-3xl text-ink mb-6 border-b border-subtle pb-4">Проблема: Алгоритмічний контент</h3>
+      <div class="grid md:grid-cols-2 gap-8 lg:gap-16">
+        <div>
+          <div class="space-y-6">
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">ШІ-мотлох (AI slop)</span>
+                <span class="font-mono text-danger">КРИТИЧНО</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bg-danger h-full transform origin-left transition-transform duration-1000 ease-out group-hover:scale-x-105" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">Elsagate 2.0</span>
+                <span class="font-mono text-danger">ВИСОКИЙ</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bg-danger h-full transform origin-left transition-transform duration-1000 ease-out group-hover:scale-x-105" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">Фрагментарне сприйняття</span>
+                <span class="font-mono text-accent2">ПОМИРНИЙ</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bg-accent2 h-full transform origin-left transition-transform duration-1000 ease-out group-hover:scale-x-105" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-quote border-l-4 border-accent p-6 shadow-inner relative overflow-hidden group mt-8">
+            <div class="absolute -right-4 -top-4 text-9xl text-surface-variant opacity-20 font-serif font-black group-hover:scale-110 transition-transform duration-700">"</div>
+            <p class="font-display text-lg italic text-accent relative z-10">
+              Відсутність логіки та причинно-наслідкових зв'язків у згенерованому контенті формує фрагментарне сприйняття світу у дитини.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-8">
+          <p class="text-base text-ink-secondary leading-relaxed">
+            Масове генерування низькоякісного, часто безглуздого контенту за допомогою ШІ перенасичує платформи,
+            знижуючи загальну якість доступного медіа для дітей та спотворюючи наративні структури.
+            Використання знайомих дітям персонажів у невідповідних, тривожних або абсурдних ситуаціях,
+            створених алгоритмами без редакційного контролю, може викликати психологічний дискомфорт у дошкільнят.
+          </p>
+          <p class="text-xs text-ink-secondary font-mono">
+            Джерела:
+            <a class="text-edu hover:underline" href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer">Wikipedia: Слоп</a>,
+            <a class="text-edu hover:underline" href="https://ru.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer">Wikipedia: Elsagate</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINDINGS -->
+  <section id="findings">
+    <div class="bg-card border border-subtle p-8 md:p-12 shadow-md relative paper-layer">
+      <div class="absolute top-0 right-0 p-4 font-mono text-xs text-ink-secondary bg-code border-l border-b border-subtle">FIG_02_FINDINGS</div>
+      <h3 class="font-display text-3xl text-ink mb-6 border-b border-subtle pb-4">Результати контент-аналізу</h3>
+
+      <p class="text-base text-ink-secondary leading-relaxed mb-8">
+        Аналіз відеоконтенту для дітей демонструє значну різницю в якості та безпеці між
+        традиційною анімацією та контентом, повністю або частково згенерованим ШІ.
+      </p>
+
+      <!-- Chart row -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-surface-low p-6 border border-subtle">
+          <p class="font-mono text-xs text-accent uppercase font-bold mb-4">Якість наративу</p>
+          <div class="space-y-4">
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">Традиційна анімація</span>
+                <span class="font-mono text-accent">94.4%</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bar-fill h-full" style="width:94.4%"></div>
+              </div>
+            </div>
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">ШІ/Гібридне відео</span>
+                <span class="font-mono text-accent">72.2%</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bar-fill h-full" style="width:72.2%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-surface-low p-6 border border-subtle">
+          <p class="font-mono text-xs text-accent uppercase font-bold mb-4">Структурованість історій</p>
+          <div class="space-y-4">
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">ШІ (структурований промпт)</span>
+                <span class="font-mono text-accent">97.2%</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bar-fill h-full" style="width:97.2%"></div>
+              </div>
+            </div>
+            <div class="group cursor-crosshair">
+              <div class="flex justify-between font-mono text-xs mb-2 uppercase tracking-wide">
+                <span class="group-hover:text-edu transition-colors">ШІ (мінімальний промпт)</span>
+                <span class="font-mono text-accent">80.6%</span>
+              </div>
+              <div class="w-full bar-bg h-2 rounded-none overflow-hidden">
+                <div class="bar-fill h-full" style="width:80.6%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comparison chart -->
+      <h4 class="font-display text-xl text-ink mb-6">Оцінка текстів та відео: вихователі й батьки</h4>
+      <div class="space-y-4">
+        <div class="flex items-center gap-4">
+          <span class="font-mono text-xs uppercase w-32 text-right text-edu">Батьки (ШІ)</span>
+          <div class="flex-1 bar-bg h-3 rounded-none overflow-hidden">
+            <div class="bar-fill-edu h-full transition-transform duration-1000 ease-out" style="width:92.8%"></div>
+          </div>
+          <span class="font-mono text-sm font-bold text-ink w-16">4.64</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="font-mono text-xs uppercase w-32 text-right text-edu">Батьки (Трад.)</span>
+          <div class="flex-1 bar-bg h-3 rounded-none overflow-hidden">
+            <div class="bar-fill-edu h-full transition-transform duration-1000 ease-out" style="width:86.6%"></div>
+          </div>
+          <span class="font-mono text-sm font-bold text-ink w-16">4.33</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="font-mono text-xs uppercase w-32 text-right text-par">Вихователі (ШІ)</span>
+          <div class="flex-1 bar-bg h-3 rounded-none overflow-hidden">
+            <div class="bar-fill-par h-full transition-transform duration-1000 ease-out" style="width:83.2%"></div>
+          </div>
+          <span class="font-mono text-sm font-bold text-ink w-16">4.16</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="font-mono text-xs uppercase w-32 text-right text-par">Вихователі (Трад.)</span>
+          <div class="flex-1 bar-bg h-3 rounded-none overflow-hidden">
+            <div class="bar-fill-par h-full transition-transform duration-1000 ease-out" style="width:81.6%"></div>
+          </div>
+          <span class="font-mono text-sm font-bold text-ink w-16">4.08</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY: BLIND TEST -->
+  <section class="pb-8" id="methodology">
+    <div class="bg-surface border-l-4 border-accent p-8 md:p-10 shadow-md relative paper-layer">
+      <div class="absolute top-0 right-0 p-4 font-mono text-xs text-ink-secondary bg-code border-l border-b border-subtle">FIG_03_METHOD</div>
+      <h3 class="font-display text-2xl text-accent mb-4">Експертне сліпе тестування</h3>
+      <p class="text-base text-ink-secondary leading-relaxed mb-6">
+        Вражаючий результат: під час сліпого тестування
+        <strong>100% вихователів</strong> помилково ідентифікували традиційну
+        високоякісну анімацію як таку, що згенерована штучним інтелектом.
+        Це свідчить про глибоке розмиття меж між людською та машинною творчістю
+        в сприйнятті дорослих.
+      </p>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-card border border-subtle p-6 shadow-sm">
+          <p class="font-mono text-xs text-danger uppercase font-bold mb-2">Розпізнавання традиційного відео</p>
+          <p class="font-display text-4xl text-ink mb-2">0%</p>
+          <p class="text-sm text-ink-secondary">Вихователів правильно визначили традиційне відео як створене людиною.</p>
+        </div>
+        <div class="bg-card border border-subtle p-6 shadow-sm">
+          <p class="font-mono text-xs text-accent uppercase font-bold mb-2">Розпізнавання ШІ-відео</p>
+          <p class="font-display text-4xl text-ink mb-2">84–85%</p>
+          <p class="text-sm text-ink-secondary">Вихователі та батьки розпізнавали ШІ-відео значно точніше, ніж традиційну анімацію.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORPUS -->
+  <section class="pt-16 pb-32" id="corpus">
+    <div class="flex items-end justify-between mb-12 border-b border-subtle pb-4">
+      <h3 class="font-display text-3xl text-ink">Corpus Матеріалів</h3>
+      <span class="font-mono text-sm text-ink-secondary">15 ФАЙЛІВ ЗАВАНТАЖЕНО</span>
+    </div>
+    <p class="text-base text-ink-secondary leading-relaxed mb-8">
+      Корпус містить 15 одиниць для сліпого оцінювання: 6 відеофрагментів і 9 казкових текстів.
+      На сторінках матеріалів походження відкривається окремим спойлером, щоб не заважати логіці сліпого оцінювання.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+      <!-- Video Cards -->
+      <div class="bg-surface-low border border-subtle p-6 dossier-card transform -rotate-2 origin-bottom-left shadow-sm hover:shadow-xl group">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-ink-secondary group-hover:text-accent transition-colors">movie</span>
+          <span class="font-mono text-xs bg-surface px-2 py-1 border border-subtle">V1–V3</span>
+        </div>
+        <h6 class="font-display text-xl mb-3 group-hover:text-edu transition-colors">Відеофрагменти V1–V3</h6>
+        <p class="text-ink-secondary line-clamp-3">Ґруффало, Кротик і Панда, Шусть і Шуня — відео для порівняння якості наративу.</p>
+        <div class="mt-6 border-t border-subtle pt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <a class="text-xs font-bold uppercase text-accent hover:underline" href="m/grk/">Переглянути →</a>
+        </div>
+      </div>
+      <div class="bg-surface-low border border-subtle p-6 dossier-card transform rotate-1 origin-top shadow-sm hover:shadow-xl group lg:mt-12">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-ink-secondary group-hover:text-accent transition-colors">movie</span>
+          <span class="font-mono text-xs bg-surface px-2 py-1 border border-subtle">V4–V6</span>
+        </div>
+        <h6 class="font-display text-xl mb-3 group-hover:text-edu transition-colors">Відеофрагменти V4–V6</h6>
+        <p class="text-ink-secondary line-clamp-3">Синій Трактор, Тофі, Пригоди поросятка — ШІ/гібридні відео для сліпого тестування.</p>
+        <div class="mt-6 border-t border-subtle pt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <a class="text-xs font-bold uppercase text-accent hover:underline" href="m/trk/">Переглянути →</a>
+        </div>
+      </div>
+      <div class="bg-surface-low border border-subtle p-6 dossier-card transform -rotate-3 origin-bottom-right shadow-sm hover:shadow-xl group sm:col-span-2 lg:col-span-1 lg:-mt-8">
+        <div class="flex justify-between items-start mb-4">
+          <span class="material-symbols-outlined text-ink-secondary group-hover:text-accent transition-colors">menu_book</span>
+          <span class="font-mono text-xs bg-surface px-2 py-1 border border-subtle">T1–T9</span>
+        </div>
+        <h6 class="font-display text-xl mb-3 group-hover:text-edu transition-colors">Текстові матеріали</h6>
+        <p class="text-ink-secondary line-clamp-3">9 казкових текстів: від "Навіщо кажуть Спасибо" до "Пригоди сонячного зайчика Пстрика".</p>
+        <div class="mt-6 border-t border-subtle pt-4 opacity-0 group-hover:opacity-100 transition-opacity">
+          <a class="text-xs font-bold uppercase text-accent hover:underline" href="m/spb/">Переглянути →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECOMMENDATIONS -->
+  <section class="pb-24" id="resources">
+    <div class="bg-card p-8 md:p-12 border-t-8 border-accent shadow-2xl mx-auto max-w-3xl paper-layer relative">
+      <div class="absolute top-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-surface-variant rounded-full"></div>
+      <h3 class="font-display text-2xl text-ink mb-8 text-center">Практичні рекомендації для батьків</h3>
+
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+        <div class="bg-surface-low p-6 border border-subtle">
+          <span class="material-symbols-outlined text-accent mb-3" style="font-variation-settings:'FILL' 0;">fact_check</span>
+          <h4 class="font-display text-lg text-ink mb-2">Попередня перевірка</h4>
+          <p class="text-sm text-ink-secondary">Завжди переглядайте контент перед тим, як показати його дитині, щоб уникнути "AI slop".</p>
+        </div>
+        <div class="bg-surface-low p-6 border border-subtle">
+          <span class="material-symbols-outlined text-accent mb-3" style="font-variation-settings:'FILL' 0;">speed</span>
+          <h4 class="font-display text-lg text-ink mb-2">Контроль темпу</h4>
+          <p class="text-sm text-ink-secondary">Уникайте відео з гіперстимулюючим, занадто швидким монтажем, характерним для автозгенерованих роликів.</p>
+        </div>
+        <div class="bg-surface-low p-6 border border-subtle">
+          <span class="material-symbols-outlined text-accent mb-3" style="font-variation-settings:'FILL' 0;">family_restroom</span>
+          <h4 class="font-display text-lg text-ink mb-2">Спільний перегляд</h4>
+          <p class="text-sm text-ink-secondary">Дивіться відео разом з дитиною, коментуйте події та пояснюйте незрозумілі моменти.</p>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="border-t border-subtle pt-8 text-center">
+        <span class="material-symbols-outlined text-accent text-3xl mb-4" style="font-variation-settings:'FILL' 1;">tips_and_updates</span>
+        <h3 class="font-display text-xl text-ink mb-4">Висновок</h3>
+        <p class="text-base text-ink-secondary leading-relaxed font-display italic">
+          Швидка експансія ШІ-контенту у сферу дитячих медіа випереджає формування відповідних механізмів захисту
+          та регулювання. <strong>Критично важливою</strong> стає роль дорослого як модератора та провідника,
+          здатного фільтрувати алгоритмічний шум та забезпечувати здоровий когнітивний розвиток дитини в цифрову епоху.
+        </p>
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a class="bg-accent text-on-accent px-8 py-4 font-mono text-xs uppercase font-bold tracking-widest hover:opacity-90 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center" href="paper/">
+          Повний текст (.PDF)
+        </a>
+        <a class="border-2 border-accent text-accent px-8 py-4 font-mono text-xs uppercase font-bold tracking-widest hover:bg-surface-low transition-colors text-center" href="m/">
+          Корпус матеріалів
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="glass-panel border-t border-subtle relative z-50">
+  <div class="flex flex-col md:flex-row justify-between items-center px-8 lg:px-12 w-full max-w-[1600px] mx-auto py-8">
+    <div class="mb-6 md:mb-0 text-center md:text-left">
+      <div class="font-mono text-xs text-accent uppercase tracking-widest font-bold mb-1">Бердичівський педагогічний фаховий коледж</div>
+      <p class="text-xs text-ink-secondary font-mono">Курсова робота · Савін Д.С. · 2026</p>
+    </div>
+    <nav class="flex flex-wrap justify-center gap-8">
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="survey/parents/">Анкета батьків</a>
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="survey/educators/">Анкета вихователів</a>
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="m/">Корпус</a>
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="literature/">Література</a>
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="reports/">Звітність</a>
+      <a class="font-mono text-xs text-ink-secondary uppercase tracking-widest hover:text-accent transition-colors" href="mailto:savind@bpedk.com.ua">Контакт</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // ===== THEME TOGGLE =====
+  const themeToggle = document.getElementById('themeToggle');
+  const themeIcon = document.getElementById('themeIcon');
+  const html = document.documentElement;
+
+  function applyTheme(dark) {
+    if (dark) {
+      html.classList.add('dark');
+      themeIcon.textContent = 'light_mode';
+    } else {
+      html.classList.remove('dark');
+      themeIcon.textContent = 'dark_mode';
+    }
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  }
+
+  // Check saved preference or system preference
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    applyTheme(true);
+  } else if (saved === 'light') {
+    applyTheme(false);
+  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    applyTheme(true);
+  }
+
+  themeToggle.addEventListener('click', () => {
+    applyTheme(!html.classList.contains('dark'));
+  });
+
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Nav active states
+  const navLinks = document.querySelectorAll('nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.forEach(l => l.classList.remove('text-accent', 'border-b-2', 'border-accent', 'pb-1'));
+      navLinks.forEach(l => l.classList.add('text-ink-secondary'));
+      link.classList.remove('text-ink-secondary');
+      link.classList.add('text-accent', 'border-b-2', 'border-accent', 'pb-1');
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+
+  // Header glassmorphism scroll effect
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    if (window.scrollY > 20) {
+      header.classList.add('shadow-md');
+    } else {
+      header.classList.remove('shadow-md');
+    }
+  });
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-S590QSD215"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-S590QSD215', { 'debug_mode': location.hostname === 'localhost' || location.hostname === '127.0.0.1' });
+</script>
+
+</body>
+</html>

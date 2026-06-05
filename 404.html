@@ -36,29 +36,52 @@
   <div class="error-container">
     <div class="error-code" aria-hidden="true">404</div>
     <div class="error-card glass-card">
-      <div class="badge">Помилка</div>
-      <h1>Сторінку не знайдено</h1>
-      <p>Можливо, адреса змінилася або посилання застаріло. Оберіть один із розділів нижче.</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div class="badge">
+          <span class="lang-uk">Помилка</span>
+          <span class="lang-en">Error</span>
+          <span class="lang-sk">Chyba</span>
+        </div>
+        <button class="lang-toggle" type="button"></button>
+      </div>
+      <h1>
+        <span class="lang-uk">Сторінку не знайдено</span>
+        <span class="lang-en">Page Not Found</span>
+        <span class="lang-sk">Stránka nebola nájdená</span>
+      </h1>
+      <p>
+        <span class="lang-uk">Можливо, адреса змінилася або посилання застаріло. Оберіть один із розділів нижче.</span>
+        <span class="lang-en">Perhaps the address changed or the link is outdated. Choose one of the sections below.</span>
+        <span class="lang-sk">Možno sa zmenila adresa alebo je odkaz neaktuálny. Vyberte si jednu z nižšie uvedených sekcií.</span>
+      </p>
       <div class="divider" style="margin: 0 auto 24px;"></div>
       <nav class="error-links" aria-label="Навігація">
         <a class="error-link" href="./">
           <div class="error-link-icon error-link-icon--home" aria-hidden="true">&#8962;</div>
-          Головна сторінка
+          <span class="lang-uk">Головна сторінка</span>
+          <span class="lang-en">Main Page</span>
+          <span class="lang-sk">Hlavná stránka</span>
           <span>index</span>
         </a>
         <a class="error-link" href="./m/">
           <div class="error-link-icon error-link-icon--hub" aria-hidden="true">&#9783;</div>
-          Корпус матеріалів
+          <span class="lang-uk">Корпус матеріалів</span>
+          <span class="lang-en">Materials Corpus</span>
+          <span class="lang-sk">Korpus materiálov</span>
           <span>m/</span>
         </a>
         <a class="error-link" href="./survey/educators/">
           <div class="error-link-icon error-link-icon--edu" aria-hidden="true">&#9998;</div>
-          Опитування вихователів
+          <span class="lang-uk">Опитування вихователів</span>
+          <span class="lang-en">Educators' Survey</span>
+          <span class="lang-sk">Prieskum medzi pedagógmi</span>
           <span>survey/educators</span>
         </a>
         <a class="error-link" href="./survey/parents/">
           <div class="error-link-icon error-link-icon--par" aria-hidden="true">&#9998;</div>
-          Опитування батьків
+          <span class="lang-uk">Опитування батьків</span>
+          <span class="lang-en">Parents' Survey</span>
+          <span class="lang-sk">Prieskum medzi rodičmi</span>
           <span>survey/parents</span>
         </a>
       </nav>
@@ -70,6 +93,7 @@
       window.Telegram.WebApp.ready();
     }
   </script>
+  <script src="assets/shared.js?v=3" defer></script>
   <script src="assets/analytics.js?v=2" defer></script>
 </body>
 </html>

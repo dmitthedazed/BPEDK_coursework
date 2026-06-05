@@ -19,62 +19,213 @@
 <div class="paper-viewer-layout">
   <!-- Sidebar -->
   <aside class="paper-sidebar" id="sidebar">
-    <div class="sidebar-header">
+    <div class="sidebar-header" style="display: flex; align-items: center; justify-content: space-between;">
       <a href="../" class="sidebar-back">
         <span class="material-symbols-outlined">arrow_back</span>
-        На головну
+        <span class="lang-uk">На головну</span>
+        <span class="lang-en">To Main</span>
+        <span class="lang-sk">Na hlavnú</span>
       </a>
+      <button class="lang-toggle" type="button" style="padding: 4px 8px; font-size: 0.7rem;"></button>
     </div>
 
     <!-- Paper info card -->
     <div class="sidebar-card">
-      <h2 class="sidebar-title">Курсова робота</h2>
-      <p class="sidebar-author">Савін Д.С.</p>
-      <p class="sidebar-year">2026 · Бердичівський педколедж</p>
+      <h2 class="sidebar-title">
+        <span class="lang-uk">Курсова робота</span>
+        <span class="lang-en">Coursework Paper</span>
+        <span class="lang-sk">Ročníková práca</span>
+      </h2>
+      <p class="sidebar-author">
+        <span class="lang-uk">Савін Д.С.</span>
+        <span class="lang-en">Savin D.S.</span>
+        <span class="lang-sk">Savin D.S.</span>
+      </p>
+      <p class="sidebar-year">
+        <span class="lang-uk">2026 · Бердичівський педколедж</span>
+        <span class="lang-en">2026 · Berdychiv Pedagogical College</span>
+        <span class="lang-sk">2026 · Berdyčivská pedagogická škola</span>
+      </p>
       <div class="sidebar-meta">
         <span class="sidebar-meta-item">
           <span class="material-symbols-outlined">description</span>
-          52 сторінки
+          <span class="lang-uk">52 сторінки</span>
+          <span class="lang-en">52 pages</span>
+          <span class="lang-sk">52 strán</span>
         </span>
         <span class="sidebar-meta-item">
           <span class="material-symbols-outlined">school</span>
-          Дитяча психологія
+          <span class="lang-uk">Дитяча психологія</span>
+          <span class="lang-en">Child Psychology</span>
+          <span class="lang-sk">Detská psychológia</span>
         </span>
       </div>
       <a href="../files/coursework.pdf" download class="sidebar-download">
         <span class="material-symbols-outlined">download</span>
-        Завантажити PDF
+        <span class="lang-uk">Завантажити PDF</span>
+        <span class="lang-en">Download PDF</span>
+        <span class="lang-sk">Stiahnuť PDF</span>
       </a>
     </div>
 
     <!-- Table of contents -->
     <nav class="sidebar-toc" aria-label="Зміст курсової роботи">
-      <h3 class="sidebar-toc-title">Зміст</h3>
+      <h3 class="sidebar-toc-title">
+        <span class="lang-uk">Зміст</span>
+        <span class="lang-en">Table of Contents</span>
+        <span class="lang-sk">Obsah</span>
+      </h3>
       <ul class="toc-list">
-        <li><a href="#toc-vstup" class="toc-link active" data-page="3">Вступ<span>с. 3</span></a></li>
+        <li><a href="#toc-vstup" class="toc-link active" data-page="3">
+          <span class="lang-uk">Вступ</span>
+          <span class="lang-en">Introduction</span>
+          <span class="lang-sk">Úvod</span>
+          <span>
+            <span class="lang-uk">с. 3</span>
+            <span class="lang-en">p. 3</span>
+            <span class="lang-sk">s. 3</span>
+          </span>
+        </a></li>
         <li class="toc-chapter">
-          <a href="#toc-ch1" class="toc-link" data-page="5">Розділ I. Теоретичні засади<span>с. 5</span></a>
+          <a href="#toc-ch1" class="toc-link" data-page="5">
+            <span class="lang-uk">Розділ I. Теоретичні засади</span>
+            <span class="lang-en">Chapter I. Theoretical Foundations</span>
+            <span class="lang-sk">Kapitola I. Teoretické východiská</span>
+            <span>
+              <span class="lang-uk">с. 5</span>
+              <span class="lang-en">p. 5</span>
+              <span class="lang-sk">s. 5</span>
+            </span>
+          </a>
           <ul class="toc-sublist">
-            <li><a href="#toc-1-1" class="toc-link" data-page="5">1.1. Психоемоційний розвиток дошкільників<span>с. 5</span></a></li>
-            <li><a href="#toc-1-2" class="toc-link" data-page="7">1.2. Психологічна безпека дитячого контенту<span>с. 7</span></a></li>
-            <li><a href="#toc-1-3" class="toc-link" data-page="9">1.3. ШІ-генерований контент<span>с. 9</span></a></li>
+            <li><a href="#toc-1-1" class="toc-link" data-page="5">
+              <span class="lang-uk">1.1. Психоемоційний розвиток дошкільників</span>
+              <span class="lang-en">1.1. Psycho-emotional Development of Preschoolers</span>
+              <span class="lang-sk">1.1. Psycho-emocionálny vývoj predškolákov</span>
+              <span>
+                <span class="lang-uk">с. 5</span>
+                <span class="lang-en">p. 5</span>
+                <span class="lang-sk">s. 5</span>
+              </span>
+            </a></li>
+            <li><a href="#toc-1-2" class="toc-link" data-page="7">
+              <span class="lang-uk">1.2. Психологічна безпека дитячого контенту</span>
+              <span class="lang-en">1.2. Psychological Safety of Children's Content</span>
+              <span class="lang-sk">1.2. Psychologická bezpečnosť detského obsahu</span>
+              <span>
+                <span class="lang-uk">с. 7</span>
+                <span class="lang-en">p. 7</span>
+                <span class="lang-sk">s. 7</span>
+              </span>
+            </a></li>
+            <li><a href="#toc-1-3" class="toc-link" data-page="9">
+              <span class="lang-uk">1.3. ШІ-генерований контент</span>
+              <span class="lang-en">1.3. AI-generated Content</span>
+              <span class="lang-sk">1.3. Obsah generovaný AI</span>
+              <span>
+                <span class="lang-uk">с. 9</span>
+                <span class="lang-en">p. 9</span>
+                <span class="lang-sk">s. 9</span>
+              </span>
+            </a></li>
           </ul>
         </li>
         <li class="toc-chapter">
-          <a href="#toc-ch2" class="toc-link" data-page="15">Розділ II. Методи та методика дослідження<span>с. 15</span></a>
+          <a href="#toc-ch2" class="toc-link" data-page="15">
+            <span class="lang-uk">Розділ II. Методи та методика дослідження</span>
+            <span class="lang-en">Chapter II. Research Methods & Methodology</span>
+            <span class="lang-sk">Kapitola II. Metódy a metodológia výskumu</span>
+            <span>
+              <span class="lang-uk">с. 15</span>
+              <span class="lang-en">p. 15</span>
+              <span class="lang-sk">s. 15</span>
+            </span>
+          </a>
         </li>
         <li class="toc-chapter">
-          <a href="#toc-ch3" class="toc-link" data-page="23">Розділ III. Аналіз результатів<span>с. 23</span></a>
+          <a href="#toc-ch3" class="toc-link" data-page="23">
+            <span class="lang-uk">Розділ III. Аналіз результатів</span>
+            <span class="lang-en">Chapter III. Analysis of Results</span>
+            <span class="lang-sk">Kapitola III. Analýza výsledkov</span>
+            <span>
+              <span class="lang-uk">с. 23</span>
+              <span class="lang-en">p. 23</span>
+              <span class="lang-sk">s. 23</span>
+            </span>
+          </a>
           <ul class="toc-sublist">
-            <li><a href="#toc-3-1" class="toc-link" data-page="23">3.1. Контент-аналіз матеріалів<span>с. 23</span></a></li>
-            <li><a href="#toc-3-2" class="toc-link" data-page="25">3.2. Анкетування вихователів<span>с. 25</span></a></li>
-            <li><a href="#toc-3-3" class="toc-link" data-page="28">3.3. Анкетування батьків<span>с. 28</span></a></li>
-            <li><a href="#toc-3-4" class="toc-link" data-page="31">3.4. Узагальнення та рекомендації<span>с. 31</span></a></li>
+            <li><a href="#toc-3-1" class="toc-link" data-page="23">
+              <span class="lang-uk">3.1. Контент-аналіз матеріалів</span>
+              <span class="lang-en">3.1. Content Analysis of Materials</span>
+              <span class="lang-sk">3.1. Obsahová analýza materiálov</span>
+              <span>
+                <span class="lang-uk">с. 23</span>
+                <span class="lang-en">p. 23</span>
+                <span class="lang-sk">s. 23</span>
+              </span>
+            </a></li>
+            <li><a href="#toc-3-2" class="toc-link" data-page="25">
+              <span class="lang-uk">3.2. Анкетування вихователів</span>
+              <span class="lang-en">3.2. Survey of Educators</span>
+              <span class="lang-sk">3.2. Prieskum medzi pedagógmi</span>
+              <span>
+                <span class="lang-uk">с. 25</span>
+                <span class="lang-en">p. 25</span>
+                <span class="lang-sk">s. 25</span>
+              </span>
+            </a></li>
+            <li><a href="#toc-3-3" class="toc-link" data-page="28">
+              <span class="lang-uk">3.3. Анкетування батьків</span>
+              <span class="lang-en">3.3. Survey of Parents</span>
+              <span class="lang-sk">3.3. Prieskum medzi rodičmi</span>
+              <span>
+                <span class="lang-uk">с. 28</span>
+                <span class="lang-en">p. 28</span>
+                <span class="lang-sk">s. 28</span>
+              </span>
+            </a></li>
+            <li><a href="#toc-3-4" class="toc-link" data-page="31">
+              <span class="lang-uk">3.4. Узагальнення та рекомендації</span>
+              <span class="lang-en">3.4. Summary and Recommendations</span>
+              <span class="lang-sk">3.4. Zhrnutie a odporúčania</span>
+              <span>
+                <span class="lang-uk">с. 31</span>
+                <span class="lang-en">p. 31</span>
+                <span class="lang-sk">s. 31</span>
+              </span>
+            </a></li>
           </ul>
         </li>
-        <li><a href="#toc-visnovky" class="toc-link" data-page="35">Висновки<span>с. 35</span></a></li>
-        <li><a href="#toc-literatura" class="toc-link" data-page="37">Література<span>с. 37</span></a></li>
-        <li><a href="#toc-dodatky" class="toc-link" data-page="39">Додатки<span>с. 39</span></a></li>
+        <li><a href="#toc-visnovky" class="toc-link" data-page="35">
+          <span class="lang-uk">Висновки</span>
+          <span class="lang-en">Conclusions</span>
+          <span class="lang-sk">Závery</span>
+          <span>
+            <span class="lang-uk">с. 35</span>
+            <span class="lang-en">p. 35</span>
+            <span class="lang-sk">s. 35</span>
+          </span>
+        </a></li>
+        <li><a href="#toc-literatura" class="toc-link" data-page="37">
+          <span class="lang-uk">Література</span>
+          <span class="lang-en">References</span>
+          <span class="lang-sk">Odkazy</span>
+          <span>
+            <span class="lang-uk">с. 37</span>
+            <span class="lang-en">p. 37</span>
+            <span class="lang-sk">s. 37</span>
+          </span>
+        </a></li>
+        <li><a href="#toc-dodatky" class="toc-link" data-page="39">
+          <span class="lang-uk">Додатки</span>
+          <span class="lang-en">Appendices</span>
+          <span class="lang-sk">Prílohy</span>
+          <span>
+            <span class="lang-uk">с. 39</span>
+            <span class="lang-en">p. 39</span>
+            <span class="lang-sk">s. 39</span>
+          </span>
+        </a></li>
       </ul>
     </nav>
 
@@ -82,14 +233,22 @@
     <div class="sidebar-cite" id="citationGuide">
       <h3 class="sidebar-cite-title">
         <span class="material-symbols-outlined">bookmark</span>
-        Як цитувати
+        <span class="lang-uk">Як цитувати</span>
+        <span class="lang-en">How to Cite</span>
+        <span class="lang-sk">Ako citovať</span>
       </h3>
       <p class="sidebar-cite-intro">
-        Якщо посилаєтесь на цю роботу в академічних текстах, використовуйте один із форматів:
+        <span class="lang-uk">Якщо посилаєтесь на цю роботу в академічних текстах, використовуйте один із форматів:</span>
+        <span class="lang-en">If referencing this work in academic texts, use one of the following formats:</span>
+        <span class="lang-sk">Pri citovaní tejto práce v akademických textoch použite jeden z nasledujúcich formátov:</span>
       </p>
 
       <details class="cite-details" open>
-        <summary>ГОСТ (український)</summary>
+        <summary>
+          <span class="lang-uk">ГОСТ (український)</span>
+          <span class="lang-en">GOST (Ukrainian)</span>
+          <span class="lang-sk">GOST (ukrajinský)</span>
+        </summary>
         <div class="cite-block">
           <pre>Савін Д.С. Вплив контенту, створеного нейромережами, на психіку та світогляд дітей дошкільного віку: курсова робота. Бердичівський педагогічний фаховий коледж, 2026.</pre>
         </div>
@@ -119,9 +278,14 @@
       </details>
 
       <details class="cite-details">
-        <summary>Для соцмереж / блогу</summary>
+        <summary>
+          <span class="lang-uk">Для соцмереж / блогу</span>
+          <span class="lang-en">For Social Media / Blog</span>
+          <span class="lang-sk">Pre sociálne médiá / blog</span>
+        </summary>
         <div class="cite-block">
-          <pre>Савін Д.С. (2026). Курсова робота про вплив ШІ-контенту на психіку дошкільників. https://dmitthedazed.github.io/BPEDK_coursework/</pre>
+          <pre><span class="lang-uk">Савін Д.С. (2026). Курсова робота про вплив ШІ-контенту на психіку дошкільників. https://dmitthedazed.github.io/BPEDK_coursework/</span><span class="lang-en">Savin D.S. (2026). Coursework paper on the impact of AI content on preschoolers' psychology. https://dmitthedazed.github.io/BPEDK_coursework/</span>
+          <pre><span class="lang-uk">Савін Д.С. (2026). Курсова робота про вплив ШІ-контенту на психіку дошкільників. https://dmitthedazed.github.io/BPEDK_coursework/</span><span class="lang-sk">Savin D.S. (2026). Ročníková práca o vplyve AI obsahu na psychiku predškolákov. https://dmitthedazed.github.io/BPEDK_coursework/</span></pre>
         </div>
       </details>
     </div>
@@ -139,7 +303,10 @@
 </div>
 
 <!-- Sidebar toggle for mobile -->
-<button class="sidebar-toggle" id="sidebarToggle" aria-label="Відкрити зміст">
+<button class="sidebar-toggle lang-uk" id="sidebarToggle" aria-label="Відкрити зміст">
+  <span class="material-symbols-outlined">menu_book</span>
+</button>
+<button class="sidebar-toggle lang-en" id="sidebarToggleEn" aria-label="Open table of contents">
   <span class="material-symbols-outlined">menu_book</span>
 </button>
 
@@ -152,11 +319,12 @@
   // Sidebar toggle (mobile)
   const sidebar = document.getElementById('sidebar');
   const overlay = document.getElementById('sidebarOverlay');
-  const toggle = document.getElementById('sidebarToggle');
 
-  toggle?.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-    overlay.classList.toggle('active');
+  document.querySelectorAll('.sidebar-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+      overlay.classList.toggle('active');
+    });
   });
 
   overlay?.addEventListener('click', () => {

@@ -1,0 +1,21 @@
+{
+  "name": "bpedk-coursework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static educational research website for coursework on psychological safety and pedagogical appropriateness of AI-generated content for preschoolers",
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "http-server": "^14.1.1",
+    "typescript": "^5.7.0"
+  },
+  "scripts": {
+    "start": "http-server . -p 8080",
+    "dev": "http-server . -p 8080",
+    "test": "playwright test",
+    "test:smoke": "playwright test smoke",
+    "test:mobile": "playwright test mobile-viewports",
+    "test:links": "playwright test links",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui"
+  }
+}

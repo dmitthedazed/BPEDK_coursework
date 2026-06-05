@@ -31,32 +31,63 @@
 
   <main class="redirect-page">
     <div class="redirect-card glass-card survey-closed-card">
-      <span class="badge badge-closed">Завершено</span>
-      <h1 class="closed-title">Збір відповідей завершено</h1>
-      <p class="redirect-subtitle">Дякуємо всім вихователям, які взяли участь у дослідженні! Ваші відповіді допоможуть оцінити якість ШІ-контенту для дошкільників.</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <span class="badge badge-closed">
+          <span class="lang-uk">Завершено</span>
+          <span class="lang-en">Completed</span>
+          <span class="lang-sk">Dokončené</span>
+        </span>
+        <button class="lang-toggle" type="button"></button>
+      </div>
+      
+      <h1 class="closed-title">
+        <span class="lang-uk">Збір відповідей завершено</span>
+        <span class="lang-en">Response Collection Completed</span>
+        <span class="lang-sk">Zber odpovedí dokončený</span>
+      </h1>
+      <p class="redirect-subtitle">
+        <span class="lang-uk">Дякуємо всім вихователям, які взяли участь у дослідженні! Ваші відповіді допоможуть оцінити якість ШІ-контенту для дошкільників.</span>
+        <span class="lang-en">Thank you to all educators who participated in the study! Your responses will help evaluate the quality of AI content for preschoolers.</span>
+        <span class="lang-sk">Ďakujeme všetkým pedagógom, ktorí sa zapojili do výskumu! Vaše odpovede pomôžu vyhodnotiť kvalitu obsahu AI pre predškolákov.</span>
+      </p>
 
       <section class="closed-info" aria-label="Інформація про завершення">
         <tgs-player class="redirect-gif" autoplay loop mode="normal" background="transparent" src="../../assets/ducklike.tgs"></tgs-player>
         <div class="closed-status">
           <p class="closed-status-text">
             <span class="closed-icon">✓</span>
-            Анкетування вихователів завершено. Результати обробляються.
+            <span class="lang-uk">Анкетування вихователів завершено. Результати обробляються.</span>
+            <span class="lang-en">Educator survey completed. The results are being processed.</span>
+            <span class="lang-sk">Prieskum medzi pedagógmi bol dokončený. Výsledky sa spracovávajú.</span>
           </p>
         </div>
       </section>
 
       <div class="redirect-actions">
-        <a id="goHomeBtn" class="closed-home-btn" href="../../">Переглянути дослідження →</a>
+        <a id="goHomeBtn" class="closed-home-btn" href="../../">
+          <span class="lang-uk">Переглянути дослідження →</span>
+          <span class="lang-en">View Research →</span>
+          <span class="lang-sk">Zobraziť výskum →</span>
+        </a>
       </div>
-      <p class="redirect-note">Курсова робота · Савін Д.С. · 2026</p>
+      <p class="redirect-note">
+        <span class="lang-uk">Курсова робота · Савін Д.С. · 2026</span>
+        <span class="lang-en">Coursework · Dmitry Savin · 2026</span>
+        <span class="lang-sk">Ročníková práca · Dmitrij Savin · 2026</span>
+      </p>
     </div>
   </main>
 
   <footer class="site-footer">
-    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
+    <span>
+      <span class="lang-uk">Дослідник: Савін Д.С. · Курсова робота 2026</span>
+      <span class="lang-en">Researcher: Dmitry Savin · Coursework 2026</span>
+      <span class="lang-sk">Výskumník: Dmitrij Savin · Ročníková práca 2026</span>
+    </span>
   </footer>
 
   <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/tgs-player.js"></script>
+  <script src="../../assets/shared.js?v=3" defer></script>
   <script src="../../assets/analytics.js?v=2" defer></script>
 </body>
 </html>

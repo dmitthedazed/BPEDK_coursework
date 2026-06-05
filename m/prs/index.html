@@ -31,7 +31,11 @@
 <body class="theme-video">
   <main class="redirect-page">
     <div class="redirect-card glass-card">
-      <span class="badge">Відеофрагмент V6</span>
+      <span class="badge">
+        <span class="lang-uk">Відеофрагмент V6</span>
+        <span class="lang-en">Video Fragment V6</span>
+        <span class="lang-sk">Video fragment V6</span>
+      </span>
       <h1 id="compliment"></h1>
       
       <p class="redirect-subtitle" id="subtitle"></p>
@@ -39,31 +43,64 @@
       <section class="redirect-media" aria-label="Автоматичний перехід">
         <tgs-player class="redirect-gif" autoplay loop mode="normal" src="../../assets/duck1.tgs" background="transparent"></tgs-player>
         <div class="redirect-status" role="status" aria-live="polite" aria-atomic="true">
-          <p class="timer-row"><span>Переходимо через</span> <span id="timer">-</span> <span>с</span></p>
+          <p class="timer-row">
+            <span class="lang-uk">Переходимо через</span>
+            <span class="lang-en">Redirecting in</span>
+            <span class="lang-sk">Presmerovanie o</span>
+            <span id="timer">-</span>
+            <span class="lang-uk">с</span>
+            <span class="lang-en">s</span>
+            <span class="lang-sk">s</span>
+          </p>
           <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
         </div>
       </section>
       <p id="fallback"></p>
       <div class="redirect-actions"><button id="goNowBtn" type="button">Перейти зараз</button></div>
       <details class="origin-disclosure">
-        <summary>Походження матеріалу</summary>
+        <summary>
+          <span class="lang-uk">Походження матеріалу</span>
+          <span class="lang-en">Material Origin</span>
+          <span class="lang-sk">Pôvod materiálu</span>
+        </summary>
         <div class="origin-body">
-          <p><span class="origin-label">Тип:</span> ШІ-генероване або гібридне відео.</p>
-          <p><span class="origin-label">Матеріал:</span> V6, «Пригоди поросятка», класифіковано за непрямими аудіовізуальними індикаторами.</p>
+          <p>
+            <span class="lang-uk"><span class="origin-label">Тип:</span> ШІ-генероване відео (нейромережевий відеоряд та озвучення).</span>
+            <span class="lang-en"><span class="origin-label">Type:</span>
+            <span class="lang-sk"><span class="origin-label">Typ:</span> AI-generated video (neural network visuals and voiceover).</span>
+          </p>
+          <p>
+            <span class="lang-uk"><span class="origin-label">Матеріал:</span> V6, «Пригоди поросятка», зразок ШІ-генерованого відеоконтенту в корпусі.</span>
+            <span class="lang-en"><span class="origin-label">Material:</span>
+            <span class="lang-sk"><span class="origin-label">Materiál:</span> V6, "Adventures of the Piglet", sample of AI-generated video content in the corpus.</span>
+          </p>
         </div>
       </details>
-      <p class="redirect-note">Участь анонімна · персональні дані не збираються</p>
+      <p class="redirect-note">
+        <span class="lang-uk">Участь анонімна · персональні дані не збираються</span>
+        <span class="lang-en">Anonymous participation · no personal data is collected</span>
+        <span class="lang-sk">Anonymná účasť · nezhromažďujú sa žiadne osobné údaje</span>
+      </p>
     </div>
   </main>
 
   <footer class="site-footer">
-    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
-    <a href="../../">На головну →</a>
+    <span>
+      <span class="lang-uk">Дослідник: Савін Д.С. · Курсова робота 2026</span>
+      <span class="lang-en">Researcher: Dmitry Savin · Coursework 2026</span>
+      <span class="lang-sk">Výskumník: Dmitrij Savin · Ročníková práca 2026</span>
+    </span>
+    <a href="../../">
+      <span class="lang-uk">На головну →</span>
+      <span class="lang-en">To Main →</span>
+      <span class="lang-sk">Na hlavnú →</span>
+    </a>
   </footer>
 
   <script>window.SURVEY_LINKS = ["https://drive.google.com/file/d/1Nht4L9CZ7lAaQ78M-RqYlBnyzeToMpUe/view?usp=drive_link"];</script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.12/dist/tgs-player.js"></script>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script src="../../assets/shared.js?v=3" defer></script>
   <script src="../../survey/survey.js?v=14" defer></script>
   <script src="../../assets/analytics.js?v=2" defer></script>
 </body>

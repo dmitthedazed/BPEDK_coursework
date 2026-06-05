@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/shared.css?v=4" />
-  <link rel="stylesheet" href="assets/landing.css?v=4" />
+  <link rel="stylesheet" href="assets/landing.css?v=8" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Дослідження БПФК · 2026" />
   <meta property="og:title" content="Психологічна безпека ШІ-контенту для дошкільників" />
@@ -59,22 +59,63 @@
 </head>
 <body class="landing-page">
 
-<a href="#abstract" class="skip-link">Перейти до контенту</a>
+<a href="#abstract" class="skip-link">
+  <span class="lang-uk">Перейти до контенту</span>
+  <span class="lang-en">Skip to content</span>
+  <span class="lang-sk">Prejsť na obsah</span>
+</a>
 
 <nav class="topbar site-nav" aria-label="Головна навігація">
   <div class="topbar-inner">
-    <a class="brand site-nav-logo" href="#abstract">Курсова · 2026</a>
+    <a class="brand site-nav-logo" href="#abstract">
+      <span class="lang-uk">Курсова · 2026</span>
+      <span class="lang-en">Coursework · 2026</span>
+      <span class="lang-sk">Ročníková práca · 2026</span>
+    </a>
     <ul class="paper-nav site-nav-links" id="navLinks">
-      <li><a class="active" href="#abstract">Анотація</a></li>
-      <li><a href="#findings">Результати</a></li>
-      <li><a href="#corpus">Корпус</a></li>
-      <li><a href="#methodology">Методологія</a></li>
-      <li><a href="#resources">Рекомендації</a></li>
-      <li><a href="literature/">Література</a></li>
-      <li><a href="reports/">Звітність</a></li>
+      <li><a class="active" href="#abstract">
+        <span class="lang-uk">Анотація</span>
+        <span class="lang-en">Abstract</span>
+        <span class="lang-sk">Abstrakt</span>
+      </a></li>
+      <li><a href="#findings">
+        <span class="lang-uk">Результати</span>
+        <span class="lang-en">Results</span>
+        <span class="lang-sk">Výsledky</span>
+      </a></li>
+      <li><a href="#corpus">
+        <span class="lang-uk">Корпус</span>
+        <span class="lang-en">Corpus</span>
+        <span class="lang-sk">Korpus</span>
+      </a></li>
+      <li><a href="#methodology">
+        <span class="lang-uk">Методологія</span>
+        <span class="lang-en">Methodology</span>
+        <span class="lang-sk">Metodológia</span>
+      </a></li>
+      <li><a href="#resources">
+        <span class="lang-uk">Рекомендації</span>
+        <span class="lang-en">Recommendations</span>
+        <span class="lang-sk">Odporúčania</span>
+      </a></li>
+      <li><a href="literature/">
+        <span class="lang-uk">Література</span>
+        <span class="lang-en">Literature</span>
+        <span class="lang-sk">Literatúra</span>
+      </a></li>
+      <li><a href="reports/">
+        <span class="lang-uk">Звітність</span>
+        <span class="lang-en">Reporting</span>
+        <span class="lang-sk">Podávanie správ</span>
+      </a></li>
     </ul>
     <div class="topbar-actions">
-      <a class="download-paper" href="paper/">Переглянути PDF</a>
+      <button class="lang-toggle" type="button" style="margin-right: 8px;"></button>
+      <a class="download-paper" href="paper/">
+        <span class="lang-uk">Переглянути PDF</span>
+        <span class="lang-en">View PDF</span>
+        <span class="lang-sk">Zobraziť PDF</span>
+      </a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Відкрити меню" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -85,48 +126,98 @@
 <main class="paper-main">
   <header class="paper-hero fade-up" id="abstract">
     <div class="hero-copy">
-      <p class="hero-kicker">Курсова робота Дмитрія Савіна</p>
-      <h1>Вплив ШІ-контенту на психіку та світогляд дітей дошкільного віку</h1>
+      <p class="hero-kicker">
+        <span class="lang-uk">Курсова робота Дмитрія Савіна</span>
+        <span class="lang-en">Dmitry Savin's Coursework</span>
+        <span class="lang-sk">Ročníková práca Dmitrija Savina</span>
+      </p>
+      <h1>
+        <span class="lang-uk">Вплив ШІ-контенту на психіку та світогляд дітей дошкільного віку</span>
+        <span class="lang-en">Impact of AI Content on the Psychology and Worldview of Preschoolers</span>
+        <span class="lang-sk">Vplyv AI obsahu na psychiku a svetonázor predškolákov</span>
+      </h1>
       <p class="paper-lead">
-        Дослідження актуальної проблеми інтеграції штучного інтелекту в дитячий медіапростір.
-        Аналіз ризиків алгоритмічно згенерованого контенту та його вплив на когнітивний
-        розвиток дошкільнят.
+        <span class="lang-uk">
+          Дослідження актуальної проблеми інтеграції штучного інтелекту в дитячий медіапростір.
+          Аналіз ризиків алгоритмічно згенерованого контенту та його вплив на когнітивний
+          розвиток дошкільнят.
+        </span>
+        <span class="lang-en">
+          Research on the pressing issue of integrating artificial intelligence into children's media space.
+          Analysis of the risks of algorithmically generated content and its impact on the cognitive
+          development of preschoolers.
+        </span>
+        <span class="lang-sk">Výskum na pálčivú tému integrácie umelej inteligencie do detského mediálneho priestoru.
+          Analýza rizík algoritmicky generovaného obsahu a jeho vplyvu na kognitívny
+          vývoj predškolákov.</span>
       </p>
       <div class="hero-actions">
-        <a class="download-paper" href="paper/">Переглянути PDF</a>
-        <a class="download-paper secondary" href="m/">Корпус матеріалів</a>
+        <a class="download-paper" href="paper/">
+          <span class="lang-uk">Переглянути PDF</span>
+          <span class="lang-en">View PDF</span>
+          <span class="lang-sk">Zobraziť PDF</span>
+        </a>
+        <a class="download-paper secondary" href="m/">
+          <span class="lang-uk">Корпус матеріалів</span>
+          <span class="lang-en">Materials Corpus</span>
+          <span class="lang-sk">Korpus materiálov</span>
+        </a>
       </div>
     </div>
     <aside class="hero-panel fade-up stagger-1" aria-label="Ключові показники дослідження">
       <div class="hero-panel-head">
-        <span>Дослідницький зріз</span>
+        <span class="lang-uk">Дослідницький зріз</span>
+        <span class="lang-en">Research Scope</span>
+        <span class="lang-sk">Rozsah výskumu</span>
         <strong>2026</strong>
       </div>
       <div class="hero-panel-row">
-        <span>Учасників опитування</span>
+        <span class="lang-uk">Учасників опитування</span>
+        <span class="lang-en">Survey Participants</span>
+        <span class="lang-sk">Účastníci prieskumu</span>
         <strong>144</strong>
       </div>
       <div class="hero-panel-row">
-        <span>Корпус матеріалів</span>
+        <span class="lang-uk">Корпус матеріалів</span>
+        <span class="lang-en">Materials Corpus</span>
+        <span class="lang-sk">Korpus materiálov</span>
         <strong>15</strong>
       </div>
       <div class="hero-panel-row danger">
-        <span>Контент понад годину щодня</span>
+        <span class="lang-uk">Контент понад годину щодня</span>
+        <span class="lang-en">Daily Content > 1 Hour</span>
+        <span class="lang-sk">Denný obsah > 1 hodina</span>
         <strong>47%</strong>
       </div>
-      <div class="hero-panel-note">Сліпе оцінювання, контент-аналіз і практичні рекомендації для дорослих.</div>
+      <div class="hero-panel-note">
+        <span class="lang-uk">Сліпе оцінювання, контент-аналіз і практичні рекомендації для дорослих.</span>
+        <span class="lang-en">Blind evaluation, content analysis, and practical recommendations for adults.</span>
+        <span class="lang-sk">Slepé hodnotenie, obsahová analýza a praktické odporúčania pre dospelých.</span>
+      </div>
     </aside>
     <div class="vertical-rule" aria-hidden="true"></div>
   </header>
 
   <div class="landing-tile-board">
   <section class="paper-section narrow fade-up tile-context">
-    <h2 class="paper-heading" style="text-align:center;">Контекст дослідження</h2>
+    <h2 class="paper-heading" style="text-align:center;">
+      <span class="lang-uk">Контекст дослідження</span>
+      <span class="lang-en">Research Context</span>
+      <span class="lang-sk">Kontext výskumu</span>
+    </h2>
     <div class="context-grid">
       <div class="context-card kpi-card kpi-total">
         <span class="context-value">144</span>
-        <span class="context-label">Учасників опитування</span>
-        <p class="kpi-desc">Загальна репрезентативна вибірка респондентів, залучених до дослідження.</p>
+        <span class="context-label">
+          <span class="lang-uk">Учасників опитування</span>
+          <span class="lang-en">Survey Participants</span>
+          <span class="lang-sk">Účastníci prieskumu</span>
+        </span>
+        <p class="kpi-desc">
+          <span class="lang-uk">Загальна репрезентативна вибірка респондентів, залучених до дослідження.</span>
+          <span class="lang-en">The overall representative sample of respondents involved in the study.</span>
+          <span class="lang-sk">Celková reprezentatívna vzorka respondentov zapojených do štúdie.</span>
+        </p>
         <div class="kpi-decor total-decor"></div>
       </div>
       <div class="context-card kpi-card kpi-split">
@@ -135,17 +226,33 @@
           <span class="sep">/</span>
           <span class="par-num">82</span>
         </span>
-        <span class="context-label">Вихователі та батьки</span>
-        <p class="kpi-desc">Розподіл учасників між професійними педагогами та батьками дошкільнят.</p>
+        <span class="context-label">
+          <span class="lang-uk">Вихователі та батьки</span>
+          <span class="lang-en">Educators and Parents</span>
+          <span class="lang-sk">Pedagógovia a rodičia</span>
+        </span>
+        <p class="kpi-desc">
+          <span class="lang-uk">Розподіл учасників між професійними педагогами та батьками дошкільнят.</span>
+          <span class="lang-en">Distribution of participants between professional educators and parents of preschoolers.</span>
+          <span class="lang-sk">Distribúcia účastníkov medzi profesionálnych pedagógov a rodičov predškolákov.</span>
+        </p>
         <div class="kpi-split-bar">
-          <span class="bar-edu" style="width: 43%" title="Вихователі (43%)"></span>
-          <span class="bar-par" style="width: 57%" title="Батьки (57%)"></span>
+          <span class="bar-edu" style="width: 43%" title="Вихователі (43%) / Educators (43%)"></span>
+          <span class="bar-par" style="width: 57%" title="Батьки (57%) / Parents (57%)"></span>
         </div>
       </div>
       <div class="context-card kpi-card kpi-risk">
         <span class="context-value danger">47%</span>
-        <span class="context-label">Перегляд &gt;1 год щодня</span>
-        <p class="kpi-desc">Частка дітей, що мають високий рівень щоденного споживання медіаконтенту.</p>
+        <span class="context-label">
+          <span class="lang-uk">Перегляд &gt;1 год щодня</span>
+          <span class="lang-en">View >1 Hour Daily</span>
+          <span class="lang-sk">Sledovanie >1 hodina denne</span>
+        </span>
+        <p class="kpi-desc">
+          <span class="lang-uk">Частка дітей, що мають високий рівень щоденного споживання медіаконтенту.</span>
+          <span class="lang-en">The share of children with high daily consumption of media content.</span>
+          <span class="lang-sk">Podiel detí s vysokou dennou konzumáciou mediálneho obsahu.</span>
+        </p>
         <div class="kpi-progress-bar">
           <span class="progress-fill" style="width: 47%"></span>
         </div>
@@ -154,47 +261,84 @@
   </section>
 
   <section class="paper-section narrow fade-up tile-problem">
-    <h2 class="paper-heading">Проблема: Алгоритмічний контент</h2>
+    <h2 class="paper-heading">
+      <span class="lang-uk">Проблема: Алгоритмічний контент</span>
+      <span class="lang-en">The Problem: Algorithmic Content</span>
+      <span class="lang-sk">Problém: Algoritmický obsah</span>
+    </h2>
     <div class="problem-grid">
       <div class="paper-card">
         <div class="problem-title">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">warning</span>
-          <h3><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer">«ШІ-мотлох»</a></h3>
+          <h3><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer">
+            <span class="lang-uk">«ШІ-мотлох»</span>
+            <span class="lang-en">"AI Slop"</span>
+            <span class="lang-sk">"AI balast"</span>
+          </a></h3>
         </div>
         <p>
-          Масове генерування низькоякісного, часто безглуздого контенту за допомогою ШІ
-          (у публічному дискурсі — AI slop).
-          Такий контент перенасичує платформи, знижуючи загальну якість доступного медіа
-          для дітей та спотворюючи наративні структури.
+          <span class="lang-uk">
+            Масове генерування низькоякісного, часто безглуздого контенту за допомогою ШІ
+            (у публічному дискурсі — AI slop).
+            Такий контент перенасичує платформи, знижуючи загальну якість доступного медіа
+            для дітей та спотворюючи наративні структури.
+          </span>
+          <span class="lang-en">
+            Mass generation of low-quality, often nonsensical content using AI (publicly referred to as AI slop).
+            Such content oversaturates platforms, degrading the overall quality of media available to children and distorting narrative structures.
+          </span>
+          <span class="lang-sk">Masové generovanie nekvalitného, často nezmyselného obsahu pomocou AI (verejne označovaného ako AI balast).
+            Takýto obsah presycuje platformy, znižuje celkovú kvalitu médií dostupných pre deti a deformuje štruktúry rozprávania.</span>
         </p>
-        <a class="problem-source" href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer">Wikipedia: Слоп</a>
+        <a class="problem-source" href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF" target="_blank" rel="noopener noreferrer">
+          <span class="lang-uk">Wikipedia: Слоп</span>
+          <span class="lang-en">Wikipedia: Slop</span>
+          <span class="lang-sk">Wikipedia: Slop</span>
+        </a>
       </div>
       <div class="paper-card">
         <div class="problem-title">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">visibility_off</span>
-          <h3><a href="https://ru.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer">Elsagate 2.0</a></h3>
+          <h3><a href="https://en.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer">Elsagate 2.0</a></h3>
         </div>
         <p>
-          Використання знайомих дітям персонажів у невідповідних, тривожних або абсурдних
-          ситуаціях, створених алгоритмами без редакційного контролю, що може викликати
-          психологічний дискомфорт у дошкільнят.
+          <span class="lang-uk">
+            Використання знайомих дітям персонажів у невідповідних, тривожних або абсурдних
+            ситуаціях, створених алгоритмами без редакційного контролю, що може викликати
+            психологічний дискомфорт у дошкільнят.
+          </span>
+          <span class="lang-en">
+            Use of familiar characters in inappropriate, disturbing, or absurd situations created by algorithms without editorial control, which can cause psychological discomfort in preschoolers.
+          </span>
+          <span class="lang-sk">Používanie známych postáv v nevhodných, znepokojujúcich alebo absurdných situáciách vytvorených algoritmami bez redakčnej kontroly, čo môže u predškolákov spôsobiť psychické nepohodlie.</span>
         </p>
-        <a class="problem-source" href="https://ru.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer">Wikipedia: Elsagate</a>
+        <a class="problem-source" href="https://en.wikipedia.org/wiki/Elsagate" target="_blank" rel="noopener noreferrer">Wikipedia: Elsagate</a>
       </div>
     </div>
     <blockquote class="paper-quote fade-up">
-      "Відсутність логіки та причинно-наслідкових зв'язків у згенерованому контенті
-      формує фрагментарне сприйняття світу у дитини."
+      <span class="lang-uk">"Відсутність логіки та причинно-наслідкових зв'язків у згенерованому контенті формує фрагментарне сприйняття світу у дитини."</span>
+      <span class="lang-en">"The lack of logic and cause-and-effect relationships in AI-generated content forms a fragmented perception of the world in a child."</span>
+      <span class="lang-sk">„Nedostatok logiky a príčinných súvislostí v obsahu generovanom AI formuje u dieťaťa roztrieštené vnímanie sveta.“</span>
     </blockquote>
   </section>
 
   <section class="findings-section paper-section tile-findings" id="findings">
     <div class="findings-content">
-      <h2 class="paper-heading fade-up">Результати контент-аналізу</h2>
+      <h2 class="paper-heading fade-up">
+        <span class="lang-uk">Результати контент-аналізу</span>
+        <span class="lang-en">Results of Content Analysis</span>
+        <span class="lang-sk">Výsledky obsahovej analýzy</span>
+      </h2>
       <p class="findings-intro fade-up">
-        Аналіз відеоконтенту для дітей (Таблиця 3.1) демонструє значну різницю
-        в якості та безпеці між традиційною анімацією та контентом, повністю або
-        частково згенерованим ШІ.
+        <span class="lang-uk">
+          Аналіз відеоконтенту для дітей (Таблиця 3.1) демонструє значну різницю
+          в якості та безпеці між традиційною анімацією та контентом, повністю або
+          частково згенерованим ШІ.
+        </span>
+        <span class="lang-en">
+          Analysis of video content for children (Table 3.1) demonstrates a significant difference in quality and safety between traditional animation and content fully or partially generated by AI.
+        </span>
+        <span class="lang-sk">Analýza videoobsahu pre deti (Tabuľka 3.1) preukazuje významný rozdiel v kvalite a bezpečnosti medzi tradičnou animáciou a obsahom plne alebo čiastočne generovaným AI.</span>
       </p>
 
       <div class="chart-two fade-up">
@@ -202,15 +346,37 @@
           <div class="chart-icon" aria-hidden="true">
             <span class="material-symbols-outlined">theater_comedy</span>
           </div>
-          <h3>Якість наративу</h3>
-          <p class="chart-desc">Наскільки послідовна та осмислена історія</p>
+          <h3>
+            <span class="lang-uk">Якість наративу</span>
+            <span class="lang-en">Narrative Quality</span>
+            <span class="lang-sk">Kvalita rozprávania</span>
+          </h3>
+          <p class="chart-desc">
+            <span class="lang-uk">Наскільки послідовна та осмислена історія</span>
+            <span class="lang-en">How consistent and meaningful the story is</span>
+            <span class="lang-sk">Nakoľko je príbeh konzistentný a zmysluplný</span>
+          </p>
           <div class="mini-bars">
             <div>
-              <div class="mini-bar-head"><span>Традиційна анімація</span><strong>94.4%</strong></div>
+              <div class="mini-bar-head">
+                <span>
+                  <span class="lang-uk">Традиційна анімація</span>
+                  <span class="lang-en">Traditional Animation</span>
+                  <span class="lang-sk">Tradičná animácia</span>
+                </span>
+                <strong>94.4%</strong>
+              </div>
               <div class="mini-track"><span class="mini-fill" style="--w:94.4%"></span></div>
             </div>
             <div>
-              <div class="mini-bar-head"><span>ШІ/Гібридне відео</span><strong>72.2%</strong></div>
+              <div class="mini-bar-head">
+                <span>
+                  <span class="lang-uk">ШІ/Гібридне відео</span>
+                  <span class="lang-en">AI/Hybrid Video</span>
+                  <span class="lang-sk">AI/hybridné video</span>
+                </span>
+                <strong>72.2%</strong>
+              </div>
               <div class="mini-track"><span class="mini-fill muted" style="--w:72.2%"></span></div>
             </div>
           </div>
@@ -219,41 +385,83 @@
           <div class="chart-icon" aria-hidden="true">
             <span class="material-symbols-outlined">format_list_bulleted</span>
           </div>
-          <h3>Структурованість історій</h3>
-          <p class="chart-desc">Відповідність класичній структурі оповіді</p>
+          <h3>
+            <span class="lang-uk">Структурованість історій</span>
+            <span class="lang-en">Story Structure</span>
+            <span class="lang-sk">Štruktúra príbehu</span>
+          </h3>
+          <p class="chart-desc">
+            <span class="lang-uk">Відповідність класичній структурі оповіді</span>
+            <span class="lang-en">Alignment with classical narrative structure</span>
+            <span class="lang-sk">Súlad s klasickou štruktúrou rozprávania</span>
+          </p>
           <div class="mini-bars">
             <div>
-              <div class="mini-bar-head"><span>ШІ (структурований промпт)</span><strong>97.2%</strong></div>
+              <div class="mini-bar-head">
+                <span>
+                  <span class="lang-uk">ШІ (структурований промпт)</span>
+                  <span class="lang-en">AI (structured prompt)</span>
+                  <span class="lang-sk">AI (štruktúrovaný prompt)</span>
+                </span>
+                <strong>97.2%</strong>
+              </div>
               <div class="mini-track"><span class="mini-fill" style="--w:97.2%"></span></div>
             </div>
             <div>
-              <div class="mini-bar-head"><span>ШІ (мінімальний промпт)</span><strong>80.6%</strong></div>
+              <div class="mini-bar-head">
+                <span>
+                  <span class="lang-uk">ШІ (мінімальний промпт)</span>
+                  <span class="lang-en">AI (minimal prompt)</span>
+                  <span class="lang-sk">AI (minimálny prompt)</span>
+                </span>
+                <strong>80.6%</strong>
+              </div>
               <div class="mini-track"><span class="mini-fill muted" style="--w:80.6%"></span></div>
             </div>
           </div>
         </div>
       </div>
 
-      <h3 class="paper-subheading fade-up">Оцінка текстів та відео: вихователі й батьки</h3>
+      <h3 class="paper-subheading fade-up">
+        <span class="lang-uk">Оцінка текстів та відео: вихователі й батьки</span>
+        <span class="lang-en">Text and Video Evaluation: Educators and Parents</span>
+        <span class="lang-sk">Hodnotenie textu a videa: pedagógovia a rodičia</span>
+      </h3>
       <div class="fade-up comparison-wrapper">
         <div class="comparison-chart">
           <div class="comparison-row">
-            <div class="comp-label">Батьки (ШІ текст)</div>
+            <div class="comp-label">
+              <span class="lang-uk">Батьки (ШІ текст)</span>
+              <span class="lang-en">Parents (AI Text)</span>
+              <span class="lang-sk">Rodičia (AI text)</span>
+            </div>
             <div class="comp-bar"><span class="comparison-fill" style="width:92.8%"></span></div>
             <span class="comp-value">4.64</span>
           </div>
           <div class="comparison-row">
-            <div class="comp-label">Батьки (Традиц.)</div>
+            <div class="comp-label">
+              <span class="lang-uk">Батьки (Традиц.)</span>
+              <span class="lang-en">Parents (Trad.)</span>
+              <span class="lang-sk">Rodičia (Tradič.)</span>
+            </div>
             <div class="comp-bar"><span class="comparison-fill muted" style="width:86.6%"></span></div>
             <span class="comp-value">4.33</span>
           </div>
           <div class="comparison-row">
-            <div class="comp-label">Вихователі (ШІ)</div>
+            <div class="comp-label">
+              <span class="lang-uk">Вихователі (ШІ)</span>
+              <span class="lang-en">Educators (AI)</span>
+              <span class="lang-sk">Pedagógovia (AI)</span>
+            </div>
             <div class="comp-bar"><span class="comparison-fill" style="width:83.2%"></span></div>
             <span class="comp-value">4.16</span>
           </div>
           <div class="comparison-row">
-            <div class="comp-label">Вихователі (Трад.)</div>
+            <div class="comp-label">
+              <span class="lang-uk">Вихователі (Трад.)</span>
+              <span class="lang-en">Educators (Trad.)</span>
+              <span class="lang-sk">Pedagógovia (Tradič.)</span>
+            </div>
             <div class="comp-bar"><span class="comparison-fill muted" style="width:81.6%"></span></div>
             <span class="comp-value">4.08</span>
           </div>
@@ -263,42 +471,120 @@
   </section>
 
   <section class="paper-section narrow tile-corpus" id="corpus">
-    <h2 class="paper-heading fade-up">Корпус матеріалів</h2>
+    <h2 class="paper-heading fade-up">
+      <span class="lang-uk">Корпус матеріалів</span>
+      <span class="lang-en">Materials Corpus</span>
+      <span class="lang-sk">Korpus materiálov</span>
+    </h2>
     <p class="fade-up" style="color:var(--ink2);line-height:1.68;margin-bottom:32px;">
-      Корпус містить 15 одиниць для сліпого оцінювання: 6 відеофрагментів
-      і 9 казкових текстів. На сторінках матеріалів походження відкривається
-      окремим спойлером, щоб не заважати логіці сліпого оцінювання.
+      <span class="lang-uk">
+        Корпус містить 15 одиниць для сліпого оцінювання: 6 відеофрагментів
+        і 9 казкових текстів. На сторінках матеріалів походження відкривається
+        окремим спойлером, щоб не заважати логіці сліпого оцінювання.
+      </span>
+      <span class="lang-en">
+        The corpus contains 15 items for blind evaluation: 6 video fragments and 9 fairy tale texts. On the material pages, the origin is revealed via a separate spoiler, so as not to interfere with the blind evaluation logic.
+      </span>
+      <span class="lang-sk">Korpus obsahuje 15 položiek na slepé hodnotenie: 6 video fragmentov a 9 rozprávkových textov. Na stránkach materiálov je pôvod odhalený prostredníctvom samostatného spojlera, aby sa nenarušila logika slepého hodnotenia.</span>
     </p>
     <div class="materials-grid fade-up">
       <div class="paper-card">
         <div class="problem-title">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">movie</span>
-          <h3>Відеофрагменти V1-V6</h3>
+          <h3>
+            <span class="lang-uk">Відеофрагменти V1–V6</span>
+            <span class="lang-en">Video Fragments V1–V6</span>
+            <span class="lang-sk">Video fragmenty V1–V6</span>
+          </h3>
         </div>
         <ul class="materials-list">
-          <li><a href="m/grk/"><strong>V1</strong><span>Ґруффало</span></a></li>
-          <li><a href="m/pkd/"><strong>V2</strong><span>Кротик і Панда</span></a></li>
-          <li><a href="m/ssn/"><strong>V3</strong><span>Шусть і Шуня</span></a></li>
-          <li><a href="m/trk/"><strong>V4</strong><span>Три пригоди Синього Трактора</span></a></li>
-          <li><a href="m/tfi/"><strong>V5</strong><span>Тофі і Таємниця</span></a></li>
-          <li><a href="m/prs/"><strong>V6</strong><span>Пригоди поросятка</span></a></li>
+          <li><a href="m/grk/"><strong>V1</strong><span>
+            <span class="lang-uk">Ґруффало</span>
+            <span class="lang-en">The Gruffalo</span>
+            <span class="lang-sk">Gruffalo</span>
+          </span></a></li>
+          <li><a href="m/pkd/"><strong>V2</strong><span>
+            <span class="lang-uk">Кротик і Панда</span>
+            <span class="lang-en">Krtek & Panda</span>
+            <span class="lang-sk">Krtko a panda</span>
+          </span></a></li>
+          <li><a href="m/ssn/"><strong>V3</strong><span>
+            <span class="lang-uk">Шусть і Шуня</span>
+            <span class="lang-en">Pip & Posy</span>
+            <span class="lang-sk">Pip a Posy</span>
+          </span></a></li>
+          <li><a href="m/trk/"><strong>V4</strong><span>
+            <span class="lang-uk">Три пригоди Синього Трактора</span>
+            <span class="lang-en">Blue Tractor</span>
+            <span class="lang-sk">Modrý traktor</span>
+          </span></a></li>
+          <li><a href="m/tfi/"><strong>V5</strong><span>
+            <span class="lang-uk">Тофі і Таємниця</span>
+            <span class="lang-en">Tofi & Mystery</span>
+            <span class="lang-sk">Tofi a záhada</span>
+          </span></a></li>
+          <li><a href="m/prs/"><strong>V6</strong><span>
+            <span class="lang-uk">Пригоди поросятка</span>
+            <span class="lang-en">Piglet Adventures</span>
+            <span class="lang-sk">Prasiatkove dobrodružstvá</span>
+          </span></a></li>
         </ul>
       </div>
       <div class="paper-card">
         <div class="problem-title">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">menu_book</span>
-          <h3>Текстові матеріали T1-T9</h3>
+          <h3>
+            <span class="lang-uk">Текстові матеріали T1–T9</span>
+            <span class="lang-en">Text Materials T1–T9</span>
+            <span class="lang-sk">Textové materiály T1–T9</span>
+          </h3>
         </div>
         <ul class="materials-list">
-          <li><a href="m/spb/"><strong>T1</strong><span>Навіщо кажуть «Спасибі»</span></a></li>
-          <li><a href="m/dub/"><strong>T2</strong><span>Дуб під вікном</span></a></li>
-          <li><a href="m/ksh/"><strong>T3</strong><span>Покинуте кошеня</span></a></li>
-          <li><a href="m/xhf/"><strong>T4</strong><span>Теплий хлібчик для друзів</span></a></li>
-          <li><a href="m/bbp/"><strong>T5</strong><span>Бабусин пиріг</span></a></li>
-          <li><a href="m/izh/"><strong>T6</strong><span>Їжачкова яблучна знахідка</span></a></li>
-          <li><a href="m/lsk/"><strong>T7</strong><span>Лисичка і чарівне зернятко</span></a></li>
-          <li><a href="m/snc/"><strong>T8</strong><span>Сонечко і хмаринка</span></a></li>
-          <li><a href="m/pst/"><strong>T9</strong><span>Пригоди сонячного зайчика Пстрика</span></a></li>
+          <li><a href="m/spb/"><strong>T1</strong><span>
+            <span class="lang-uk">Навіщо кажуть «Спасибі»</span>
+            <span class="lang-en">Why We Say "Thank You"</span>
+            <span class="lang-sk">Prečo hovoríme „Ďakujem“</span>
+          </span></a></li>
+          <li><a href="m/dub/"><strong>T2</strong><span>
+            <span class="lang-uk">Дуб під вікном</span>
+            <span class="lang-en">The Oak Under Window</span>
+            <span class="lang-sk">Dub pod oknom</span>
+          </span></a></li>
+          <li><a href="m/ksh/"><strong>T3</strong><span>
+            <span class="lang-uk">Покинуте кошеня</span>
+            <span class="lang-en">Abandoned Kitten</span>
+            <span class="lang-sk">Opustené mačiatko</span>
+          </span></a></li>
+          <li><a href="m/xhf/"><strong>T4</strong><span>
+            <span class="lang-uk">Теплий хлібчик для друзів</span>
+            <span class="lang-en">Warm Bread for Friends</span>
+            <span class="lang-sk">Teplý chlieb pre kamarátov</span>
+          </span></a></li>
+          <li><a href="m/bbp/"><strong>T5</strong><span>
+            <span class="lang-uk">Бабусин пиріг</span>
+            <span class="lang-en">Grandmother's Pie</span>
+            <span class="lang-sk">Babkin koláč</span>
+          </span></a></li>
+          <li><a href="m/izh/"><strong>T6</strong><span>
+            <span class="lang-uk">Їжачкова яблучна знахідка</span>
+            <span class="lang-en">Hedgehog's Apple Find</span>
+            <span class="lang-sk">Ježkov nález jablka</span>
+          </span></a></li>
+          <li><a href="m/lsk/"><strong>T7</strong><span>
+            <span class="lang-uk">Лисичка і чарівне зернятко</span>
+            <span class="lang-en">Fox & Magic Seed</span>
+            <span class="lang-sk">Líška a čarovné semienko</span>
+          </span></a></li>
+          <li><a href="m/snc/"><strong>T8</strong><span>
+            <span class="lang-uk">Сонечко і хмаринка</span>
+            <span class="lang-en">Sun & Cloud</span>
+            <span class="lang-sk">Slnko a oblak</span>
+          </span></a></li>
+          <li><a href="m/pst/"><strong>T9</strong><span>
+            <span class="lang-uk">Пригоди сонячного зайчика Пстрика</span>
+            <span class="lang-en">Adventures of Pstryk</span>
+            <span class="lang-sk">Pstrykove dobrodružstvá</span>
+          </span></a></li>
         </ul>
       </div>
     </div>
@@ -308,50 +594,116 @@
     <div class="expert-panel fade-up">
       <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">psychology</span>
       <div>
-        <h2>Експертне сліпе тестування</h2>
+        <h2>
+          <span class="lang-uk">Експертне сліпе тестування</span>
+          <span class="lang-en">Expert Blind Testing</span>
+          <span class="lang-sk">Odborné slepé testovanie</span>
+        </h2>
         <p>
-          Вражаючий результат з Розділу 3.2: під час сліпого тестування
-          <strong>100% вихователів</strong> помилково ідентифікували традиційну
-          високоякісну анімацію як таку, що згенерована штучним інтелектом.
-          Це свідчить про глибоке розмиття меж між людською та машинною творчістю
-          в сприйнятті дорослих.
+          <span class="lang-uk">
+            Вражаючий результат з Розділу 3.2: під час сліпого тестування
+            <strong>100% вихователів</strong> помилково ідентифікували традиційну
+            високоякісну анімацію як таку, що згенерована штучним інтелектом.
+            Це свідчить про глибоке розмиття меж між людською та машинною творчістю
+            в сприйнятті дорослих.
+          </span>
+          <span class="lang-en">
+            An impressive result from Section 3.2: during blind testing,
+            <strong>100% of educators</strong> mistakenly identified traditional
+            high-quality animation as generated by artificial intelligence.
+            This indicates a deep blurring of boundaries between human and machine creativity
+            in adults' perception.
+          </span>
+          <span class="lang-sk">Pôsobivý výsledok z časti 3.2: počas slepého testovania
+            <strong>100 % pedagógov</strong> omylom označilo tradičnú
+            vysokokvalitnú animáciu za generovanú umelou inteligenciou.
+            To naznačuje hlboké stieranie hraníc medzi ľudskou a strojovou tvorivosťou
+            vo vnímaní dospelých.</span>
         </p>
       </div>
     </div>
 
-    <h3 class="paper-subheading fade-up">Точність розпізнавання контенту</h3>
+    <h3 class="paper-subheading fade-up">
+      <span class="lang-uk">Точність розпізнавання контенту</span>
+      <span class="lang-en">Content Recognition Accuracy</span>
+      <span class="lang-sk">Presnosť rozpoznávania obsahu</span>
+    </h3>
     <div class="recognition-grid-paper fade-up">
       <div class="recognition-paper">
-        <h4>Розпізнавання Традиційного Відео</h4>
+        <h4>
+          <span class="lang-uk">Розпізнавання Традиційного Відео</span>
+          <span class="lang-en">Traditional Video Recognition</span>
+          <span class="lang-sk">Rozpoznávanie tradičného videa</span>
+        </h4>
         <strong>0%</strong>
-        <p>Вихователів правильно визначили традиційне відео як створене людиною.</p>
+        <p>
+          <span class="lang-uk">Вихователів правильно визначили традиційне відео як створене людиною.</span>
+          <span class="lang-en">of educators correctly identified traditional video as human-made.</span>
+          <span class="lang-sk">pedagógov správne identifikovalo tradičné video ako vytvorené človekom.</span>
+        </p>
       </div>
       <div class="recognition-paper">
-        <h4>Розпізнавання ШІ-Відео</h4>
+        <h4>
+          <span class="lang-uk">Розпізнавання ШІ-Відео</span>
+          <span class="lang-en">AI Video Recognition</span>
+          <span class="lang-sk">Rozpoznávanie AI videa</span>
+        </h4>
         <strong>84% – 85%</strong>
-        <p>Вихователі та батьки розпізнавали ШІ-відео значно точніше, ніж традиційну анімацію.</p>
+        <p>
+          <span class="lang-uk">Вихователі та батьки розпізнавали ШІ-відео значно точніше, ніж традиційну анімацію.</span>
+          <span class="lang-en">Educators and parents recognized AI video much more accurately than traditional animation.</span>
+          <span class="lang-sk">Pedagógovia a rodičia rozpoznali AI video omnoho presnejšie ako tradičnú animáciu.</span>
+        </p>
       </div>
     </div>
   </section>
 
   <section class="resources-section paper-section tile-resources" id="resources">
     <div>
-      <h2 class="paper-heading fade-up" style="text-align:center;">Практичні рекомендації для батьків</h2>
+      <h2 class="paper-heading fade-up" style="text-align:center;">
+        <span class="lang-uk">Практичні рекомендації для батьків</span>
+        <span class="lang-en">Practical Recommendations for Parents</span>
+        <span class="lang-sk">Praktické odporúčania pre rodičov</span>
+      </h2>
       <div class="recommendations-grid fade-up">
         <div class="recommendation-paper">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">fact_check</span>
-          <h4>Попередня перевірка</h4>
-          <p>Завжди переглядайте контент перед тим, як показати його дитині, щоб уникнути "AI slop".</p>
+          <h4>
+            <span class="lang-uk">Попередня перевірка</span>
+            <span class="lang-en">Pre-screening</span>
+            <span class="lang-sk">Predbežná kontrola</span>
+          </h4>
+          <p>
+            <span class="lang-uk">Завжди переглядайте контент перед тим, як показати його дитині, щоб уникнути "AI slop".</span>
+            <span class="lang-en">Always preview content before showing it to a child to avoid "AI slop".</span>
+            <span class="lang-sk">Pred ukázaním obsahu dieťaťu si ho vždy vopred prezrite, aby ste sa vyhli „AI balastu“.</span>
+          </p>
         </div>
         <div class="recommendation-paper">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">speed</span>
-          <h4>Контроль темпу</h4>
-          <p>Уникайте відео з гіперстимулюючим, занадто швидким монтажем, характерним для автозгенерованих роликів.</p>
+          <h4>
+            <span class="lang-uk">Контроль темпу</span>
+            <span class="lang-en">Pace Control</span>
+            <span class="lang-sk">Kontrola tempa</span>
+          </h4>
+          <p>
+            <span class="lang-uk">Уникайте відео з гіперстимулюючим, занадто швидким монтажем, характерним для автозгенерованих роликів.</span>
+            <span class="lang-en">Avoid videos with hyper-stimulating, excessively fast editing typical of auto-generated clips.</span>
+            <span class="lang-sk">Vyhýbajte sa videám s hyperstimulujúcim, nadmerne rýchlym strihom typickým pre automaticky generované klipy.</span>
+          </p>
         </div>
         <div class="recommendation-paper">
           <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 0;">family_restroom</span>
-          <h4>Спільний перегляд</h4>
-          <p>Дивіться відео разом з дитиною, коментуйте події та пояснюйте незрозумілі моменти.</p>
+          <h4>
+            <span class="lang-uk">Спільний перегляд</span>
+            <span class="lang-en">Co-viewing</span>
+            <span class="lang-sk">Spoločné sledovanie</span>
+          </h4>
+          <p>
+            <span class="lang-uk">Дивіться відео разом з дитиною, коментуйте події та пояснюйте незрозумілі моменти.</span>
+            <span class="lang-en">Watch videos together with the child, comment on events, and explain confusing moments.</span>
+            <span class="lang-sk">Sledujte videá spoločne s dieťaťom, komentujte udalosti a vysvetľujte mätúce momenty.</span>
+          </p>
         </div>
       </div>
     </div>
@@ -360,13 +712,29 @@
   <section class="paper-section paper-conclusion fade-up tile-conclusion" id="conclusion">
     <div class="conclusion-card">
       <span class="material-symbols-outlined conclusion-icon" aria-hidden="true">tips_and_updates</span>
-      <h2>Висновок</h2>
+      <h2>
+        <span class="lang-uk">Висновок</span>
+        <span class="lang-en">Conclusion</span>
+        <span class="lang-sk">Záver</span>
+      </h2>
       <p>
-        Швидка експансія ШІ-контенту у сферу дитячих медіа випереджає формування
-        відповідних механізмів захисту та регулювання. <strong>Критично важливою</strong>
-        стає роль дорослого як модератора та провідника, здатного фільтрувати
-        алгоритмічний шум та забезпечувати здоровий когнітивний розвиток дитини
-        в цифрову епоху.
+        <span class="lang-uk">
+          Швидка експансія ШІ-контенту у сферу дитячих медіа випереджає формування
+          відповідних механізмів захисту та регулювання. <strong>Критично важливою</strong>
+          стає роль дорослого як модератора та провідника, здатного фільтрувати
+          алгоритмічний шум та забезпечувати здоровий когнітивний розвиток дитини
+          в цифрову епоху.
+        </span>
+        <span class="lang-en">
+          The rapid expansion of AI content into children's media outpaces the formation
+          of appropriate protection and regulation mechanisms. The role of the adult
+          as a moderator and guide, capable of filtering algorithmic noise and ensuring
+          healthy cognitive development of the child in the digital era, becomes <strong>critically important</strong>.
+        </span>
+        <span class="lang-sk">Rýchla expanzia obsahu AI do detského mediálneho priestoru predbieha vytváranie
+          vhodných ochranných a regulačných mechanizmov. Rola dospelého
+          ako moderátora a sprievodcu, schopného filtrovať algoritmický šum a zabezpečiť
+          zdravý kognitívny vývoj dieťaťa v digitálnej ére, sa stáva <strong>kriticky dôležitou</strong>.</span>
       </p>
     </div>
   </section>
@@ -375,20 +743,59 @@
 
 <footer class="paper-footer">
   <div class="paper-footer-inner">
-    <a class="brand site-nav-logo" href="#abstract">Курсова · 2026</a>
+    <a class="brand site-nav-logo" href="#abstract">
+      <span class="lang-uk">Курсова · 2026</span>
+      <span class="lang-en">Coursework · 2026</span>
+      <span class="lang-sk">Ročníková práca · 2026</span>
+    </a>
     <div class="footer-links">
-      <a href="survey/parents/">Анкета батьків</a>
-      <a href="survey/educators/">Анкета вихователів</a>
-      <a href="m/">Матеріали корпусу</a>
-      <a href="literature/">Література</a>
-      <a href="reports/">Звітність</a>
-      <a href="paper/">Переглянути PDF</a>
-      <a href="mailto:savind@bpedk.com.ua">Контакт</a>
+      <a href="survey/parents/">
+        <span class="lang-uk">Анкета батьків</span>
+        <span class="lang-en">Parents' Survey</span>
+        <span class="lang-sk">Prieskum medzi rodičmi</span>
+      </a>
+      <a href="survey/educators/">
+        <span class="lang-uk">Анкета вихователів</span>
+        <span class="lang-en">Educators' Survey</span>
+        <span class="lang-sk">Prieskum medzi pedagógmi</span>
+      </a>
+      <a href="m/">
+        <span class="lang-uk">Матеріали корпусу</span>
+        <span class="lang-en">Corpus Materials</span>
+        <span class="lang-sk">Materiály korpusu</span>
+      </a>
+      <a href="literature/">
+        <span class="lang-uk">Література</span>
+        <span class="lang-en">Literature</span>
+        <span class="lang-sk">Literatúra</span>
+      </a>
+      <a href="reports/">
+        <span class="lang-uk">Звітність</span>
+        <span class="lang-en">Reporting</span>
+        <span class="lang-sk">Podávanie správ</span>
+      </a>
+      <a href="paper/">
+        <span class="lang-uk">Переглянути PDF</span>
+        <span class="lang-en">View PDF</span>
+        <span class="lang-sk">Zobraziť PDF</span>
+      </a>
+      <a href="mailto:savind@bpedk.com.ua">
+        <span class="lang-uk">Контакт</span>
+        <span class="lang-en">Contact</span>
+        <span class="lang-sk">Kontakt</span>
+      </a>
     </div>
-    <div class="footer-copy">© 2026 Бердичівський педагогічний фаховий коледж.</div>
-    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Перемкнути тему" title="Перемкнути тему">
-      <span class="material-symbols-outlined" id="themeToggleIcon">dark_mode</span>
-    </button>
+    <div class="footer-copy">
+      <span class="lang-uk">© 2026 Бердичівський педагогічний фаховий коледж.</span>
+      <span class="lang-en">© 2026 Berdychiv Pedagogical College.</span>
+      <span class="lang-sk">© 2026 Berdyčivská pedagogická škola.</span>
+    </div>
+    <div style="display: inline-flex; align-items: center; gap: 8px;">
+      <button class="lang-toggle" type="button"></button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Перемкнути тему" title="Перемкнути тему">
+        <span class="material-symbols-outlined" id="themeToggleIcon">dark_mode</span>
+      </button>
+    </div>
   </div>
 </footer>
 

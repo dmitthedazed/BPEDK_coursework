@@ -24,42 +24,106 @@
 </head>
 <body>
   <nav class="site-nav">
-    <a class="site-nav-logo" href="../">Курсова · 2026</a>
-    <a class="site-nav-back" href="../">На головну →</a>
+    <a class="site-nav-logo" href="../">
+      <span class="lang-uk">Курсова · 2026</span>
+      <span class="lang-en">Coursework · 2026</span>
+      <span class="lang-sk">Ročníková práca · 2026</span>
+    </a>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <button class="lang-toggle" type="button"></button>
+      <a class="site-nav-back" href="../">
+        <span class="lang-uk">На головну →</span>
+        <span class="lang-en">To Main →</span>
+        <span class="lang-sk">Na hlavnú →</span>
+      </a>
+    </div>
   </nav>
 
   <main class="reports-layout">
     <header class="reports-header">
-      <div class="section-label">Дані опитування</div>
-      <h1>Звітність</h1>
+      <div class="section-label">
+        <span class="lang-uk">Дані опитування</span>
+        <span class="lang-en">Survey Data</span>
+        <span class="lang-sk">Údaje z prieskumu</span>
+      </div>
+      <h1>
+        <span class="lang-uk">Звітність</span>
+        <span class="lang-en">Reporting</span>
+        <span class="lang-sk">Podávanie správ</span>
+      </h1>
       <p class="reports-lead">
-        CSV-файли з відповідями респондентів, підготовлені для подальшого аналізу
-        результатів опитування батьків і вихователів.
+        <span class="lang-uk">
+          CSV-файли з відповідями респондентів, підготовлені для подальшого аналізу
+          результатів опитування батьків і вихователів.
+        </span>
+        <span class="lang-en">
+          CSV files containing respondents' answers, prepared for further analysis
+          of the survey results from parents and educators.
+        </span>
+        <span class="lang-sk">Súbory CSV obsahujúce odpovede respondentov, pripravené na ďalšiu analýzu
+          výsledkov prieskumu od rodičov a pedagógov.</span>
       </p>
     </header>
 
     <section class="reports-grid" aria-label="Файли для завантаження">
       <article class="report-card">
         <div>
-          <h2>Відповіді батьків</h2>
-          <p>Повний CSV-набір відповідей батьків щодо дитячого медіаспоживання та ставлення до ШІ-контенту.</p>
+          <h2>
+            <span class="lang-uk">Відповіді батьків</span>
+            <span class="lang-en">Parents' Responses</span>
+            <span class="lang-sk">Odpovede rodičov</span>
+          </h2>
+          <p>
+            <span class="lang-uk">Повний CSV-набір відповідей батьків щодо дитячого медіаспоживання та ставлення до ШІ-контенту.</span>
+            <span class="lang-en">Complete CSV dataset of parents' answers regarding children's media consumption and attitude towards AI content.</span>
+            <span class="lang-sk">Kompletný CSV dataset odpovedí rodičov týkajúcich sa konzumácie médií deťmi a postoja k obsahu AI.</span>
+          </p>
           <div class="report-meta">
             <span>CSV</span>
-            <span>Батьки</span>
+            <span>
+              <span class="lang-uk">Батьки</span>
+              <span class="lang-en">Parents</span>
+              <span class="lang-sk">Rodičia</span>
+            </span>
           </div>
         </div>
-        <a class="report-download" href="../data/responses_parents_all.csv" download>Завантажити CSV</a>
+        <a class="report-download" href="../data/responses_parents_all.csv" download>
+          <span class="lang-uk">Завантажити CSV</span>
+          <span class="lang-en">Download CSV</span>
+          <span class="lang-sk">Stiahnuť CSV</span>
+        </a>
         <div class="report-preview">
-          <h3>Перші записи <span>82 рядки</span></h3>
+          <h3>
+            <span class="lang-uk">Перші записи</span>
+            <span class="lang-en">First Records</span>
+            <span class="lang-sk">Prvé záznamy</span>
+            <span>
+              <span class="lang-uk">82 рядки</span>
+              <span class="lang-en">82 rows</span>
+              <span class="lang-sk">82 riadkov</span>
+            </span>
+          </h3>
           <div class="preview-scroll">
             <table class="preview-table">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Матеріали</th>
-                  <th>Вік</th>
+                  <th>
+                    <span class="lang-uk">Матеріали</span>
+                    <span class="lang-en">Materials</span>
+                    <span class="lang-sk">Materiály</span>
+                  </th>
+                  <th>
+                    <span class="lang-uk">Вік</span>
+                    <span class="lang-en">Age</span>
+                    <span class="lang-sk">Vek</span>
+                  </th>
                   <th>YouTube</th>
-                  <th>Оцінки</th>
+                  <th>
+                    <span class="lang-uk">Оцінки</span>
+                    <span class="lang-en">Scores</span>
+                    <span class="lang-sk">Skóre</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -92,25 +156,62 @@
 
       <article class="report-card">
         <div>
-          <h2>Відповіді вихователів</h2>
-          <p>Повний CSV-набір відповідей вихователів для порівняння оцінок і професійного погляду на матеріали корпусу.</p>
+          <h2>
+            <span class="lang-uk">Відповіді вихователів</span>
+            <span class="lang-en">Educators' Responses</span>
+            <span class="lang-sk">Odpovede pedagógov</span>
+          </h2>
+          <p>
+            <span class="lang-uk">Повний CSV-набір відповідей вихователів для порівняння оцінок і професійного погляду на матеріали корпусу.</span>
+            <span class="lang-en">Complete CSV dataset of educators' answers for comparing evaluations and professional perspectives on corpus materials.</span>
+            <span class="lang-sk">Kompletný CSV dataset odpovedí pedagógov na porovnanie hodnotení a odborných pohládov na materiály korpusu.</span>
+          </p>
           <div class="report-meta">
             <span>CSV</span>
-            <span>Вихователі</span>
+            <span>
+              <span class="lang-uk">Вихователі</span>
+              <span class="lang-en">Educators</span>
+              <span class="lang-sk">Pedagógovia</span>
+            </span>
           </div>
         </div>
-        <a class="report-download" href="../data/responses_educators_all.csv" download>Завантажити CSV</a>
+        <a class="report-download" href="../data/responses_educators_all.csv" download>
+          <span class="lang-uk">Завантажити CSV</span>
+          <span class="lang-en">Download CSV</span>
+          <span class="lang-sk">Stiahnuť CSV</span>
+        </a>
         <div class="report-preview">
-          <h3>Перші записи <span>62 рядки</span></h3>
+          <h3>
+            <span class="lang-uk">Перші записи</span>
+            <span class="lang-en">First Records</span>
+            <span class="lang-sk">Prvé záznamy</span>
+            <span>
+              <span class="lang-uk">62 рядки</span>
+              <span class="lang-en">62 rows</span>
+              <span class="lang-sk">62 riadkov</span>
+            </span>
+          </h3>
           <div class="preview-scroll">
             <table class="preview-table">
               <thead>
                 <tr>
                   <th>ID</th>
-                  <th>Матеріали</th>
-                  <th>Стаж</th>
+                  <th>
+                    <span class="lang-uk">Матеріали</span>
+                    <span class="lang-en">Materials</span>
+                    <span class="lang-sk">Materiály</span>
+                  </th>
+                  <th>
+                    <span class="lang-uk">Стаж</span>
+                    <span class="lang-en">Exp.</span>
+                    <span class="lang-sk">Exp.</span>
+                  </th>
                   <th>YouTube</th>
-                  <th>Оцінки</th>
+                  <th>
+                    <span class="lang-uk">Оцінки</span>
+                    <span class="lang-en">Scores</span>
+                    <span class="lang-sk">Skóre</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -144,26 +245,62 @@
 
     <section class="data-note" aria-label="Пояснення складу CSV">
       <div>
-        <h2>Що входить у CSV</h2>
+        <h2>
+          <span class="lang-uk">Що входить у CSV</span>
+          <span class="lang-en">What is included in the CSV</span>
+          <span class="lang-sk">Čo je zahrnuté v CSV</span>
+        </h2>
         <p>
-          Обидва файли об'єднують електронні та паперові відповіді, щоб у
-          подальшому аналізі використовувався один повний масив даних.
+          <span class="lang-uk">
+            Обидва файли об'єднують електронні та паперові відповіді, щоб у
+            подальшому аналізі використовувався один повний масив даних.
+          </span>
+          <span class="lang-en">
+            Both files combine electronic and paper responses so that a single,
+            complete dataset is used for further analysis.
+          </span>
+          <span class="lang-sk">Oba súbory spájajú elektronické a papierové odpovede, takže na ďalšiu analýzu
+            sa používa jeden kompletný dataset.</span>
         </p>
       </div>
       <ul class="data-note-list">
         <li>
           <strong>Google Forms</strong>
-          <span>Електронні відповіді респондентів, експортовані з Google Forms.</span>
-        </li>
-        <li>
-          <strong>Паперові анкети</strong>
-          <span>Відскановані бланки з raw-масивів нижче також внесені до CSV.</span>
-        </li>
-        <li>
-          <strong>Оцифрування</strong>
           <span>
-            Перенесення паперових анкет виконувалося через
-            <a href="../data-entry/">data-entry</a>; усі відповіді читалися та вводилися вручну.
+            <span class="lang-uk">Електронні відповіді респондентів, експортовані з Google Forms.</span>
+            <span class="lang-en">Electronic responses of respondents exported from Google Forms.</span>
+            <span class="lang-sk">Elektronické odpovede respondentov exportované z Google Formulárov.</span>
+          </span>
+        </li>
+        <li>
+          <strong>
+            <span class="lang-uk">Паперові анкети</span>
+            <span class="lang-en">Paper Questionnaires</span>
+            <span class="lang-sk">Papierové dotazníky</span>
+          </strong>
+          <span>
+            <span class="lang-uk">Відскановані бланки з raw-масивів нижче також внесені до CSV.</span>
+            <span class="lang-en">Scanned forms from the raw datasets below are also entered into the CSV.</span>
+            <span class="lang-sk">Naskenované formuláre z nižšie uvedených surových datasetov sú tiež zapísané v CSV.</span>
+          </span>
+        </li>
+        <li>
+          <strong>
+            <span class="lang-uk">Оцифрування</span>
+            <span class="lang-en">Digitization</span>
+            <span class="lang-sk">Digitalizácia</span>
+          </strong>
+          <span>
+            <span class="lang-uk">
+              Перенесення паперових анкет виконувалося через
+              <a href="../data-entry/">data-entry</a>; усі відповіді читалися та вводилися вручну.
+            </span>
+            <span class="lang-en">
+              Transferring paper questionnaires was performed via
+              <a href="../data-entry/">data-entry</a>; all responses were read and entered manually.
+            </span>
+            <span class="lang-sk">Prevod papierových dotazníkov sa uskutočnil prostredníctvom
+              <a href="../data-entry/">data-entry</a>; všetky odpovede boli prečítané a zadané ručne.</span>
           </span>
         </li>
       </ul>
@@ -172,8 +309,16 @@
     <section class="scan-panel" aria-label="Raw-скани паперових опитувальників">
       <div class="scan-head">
         <div>
-          <h2>Raw-скани паперових опитувальників</h2>
-          <p>Оригінальні PDF-скани паперових масивів відповідей. Файли великі, тому відкриття або завантаження може зайняти трохи часу.</p>
+          <h2>
+            <span class="lang-uk">Raw-скани паперових опитувальників</span>
+            <span class="lang-en">Raw Scans of Paper Questionnaires</span>
+            <span class="lang-sk">Naskenované papierové dotazníky</span>
+          </h2>
+          <p>
+            <span class="lang-uk">Оригінальні PDF-скани паперових масивів відповідей. Файли великі, тому відкриття або завантаження може зайняти трохи часу.</span>
+            <span class="lang-en">Original PDF scans of paper response datasets. The files are large, so opening or downloading them may take some time.</span>
+            <span class="lang-sk">Originálne naskenované PDF súbory papierových dotazníkov s odpoveďami. Súbory sú veľké, takže ich otváranie alebo sťahovanie môže chvíľu trvať.</span>
+          </p>
         </div>
         <div class="scan-badge">4 PDF</div>
       </div>
@@ -181,39 +326,81 @@
       <div class="scan-grid">
         <article class="scan-card">
           <div>
-            <strong>Масив 1</strong>
+            <strong>
+              <span class="lang-uk">Масив 1</span>
+              <span class="lang-en">Dataset 1</span>
+              <span class="lang-sk">Dataset 1</span>
+            </strong>
             <span>PDF · 23 MB</span>
           </div>
-          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_1.pdf" download>Завантажити</a>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_1.pdf" download>
+            <span class="lang-uk">Завантажити</span>
+            <span class="lang-en">Download</span>
+            <span class="lang-sk">Stiahnuť</span>
+          </a>
         </article>
         <article class="scan-card">
           <div>
-            <strong>Масив 2</strong>
+            <strong>
+              <span class="lang-uk">Масив 2</span>
+              <span class="lang-en">Dataset 2</span>
+              <span class="lang-sk">Dataset 2</span>
+            </strong>
             <span>PDF · 31 MB</span>
           </div>
-          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_2.pdf" download>Завантажити</a>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_2.pdf" download>
+            <span class="lang-uk">Завантажити</span>
+            <span class="lang-en">Download</span>
+            <span class="lang-sk">Stiahnuť</span>
+          </a>
         </article>
         <article class="scan-card">
           <div>
-            <strong>Масив 3</strong>
+            <strong>
+              <span class="lang-uk">Масив 3</span>
+              <span class="lang-en">Dataset 3</span>
+              <span class="lang-sk">Dataset 3</span>
+            </strong>
             <span>PDF · 28 MB</span>
           </div>
-          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_3.pdf" download>Завантажити</a>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_3.pdf" download>
+            <span class="lang-uk">Завантажити</span>
+            <span class="lang-en">Download</span>
+            <span class="lang-sk">Stiahnuť</span>
+          </a>
         </article>
         <article class="scan-card">
           <div>
-            <strong>Масив 4</strong>
+            <strong>
+              <span class="lang-uk">Масив 4</span>
+              <span class="lang-en">Dataset 4</span>
+              <span class="lang-sk">Dataset 4</span>
+            </strong>
             <span>PDF · 986 KB</span>
           </div>
-          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_4.pdf" download>Завантажити</a>
+          <a class="report-download" href="../data/%D0%9C%D0%B0%D1%81%D0%B8%D0%B2_4.pdf" download>
+            <span class="lang-uk">Завантажити</span>
+            <span class="lang-en">Download</span>
+            <span class="lang-sk">Stiahnuť</span>
+          </a>
         </article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>Дослідник: Савін Д.С. · Курсова робота 2026</span>
-    <a href="../">На головну →</a>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+      <span>
+        <span class="lang-uk">Дослідник: Савін Д.С. · Курсова робота 2026</span>
+        <span class="lang-en">Researcher: Dmitry Savin · Coursework 2026</span>
+        <span class="lang-sk">Výskumník: Dmitrij Savin · Ročníková práca 2026</span>
+      </span>
+      <a href="../">
+        <span class="lang-uk">На головну →</span>
+        <span class="lang-en">To Main →</span>
+        <span class="lang-sk">Na hlavnú →</span>
+      </a>
+    </div>
   </footer>
 
   <script src="../assets/shared.js?v=3" defer></script>

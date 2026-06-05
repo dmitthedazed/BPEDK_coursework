@@ -1,0 +1,262 @@
+- generic [active] [ref=e1]:
+  - link "Перейти до контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#abstract"
+  - navigation "Головна навігація" [ref=e3]:
+    - generic [ref=e4]:
+      - link "Курсова · 2026" [ref=e5] [cursor=pointer]:
+        - /url: "#abstract"
+      - button "Відкрити меню" [ref=e6] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - paragraph [ref=e13]: Курсова робота Дмитрія Савіна
+        - heading "Вплив ШІ-контенту на психіку та світогляд дітей дошкільного віку" [level=1] [ref=e14]
+        - paragraph [ref=e15]: Дослідження актуальної проблеми інтеграції штучного інтелекту в дитячий медіапростір. Аналіз ризиків алгоритмічно згенерованого контенту та його вплив на когнітивний розвиток дошкільнят.
+        - generic [ref=e16]:
+          - link "Переглянути PDF" [ref=e17] [cursor=pointer]:
+            - /url: paper/
+          - link "Корпус матеріалів" [ref=e18] [cursor=pointer]:
+            - /url: m/
+      - complementary "Ключові показники дослідження" [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e21]: Дослідницький зріз
+          - strong [ref=e22]: "2026"
+        - generic [ref=e23]:
+          - generic [ref=e24]: Учасників опитування
+          - strong [ref=e25]: "144"
+        - generic [ref=e26]:
+          - generic [ref=e27]: Корпус матеріалів
+          - strong [ref=e28]: "15"
+        - generic [ref=e29]:
+          - generic [ref=e30]: Контент понад годину щодня
+          - strong [ref=e31]: 47%
+        - generic [ref=e32]: Сліпе оцінювання, контент-аналіз і практичні рекомендації для дорослих.
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - heading "Контекст дослідження" [level=2] [ref=e35]
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: "144"
+            - text: Учасників опитування
+          - generic [ref=e39]:
+            - generic [ref=e40]:
+              - text: 62 Вихователі
+              - text: 82 Батьки
+            - text: Розподіл респондентів
+          - generic [ref=e41]:
+            - generic [ref=e42]: 47%
+            - text: Дітей дивляться контент >1 год щодня
+      - generic [ref=e43]:
+        - 'heading "Проблема: Алгоритмічний контент" [level=2] [ref=e44]'
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]:
+              - generic [ref=e48]: warning
+              - heading "«ШІ-мотлох»" [level=3] [ref=e49]:
+                - link "«ШІ-мотлох»" [ref=e50] [cursor=pointer]:
+                  - /url: https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF
+            - paragraph [ref=e51]: Масове генерування низькоякісного, часто безглуздого контенту за допомогою ШІ (у публічному дискурсі — AI slop). Такий контент перенасичує платформи, знижуючи загальну якість доступного медіа для дітей та спотворюючи наративні структури.
+            - 'link "Wikipedia: Слоп" [ref=e52] [cursor=pointer]':
+              - /url: https://uk.wikipedia.org/wiki/%D0%A1%D0%BB%D0%BE%D0%BF
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - generic [ref=e55]: visibility_off
+              - heading "Elsagate 2.0" [level=3] [ref=e56]:
+                - link "Elsagate 2.0" [ref=e57] [cursor=pointer]:
+                  - /url: https://ru.wikipedia.org/wiki/Elsagate
+            - paragraph [ref=e58]: Використання знайомих дітям персонажів у невідповідних, тривожних або абсурдних ситуаціях, створених алгоритмами без редакційного контролю, що може викликати психологічний дискомфорт у дошкільнят.
+            - 'link "Wikipedia: Elsagate" [ref=e59] [cursor=pointer]':
+              - /url: https://ru.wikipedia.org/wiki/Elsagate
+        - blockquote [ref=e60]: "\"Відсутність логіки та причинно-наслідкових зв'язків у згенерованому контенті формує фрагментарне сприйняття світу у дитини.\""
+      - generic [ref=e62]:
+        - heading "Результати контент-аналізу" [level=2] [ref=e63]
+        - paragraph [ref=e64]: Аналіз відеоконтенту для дітей (Таблиця 3.1) демонструє значну різницю в якості та безпеці між традиційною анімацією та контентом, повністю або частково згенерованим ШІ.
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - generic [ref=e68]: theater_comedy
+            - heading "Якість наративу" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Наскільки послідовна та осмислена історія
+            - generic [ref=e71]:
+              - generic [ref=e73]:
+                - generic [ref=e74]: Традиційна анімація
+                - strong [ref=e75]: 94.4%
+              - generic [ref=e79]:
+                - generic [ref=e80]: ШІ/Гібридне відео
+                - strong [ref=e81]: 72.2%
+          - generic [ref=e84]:
+            - generic [ref=e86]: format_list_bulleted
+            - heading "Структурованість історій" [level=3] [ref=e87]
+            - paragraph [ref=e88]: Відповідність класичній структурі оповіді
+            - generic [ref=e89]:
+              - generic [ref=e91]:
+                - generic [ref=e92]: ШІ (структурований промпт)
+                - strong [ref=e93]: 97.2%
+              - generic [ref=e97]:
+                - generic [ref=e98]: ШІ (мінімальний промпт)
+                - strong [ref=e99]: 80.6%
+        - 'heading "Оцінка текстів та відео: вихователі й батьки" [level=3] [ref=e102]'
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]: Батьки (ШІ текст)
+            - generic [ref=e109]: "4.64"
+          - generic [ref=e110]:
+            - generic [ref=e111]: Батьки (Традиц.)
+            - generic [ref=e114]: "4.33"
+          - generic [ref=e115]:
+            - generic [ref=e116]: Вихователі (ШІ)
+            - generic [ref=e119]: "4.16"
+          - generic [ref=e120]:
+            - generic [ref=e121]: Вихователі (Трад.)
+            - generic [ref=e124]: "4.08"
+      - generic [ref=e125]:
+        - heading "Корпус матеріалів" [level=2] [ref=e126]
+        - paragraph [ref=e127]: "Корпус містить 15 одиниць для сліпого оцінювання: 6 відеофрагментів і 9 казкових текстів. На сторінках матеріалів походження відкривається окремим спойлером, щоб не заважати логіці сліпого оцінювання."
+        - generic [ref=e128]:
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]: movie
+              - heading "Відеофрагменти V1-V6" [level=3] [ref=e132]
+            - list [ref=e133]:
+              - listitem [ref=e134]:
+                - link "V1 Ґруффало" [ref=e135] [cursor=pointer]:
+                  - /url: m/grk/
+                  - strong [ref=e136]: V1
+                  - generic [ref=e137]: Ґруффало
+              - listitem [ref=e138]:
+                - link "V2 Кротик і Панда" [ref=e139] [cursor=pointer]:
+                  - /url: m/pkd/
+                  - strong [ref=e140]: V2
+                  - generic [ref=e141]: Кротик і Панда
+              - listitem [ref=e142]:
+                - link "V3 Шусть і Шуня" [ref=e143] [cursor=pointer]:
+                  - /url: m/ssn/
+                  - strong [ref=e144]: V3
+                  - generic [ref=e145]: Шусть і Шуня
+              - listitem [ref=e146]:
+                - link "V4 Три пригоди Синього Трактора" [ref=e147] [cursor=pointer]:
+                  - /url: m/trk/
+                  - strong [ref=e148]: V4
+                  - generic [ref=e149]: Три пригоди Синього Трактора
+              - listitem [ref=e150]:
+                - link "V5 Тофі і Таємниця" [ref=e151] [cursor=pointer]:
+                  - /url: m/tfi/
+                  - strong [ref=e152]: V5
+                  - generic [ref=e153]: Тофі і Таємниця
+              - listitem [ref=e154]:
+                - link "V6 Пригоди поросятка" [ref=e155] [cursor=pointer]:
+                  - /url: m/prs/
+                  - strong [ref=e156]: V6
+                  - generic [ref=e157]: Пригоди поросятка
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - generic [ref=e160]: menu_book
+              - heading "Текстові матеріали T1-T9" [level=3] [ref=e161]
+            - list [ref=e162]:
+              - listitem [ref=e163]:
+                - link "T1 Навіщо кажуть «Спасибі»" [ref=e164] [cursor=pointer]:
+                  - /url: m/spb/
+                  - strong [ref=e165]: T1
+                  - generic [ref=e166]: Навіщо кажуть «Спасибі»
+              - listitem [ref=e167]:
+                - link "T2 Дуб під вікном" [ref=e168] [cursor=pointer]:
+                  - /url: m/dub/
+                  - strong [ref=e169]: T2
+                  - generic [ref=e170]: Дуб під вікном
+              - listitem [ref=e171]:
+                - link "T3 Покинуте кошеня" [ref=e172] [cursor=pointer]:
+                  - /url: m/ksh/
+                  - strong [ref=e173]: T3
+                  - generic [ref=e174]: Покинуте кошеня
+              - listitem [ref=e175]:
+                - link "T4 Теплий хлібчик для друзів" [ref=e176] [cursor=pointer]:
+                  - /url: m/xhf/
+                  - strong [ref=e177]: T4
+                  - generic [ref=e178]: Теплий хлібчик для друзів
+              - listitem [ref=e179]:
+                - link "T5 Бабусин пиріг" [ref=e180] [cursor=pointer]:
+                  - /url: m/bbp/
+                  - strong [ref=e181]: T5
+                  - generic [ref=e182]: Бабусин пиріг
+              - listitem [ref=e183]:
+                - link "T6 Їжачкова яблучна знахідка" [ref=e184] [cursor=pointer]:
+                  - /url: m/izh/
+                  - strong [ref=e185]: T6
+                  - generic [ref=e186]: Їжачкова яблучна знахідка
+              - listitem [ref=e187]:
+                - link "T7 Лисичка і чарівне зернятко" [ref=e188] [cursor=pointer]:
+                  - /url: m/lsk/
+                  - strong [ref=e189]: T7
+                  - generic [ref=e190]: Лисичка і чарівне зернятко
+              - listitem [ref=e191]:
+                - link "T8 Сонечко і хмаринка" [ref=e192] [cursor=pointer]:
+                  - /url: m/snc/
+                  - strong [ref=e193]: T8
+                  - generic [ref=e194]: Сонечко і хмаринка
+              - listitem [ref=e195]:
+                - link "T9 Пригоди сонячного зайчика Пстрика" [ref=e196] [cursor=pointer]:
+                  - /url: m/pst/
+                  - strong [ref=e197]: T9
+                  - generic [ref=e198]: Пригоди сонячного зайчика Пстрика
+      - generic [ref=e199]:
+        - generic [ref=e200]:
+          - generic [ref=e201]: psychology
+          - generic [ref=e202]:
+            - heading "Експертне сліпе тестування" [level=2] [ref=e203]
+            - paragraph [ref=e204]:
+              - text: "Вражаючий результат з Розділу 3.2: під час сліпого тестування"
+              - strong [ref=e205]: 100% вихователів
+              - text: помилково ідентифікували традиційну високоякісну анімацію як таку, що згенерована штучним інтелектом. Це свідчить про глибоке розмиття меж між людською та машинною творчістю в сприйнятті дорослих.
+        - heading "Точність розпізнавання контенту" [level=3] [ref=e206]
+        - generic [ref=e207]:
+          - generic [ref=e208]:
+            - heading "Розпізнавання Традиційного Відео" [level=4] [ref=e209]
+            - strong [ref=e210]: 0%
+            - paragraph [ref=e211]: Вихователів правильно визначили традиційне відео як створене людиною.
+          - generic [ref=e212]:
+            - heading "Розпізнавання ШІ-Відео" [level=4] [ref=e213]
+            - strong [ref=e214]: 84% – 85%
+            - paragraph [ref=e215]: Вихователі та батьки розпізнавали ШІ-відео значно точніше, ніж традиційну анімацію.
+      - generic [ref=e217]:
+        - heading "Практичні рекомендації для батьків" [level=2] [ref=e218]
+        - generic [ref=e219]:
+          - generic [ref=e220]:
+            - generic [ref=e221]: fact_check
+            - heading "Попередня перевірка" [level=4] [ref=e222]
+            - paragraph [ref=e223]: Завжди переглядайте контент перед тим, як показати його дитині, щоб уникнути "AI slop".
+          - generic [ref=e224]:
+            - generic [ref=e225]: speed
+            - heading "Контроль темпу" [level=4] [ref=e226]
+            - paragraph [ref=e227]: Уникайте відео з гіперстимулюючим, занадто швидким монтажем, характерним для автозгенерованих роликів.
+          - generic [ref=e228]:
+            - generic [ref=e229]: family_restroom
+            - heading "Спільний перегляд" [level=4] [ref=e230]
+            - paragraph [ref=e231]: Дивіться відео разом з дитиною, коментуйте події та пояснюйте незрозумілі моменти.
+      - generic [ref=e233]:
+        - generic [ref=e234]: tips_and_updates
+        - heading "Висновок" [level=2] [ref=e235]
+        - paragraph [ref=e236]:
+          - text: Швидка експансія ШІ-контенту у сферу дитячих медіа випереджає формування відповідних механізмів захисту та регулювання.
+          - strong [ref=e237]: Критично важливою
+          - text: стає роль дорослого як модератора та провідника, здатного фільтрувати алгоритмічний шум та забезпечувати здоровий когнітивний розвиток дитини в цифрову епоху.
+  - contentinfo [ref=e238]:
+    - generic [ref=e239]:
+      - link "Курсова · 2026" [ref=e240] [cursor=pointer]:
+        - /url: "#abstract"
+      - generic [ref=e241]:
+        - link "Анкета батьків" [ref=e242] [cursor=pointer]:
+          - /url: survey/parents/
+        - link "Анкета вихователів" [ref=e243] [cursor=pointer]:
+          - /url: survey/educators/
+        - link "Матеріали корпусу" [ref=e244] [cursor=pointer]:
+          - /url: m/
+        - link "Література" [ref=e245] [cursor=pointer]:
+          - /url: literature/
+        - link "Звітність" [ref=e246] [cursor=pointer]:
+          - /url: reports/
+        - link "Переглянути PDF" [ref=e247] [cursor=pointer]:
+          - /url: paper/
+        - link "Контакт" [ref=e248] [cursor=pointer]:
+          - /url: mailto:savind@bpedk.com.ua
+      - generic [ref=e249]: © 2026 Бердичівський педагогічний фаховий коледж.
+      - button "Увімкнути темну тему" [ref=e250] [cursor=pointer]: ☾
+  - button "Нагору": ↑
